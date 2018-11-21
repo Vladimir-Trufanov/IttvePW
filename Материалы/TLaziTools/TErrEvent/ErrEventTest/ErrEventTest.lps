@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="24">
+      <Unit0>
+        <Filename Value="ErrEventTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="56" Y="32"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ErrEventtestFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmErrEvent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="3" Y="65"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\TErrEvent\ErrEventClass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <CursorPos Y="65"/>
+        <UsageCount Value="36"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\TErrEvent\erANYMesUni.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="63" Y="36"/>
+        <UsageCount Value="30"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\LazitoolsOutfit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="3" Y="20"/>
+        <UsageCount Value="28"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\TLaziPrown\TellmeFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="23"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\TLempeZiW\LempeTestFrm.pas"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="logerfrm.pas"/>
+        <UnitName Value="LogerFrm"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\TLaziPrown\ArrayFrm.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="206"/>
+        <CursorPos X="9" Y="218"/>
+        <UsageCount Value="12"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\TD7TOOLS\TErrEvent\ErrEvent.pas"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="96"/>
+        <CursorPos X="18" Y="114"/>
+        <UsageCount Value="12"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\TFidirCheck\fidircheckclass.pas"/>
+        <UnitName Value="FidirCheckClass"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="86"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="14"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\TD7TOOLS\TErrEvent\erANYMesUni.pas"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="46"/>
+        <CursorPos X="6" Y="106"/>
+        <UsageCount Value="13"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\TD7TOOLS_old\TErrEvent_old\ErrEvent.pas"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="137"/>
+        <CursorPos Y="36"/>
+        <UsageCount Value="11"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\TD7TOOLS_old\TErrEvent_old\erANYMesUni.pas"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="91"/>
+        <CursorPos Y="114"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\TD7TOOLS_old\TErrEvent_old\erTVEMesUni.pas"/>
+        <UsageCount Value="11"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\TErrEvent\ErrEventAlerts.pas"/>
+        <UnitName Value="ErreventAlerts"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="8" Y="27"/>
+        <UsageCount Value="14"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\TD7TOOLS\Td7Profi.pas"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\Docsy\libdocsy\convs\convemw.pas"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="74"/>
+        <CursorPos X="11" Y="92"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus124.64\fpc\2.6.4\source\rtl\win64\system.pp"/>
+        <UnitName Value="System"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="2" Y="33"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\TD7PROWN\MessHelpLib.pas"/>
+        <ComponentName Value="frmMessHelp"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="91"/>
+        <CursorPos X="36" Y="7"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\TLaziPrown\MessHelpLib.pas"/>
+        <ComponentName Value="frmMessHelp"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\TLempeZiW\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="324"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\TLaziPrown\LaziprownAlerts.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="17"/>
+        <CursorPos Y="24"/>
+        <UsageCount Value="12"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\TLaziPrown\LaziprownOutfit.pas"/>
+        <UnitName Value="LaziPrownOutfit"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="3" Y="24"/>
+        <UsageCount Value="11"/>
+      </Unit23>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>
