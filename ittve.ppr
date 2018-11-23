@@ -1,0 +1,37 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\IttvePW\www
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+ittve
+	+www
+		www\First.php
+		www\index.php
+[Open project files]
+0=www\First.php
+1=www\index.php
+2=www\indexold.html
+[Selected Project Files]
+Main=
+Selected=www\indexold.html
+[www\First.php]
+TopLine=132
+Caret=15,152
+[www\index.php]
+TopLine=1
+Caret=49,5
+[www\indexold.html]
+TopLine=1
+Caret=1,1

@@ -9,6 +9,7 @@
 //                                                   Дата создания:  01.11.2016
 // Copyright © 2016 TVE                              Посл.изменение: 05.03.2018
 
+/*
 // Объявляем и инициируем сайтовые переменные
 require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/GetAbove.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/MakeCookie.php";
@@ -60,8 +61,9 @@ elseif (isComRequest('Norms'))
     require $SiteRoot.'/Pages/Sotsialnyye_normy_ploshchadi_zhilya.php';
 else
     require $SiteRoot.'/Pages/Other_Main.php';
-    
+*/    
 
+/*
 // Определяем, следуем ли инициировать начальные условия расчетов
 $Atfirst=Inane;
 if (IsSet($_GET['Com'])) 
@@ -87,126 +89,71 @@ intro();
 
 // Заполняем страницу браузера
 echo "</div>";
+*/
 ?>
-<div class="linel" id="LineTop">
-    <div id="Ers">
-    <?php
-    if (IsSet($_GET['Com'])) 
-    {                                      
-        if ($_GET['Com']=='Mess')
-        {
-            echo $_GET['mess'];
-        }
-    }
-    ?>
-    </div>
-    <?php 
-    // echo $_SERVER['HTTP_HOST'];
-    IniTopMenu($Comm,$Law->isLaws($Comm),$Norm->isNorms($Comm),$Ref->isReffs($Comm)); 
-    ?>
-    <div id="Pers">
-        <?php //echo " ".$PersName." ".$PersMain."[".$PersEntry."]"; ?>
-        <?php echo " ".$PersName." "."[".$PersEntry."]"; ?>
-    </div>
-</div>
- 
-<div id="Сontents">
-    <section id="mleft">
-        
-        <div id="main">
-        <h2>Жилищно-коммунальные услуги, начисления</h2>
-        <!--noindex-->
-        <table class="inventory">
-        <tr>
-        <?php                                           
-        // Выводим заголовок чекбоксов при запросе на удаление
-        if (IsSet($_GET['Com'])) 
-        { 
-            if ($_GET['Com']=="delUsl")
-            {
-                echo "<th> </th>";
-            }
-        }
-        ?>
-        <th scope="col">Услуга</th>
-        <th scope="col">Норма</th>
-        <th scope="col">Тариф</th>
-        <th scope="col">Колич.</th>
-        <th scope="col">Начислено</th>
-        <th scope="col">Коррек.</th>
-        <th scope="col">Сумма</th>
-        </tr>
-		<?php
-            ShowNch($Nch,$db,$Domik)
-        ?>
-		</table>
-        <!--/noindex-->
-        </div>
-        
-        <div id="lgoty">
-        <h2>Льготополучатели, начисленные льготы - ЕДК</h2>
-        <!--noindex-->
-        <table class="inventory">
-        <tr>
-        <th scope="col">Услуга</th>
-        <th scope="col">Расчет</th>
-        <th scope="col">Фамилия И.О.</th>
-        <th scope="col">Норма</th>
-        <th scope="col">Доля</th>
-        <th scope="col">Льгота</th>
-        <th scope="col"> </th>
-        </tr>
-		<?php
-            ShowLgo($Lgo,$Domik)
-        ?>
-        </table>
-        <!--/noindex-->
-        </div>
-    </section>
-    <?php
-    // Выводим поясняющую информация или справочники, или законы 
-    ShowCommon($Comm,$Domik,$Ref,$Law,$Norm,$db,$Nch);
-    ?>
-</div>
 
-<div class="linel" id="LineBottom">
-    <?php 
-    IniPlusMinus(ListUsl);
-    // Добавляем счетчик LiveInternet
-    echo "<div id=\"MainCounter\">";
-    if ($_SERVER['HTTP_HOST']=='kwinflat.ru')
-    {
-        echo "<!--noindex-->";
-        ?>
-        <!--LiveInternet counter--><script type="text/javascript">
-        document.write("<a href='//www.liveinternet.ru/click' "+
-        "target=_blank><img src='//counter.yadro.ru/hit?t53.6;r"+
-        escape(document.referrer)+((typeof(screen)=="undefined")?"":
-        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-        ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-        "' alt='' title='LiveInternet: показано число просмотров и"+
-        " посетителей за 24 часа' "+
-        "border='0' width='88' height='31'><\/a>")
-        </script><!--/LiveInternet-->
-        <?php 
-        echo "<!--/noindex-->";
-    }
-    echo "</div>";
-    IniBottomMenu($Comm); 
-    ?>
-    <div id="Persmail">
-        <?php echo "e-mail: tve58@inbox.ru"; ?>
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>В программировании моя жизнь!</title>
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
+      Перестав мыслить понятиями и размышлять о путях существования и небытия, 
+      о душе и плоти, о пассивном и активном и о других подобных вещах, 
+      начинаешь осознавать, что разум — это Будда, 
+      что Будда — это сущность разума, 
+      и что разум подобен бесконечности.</p>
+      
+      <header class="cHeader" id="hBlock">
+         Это header
+      </header>
+      
+      <details class="cDetails" id="pLine">
+         Параметры сайта по алфавиту
+      </details>
+      
+      <nav class="cNav" id="tLine">
+         Навигация в глубину сайта
+      </nav>
+
+      <div id="lSide">
+         Левый блок краткого меню и новостей
+         
+         <menu id="waMenu">
+            Меню - кратко
+         </menu>
+         
+         <article id="waNews">
+            Новости
+         </article>                                        
+      </div>
+
+      <div id="cCenter">
+         Основная тема страницы
+      </div>
+
+      <div id="rSide">
+         Примеры в разных системах программирования
+         <section class="cSection" id="exLaz">
+            Примеры на Lazarus
+         </section>
+         <section class="cSection" id="exJav">
+            Примеры на JavaAndroid
+         </section>
+         <section class="cSection" id="exPhp">
+            Примеры на PHP
+         </section>
+      </div>
+      
+      <footer class="cFooter" id="fBlock">
+         Copyright, TinyMce, обратная связь
+      </footer>
+
+   </body> 
+</html>
 
 <?php
-echo "<footer>";
-echo "<h2>KwinFlat-близкий всем!</h2>";
-//prown\ViewGlobal('avgSESSION');
-//prown\ViewGlobal('avgCOOKIE');
-//prown\ViewGlobal('avgREQUEST');
-echo "</footer>";
-IniEndHtml();
 
 // *************************************************************** Main.php ***
