@@ -22,16 +22,12 @@ ittve
 [Open project files]
 0=www\First.php
 1=www\index.php
-2=www\indexold.html
 [Selected Project Files]
 Main=
-Selected=www\indexold.html
+Selected=www\First.php
 [www\First.php]
-TopLine=132
-Caret=15,152
+TopLine=124
+Caret=1,176
 [www\index.php]
 TopLine=1
 Caret=49,5
-[www\indexold.html]
-TopLine=1
-Caret=1,1
