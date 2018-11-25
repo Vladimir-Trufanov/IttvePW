@@ -17,17 +17,19 @@ Extensions=*.*
 [Project tree]
 ittve
 	+www
+		+Allcss
+			www\Allcss\Styles.css
 		www\First.php
 		www\index.php
 [Open project files]
 0=www\First.php
-1=www\index.php
+1=www\Allcss\Styles.css
 [Selected Project Files]
 Main=
 Selected=www\First.php
 [www\First.php]
-TopLine=124
-Caret=1,176
-[www\index.php]
-TopLine=1
-Caret=49,5
+TopLine=188
+Caret=14,209
+[www\Allcss\Styles.css]
+TopLine=93
+Caret=3,113
