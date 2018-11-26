@@ -24,12 +24,16 @@ ittve
 [Open project files]
 0=www\First.php
 1=www\Allcss\Styles.css
+2=www\index.php
 [Selected Project Files]
 Main=
-Selected=www\First.php
+Selected=www\Allcss\Styles.css
 [www\First.php]
-TopLine=188
-Caret=14,209
+TopLine=116
+Caret=20,126
 [www\Allcss\Styles.css]
-TopLine=93
-Caret=3,113
+TopLine=91
+Caret=30,107
+[www\index.php]
+TopLine=1
+Caret=1,1

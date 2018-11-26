@@ -97,7 +97,7 @@ echo "</div>";
    <head>
       <title>В программировании моя жизнь!</title>
       <meta charset="utf-8">
-      <link rel=\"stylesheet\" type=\"text/css\" href=\"Allcss/Styles.css\"/>
+      <link rel="stylesheet" type="text/css" href="Allcss/Styles.css">
    </head>
    <body>
       <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
@@ -122,9 +122,9 @@ echo "</div>";
       <aside id="lSide">
          Левый блок краткого меню и новостей
          
-         <menu id="waMenu">
-            Меню - кратко
-         </menu>
+         <div id="waMenu">
+            Меню не в изображениях
+         </div>
          
          <article id="waNews">
             Новости
