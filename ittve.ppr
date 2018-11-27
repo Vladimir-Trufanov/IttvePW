@@ -29,11 +29,11 @@ ittve
 Main=
 Selected=www\Allcss\Styles.css
 [www\First.php]
-TopLine=116
-Caret=20,126
+TopLine=257
+Caret=1,237
 [www\Allcss\Styles.css]
-TopLine=91
-Caret=30,107
+TopLine=103
+Caret=22,100
 [www\index.php]
 TopLine=1
-Caret=1,1
+Caret=70,9

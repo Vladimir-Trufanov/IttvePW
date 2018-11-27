@@ -96,7 +96,8 @@ h1
 {
    float: left;
    width: 14%;
-   /* padding: 0 20px 0 10px; */
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
 }
 
 #cCenter  
@@ -104,7 +105,7 @@ h1
    float: left;
    width: 43%;
    /* Отодвигаем текст от границ колонки */
-   padding: 0 0.2rem 0 0.2rem; 
+   padding: 0 0.6rem 0.6rem 0.6rem; 
    /* Отделяем бордюром основную тему страницы справа и слева */
    border-left:  dashed 0.1rem rgb(153,153,153);
    border-right: dashed 0.1rem rgb(153,153,153);
@@ -114,9 +115,20 @@ h1
 {
    float: right;
    width: 43%;
-   /* padding: 0 10px 0 10px; */
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
 }
 
+footer 
+{
+   color: rgb(204,204,204);
+	background-color: black;
+   clear: both;
+} 
+
+footer a {
+	color: white;	
+}
 
 /*
  *************************************************************** Styles.css ***
