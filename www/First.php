@@ -99,6 +99,7 @@ echo "</div>";
       <title>В программировании моя жизнь!</title>
       <meta charset="utf-8">
       <link rel="stylesheet" type="text/css" href="Allcss/Styles.css">
+      <link rel="stylesheet" type="text/css" href="css1/style.css" />
    </head>
    <body>
       <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
@@ -123,6 +124,69 @@ echo "</div>";
       <div>
       <aside id="lSide">
          Левый блок краткого меню и новостей
+         
+         
+         <div id="wrapper">
+         
+	         <ul class="accordion">
+		      <li id="one" class="files"> <a href="#" class="">Мои файлы<span>495</span></a>
+			   <ul class="sub-menu" style="display: none; ">
+				   <li><a href="#"><em>01</em>Dropbox<span>42</span></a></li>
+				   <li><a href="#"><em>02</em>Skydrive<span>87</span></a></li>
+				   <li><a href="#"><em>03</em>FTP Сервер<span>366</span></a></li>
+				   <li><a href="#"><em>04</em>Google Drive<span>1</span></a></li>
+				   <li><a href="#"><em>05</em>Skydrive<span>10</span></a></li>
+			   </ul>
+		      </li>
+		
+            <li id="two" class="mail"> <a href="#" class="">Почта<span>26</span></a>
+			   <ul class="sub-menu" style="display: none; ">
+				   <li><a href="#"><em>01</em>Gmail<span>9</span></a></li>
+				   <li><a href="#"><em>02</em>Yandex<span>14</span></a></li>
+			   </ul>
+		      </li>
+            
+		      <li id="three" class="cloud"> <a href="#" class="">Работа<span>58</span></a>
+			   <ul class="sub-menu" style="display: none; ">
+				   <li><a href="#"><em>01</em>Отправка<span>12</span></a></li>
+				   <li><a href="#"><em>02</em>Сайты<span>19</span></a></li>
+				   <li><a href="#"><em>03</em>Сделать<span>27</span></a></li>
+				   <li><a href="#"><em>04</em>Пароли<span>12</span></a></li>
+				   <li><a href="#"><em>05</em>Профили<span>19</span></a></li>
+				   <li><a href="#"><em>06</em>Опции<span>27</span></a></li>
+			   </ul>
+		      </li>
+            
+		      <li id="four" class="sign"> <a href="#" class="active">Войти</a>
+			   <ul class="sub-menu" style="display: block; ">
+				   <li><a href="#"><em>01</em>Выход</a></li>
+				   <li><a href="#"><em>02</em>Удалить профиль</a></li>
+				   <li><a href="#"><em>03</em>Параметры</a></li>
+			   </ul>
+		      </li>
+	         </ul>
+         </div>
+         
+         <script type="text/javascript" src="js/jquery-2.0.1.js"></script>
+         <script type="text/javascript">
+         $(document).ready(function() {			
+	      var accordion_head = $('.accordion > li > a'),
+		   accordion_body = $('.accordion li > .sub-menu');
+	      accordion_head.first().addClass('active').next().slideDown('normal');
+	      accordion_head.on('click', function(event) {			
+		   event.preventDefault();
+		   if ($(this).attr('class') != 'active'){
+			accordion_body.slideUp('normal');
+			$(this).next().stop(true,true).slideToggle('normal');
+			accordion_head.removeClass('active');
+			$(this).addClass('active');
+		   }
+	      });
+         });
+         </script>
+
+         
+         
          
          <div id="waMenu">
             Меню в изображениях
@@ -215,7 +279,8 @@ PHP прост для освоения, и вместе с тем способе
          Copyright, TinyMce, обратная связь
          <p>Copyright © 2018 tve </p>
          <p>Контакты: <a href="mailto:tve58@inbox.ru">tve58@inbox.ru</a></p>
-         
+            <!-- 
+
          Сайты для мобильных устройств
 Поисковые системы улучшают выдачу результатов поиска для пользователей мобильных устройств (смартфонов, планшетов). Таким пользователям вероятнее всего будет показан сайт с адаптивным дизайном, динамической версткой страниц, мобильная версия сайта или Турбо-страница.
 
@@ -234,7 +299,7 @@ PHP прост для освоения, и вместе с тем способе
 Размещайте контент вашего сайта таким образом, чтобы он был максимально виден на экране мобильного устройства.
 Содержимое страниц не должно выходить за рамки экрана по горизонтали.
 Размер текста в пикселях должен быть таким, чтобы весь текст удобно читался на экране мобильного устройства.
-
+       -->
       </footer>
 
    </body> 
