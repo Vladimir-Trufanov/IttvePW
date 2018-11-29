@@ -18,38 +18,29 @@ Extensions=*.*
 ittve
 	+www
 		+Allcss
+			www\Allcss\MenuAccord.css
 			www\Allcss\Styles.css
-		-css1
-			www\css1\style1.css
-		-css2
-			www\css2\style2.css
-		+js
-			www\js\jquery-1.3.1.min.js
+		-js
 			www\js\jquery-2.0.1.js
 		www\First.php
-		www\FirstExm1.php
 		www\index.php
 [Open project files]
 0=www\First.php
 1=www\Allcss\Styles.css
 2=www\index.php
-3=www\css1\style.css
-4=www\FirstExm1.php
+3=www\Allcss\MenuAccord.css
 [Selected Project Files]
 Main=
-Selected=www\First.php
+Selected=www\Allcss\MenuAccord.css
 [www\First.php]
-TopLine=121
-Caret=1,190
+TopLine=135
+Caret=86,148
 [www\Allcss\Styles.css]
-TopLine=3
-Caret=12,106
+TopLine=9
+Caret=1,13
 [www\index.php]
 TopLine=1
 Caret=70,9
-[www\css1\style.css]
-TopLine=163
-Caret=1,176
-[www\FirstExm1.php]
-TopLine=174
-Caret=1,189
+[www\Allcss\MenuAccord.css]
+TopLine=21
+Caret=3,47
