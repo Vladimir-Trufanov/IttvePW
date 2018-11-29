@@ -125,7 +125,6 @@ echo "</div>";
       <div>
       <aside id="lSide">
          Левый блок краткого меню и новостей
-
          
          <!-- Первый пример меню -->
          <div id="wrapper">
@@ -186,125 +185,6 @@ echo "</div>";
 	      });
          });
          </script>
-
-
-
-
-
- 
-         <!-- Второй пример меню -->
-<div class="box">
-    <ul id="tabMenu">
-        <li class="posts selected"></li>
-        <li class="comments"></li>
-        <li class="category"></li>
-        <li class="famous"></li>
-        <li class="random"></li>
-    </ul>
-    <div class="boxTop"></div>
-    <div class="boxBody"> 
-        <div id="posts" class="show parent">
-            <ul>
-                <li>Create a Simple CSS + Javascript Tooltip with jQuery.</li>
-                <li>Simple JQuery Modal Window Tutorial.</li>
-                <li>Navigation List menu + Jquery Animate Effect Tutorial.</li>
-                <li>Exclusive RSS Icons from Queness.</li>
-                <li>50 Monochromatic Website Designs.</li>
-                <li>Food Plates and Creative Dishware Designs.</li>
-                <li>Breadcrumbs In Web Design: Examples And Best Practices.</li>
-                <li class="last">New Smashing Freebies For Designers and Bloggers.</li>
-            </ul>  
-        </div>   
-        <div id="comments" class="parent">
-            <ul>
-                <li><a>jQuery Tabbed Navigation Menu. <span> - kevin</span></a></li>
-                <li><a>You can add links in here! <span> - kevin</span></a></li>
-                <li><a>It's easy to understand. Though it's not the best, but hell yeah it works. <span> - kevin</span></a></li>
-                <li><a>I hope you will like it. <span> - kevin</span></a></li>
-                <li><a>My next tutorial will be jQuery-based Accordion. <span> - kevin</span></a></li>
-                <li class="last"><a>And, I'm working on a free wordpress template as well : ) <span> - kevin</span></a></li>
-            </ul>
-        </div>  
-        <div id="category" class="parent">
-            <ul>
-                <li><a href="#">ajax</a></li>
-                <li><a href="#">css-html</a></li>
-                <li><a href="#">freebies</a></li>
-                <li><a href="#">icon</a></li>
-                <li><a href="#">inspiration</a></li>
-                <li><a href="#">javascript</a></li>
-                <li><a href="#">logo</a></li>
-                <li><a href="#">photography</a></li>
-                <li><a href="#">photoshop</a></li>
-                <li><a href="#">php</a></li>
-                <li><a href="#">seo</a></li>
-                <li><a href="#">tutorial</a></li>
-                <li><a href="#">usability</a></li>
-                <li><a href="#">wallpaper</a></li>
-                <li class="last"><a href="#">wordpress</a></li>
-            </ul>  
-        </div> 
-        <div id="famous" class="parent">
-            <ul>
-                <li>Simple JQuery Modal Window Tutorial.</li>
-                <li>Create a Simple CSS + Javascript Tooltip with jQuery.</li>
-                <li>Navigation List menu + Jquery Animate Effect Tutorial.</li>
-                <li class="last">Exclusive RSS Icons from Queness.</li>
-            </ul>  
-        </div>
-        <div id="random" class="parent">
-            <ul>
-                <li>50 Monochromatic Website Designs.</li>
-                <li>Breadcrumbs In Web Design: Examples And Best Practices.</li>
-                <li>Simple JQuery Modal Window Tutorial.</li>
-                <li>Navigation List menu + Jquery Animate Effect Tutorial.</li>
-                <li>Create a Simple CSS + Javascript Tooltip with jQuery.</li>
-                <li>Exclusive RSS Icons from Queness.</li>
-                <li>New Smashing Freebies For Designers and Bloggers.</li>
-                <li class="last">Food Plates and Creative Dishware Designs.</li>
-            </ul>    
-        </div>        
-    </div>
-    <div class="boxBottom"></div>
-</div>
-<script type="text/javascript" src="js/jquery-2.0.1.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {	
-    $('#tabMenu li').click(function(){
-        if (!$(this).hasClass('selected')) {     
-	        $('#tabMenu li').removeClass('selected');
-	        $(this).addClass('selected');
-	        $('.boxBody div.parent').slideUp('1500');
-	        $('.boxBody div.parent:eq(' + $('#tabMenu > li').index(this) + ')').slideDown('1500');	    
-	    }    
-    }).mouseover(function() {
-        $(this).addClass('mouseover');
-        $(this).removeClass('mouseout');       
-    }).mouseout(function() {
-        $(this).addClass('mouseout');
-        $(this).removeClass('mouseover');       
-    });
-    $('.boxBody #category li').click(function(){
-        window.location = $(this).children().attr('href');
-    }).mouseover(function() {
-        $(this).css('backgroundColor','#888');
-        $(this).children().animate({paddingLeft:"20px"}, {queue:false, duration:300});
-    }).mouseout(function() {
-        $(this).css('backgroundColor','');
-        $(this).children().animate({paddingLeft:"0"}, {queue:false, duration:300});
-    });  
-    $('#.boxBody li').click(function(){
-        window.location = $(this).children().attr('href');
-    }).mouseover(function() {
-        $(this).css('backgroundColor','#888');
-    }).mouseout(function() {
-        $(this).css('backgroundColor','');
-    });  	
-});
-</script>
- 
- 
-         
 
          
          
