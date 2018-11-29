@@ -120,7 +120,7 @@ echo "</div>";
          Навигация в глубину сайта
       </nav>
 
-      <div>
+      <div id="lSideTOrSide">
       <aside id="lSide">
          Левый блок краткого меню и новостей
          
