@@ -73,15 +73,15 @@ table
 */
 html
 {
-    font-family: verdana, arial, sans-serif;
-    font-size: 62.5%;
+   font-family: verdana, arial, sans-serif;
+   font-size: 62.5%;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-    font-size: 16px;   /* для старых браузеров, что rem не поддерживают */
-    font-size: 1.6rem;  
+   font-size: 16px;   /* для старых браузеров, что rem не поддерживают */
+   font-size: 1.6rem;  
 }
 
 h1 
@@ -90,6 +90,12 @@ h1
 	color: #46874D;
 	background: url(../images/underline.png) no-repeat 0px 88%;
 	/*padding-left: 0.5rem;*/
+}
+
+
+#lSideTOrSide
+{
+   margin: 4.5rem 0 0 0; 
 }
 
 /* Позиционируем центральные секции */
@@ -119,18 +125,44 @@ h1
    /* Отодвигаем текст от границ колонки */
    padding: 0 0.6rem 0.6rem 0.6rem; 
 }
+/* Оформляем шапку */
+#hBlock
+{
+   position: fixed;     /* Фиксированное положение */
+   left: 0; top: 0;     /* Правый верхний угол */
+   /* padding: 10px;        Поля вокруг текста */
+   width: 100%;         /* Ширина слоя */
+} 
+/* Оформляем строку параметров сайта */
+#pLine
+{
+   color: #60472E;
+	background-color: #E2D5C5;
+   height: 2rem;
+} 
+/* Оформляем навигацию в глубину сайта */
+#tLine
+{
+   color: #FFFFFF;
+	background-color: #899504;
+   height: 2rem;
+} 
 
+/* Оформляем подвал */
 footer 
 {
    color: rgb(204,204,204);
 	background-color: black;
    clear: both;
+   
+   position: fixed;     /* Фиксированное положение */
+   left: 0; bottom: 0;  /* Левый нижний угол */
+   /* padding: 10px;        Поля вокруг текста */
+   width: 100%;         /* Ширина слоя */
 } 
-
 footer a {
 	color: white;	
 }
-
 
 /*
  *************************************************************** Styles.css ***
