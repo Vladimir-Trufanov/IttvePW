@@ -1,0 +1,172 @@
+/** HTML5/CSS3, EDGE/CHROME                                  *** Styles.css ***
+
+ ******************************************************************************
+ * ittve.pw                                        Определить начальные стили *
+ ******************************************************************************
+
+                                                     Автор:       Труфанов В.Е.
+                                                     Дата создания:  25.11.2018
+ Copyright © 2018 tve                                Посл.изменение: 25.11.2018
+*/
+
+@import "MenuAccord.css"; 
+
+
+/* Содержим поля в ширине блока (кроме margin) */
+* 
+{
+   box-sizing: border-box;
+}
+ 
+/* Выравниваем базовую линию блока по базовой линии родителя */
+html, body,
+a, abbr, acronym, address, article, aside, audio, b, big, blockquote,
+canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, 
+em, embed,  
+fieldset, figcaption, figure, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, 
+label, legend, li, mark, menu, nav, 
+object, ol, output, p, pre, q, ruby, 
+s, samp, section, small, span, strike, strong, sub, summary, sup, 
+table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/* Снимаем умалчиваемый стили браузеров при фокусировании на поле ввода */
+*:focus 
+{
+   outline: none;
+}
+
+/* Все секции представляем, как блоки */
+article, aside, details, div, figcaption, figure, footer, header, hgroup, 
+menu, nav, section 
+{
+	display: block;
+}
+
+/* Нумеруем списки арабскими числами (1,2,3,4,...) */
+ol 
+{ 
+	list-style: decimal;
+}
+
+/* Ставим маркер в виде квадрата в маркированных списках */
+ul 
+{
+	list-style: square;
+}
+
+/* Склеиваем линии между ячейками */
+table 
+{
+	border-collapse: collapse;
+} 
+
+/**
+ Определяем базовый шрифт.
+ Для простоты вычислений в качестве базового размера шрифта задаем 10 пикселей 
+*/
+html
+{
+   font-family: verdana, arial, sans-serif;
+   font-size: 62.5%;
+}
+
+/* Устанавливаем размеры шрифтов по умолчанию */
+body 
+{
+   font-size: 16px;   /* для старых браузеров, что rem не поддерживают */
+   font-size: 1.6rem;  
+}
+
+h1 
+{
+	font: bold italic 2.4rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
+	color: #46874D;
+	background: url(../images/underline.png) no-repeat 0px 88%;
+	/*padding-left: 0.5rem;*/
+}
+
+
+#lSideTOrSide
+{
+   margin: 4.5rem 0 0 0; 
+}
+
+/* Позиционируем центральные секции */
+#lSide 
+{
+   float: left;
+   width: 18%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+}
+
+#cCenter  
+{
+   float: left;
+   width: 41%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+   /* Отделяем бордюром основную тему страницы справа и слева */
+   border-left:  dashed 0.1rem rgb(153,153,153);
+   border-right: dashed 0.1rem rgb(153,153,153);
+}
+
+#rSide  
+{
+   float: right;
+   width: 41%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+}
+/* Оформляем шапку */
+#hBlock
+{
+   position: fixed;     /* Фиксированное положение */
+   left: 0; top: 0;     /* Правый верхний угол */
+   /* padding: 10px;        Поля вокруг текста */
+   width: 100%;         /* Ширина слоя */
+} 
+/* Оформляем строку параметров сайта */
+#pLine
+{
+   color: #60472E;
+	background-color: #E2D5C5;
+   height: 2rem;
+} 
+/* Оформляем навигацию в глубину сайта */
+#tLine
+{
+   color: #FFFFFF;
+	background-color: #899504;
+   height: 2rem;
+   display: none;
+} 
+
+/* Оформляем подвал */
+footer 
+{
+   color: rgb(204,204,204);
+	background-color: black;
+   clear: both;
+   
+   position: fixed;     /* Фиксированное положение */
+   left: 0; bottom: 0;  /* Левый нижний угол */
+   /* padding: 10px;        Поля вокруг текста */
+   width: 100%;         /* Ширина слоя */
+} 
+footer a {
+	color: white;	
+}
+
+/*
+ *************************************************************** Styles.css ***
+*/	
+	
+
