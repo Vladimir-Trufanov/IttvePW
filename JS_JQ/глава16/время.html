@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Отображение времени</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="getTime.js"></script>
+<script>
+$(document).ready(function() {
+	function displayTime() {
+		$('#time').text(getTime(true));
+	}
+	displayTime();
+	setInterval(displayTime,1000);
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+  </header>
+	<div class="content">
+		<div class="main">
+			<h1>Отображение времени</h1>
+			<p>Сейчас: <strong id="time"></strong></p>
+			<div id="headlines"></div>
+		</div>
+	</div>
+	<footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+</div>
+</body>
+</html>

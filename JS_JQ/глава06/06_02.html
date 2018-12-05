@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Анимированная панель навигации</title>
+<link href="../_css/site.css" rel="stylesheet">
+<style>
+#dashboard {
+	width: 110px;
+	background-color: rgb(255,211,224);
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+#dashboard img {
+	margin-bottom: 20px;
+	border: 1px solid rgb(0,0,0);
+}
+</style>
+<script src="../_js/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+ 
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+     JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+  </header>
+<div id="dashboard">
+<img src="../_images/small/blue_h.jpg" width="70" height="70" alt="blue">
+<img src="../_images/small/green_h.jpg" width="70" height="70" alt="green">
+<img src="../_images/small/orange_h.jpg" width="70" height="70" alt="orange">
+<img src="../_images/small/purple_h.jpg" width="70" height="70" alt="purple">
+<img src="../_images/small/red_h.jpg" width="70" height="70" alt="red">
+<img src="../_images/small/yellow_h.jpg" width="70" height="70" alt="yellow">
+</div>
+<div class="content">
+<div class="main">
+<h1>Анимированная панель навигации</h1>
+<p>Наведите указатель мыши на розовую полосу у левого края страницы</p>
+</div>
+</div>
+<footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+</div>
+</body>
+</html>

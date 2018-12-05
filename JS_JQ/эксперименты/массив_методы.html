@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript &amp; jQuery:The Missing Manual</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/site.js"></script><script>
+$(document).ready(function( ) {
+function results(type,code,expl) {
+	if (type=="reset") {
+		$('.results div').not('#start').hide();
+		items = ['туфли', 'носки', 'пояс', 'шляпа'];	
+	} else {
+		$('.results div').show();
+	}
+	
+	if (items[0]!=undefined) {
+		$('#start code').html(items.toString());
+	} else {
+		$('#start code').html('<strong>Массив пуст</strong>');
+	}
+		$('#code code').html(code);
+		var originalItems = items.toString();
+		var returnVal = eval(code);
+	if (items[0]!=undefined) {
+		if (originalItems==items.toString()) {
+		$('#finish code').html('<strong>Массив не изменился</strong>');
+		} else {
+		$('#finish code').html(items.toString());
+		}
+	} else {
+		$('#finish code').html('<strong>Массив пуст</strong>');
+	}
+		if (returnVal) {
+		$('#return code').html(returnVal.toString());
+		} else {
+		$('#return code').html('nothing returned');
+		}
+		
+		$('#explanation code').html(expl);
+	}
+	
+	
+	$('.results div').not('#start').hide();
+	$('.example').click(function() {
+			var $this = $(this);
+			var resetA = $this.hasClass('reset');
+			var code = resetA ? "var items = ['туфли', 'носки', 'пояс', 'шляпа'];" : $this.text();
+			var expl = $this.attr('title') || 'none';
+			var type = resetA ? 'reset' : 'update';
+			results(type,code,expl);
+	});
+	
+	results('reset',"var items = ['туфли', 'носки', 'пояс', 'шляпа'];",false);
+	
+	
+});
+
+
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+  </header>
+  <div class="content">
+    <div class="main">
+      <div id="main">
+        <h1>Эксперименты с массивами</h1>
+        <div class="results">
+          <h2>Результаты</h2>
+          <div id="start"><strong>Элементы массива items[] в начале:</strong> <code>&nbsp;</code></div>
+          <div id="code"><strong>Код JavaScript:</strong> <code>&nbsp;</code></div>
+          <div id="finish"><strong>Элементы массива items[] после применения кода JavaScript:</strong> <code>&nbsp;</code></div>
+          <div id="return"><strong>Возвращенное значение: </strong><code>&nbsp;</code></div>
+          <div id="explanation"><strong>Объяснение:</strong><code class="explanation">&nbsp;blah</code></div>
+          <div id="reset">
+            <p class="example reset">Восстановить массив</p>
+          </div>
+        </div>
+        
+        <!--<h2>Original Array</h2>
+		<p class="example" title="Initializes array with 4 items">items = ['shoes', 'socks', 'belt', 'hat'];</p>-->
+        <div class="unit">
+          <h2>Splice</h2>
+          <p class="example" title="удаляет 3-й элемент и добавляет два новых элемента">items.splice(2,1,'пальто','шарф');</p>
+          <h2>Push</h2>
+          <p class="example" title="добавляет два новых элемента в конец массива и возвращает общее число элементов в массиве">items.push('зонт','рубашка');</p>
+          <h2>Unshift</h2>
+          <p class="example" title="добавляет два новых элемента в начало массива и возвращает общее число элементов в массиве">items.unshift('галстук','брюки');</p>
+          <h2>Shift</h2>
+          <p class="example" title="удаляет начальный элемент массива">items.shift();</p>
+        </div>
+        <div class="unit">
+          <h2>Pop</h2>
+          <p class="example" title="удаляет конечный элемент массива">items.pop();</p>
+          <h2>Slice</h2>
+          <p class="example" title="создает новый массив, состоящий из части первоначального массива. Первый номер - это начальный индекс, второй номер - это конечный индекс">items.slice(1,2);</p>
+          <h2>Reverse</h2>
+          <p class="example" title="обращает порядок элементов массива">items.reverse();</p>
+          <h2>Join</h2>
+          <p class="example" title="создает строку, объединяя значения каждого элемента массива. Строка, сообщаемая команде join(), используется в качестве разделителя">items.join(':');</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+  <div id="resources">
+    <p class="open">+</p>
+    <h2>Эксперименты</h2>
+    <ul class="nav">
+	  <li><a href="селекторы.html">Эксперименты с селекторами jQuery</a></li>
+      <li><a href="содержимое_функции.html">Эксперименты с функциями jQuery</a></li>
+      <li><a href="события.html">Эксперименты с событиями</a></li>
+      <li><a href="эффекты.html">Эксперименты с эффектами jQuery</a></li>
+      <li><a href="массив_методы.html">Эксперименты с массивами</a></li>
+      <li><a href="регекс_тест.html">Тестирование регулярных выражений</a></li>
+    </ul>
+    <h2>Ресурсы jQuery</h2>
+    <ul class="nav">
+      <li><a href="http://jquery.com">jQuery</a></li>
+      <li><a href="http://jqueryui.com/">jQuery UI</a></li>
+      <li><a href="http://jquerymobile.com/">jQuery Mobile</a></li>
+      <li><a href="http://jqapi.com/">jQAPI.com</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

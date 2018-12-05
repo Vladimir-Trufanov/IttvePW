@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Аккордеоны</title>
+<link href="../_css/jquery-ui.min.css" rel="stylesheet">
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#accordion').accordion({
+  active: false,
+  collapsible: true,
+  icons : {
+    header: 'ui-icon-circle-plus',
+    activeHeader: 'ui-icon-circle-minus'
+  },
+  animate: false
+});
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Аккордеон jQuery UI</h1>
+			 <div id="accordion">
+			  <h2>Что говорит робот?</h2>
+				<div>
+				  <h3><img src="images/robot.jpg" style="float:right" height="150" alt="robot">Содержимое аккордеона 1</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<h2>Списки и прочее...</h2>
+				<div>
+				  <h3>Содержимое аккордеона 2</h3>
+				  <p>Вы можете поместить в панель любой HTML-код</p>
+				  <ul>
+						<li>Избранное...</li>
+						<li>Заголовки...</li>
+						<li>Изображения...</li>
+						<li>Другое...</li>
+				  </ul>
+				</div>
+				<h2>Еще один аккордеон.</h2>
+				<div>
+				  <h3>Содержимое аккордеона 3</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+  </div>
+	</div>
+	<footer>
+		<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+	</footer>
+</div>
+</body>
+</html>

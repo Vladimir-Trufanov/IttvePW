@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Привет, мир</title>
+<link href="../_css/jquery-ui.min.css" rel="stylesheet">
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#contact').tooltip({
+  	content: $('#contactInfo').html()
+  }); // end tooltip
+}); // end ready
+</script>>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Всплывающие подсказки</h1>
+			<p>Вы можете добавить всплывающие подсказки к любому элементу страницы.</p>
+			<div class="row">
+			<p id="contact" title="hello">Контакты</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+	</footer>
+</div>
+<script id="contactInfo" type="text/template">
+	<p>Наш телефон 555-555-5555</p>
+	<p><img src="images/map.png" title="Я карта!"></p>
+</script>
+</body>
+</html>

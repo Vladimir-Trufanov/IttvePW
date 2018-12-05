@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Использование функции Callback</title>
+<link href="../_css/site.css" rel="stylesheet">
+<style>
+#figure {
+  position: relative;
+  width: 400px;
+  margin: 0;
+}
+
+#caption {
+	position: absolute;
+	width: 	340px;
+	background-color: black;
+	bottom: 10px;
+	left: 24px;
+	padding: 5px;
+	border: 1px solid white;
+	color: white;
+}
+</style>
+<script src="../_js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#photo').width(0).height(0).css('opacity',0);
+	$('#caption').hide();
+	$('#photo').animate(
+	   {
+		  width: '400px',
+		  height: '300px',
+		  opacity: 1
+	   },
+	   1000, 
+	   function() {
+		  $('#caption').fadeIn(1000);
+	   }
+	); // end animate
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+</header>
+<div class="content">
+	<div class="main">
+<h1>Использование функции Callback с функцией animate()</h1>
+<div id="figure"><img src="../_images/pencils.jpg" width="400" height="300" alt="pencils" id="photo">
+<p id="caption">Карандаши!!!!!!</p></div>
+	</div>
+</div>
+<footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+</div>
+</body>
+</html>

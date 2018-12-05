@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Отладка программ</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+var score = 0;
+var quiz = [
+  ['Сколько лун у планеты Земля?',1,[0,1,2,3]],
+  ['Сколько лун у планеты Сатурн?',31,[0,14,31,160]],
+  ['Сколько лун у планеты Венера?',0,[0,1,11,15]]
+;
+//get total number of questions
+var totalQuestion=quiz.length;
+
+//generate question and display multiple choice answers
+function askQuestion() {
+ // pick a  question
+ var currentQ=quiz.pop();
+ // get the question text
+ $('#question').text(currentQ[0]);
+ /* call buildAnswers() function to 
+    generate radio buttions with multiple choices */
+ var answers=buildAnswers(currentQ[2]);
+ // add choices to the page
+ $('#answers').html(answers);
+ // click() event handler to evaluate user answer
+ $('#answers input').click(function() {
+    if ($(this).val()==currentQ[1]) {
+      score++;
+      $('#result').prepend('Верно!');
+    } else {
+      $('#result').prepend('Неверно. Правильный ответ '+currentQ[1]);
+    }
+    // show the NEXT button
+    $('#next').show();
+  }); // end click()
+}
+
+function buildAnswers(answers) {
+  var answerHTML='';
+  // loop through each item in array answers
+  for (var i=0;i<=answers.length;i++) {
+    //build radio button
+    answerHTML+=' <input name="quiz" type="radio" value="';
+    answerHTML+=answers[i] + '">' + answers[i];
+  }
+  //return completed HTML of radio buttons
+  return answerHTML;
+}
+
+function giveResults() {
+  var results='<p>Вы ответили правильно на ' + score + ' из ' + totalQuestion + ' вопросов.</p>';
+  $('#questionArea').html(results); 
+}
+
+$('#next').click(function() {
+  $(this).hide();
+  $('#result').text('');
+  if (quiz.length==totalQuestion) {
+    $(this).val('Следующий вопрос >>');
+  } else if (quiz.length==1) {
+    $(this).val('Результат');
+  }
+  if (quiz.length>0) {
+    askQuestions();
+  } else {
+    giveResults();
+  }
+});
+
+
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+</header>
+	<div class="content">
+		<div class="main">
+			<h1>Использование отладчика</h1>
+			<div id="questionArea">
+  <p id="question"></p>
+  <p id="answers"></p>
+  <p id="result"></p>
+  <input type="button" value="Начать викторину" id="next">
+  </div>
+		</div>
+	</div>
+	<footer>
+    <p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+</div>
+</body>
+</html>

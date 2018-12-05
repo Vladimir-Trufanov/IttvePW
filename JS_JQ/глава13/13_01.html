@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Заголовки новостей</title>
+<link href="../_css/site.css" rel="stylesheet">
+<style>
+#newslinks li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#newslinks li a {
+	padding: 5px 10px; 
+	background-color: white;
+	color: black !important;
+	text-decoration: none;	
+}
+#newslinks li a:hover {
+	background-color: rgb(110,138,195);
+	color: white !important;	
+}
+#headlines #newsItem {
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid white;	
+}
+</style>
+<script src="../_js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	
+
+			
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+</header>
+	<div class="content">
+		<div class="main">
+			<h1>Заголовки новостей</h1>
+			<ul id="newslinks">
+			<li><a href="today.html">Сегодняшние новости</a></li>
+    <li><a href="yesterday.html">Вчерашние новости</a></li>
+    <li><a href="lastweek.html">Новости прошлой недели</a></li>
+			</ul>
+			<div id="headlines"></div>
+		</div>
+	</div>
+<footer>
+   <p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+</div>
+</body>
+</html>

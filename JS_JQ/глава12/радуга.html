@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Сортируемые цвета</title>
+<link href="../_css/jquery-ui.min.css" rel="stylesheet">
+<link href="../_css/site.css" rel="stylesheet">
+<link href="game.css" rel="stylesheet" >
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  var answer = ['r','o','y','g','b','i','v'].join('');
+
+   function coordinates(event,ui) {
+    console.log(ui.position);
+   }
+
+   $('#gameContainer').sortable({
+    axis : 'x',
+    stop : function (event, ui) {
+      if ($(this).sortable("toArray").join('') === answer) {
+        alert('Вы выиграли!');
+        $(this).sortable("disable");
+      }
+    },
+    sort : coordinates
+   });
+   
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Расположите цвета в порядке их следования в радуге</h1>
+			<div id="gameContainer">
+        
+        <div id="v" class="piece violet">Фиолетовый</div>
+        <div id="g" class="piece green">Зеленый</div>
+        <div id="o" class="piece orange">Оранжевый</div>
+        <div id="r" class="piece red">Красный</div>
+        <div id="i" class="piece indigo">Синий</div>
+        <div id="y" class="piece yellow">Желтый</div>
+        <div id="b" class="piece blue">Голубой</div>
+        
+      </div>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+	</footer>
+</div>
+</body>
+</html>

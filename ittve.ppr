@@ -31,17 +31,13 @@ ittve
 		www\Inimem.php
 		www\Mobile_Detect.php
 [Open project files]
-0=www\First.php
-1=www\aComputercss\Styles.css
-2=www\index.php
-3=www\Inimem.php
-4=www\TPHPPROWN\GetAbove.php
+0=www\aComputercss\Styles.css
+1=www\index.php
+2=www\Inimem.php
+3=www\TPHPPROWN\GetAbove.php
 [Selected Project Files]
 Main=
 Selected=www\Inimem.php
-[www\First.php]
-TopLine=109
-Caret=63,309
 [www\aComputercss\Styles.css]
 TopLine=129
 Caret=1,149

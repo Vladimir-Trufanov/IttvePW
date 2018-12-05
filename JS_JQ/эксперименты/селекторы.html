@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript и jQuery: Недостающее Руководство</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script src="../_js/jquery-ui.min.js"></script>
+<script src="../_js/site.js"></script>
+<script>
+$(document).ready(function() {
+  $('#submit').attr("disabled","disabled");
+													 
+	var highlight = {
+		current: false
+	};
+	
+	$('#selectorList li').each(function(){
+		$(this).html('<a href="#">'+$(this).text()+'</a>');
+	});
+	
+	$('#selectorList li a').addClass('example').click(function(event) {
+		$('#selector').val($(this).text());
+		$('#apply').click();
+		event.stopPropagation();
+		return false;
+		
+	});
+	
+	$('#apply').click(apply);
+	$('form').submit(apply);
+										
+   function apply() {
+		var selector = $('#selector').val();
+		clearPage();
+		if (selector == '') {
+			return false;
+		} else {
+			$('#jquerySelector').text(selector);
+			highlight.current = $(selector);
+			highlight.current.each(function() {
+				var $this = $(this),
+            w=$this.outerWidth(),
+            h=$this.outerHeight(),
+            t=$this.offset().top,
+            l=$this.offset().left,
+            overlay = $('<span class="highlighted"></span>');
+				overlay.width(w).height(h);
+				overlay.css({top:t,left:l});
+				overlay.appendTo('body');
+				overlay.animate({ backgroundColor: "red" }, 1000)
+			});
+		}
+		$('#numElems').text(highlight.current.length);
+		return false;
+	}
+	
+	$('#resetPage').click(function() {
+		resetPage();
+	});
+	
+	
+	
+	$(document).click(function(event) {
+		$('.highlighted').remove();
+		$('#selector')[0].focus();
+	});
+
+	
+	function clearPage() {
+		$('#jquerySelector').html('&nbsp;&nbsp;');
+		$('.highlighted').remove();
+		$('#numElems').html('&nbsp;');
+	}	
+	
+	function resetPage() {
+		$('#selector').val('');
+   		clearPage();
+	}
+	
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+  </header>
+  <div class="content">
+    <div class="main">
+      <h1>Эксперименты с селекторами jQuery</h1>
+      <div class="col1">
+        <p>Введите селектор jQuery в поле, чтобы увидеть, какие элементы будут выбраны:</p>
+        <form name="form1" method="post" action="">
+          <div class="results">
+            <p>
+              <label><strong>Селектор:</strong>
+                <input type="text" name="selector" id="selector">
+              </label>
+              <input type="submit" name="apply" id="apply" value="OK">
+              <input type="reset" name="resetPage" id="resetPage" value="Отмена">
+            </p>
+            <p><strong>Код jQuery: </strong>$('<span id="jquerySelector">&nbsp;&nbsp;</span>')</p>
+            <p><strong>Найденных элементов:</strong> <span id="numElems"></span></p>
+          </div>
+          <h2 class="shadowLine"> Примеры селекторов (щелкните, чтобы испытать их)</h2>
+          <ul id="selectorList" class="sideBySide">
+            <li>*</li>
+            <li>body</li>
+            <li>p</li>
+            <li>.example</li>
+            <li>.main</li>
+            <li>.main h2</li>
+            <li>div>h2</li>
+            <li>h1+div</li>
+            <li>:text</li>
+            <li>#selectorList</li>
+            <li>p:first</li>
+            <li>.col2</li>
+            <li>p:even</li>
+            <li>p:odd</li>
+            <li>p:lt(3)</li>
+            <li>li:contains(.main)</li>
+            <li>p:has(strong)</li>
+            <li>a[href="#"]</li>
+            <li>a[href*="oreilly.com"]</li>
+            <li>a[href^="http://sawmac"]</li>
+            <li>:checked</li>
+            <li>:disabled</li>
+          </ul>
+        </form>
+      </div>
+      <div class="col2">
+        <h2>HTML-код, который можно выбрать</h2>
+        <h3>Заголовок 3</h3>
+        <p>Quis nostrud exercitation ut labore et <strong>dolore magna aliqua.</strong> Sed do eiusmod tempor incididunt cupidatat non </p>
+        <h3>Заголовок 3</h3>
+        <p>Quis <em>nostrud exercitation ut labore et dolore magna</em> aliqua. Sed do eiusmod tempor incididunt cupidatat non </p>
+        <h2>Поля формы</h2>
+        <form action="" method="post" name="form2" id="test">
+          <p>
+            <label>
+              <input name="checkbox1" type="checkbox" id="checkbox1" value="check1">
+              Флажок</label>
+            <br>
+            <label>
+              <input name="checkbox2" type="checkbox" id="checkbox2" value="check2" checked>
+              Флажок2</label>
+          </p>
+          <p>
+            <label>
+              <input name="radio" type="radio" id="radio1" value="yes" checked>
+              Переключатель1</label>
+            <label> <br>
+              <input type="radio" name="radio" id="radio2" value="no">
+              Переключатель2</label>
+          </p>
+          <p>
+            <input type="submit" name="submit" id="submit" value="Отправить" style="margin-left:0;">
+          </p>
+        </form>
+        <ul>
+          <li>Элемент 1 маркированного списка</li>
+          <li>Элемент 2 маркированного списка</li>
+        </ul>
+      </div>
+      <br class="clearLeft">
+    </div>
+  </div>
+  <footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+</footer>
+  <div id="resources">
+    <p class="open">+</p>
+    <h2>Эксперименты</h2>
+    <ul class="nav">
+	  <li><a href="селекторы.html">Эксперименты с селекторами jQuery</a></li>
+      <li><a href="содержимое_функции.html">Эксперименты с функциями jQuery</a></li>
+      <li><a href="события.html">Эксперименты с событиями</a></li>
+      <li><a href="эффекты.html">Эксперименты с эффектами jQuery</a></li>
+      <li><a href="массив_методы.html">Эксперименты с массивами</a></li>
+      <li><a href="регекс_тест.html">Тестирование регулярных выражений</a></li>
+    </ul>
+    <h2>Ресурсы jQuery</h2>
+    <ul class="nav">
+      <li><a href="http://jquery.com">jQuery</a></li>
+      <li><a href="http://jqueryui.com/">jQuery UI</a></li>
+      <li><a href="http://jquerymobile.com/">jQuery Mobile</a></li>
+      <li><a href="http://jqapi.com/">jQAPI.com</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Использование функций</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+var biblioText='';
+$('.main a[href^="http://"]').each(function() {
+  var siteText = $(this).text();
+  var extLink = $(this).attr('href');
+  biblioText += '<li><strong>' + siteText + ":</strong> " + extLink + '</li>\n';
+}); // end each
+
+if (biblioText) {
+  bibHTML = '<div id="bib"><p>Веб-сайты, упомянутые в данном документе:</p></div>';
+  $(bibHTML).append(biblioText).appendTo($('.main'));
+}
+
+}); // end ready
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<header>
+	    JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+	</header>
+<div class="content">
+	<div class="main">
+	<h1>Динамически созданная библиография</h1>
+	  <p>Существует много фантастических веб-сайтов. <a href="http://www.yahoo.com/">Yahoo!</a> приходит на ум, как и <a href="http://www.google.com/">Google</a>. Мало, кто забудет влияние, оказанное на культуру сайтом <a href="http://www.hampsterdance.com/">Hampster Dance</a>.</p>
+	</div>
+	<footer>
+<p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+	</footer>
+</div>
+</div>
+</body>
+</html>
