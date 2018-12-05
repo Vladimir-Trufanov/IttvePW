@@ -10,19 +10,11 @@
 // Copyright © 2018 tve                              Посл.изменение: 03.12.2018
 
 require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/GetAbove.php";
-require_once $_SERVER['DOCUMENT_ROOT']."/Inimem.php";
+require_once "Inimem.php";
+require_once "iHtmlBegin.php";
 
 ?>
-
-<!DOCTYPE html>
-<html>
    <!-- -->
-   <head>
-      <title>В программировании моя жизнь!</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="aComputercss/Styles.css">
-   </head>
-   <body>
 
       <div id="hBlock">
          <nav id="pLine">
@@ -211,15 +203,7 @@ PHP прост для освоения, и вместе с тем способе
 Размер текста в пикселях должен быть таким, чтобы весь текст удобно читался на экране мобильного устройства.
        -->
       </footer>
-
-   </body> 
-</html>
-
 <?php
-
-
-
-
-
+require_once "iHtmlEnd.php";
 
 // *************************************************************** ittve.pw ***
