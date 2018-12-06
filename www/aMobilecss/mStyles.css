@@ -71,14 +71,15 @@ table
 html
 {
    font-family: verdana, arial, sans-serif;
-   font-size: 62.5%;
+   font-size: 20px;
+   /* font-size: 62.5%; */
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-   font-size: 50px;   /* для старых браузеров, что rem не поддерживают */
-   font-size: 5rem;  
+   /* font-size: 50px;    для старых браузеров, что rem не поддерживают */
+   /* font-size: 5rem; */  
 }
 
 h1 
@@ -96,11 +97,12 @@ h1
    position: fixed;     /* Фиксированное положение */
    left: 0; top: 0;     /* Правый верхний угол */
    width: 100%;         /* Ширина слоя */
-   height: 4rem;
+  /* height: 4rem;  */
 } 
 #lSideTOrSide
 {
-   /* margin: 4.5rem 0 0 0; */
+   /* */
+   margin: 4.5rem 0 4.5rem 0; 
 }
 #lSide 
 {
@@ -128,21 +130,20 @@ h1
    /* Отодвигаем текст от границ колонки 
    padding: 0 0.6rem 0.6rem 0.6rem; */
 }
-/* Оформляем строку параметров сайта 
+/* Оформляем строку параметров сайта */
 #pLine
 {
    color: #60472E;
 	background-color: #E2D5C5;
    height: 2rem;
-} */
-/* Оформляем навигацию в глубину сайта 
+} 
+/* Оформляем навигацию в глубину сайта */
 #tLine
 {
    color: #FFFFFF;
 	background-color: #899504;
    height: 2rem;
-   display: none; 
-} */
+} 
 
 /* Оформляем подвал */
 footer 

@@ -46,8 +46,8 @@ ittve
 Main=
 Selected=www\aMobilecss\mStyles.css
 [www\index.php]
-TopLine=1
-Caret=1,45
+TopLine=71
+Caret=23,82
 [www\Inimem.php]
 TopLine=11
 Caret=1,31
@@ -61,11 +61,11 @@ Caret=53,20
 TopLine=1
 Caret=21,14
 [www\aMobilecss\mStyles.css]
-TopLine=75
-Caret=16,81
+TopLine=63
+Caret=9,104
 [www\MenuAccord.php]
 TopLine=3
 Caret=6,13
 [www\aComputercss\Styles.css]
-TopLine=123
-Caret=1,142
+TopLine=85
+Caret=28,98
