@@ -17,12 +17,12 @@ Extensions=*.*
 [Project tree]
 ittve
 	+www
-		-aComputercss
+		+aComputercss
 			www\aComputercss\MenuAccord.css
 			www\aComputercss\Styles.css
 		-aMobilecss
 			www\aMobilecss\MenuAccord.css
-			www\aMobilecss\Styles.css
+			www\aMobilecss\mStyles.css
 		-js
 			www\js\jquery-2.0.1.js
 		-TPHPPROWN
@@ -31,23 +31,23 @@ ittve
 		www\iHtmlEnd.php
 		www\index.php
 		www\Inimem.php
+		www\MenuAccord.php
 		www\Mobile_Detect.php
 [Open project files]
-0=www\aComputercss\Styles.css
-1=www\index.php
-2=www\Inimem.php
-3=www\TPHPPROWN\GetAbove.php
-4=www\iHtmlBegin.php
-5=www\iHtmlEnd.php
+0=www\index.php
+1=www\Inimem.php
+2=www\TPHPPROWN\GetAbove.php
+3=www\iHtmlBegin.php
+4=www\iHtmlEnd.php
+5=www\aMobilecss\mStyles.css
+6=www\MenuAccord.php
+7=www\aComputercss\Styles.css
 [Selected Project Files]
 Main=
-Selected=www\iHtmlBegin.php
-[www\aComputercss\Styles.css]
-TopLine=129
-Caret=1,149
+Selected=www\aMobilecss\mStyles.css
 [www\index.php]
-TopLine=59
-Caret=1,209
+TopLine=1
+Caret=1,45
 [www\Inimem.php]
 TopLine=11
 Caret=1,31
@@ -55,8 +55,17 @@ Caret=1,31
 TopLine=1
 Caret=1,1
 [www\iHtmlBegin.php]
-TopLine=13
-Caret=33,33
+TopLine=9
+Caret=53,20
 [www\iHtmlEnd.php]
 TopLine=1
 Caret=21,14
+[www\aMobilecss\mStyles.css]
+TopLine=75
+Caret=16,81
+[www\MenuAccord.php]
+TopLine=3
+Caret=6,13
+[www\aComputercss\Styles.css]
+TopLine=123
+Caret=1,142
