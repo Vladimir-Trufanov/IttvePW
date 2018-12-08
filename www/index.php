@@ -21,6 +21,7 @@ require_once "iHtmlBegin.php";
             Параметры сайта по алфавиту = 
             <?php 
                echo $MobileDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost 
+               // echo $uagent
             ?>
          </nav>
          <nav class="cNav" id="tLine">
@@ -46,6 +47,60 @@ require_once "iHtmlBegin.php";
       </aside>
 
       <article id="cCenter">
+          1
+      
+          
+  <ul>
+    <li>Ctrl-E для начала редактирования.</li>
+    <li>Во время редактирования: Ctrl-S для сохранения, Esc для отмены.</li>
+  </ul>
+
+  HTML разрешён.
+
+  <textarea id="area"></textarea>
+  <div id="view">Текст</div>
+
+  <script>
+    document.onkeydown = function(e) {
+      if (e.keyCode == 27) { // escape
+        cancel();
+        return false;
+      }
+
+      if ((e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) && !area.offsetHeight) {
+        edit();
+        return false;
+      }
+
+      if ((e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) && area.offsetHeight) {
+        save();
+        return false;
+      }
+    }
+
+    function edit() {
+      view.style.display = 'none';
+      area.value = view.innerHTML;
+      area.style.display = 'block';
+      area.focus();
+    }
+
+    function save() {
+      area.style.display = 'none';
+      view.innerHTML = area.value;
+      view.style.display = 'block';
+    }
+
+    function cancel() {
+      area.style.display = 'none';
+      view.style.display = 'block';
+    }
+  </script>
+
+      
+      
+      
+          12
          <h1>Основная тема страницы</h1>
 При оформлении разделов группы важное значение имеет формат контента. Например, оптимальным форматом для прайс-листов и расписаний является таблица. Сегодня я расскажу, как сделать таблицу с помощью вики-разметки. 
 1. Откройте нужную вам страницу в режиме редактирования (кнопка справа вверху страницы). 

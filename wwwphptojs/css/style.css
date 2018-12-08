@@ -1,0 +1,57 @@
+body {
+	background-color: #333333
+}
+div.wrap{
+	width:800px;
+	border:2px solid white;
+	border-radius: 10px;
+	margin:20px auto 0px auto;
+	box-shadow: rgba(255,255,240,.2) 0 0 200px 100px, rgba(255,255,240,.3) 0 0 40px, inset rgba(0,0,0,.8) 0 0 20px
+}
+
+div.header {
+	width:800px;
+	height:200px;
+	background-image: url(images/header.jpg);
+}
+div.content {
+	width:780px;
+	padding:10px;
+	background-color: white;
+}
+h2{
+	margin:50 0 0 0;
+	padding:0px;
+	text-align:center;
+}
+table.table{
+	border: 2px solid #d3d3d3;
+	box-shadow:inset 0px 0px 10px rgba(0,0,0,0.5);
+	
+	//box-shadow: rgba(255,255,240,.2) 0 0 200px 100px, rgba(255,255,240,.3) 0 0 40px, inset rgba(0,0,0,.8) 0 0 20px;
+	border-radius: 10px;
+	margin:10px 0 10px;
+	padding:5px;
+}
+table td {
+	padding:5px;
+}
+img {
+	margin-right:5px;
+}
+p {
+	margin-top:0;
+}
+
+.my_class {
+	border:1px solid red !important;
+}
+
+.for_button {
+	padding:5px;
+	text-align:center;
+	border:1px solid green;
+	border-radius:5px;
+	width:150px;
+	
+}

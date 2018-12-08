@@ -19,9 +19,9 @@ ittve
 	+www
 		+aComputercss
 			www\aComputercss\MenuAccord.css
+			www\aComputercss\my.css
 			www\aComputercss\Styles.css
 		-aMobilecss
-			www\aMobilecss\MenuAccord.css
 			www\aMobilecss\mStyles.css
 		-js
 			www\js\jquery-2.0.1.js
@@ -44,24 +44,24 @@ ittve
 7=www\aComputercss\Styles.css
 [Selected Project Files]
 Main=
-Selected=www\aMobilecss\mStyles.css
+Selected=www\index.php
 [www\index.php]
-TopLine=71
-Caret=23,82
+TopLine=55
+Caret=1,99
 [www\Inimem.php]
-TopLine=11
-Caret=1,31
+TopLine=17
+Caret=1,36
 [www\TPHPPROWN\GetAbove.php]
 TopLine=1
 Caret=1,1
 [www\iHtmlBegin.php]
-TopLine=9
-Caret=53,20
+TopLine=7
+Caret=63,23
 [www\iHtmlEnd.php]
 TopLine=1
 Caret=21,14
 [www\aMobilecss\mStyles.css]
-TopLine=63
+TopLine=78
 Caret=9,104
 [www\MenuAccord.php]
 TopLine=3
