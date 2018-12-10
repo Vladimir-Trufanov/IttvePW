@@ -20,6 +20,7 @@
          <li><a href="#"><em>03</em>FTP Сервер<span>366</span></a></li>
          <li><a href="#"><em>04</em>Google Drive<span>1</span></a></li>
          <li><a href="#"><em>05</em>Skydrive<span>10</span></a></li>
+         <li><a href="index.php?Com=Common">Дом и квартира</a></li>";
          </ul>
       </li>
       

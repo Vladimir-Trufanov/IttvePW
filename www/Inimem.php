@@ -15,8 +15,8 @@ define ("ChangeSize", "chs");   // "Изменить размер базовог
 
 // Инициализируем общесайтовые переменные
 $SiteRoot = $_SERVER['DOCUMENT_ROOT'];       // Корневой каталог сайта
-$SiteAbove = \prown\GetAbove($SiteRoot);     // Надсайтовый каталог
-$SiteHost = \prown\GetAbove($SiteAbove);     // Каталог хостинга
+$SiteAbove = iGetAbove($SiteRoot);           // Надсайтовый каталог
+$SiteHost = iGetAbove($SiteAbove);           // Каталог хостинга
 $MobileDevice='Computer';                    // Tип устройства, запросившего сайт
 $uagent='';                                  // HTTP_USER_AGENT
 

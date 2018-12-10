@@ -9,8 +9,18 @@
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 03.12.2018
 
-require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/GetAbove.php";
+// Выполняем начальную инициализацию
+//require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/GetAbove.php";
+require_once "iGetAbove.php";
 require_once "Inimem.php";
+
+// Подключаем рабочие модули
+require_once $SiteHost."/TPhpPrown/ViewArray.php";
+require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
+//require_once "ViewGlobal.php";
+//require_once "ViewArray.php";
+
+// Разворачиваем страницу
 require_once "iHtmlBegin.php";
 
 ?>
@@ -25,8 +35,12 @@ require_once "iHtmlBegin.php";
             ?>
          </nav>
          <nav class="cNav" id="tLine">
-            Навигация в глубину сайта
+            Навигация в глубину сайта hhhh jj
          </nav>
+         
+         <?php prown\ViewGlobal('avgREQUEST'); ?>
+
+         
       </div>
 
       <div id="lSideTOrSide">
@@ -47,8 +61,6 @@ require_once "iHtmlBegin.php";
       </aside>
 
       <article id="cCenter">
-          1
-      
           
   <ul>
     <li>Ctrl-E для начала редактирования.</li>
@@ -97,10 +109,6 @@ require_once "iHtmlBegin.php";
     }
   </script>
 
-      
-      
-      
-          12
          <h1>Основная тема страницы</h1>
 При оформлении разделов группы важное значение имеет формат контента. Например, оптимальным форматом для прайс-листов и расписаний является таблица. Сегодня я расскажу, как сделать таблицу с помощью вики-разметки. 
 1. Откройте нужную вам страницу в режиме редактирования (кнопка справа вверху страницы). 

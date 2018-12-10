@@ -20,7 +20,6 @@ if ($MobileDevice=='MobileDevice')
       <title>В MOBILE-программировании моё увлечение!</title>
       <meta charset="utf-8">
       <link rel="stylesheet" type="text/css" href="aMobilecss/mStyles.css">
-      <link rel="stylesheet" type="text/css" href="aMobilecss/my.css">
    </head>
    <body>
    <?php
@@ -33,6 +32,7 @@ else
    <head>
       <title>В программировании моя жизнь!</title>
       <link rel="stylesheet" type="text/css" href="aComputercss/Styles.css">
+      <link rel="stylesheet" type="text/css" href="aComputercss/my.css">
       <meta charset="utf-8">
       
    </head>
