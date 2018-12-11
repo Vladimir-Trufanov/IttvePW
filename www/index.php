@@ -7,18 +7,15 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  23.11.2018
-// Copyright © 2018 tve                              Посл.изменение: 03.12.2018
+// Copyright © 2018 tve                              Посл.изменение: 11.12.2018
 
 // Выполняем начальную инициализацию
-//require_once $_SERVER['DOCUMENT_ROOT']."/TPHPPROWN/GetAbove.php";
 require_once "iGetAbove.php";
 require_once "Inimem.php";
 
 // Подключаем рабочие модули
 require_once $SiteHost."/TPhpPrown/ViewArray.php";
 require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
-//require_once "ViewGlobal.php";
-//require_once "ViewArray.php";
 
 // Разворачиваем страницу
 require_once "iHtmlBegin.php";
@@ -27,6 +24,9 @@ require_once "iHtmlBegin.php";
    <!-- -->
 
       <div id="hBlock">
+                     
+         <?php prown\ViewGlobal('avgREQUEST'); ?>
+
          <nav id="pLine">
             Параметры сайта по алфавиту = 
             <?php 
@@ -35,10 +35,8 @@ require_once "iHtmlBegin.php";
             ?>
          </nav>
          <nav class="cNav" id="tLine">
-            Навигация в глубину сайта hhhh jj
+            Навигация в глубину сайта
          </nav>
-         
-         <?php prown\ViewGlobal('avgREQUEST'); ?>
 
          
       </div>
@@ -61,53 +59,6 @@ require_once "iHtmlBegin.php";
       </aside>
 
       <article id="cCenter">
-          
-  <ul>
-    <li>Ctrl-E для начала редактирования.</li>
-    <li>Во время редактирования: Ctrl-S для сохранения, Esc для отмены.</li>
-  </ul>
-
-  HTML разрешён.
-
-  <textarea id="area"></textarea>
-  <div id="view">Текст</div>
-
-  <script>
-    document.onkeydown = function(e) {
-      if (e.keyCode == 27) { // escape
-        cancel();
-        return false;
-      }
-
-      if ((e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) && !area.offsetHeight) {
-        edit();
-        return false;
-      }
-
-      if ((e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) && area.offsetHeight) {
-        save();
-        return false;
-      }
-    }
-
-    function edit() {
-      view.style.display = 'none';
-      area.value = view.innerHTML;
-      area.style.display = 'block';
-      area.focus();
-    }
-
-    function save() {
-      area.style.display = 'none';
-      view.innerHTML = area.value;
-      view.style.display = 'block';
-    }
-
-    function cancel() {
-      area.style.display = 'none';
-      view.style.display = 'block';
-    }
-  </script>
 
          <h1>Основная тема страницы</h1>
 При оформлении разделов группы важное значение имеет формат контента. Например, оптимальным форматом для прайс-листов и расписаний является таблица. Сегодня я расскажу, как сделать таблицу с помощью вики-разметки. 
