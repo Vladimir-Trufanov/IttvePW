@@ -9,13 +9,19 @@
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 11.12.2018
 
-// Выполняем начальную инициализацию
+// Инициализируем корневой каталог сайта, надсайтовый каталог, каталог хостинга
 require_once "iGetAbove.php";
-require_once "Inimem.php";
+$SiteRoot = $_SERVER['DOCUMENT_ROOT'];  // Корневой каталог сайта
+$SiteAbove = iGetAbove($SiteRoot);      // Надсайтовый каталог
+$SiteHost = iGetAbove($SiteAbove);      // Каталог хостинга
 
-// Подключаем рабочие модули
-require_once $SiteHost."/TPhpPrown/ViewArray.php";
+// Подключаем файлы библиотеки прикладных модулей
+require_once $SiteHost."/TPhpPrown/getSiteDevice.php";
+require_once $SiteHost."/TPhpPrown/Mobile_Detect.php";   
 require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
+
+// Выполняем начальную инициализацию
+require_once "Inimem.php";
 
 // Разворачиваем страницу
 require_once "iHtmlBegin.php";
@@ -30,7 +36,7 @@ require_once "iHtmlBegin.php";
          <nav id="pLine">
             Параметры сайта по алфавиту = 
             <?php 
-               echo $MobileDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost 
+               echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost 
                // echo $uagent
             ?>
          </nav>
@@ -51,7 +57,7 @@ require_once "iHtmlBegin.php";
          и что разум подобен бесконечности.</p>
 
          <?php
-         if ($MobileDevice<>'MobileDevice')
+         if ($SiteDevice<>Mobile)
          {   
             require_once "MenuAccord.php";
          }

@@ -11,7 +11,7 @@
 // Copyright © 2018 tve                              Посл.изменение: 11.12.2018
 
 
-if ($MobileDevice=='MobileDevice') 
+if ($SiteDevice==Mobile) 
 {   
    ?>
    <!DOCTYPE html>
