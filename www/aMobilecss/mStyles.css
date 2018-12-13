@@ -71,8 +71,9 @@ table
 html
 {
    font-family: verdana, arial, sans-serif;
-   font-size: 20px;
-   /* font-size: 62.5%; */
+   //font-size: 20px;
+   //font-size: 62.5%;
+   font-size: 3mm;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
