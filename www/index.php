@@ -29,9 +29,7 @@ require_once "iHtmlBegin.php";
    <!-- -->
 
       <div id="hBlock">
-                     
-        <?php prown\ViewGlobal('avgREQUEST'); ?>
-
+         hBlock             
          <nav id="pLine">
             Параметры сайта по алфавиту = 
             <?php 
