@@ -30,7 +30,7 @@ require_once "iHtmlBegin.php";
 
       <div id="hBlock">
                      
-         <?php prown\ViewGlobal('avgREQUEST'); ?>
+        <?php prown\ViewGlobal('avgREQUEST'); ?>
 
          <nav id="pLine">
             Параметры сайта по алфавиту = 
@@ -42,10 +42,9 @@ require_once "iHtmlBegin.php";
          <nav class="cNav" id="tLine">
             Навигация в глубину сайта
          </nav>
-
          
       </div>
-
+      
       <div id="lSideTOrSide">
       <aside id="lSide">
          <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
@@ -119,6 +118,16 @@ require_once "iHtmlBegin.php";
          
          <section class="cSection" id="exJav">
             <h1>Пример на JavaAndroid</h1>
+            
+            <script>
+               document.write('screen.width*screen.height: <b>'+screen.width+'*'+screen.height+'</b><br>');
+               document.write('window.screen.availWidth*window.screen.availHeight= <b>'+window.screen.availWidth+'*'+window.screen.availHeight+'</b><br>');
+
+               document.write('Ширина окна в браузере: document.body.scrollWidth=<b>'+document.body.scrollWidth+'</b><br>');
+               document.write('Высота окна в браузере: document.body.scrollHeight=<b>'+document.body.scrollHeight+'</b><br>');
+
+	         </script> 
+
             https://stfalcon.com/ru/blog/post/android-developer-java-review Что же такое Java и откуда она к нам пришла? А пришла она к нам с далёкого 1995. Поначалу язык назывался Oak («дуб»), разрабатывал его бородатый Джеймсон Гослинг для программирования бытовых электронных устройств. В дальнейшем получил язык название Java, которое, по одной из версий, происходит от марки элитного кофе. Помните логотип?
 Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой виртуальной Java-машине вне зависимости от компьютерной архитектуры.
             <button>  
