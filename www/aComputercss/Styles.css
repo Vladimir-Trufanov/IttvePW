@@ -73,16 +73,14 @@ table
 */
 html
 {
-   font-family: verdana, arial, sans-serif;
-   //font-size: 62.5%;
-   font-size: 3mm;
+   font-family: 'Anonymous Pro', monospace;
+   font-size: 4mm;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-   font-size: 16px;   /* для старых браузеров, что rem не поддерживают */
-   font-size: 1.6rem;  
+   font-size: 1rem;  
 }
 
 h1 
@@ -125,6 +123,7 @@ h1
    width: 41%;
    /* Отодвигаем текст от границ колонки */
    padding: 0 0.6rem 0.6rem 0.6rem; 
+   font-weight: bold;
 }
 /* Оформляем шапку */
 #hBlock
@@ -139,14 +138,12 @@ h1
 {
    color: #60472E;
 	background-color: #E2D5C5;
-   height: 2rem;
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
 {
    color: #FFFFFF;
 	background-color: #899504;
-   height: 2rem;
 } 
 
 /* Оформляем подвал */

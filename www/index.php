@@ -35,12 +35,15 @@ require_once "iHtmlBegin.php";
          <nav id="pLine">
             Параметры сайта по алфавиту = 
             <?php 
-               echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost 
+               echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
                // echo $uagent
             ?>
          </nav>
-         <nav class="cNav" id="tLine">
-            Навигация в глубину сайта
+         <nav id="tLine">
+            <!-- 
+            1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23456-160
+            -->
+            1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
          </nav>
          
       </div>
@@ -120,12 +123,8 @@ require_once "iHtmlBegin.php";
             <h1>Пример на JavaAndroid</h1>
             
             <script>
-               document.write('screen.width*screen.height: <b>'+screen.width+'*'+screen.height+'</b><br>');
-               document.write('window.screen.availWidth*window.screen.availHeight= <b>'+window.screen.availWidth+'*'+window.screen.availHeight+'</b><br>');
-
-               document.write('Ширина окна в браузере: document.body.scrollWidth=<b>'+document.body.scrollWidth+'</b><br>');
-               document.write('Высота окна в браузере: document.body.scrollHeight=<b>'+document.body.scrollHeight+'</b><br>');
-
+               document.write('Разрешение страницы: screen.width*screen.height= <b>'+screen.width+'*'+screen.height+'</b><br>');
+               document.write('<b>1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100</b><br>');
 	         </script> 
 
             https://stfalcon.com/ru/blog/post/android-developer-java-review Что же такое Java и откуда она к нам пришла? А пришла она к нам с далёкого 1995. Поначалу язык назывался Oak («дуб»), разрабатывал его бородатый Джеймсон Гослинг для программирования бытовых электронных устройств. В дальнейшем получил язык название Java, которое, по одной из версий, происходит от марки элитного кофе. Помните логотип?

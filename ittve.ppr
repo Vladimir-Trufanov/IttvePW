@@ -46,22 +46,22 @@ ittve
 8=www\iHtmlBegin.php
 [Selected Project Files]
 Main=
-Selected=www\index.php
+Selected=www\aComputercss\Styles.css
 [www\index.php]
-TopLine=109
-Caret=81,126
+TopLine=27
+Caret=77,38
 [www\iHtmlEnd.php]
 TopLine=1
 Caret=21,14
 [www\aMobilecss\mStyles.css]
-TopLine=49
-Caret=1,75
+TopLine=63
+Caret=11,84
 [www\MenuAccord.php]
 TopLine=13
 Caret=44,23
 [www\aComputercss\Styles.css]
-TopLine=67
-Caret=1,79
+TopLine=66
+Caret=1,84
 [www\iGetAbove.php]
 TopLine=1
 Caret=78,7
@@ -72,5 +72,5 @@ Caret=54,10
 TopLine=5
 Caret=1,23
 [www\iHtmlBegin.php]
-TopLine=32
-Caret=1,40
+TopLine=14
+Caret=7,22

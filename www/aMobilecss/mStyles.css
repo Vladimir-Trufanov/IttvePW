@@ -70,17 +70,14 @@ table
 */
 html
 {
-   font-family: verdana, arial, sans-serif;
-   //font-size: 20px;
-   //font-size: 62.5%;
-   font-size: 3mm;
+   font-family: 'Anonymous Pro', monospace;
+   font-size: 4mm;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-   /* font-size: 50px;    для старых браузеров, что rem не поддерживают */
-   /* font-size: 5rem; */  
+   font-size: 1rem;  
 }
 
 h1 
