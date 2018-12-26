@@ -98,6 +98,7 @@ h1
 
 #lSideTOrSide
 {
+   font-size: 2rem;  
    /*
    margin: 4.5rem 0 4.5rem 0; 
     */
@@ -121,7 +122,6 @@ h1
 }
 #rSide  
 {
-   font-size: 2rem;  
 }
 /* Оформляем строку параметров сайта */
 #pLine

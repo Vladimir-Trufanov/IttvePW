@@ -23,6 +23,9 @@ if ($SiteDevice==Mobile)
       <link rel="stylesheet" type="text/css" href="aMobilecss/mStyles.css">
    </head>
    <body>
+   <script>
+      ScreenInfo33();
+   </script> 
    <?php
 }
 else 
@@ -39,6 +42,15 @@ else
       <script> TurnOnHotkeys() </script>
    </head>
    <body>
+   <br><br><br><br>
+   <div id="meter" style="width:10cm">
+   1234567-10-234567-20-234567-30-234567-40-2345
+   67-50-234567-60-234567-70-234567-80-234567-90
+   </div>
+   <script>
+      ScreenInfo33();
+      ScreenInfo10();
+   </script> 
    <?php
 }
 

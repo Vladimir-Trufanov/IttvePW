@@ -27,26 +27,29 @@ require_once "iHtmlBegin.php";
 
 ?>
    <!-- -->
-
-      <div id="hBlock">
-         hBlock             
-         <nav id="pLine">
-            Параметры сайта по алфавиту = 
-            <?php 
-               echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
-               // echo $uagent
-            ?>
-         </nav>
-         <nav id="tLine">
-            <!-- 
-            1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23456-160
-            -->
-            1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
-         </nav>
+   <div id="hBlock">
+      <nav id="pLine">
+         Параметры сайта по алфавиту = 
+         <?php 
+            echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
+            // echo $uagent
+         ?>
+      </nav>
+      <nav id="tLine">
+         1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
+      </nav>
          
-      </div>
+   </div>
       
       <div id="lSideTOrSide">
+      
+      
+            <script>
+   
+            </script> 
+
+      
+      
       <aside id="lSide">
          <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
          Перестав мыслить понятиями и размышлять о путях существования и небытия, 
@@ -98,6 +101,7 @@ require_once "iHtmlBegin.php";
 
       <aside id="rSide">
          <section class="cSection" id="exLaz">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <h1>Пример на Lazarus</h1>
             https://ru.wikipedia.org/wiki/Lazarus Lazarus — открытая среда разработки программного обеспечения на языке Object Pascal для компилятора Free Pascal (часто используется сокращение FPC — Free Pascal Compiler, бесплатно распространяемый компилятор языка программирования Pascal). Интегрированная среда разработки предоставляет возможность кроссплатформенной разработки приложений в Delphi-подобном окружении.
 Позволяет достаточно несложно переносить Delphi-программы с графическим интерфейсом в различные операционные системы: Linux, FreeBSD, Mac OS X, Microsoft Windows, Android[1]. Начиная с Delphi XE2 в самом Delphi имеется возможность компиляции программ для Mac OS X, с версии XE4 — для iOS, с версии XE5 — для Android, с версии 10.2 Tokyo — для Linux (x64).
@@ -121,10 +125,43 @@ require_once "iHtmlBegin.php";
             <h1>Пример на JavaAndroid</h1>
             
             <script>
+            
+               function getWidthOfText(txt,fontname,fontsize)
+               {
+                  if(getWidthOfText.c === undefined)
+                  {
+                     getWidthOfText.c=document.createElement('canvas');
+                     getWidthOfText.ctx=getWidthOfText.c.getContext('2d');
+                  }
+                  getWidthOfText.ctx.font = fontsize + ' ' + fontname;
+                  return getWidthOfText.ctx.measureText(txt).width;
+               }
+
+            	var StringTest='1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234';
+               document.write('StringTest: '+StringTest+'<br>');
+            	var LengthTest=64;
+            	var LengthTest=getWidthOfText(StringTest,'Anonymous Pro',4);
+               document.write('Размер через CANVAS: '+LengthTest+'<br>');
+
                document.write('Разрешение страницы: screen.width*screen.height= <b>'+screen.width+'*'+screen.height+'</b><br>');
                document.write('<b>1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100</b><br>');
-	         </script> 
 
+               
+var pixPer10CM = $('#meter').width();
+var CMPerPix = 10 / pixPer10CM;
+var widthCM = screen.width * CMPerPix;
+
+document.write('Ширина экрана (см): '+widthCM+'<br>');
+
+	         
+            
+            
+            
+            </script> 
+            
+            
+            
+            <br>
             https://stfalcon.com/ru/blog/post/android-developer-java-review Что же такое Java и откуда она к нам пришла? А пришла она к нам с далёкого 1995. Поначалу язык назывался Oak («дуб»), разрабатывал его бородатый Джеймсон Гослинг для программирования бытовых электронных устройств. В дальнейшем получил язык название Java, которое, по одной из версий, происходит от марки элитного кофе. Помните логотип?
 Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой виртуальной Java-машине вне зависимости от компьютерной архитектуры.
             <button>  

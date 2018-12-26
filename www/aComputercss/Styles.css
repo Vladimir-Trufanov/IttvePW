@@ -75,11 +75,13 @@ html
 {
    font-family: 'Anonymous Pro', monospace;
    font-size: 4mm;
+   //font-size: 8px;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
+   //font-size: 2rem;  
    font-size: 1rem;  
 }
 
