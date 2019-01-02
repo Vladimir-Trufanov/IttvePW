@@ -42,6 +42,9 @@ else
       <script> TurnOnHotkeys() </script>
    </head>
    <body>
+   
+
+   
    <br><br><br><br>
    <div id="meter" style="width:10cm">
    1234567-10-234567-20-234567-30-234567-40-2345

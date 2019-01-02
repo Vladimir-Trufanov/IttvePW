@@ -74,16 +74,17 @@ table
 html
 {
    font-family: 'Anonymous Pro', monospace;
-   font-size: 4mm;
-   //font-size: 8px;
+   font-size: 16px;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-   //font-size: 2rem;  
    font-size: 1rem;  
 }
+
+
+
 
 h1 
 {
@@ -132,14 +133,13 @@ h1
 {
    position: fixed;     /* Фиксированное положение */
    left: 0; top: 0;     /* Правый верхний угол */
-   /* padding: 10px;        Поля вокруг текста */
    width: 100%;         /* Ширина слоя */
 } 
 /* Оформляем строку параметров сайта */
 #pLine
 {
    color: #60472E;
-	background-color: #E2D5C5;
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
@@ -147,6 +147,85 @@ h1
    color: #FFFFFF;
 	background-color: #899504;
 } 
+
+// ----
+.btnItPW 
+{
+}
+.imgItPW // в стилях должен идти после контейнера btnItPW
+{
+   width: 2rem;
+   height: 2rem;
+}
+#btnMenu 
+{
+   color: #FFFFFF;
+   background: radial-gradient(farthest-side ellipse at top left, #657,  #000);
+}
+#btnMenu:hover 
+{
+   color: #FFFFFF;
+   background: radial-gradient(farthest-side ellipse at top left, #444,  #000);
+}
+#btnMenu:active 
+{
+   color: #FFFFFF; 
+   background: radial-gradient(farthest-side ellipse at top left, #000,  #444);
+}
+#btnLazi 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #faa51a,  #f47a20);
+   /*background: radial-gradient(farthest-side ellipse at top left, #fff,  #f47a20);*/
+}
+#btnLazi:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f88e11,  #f06015);
+}
+#btnLazi:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f47a20,  #faa51a);
+   /*
+   background: -webkit-gradient(radial, farthest-side ellipse at top left, from(#f47a20), to(#faa51a));
+   background: -moz-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background: -ms-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background: -o-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background-image: -o-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   */
+}
+#btnJava 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #fff,  #ededed);
+}
+#btnJava:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #fff,  #dcdcdc);
+}
+#btnJava:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #ededed,  #fff);
+}
+#btnPhp 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #feb1d3,  #f171ab);
+}
+#btnPhp:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f4aacb,  #e86ca4);
+}
+#btnPhp:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
+}
+// ----
+
+
+
+
+
+
+
+
+
 
 /* Оформляем подвал */
 footer 
