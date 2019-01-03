@@ -14,6 +14,9 @@ require_once "iGetAbove.php";
 $SiteRoot = $_SERVER['DOCUMENT_ROOT'];  // Корневой каталог сайта
 $SiteAbove = iGetAbove($SiteRoot);      // Надсайтовый каталог
 $SiteHost = iGetAbove($SiteAbove);      // Каталог хостинга
+                                                                                   
+// Подключаем модули инициализации
+// require_once "iUAparser.php";
 
 // Подключаем файлы библиотеки прикладных модулей
 require_once $SiteHost."/TPhpPrown/getSiteDevice.php";
@@ -48,10 +51,10 @@ require_once "iHtmlBegin.php";
            Php
         </button>
 
-         Параметры сайта по алфавиту = 
+        <!-- Параметры сайта по алфавиту = -->
          <?php 
-            echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
-            // echo $uagent
+            //echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
+            echo $uagent.'<br>';
          ?>
       </nav>
       <nav id="tLine">
