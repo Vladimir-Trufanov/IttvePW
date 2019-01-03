@@ -52,7 +52,6 @@ else
    </div>
    <script>
       ScreenInfo33();
-      ScreenInfo10();
    </script> 
    <?php
 }

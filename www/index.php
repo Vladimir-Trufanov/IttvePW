@@ -35,53 +35,47 @@ require_once "iHtmlBegin.php";
       <nav id="pLine">
 
         <button class="btnItPW" id="btnMenu">
-           <img class="imgItPW" src="Menu.svg" height="32">
+           <img class="imgItPW" src="Images/Buttons/Menu.svg" height="32">
            Menu
         </button>
         <button class="btnItPW" id="btnLazi">
-           <img class="imgItPW" src="Lazarus.svg" height="32"> 
+           <img class="imgItPW" src="Images/Buttons/Lazarus.svg" height="32"> 
            Lazarus
         </button>
         <button class="btnItPW" id="btnJava">
-           <img class="imgItPW" src="Java.svg" height="32">
+           <img class="imgItPW" src="Images/Buttons/Java.svg" height="32">
            Java
         </button>
         <button class="btnItPW" id="btnPhp">
-           <img class="imgItPW" src="Php.svg" height="32"> 
+           <img class="imgItPW" src="Images/Buttons/Php.svg" height="32"> 
            Php
         </button>
 
         <!-- Параметры сайта по алфавиту = -->
          <?php 
-            //echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
-            echo $uagent.'<br>';
+            echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
+            // echo $uagent.'<br>';
          ?>
       </nav>
       <nav id="tLine">
+         1234567-10
+         <!--
          1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
+         -->
       </nav>
          
    </div>
       
       <div id="lSideTOrSide">
-      
-      
-            <script>
-   
-            </script> 
-
-      
-      
+      <script>
+      </script> 
       <aside id="lSide">
-      
-
          <p>Разум — это Будда, а прекращение умозрительного мышления — это путь. 
          Перестав мыслить понятиями и размышлять о путях существования и небытия, 
          о душе и плоти, о пассивном и активном и о других подобных вещах, 
          начинаешь осознавать, что разум — это Будда, 
          что Будда — это сущность разума, 
          и что разум подобен бесконечности.</p>
-
          <?php
          if ($SiteDevice<>Mobile)
          {   
@@ -92,8 +86,7 @@ require_once "iHtmlBegin.php";
 
       <article id="cCenter">
 
-         <h1>Основная тема страницы</h1>
-
+      <h1>Основная тема страницы</h1>
 При оформлении разделов группы важное значение имеет формат контента. Например, оптимальным форматом для прайс-листов и расписаний является таблица. Сегодня я расскажу, как сделать таблицу с помощью вики-разметки. 
 1. Откройте нужную вам страницу в режиме редактирования (кнопка справа вверху страницы). 
 2. Убедитесь, что включен режим редактирования вики-кода (наведите курсор мыши на значок <> в правом верхнем углу. Если всплывет текст Режим визуального редактирования, оставьте как есть, если всплывет Режим wiki-разметки, нажмите на значок). 
@@ -126,9 +119,8 @@ require_once "iHtmlBegin.php";
 
       <aside id="rSide">
          <section class="cSection" id="exLaz">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h1>Пример на Lazarus</h1>
-            https://ru.wikipedia.org/wiki/Lazarus Lazarus — открытая среда разработки программного обеспечения на языке Object Pascal для компилятора Free Pascal (часто используется сокращение FPC — Free Pascal Compiler, бесплатно распространяемый компилятор языка программирования Pascal). Интегрированная среда разработки предоставляет возможность кроссплатформенной разработки приложений в Delphi-подобном окружении.
+         <h1>Пример на Lazarus</h1>
+         https://ru.wikipedia.org/wiki/Lazarus Lazarus — открытая среда разработки программного обеспечения на языке Object Pascal для компилятора Free Pascal (часто используется сокращение FPC — Free Pascal Compiler, бесплатно распространяемый компилятор языка программирования Pascal). Интегрированная среда разработки предоставляет возможность кроссплатформенной разработки приложений в Delphi-подобном окружении.
 Позволяет достаточно несложно переносить Delphi-программы с графическим интерфейсом в различные операционные системы: Linux, FreeBSD, Mac OS X, Microsoft Windows, Android[1]. Начиная с Delphi XE2 в самом Delphi имеется возможность компиляции программ для Mac OS X, с версии XE4 — для iOS, с версии XE5 — для Android, с версии 10.2 Tokyo — для Linux (x64).
 Основан на библиотеке визуальных компонентов Lazarus Component Library (LCL). В настоящее время практически полностью поддерживает виджеты Win32, GTK1, GTK2, Carbon, Qt. В разработке находятся виджеты WinCE[2].
 Поддерживает преобразование проектов Delphi

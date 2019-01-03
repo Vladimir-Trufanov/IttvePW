@@ -18,6 +18,6 @@ define ("Tablet", "Tablet");     // "Устройство, запросивше�
 
 // Инициализируем общесайтовые переменные
 $uagent=$_SERVER['HTTP_USER_AGENT'];    // HTTP_USER_AGENT
-$SiteDevice=prown\getSiteDevice();      // Tип устройства, запросившего сайт
+$SiteDevice=prown\getSiteDevice();      // 'Computer','Mobile','Tablet'
 
 // ************************************************************* Inimem.php *** 
