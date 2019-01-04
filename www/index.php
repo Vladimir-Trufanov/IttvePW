@@ -31,38 +31,40 @@ require_once "iHtmlBegin.php";
 ?>
    <!-- -->
    <div id="hBlock">
-
+   
+      <div id="Buttons">
+         <button class="btnItPW" id="btnMenu">
+            <img class="imgItPW" src="Images/Buttons/Menu.svg" height="32">
+            Menu
+         </button>
+         <button class="btnItPW" id="btnLazi">
+            <img class="imgItPW" src="Images/Buttons/Lazarus.svg" height="32"> 
+            Lazarus
+         </button>
+         <button class="btnItPW" id="btnJava">
+            <img class="imgItPW" src="Images/Buttons/Java.svg" height="32">
+            Java
+         </button>
+         <button class="btnItPW" id="btnPhp">
+            <img class="imgItPW" src="Images/Buttons/Php.svg" height="32"> 
+            Php
+         </button>
+      </div>
+      
+      <!--
       <nav id="pLine">
-
-        <button class="btnItPW" id="btnMenu">
-           <img class="imgItPW" src="Images/Buttons/Menu.svg" height="32">
-           Menu
-        </button>
-        <button class="btnItPW" id="btnLazi">
-           <img class="imgItPW" src="Images/Buttons/Lazarus.svg" height="32"> 
-           Lazarus
-        </button>
-        <button class="btnItPW" id="btnJava">
-           <img class="imgItPW" src="Images/Buttons/Java.svg" height="32">
-           Java
-        </button>
-        <button class="btnItPW" id="btnPhp">
-           <img class="imgItPW" src="Images/Buttons/Php.svg" height="32"> 
-           Php
-        </button>
-
-        <!-- Параметры сайта по алфавиту = -->
          <?php 
-            echo $SiteDevice/*.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost*/; 
+            //echo $SiteDevice/*.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost*/; 
             // echo $uagent.'<br>';
          ?>
       </nav>
       <nav id="tLine">
          1234567-10
-         <!--
-         1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
-         -->
       </nav>
+      -->
+      <!--
+      1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100-23456-110-23456-120-23456-130-23456-140-23456-150-23
+      -->
          
    </div>
       

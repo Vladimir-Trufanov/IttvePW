@@ -39,12 +39,12 @@ else
       <link rel="stylesheet" type="text/css" href="aComputercss/Styles.css">
       <script src="/js/IttvePW.js"></script>
       <script> 
-         TurnOnHotkeys() 
+         //TurnOnHotkeys() 
       </script>
    </head>
    <body>
    <script>
-      ScreenInfo33();
+      //ScreenInfo33();
    </script> 
    <?php
 }

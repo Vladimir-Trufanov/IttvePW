@@ -83,9 +83,6 @@ body
    font-size: 1rem;  
 }
 
-
-
-
 h1 
 {
 	font: bold italic 2.4rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
@@ -94,78 +91,34 @@ h1
 	/*padding-left: 0.5rem;*/
 }
 
-
-#lSideTOrSide
-{
-   margin: 4.5rem 0 4.5rem 0; 
-}
-
-/* Позиционируем центральные секции */
-#lSide 
-{
-   float: left;
-   width: 18%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-}
-
-#cCenter  
-{
-   float: left;
-   width: 41%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-   /* Отделяем бордюром основную тему страницы справа и слева */
-   border-left:  dashed 0.1rem rgb(153,153,153);
-   border-right: dashed 0.1rem rgb(153,153,153);
-}
-
-#rSide  
-{
-   float: right;
-   width: 41%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-   font-weight: bold;
-}
 /* Оформляем шапку */
 #hBlock
 {
    position: fixed;     /* Фиксированное положение */
    left: 0; top: 0;     /* Правый верхний угол */
    width: 100%;         /* Ширина слоя */
+   height: 2.8rem;         
+   z-index: 101;
+   background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
 } 
 /* Оформляем строку параметров сайта */
 #pLine
 {
    color: #60472E;
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
-      display:none;
-   height: 0;
-
+   //background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
+   // display:none;
+   // height: 0;
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
 {
    color: #FFFFFF;
-	background-color: #899504;
-      display:none;
-   height: 0;
-
+	// background-color: #899504;
+   // display:none;
+   // height: 0;
 } 
 
-// ----
-
-.for_button 
-{
-    padding:5px;
-    text-align:center;
-    border:1px solid green;
-    border-radius:5px;
-    width:150px;
-}
-
-// ----
+/* Размещаем кнопки */
 
 .btnItPW 
 {
@@ -234,6 +187,41 @@ h1
 {
    background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
 }
+
+
+/* Позиционируем центральные секции */
+
+#lSideTOrSide
+{
+   margin: 3rem 0 3rem 0; 
+}
+#lSide 
+{
+   float: left;
+   width: 18%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+}
+
+#cCenter  
+{
+   float: left;
+   width: 41%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+   /* Отделяем бордюром основную тему страницы справа и слева */
+   border-left:  dashed 0.1rem rgb(153,153,153);
+   border-right: dashed 0.1rem rgb(153,153,153);
+}
+#rSide  
+{
+   float: right;
+   width: 41%;
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 0.6rem 0.6rem; 
+   font-weight: bold;
+}
+
 // ----
 
 
