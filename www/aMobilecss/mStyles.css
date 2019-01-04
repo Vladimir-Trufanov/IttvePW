@@ -84,7 +84,7 @@ h1
 {
 	font: bold italic 2.4rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
 	color: #46874D;
-	background: url(../images/underline.png) no-repeat 0px 88%;
+	//background: url(../images/underline.png) no-repeat 0px 88%;
 	/*padding-left: 0.5rem;*/
 }
 

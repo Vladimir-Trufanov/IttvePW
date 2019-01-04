@@ -53,7 +53,7 @@ require_once "iHtmlBegin.php";
 
         <!-- Параметры сайта по алфавиту = -->
          <?php 
-            echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
+            echo $SiteDevice/*.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost*/; 
             // echo $uagent.'<br>';
          ?>
       </nav>
@@ -140,49 +140,33 @@ require_once "iHtmlBegin.php";
          
          <section class="cSection" id="exJav">
             <h1>Пример на JavaAndroid</h1>
+
+            <!-- Пример передачи значения в JavaScript --------------------- -->
+            <?php
+               // Подготавливаем переменную для передачи в JavaScript
+               $ParmValue = "Текст для передачи в JavaScript";
+            ?>
             
             <script>
-            
-               function getWidthOfText(txt,fontname,fontsize)
-               {
-                  if(getWidthOfText.c === undefined)
-                  {
-                     getWidthOfText.c=document.createElement('canvas');
-                     getWidthOfText.ctx=getWidthOfText.c.getContext('2d');
-                  }
-                  getWidthOfText.ctx.font = fontsize + ' ' + fontname;
-                  return getWidthOfText.ctx.measureText(txt).width;
-               }
-
-            	var StringTest='1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234';
-               document.write('StringTest: '+StringTest+'<br>');
-            	var LengthTest=64;
-            	var LengthTest=getWidthOfText(StringTest,'Anonymous Pro',4);
-               document.write('Размер через CANVAS: '+LengthTest+'<br>');
-
-               document.write('Разрешение страницы: screen.width*screen.height= <b>'+screen.width+'*'+screen.height+'</b><br>');
-               document.write('<b>1234567-10-234567-20-234567-30-234567-40-234567-50-234567-60-234567-70-234567-80-234567-90-23456-100</b><br>');
-
-               
-var pixPer10CM = $('#meter').width();
-var CMPerPix = 10 / pixPer10CM;
-var widthCM = screen.width * CMPerPix;
-
-document.write('Ширина экрана (см): '+widthCM+'<br>');
-
-	         
-            
-            
-            
+               // Принимаем значение из PHP
+	            var ParmValue = "<?php echo $ParmValue; ?>";
+               // Выводим принятое значение
+               document.write('ParmValue='+ParmValue+'<br>');
             </script> 
-            
-            
-            
-            <br>
+            <!-- ------------------------------------- --------------------- -->
+
+            <!-- Приём переданного значения от JavaScript ------------------ -->
+            <?php
+               $otJavaScript='Значение не передано!';
+               if (IsSet($_GET['idi'])) 
+               {
+                  $otJavaScript='Передано значение = '.$_GET['idi'];
+               }
+               echo $otJavaScript.'<br>'; 
+            ?>
+            <!-- ------------------------------------- --------------------- -->
             https://stfalcon.com/ru/blog/post/android-developer-java-review Что же такое Java и откуда она к нам пришла? А пришла она к нам с далёкого 1995. Поначалу язык назывался Oak («дуб»), разрабатывал его бородатый Джеймсон Гослинг для программирования бытовых электронных устройств. В дальнейшем получил язык название Java, которое, по одной из версий, происходит от марки элитного кофе. Помните логотип?
 Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой виртуальной Java-машине вне зависимости от компьютерной архитектуры.
-
-            <span class="letter" display=block >Навигация в глубину сайта</span>
 Моё изучение Java началось с разработки приложения под Android. Разработчиков, которые специализировались в этой сфере, поблизости не было, потому многое оставалось без внимания просто по причине незнания о существовании тех или иных вещей.
 Думаю, каждый оказывался в ситуации, когда ты понимаешь, что что-то в твоем коде не так. Имея огромное желание это исправить, ты начинаешь искать ответ на вопрос, который не можешь сформулировать, да еще и подсказать некому...
 В этой статье я попробую собрать все особенности программирования на Java для Android, которые в свое время мне пришлось выискивать в безграничной сети. Возможно, кому-то они покажутся очевидными, но мне в свое время такая подборка фишек Java очень бы помогла. Надеюсь, все же найдутся те, кому это пригодится :).

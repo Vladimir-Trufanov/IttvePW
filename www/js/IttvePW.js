@@ -35,6 +35,14 @@
       }
 
       // Ctrl+S  Сохранить страницу сайта (функцию предоставляет браузер Chrome‎)
+
+      // Ctrl+Z  Передать значение переменной в PHP
+      else if (e.ctrlKey && e.keyCode == 'Z'.charCodeAt(0)) 
+      {
+        var idi = 1352;
+        document.location.replace("index.php?idi="+idi);
+        return false;
+      }
       
     }
   }
@@ -42,10 +50,10 @@
 function ScreenInfo33(){
 // http://qaru.site/questions/83058/getting-the-physical-screen-dimensions-dpi-pixel-density-in-chrome-on-android
 var $el = document.createElement('div');
-$el.style.width = '1cm';
+$el.style.width = '10cm';
 $el.style.height = '1cm';
-// $el.style.backgroundColor = '#ff0000'; // показали выстроенный DIV
-$el.style.position = 'fixed';
+//$el.style.display = 'none';
+$el.style.backgroundColor = '#ff00ff'; // показали выстроенный DIV
 $el.style.bottom = 0;
 document.body.appendChild($el);
 

@@ -90,7 +90,7 @@ h1
 {
 	font: bold italic 2.4rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
 	color: #46874D;
-	background: url(../images/underline.png) no-repeat 0px 88%;
+	//background: url(../images/underline.png) no-repeat 0px 88%;
 	/*padding-left: 0.5rem;*/
 }
 
@@ -140,15 +140,33 @@ h1
 {
    color: #60472E;
    background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
+      display:none;
+   height: 0;
+
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
 {
    color: #FFFFFF;
 	background-color: #899504;
+      display:none;
+   height: 0;
+
 } 
 
 // ----
+
+.for_button 
+{
+    padding:5px;
+    text-align:center;
+    border:1px solid green;
+    border-radius:5px;
+    width:150px;
+}
+
+// ----
+
 .btnItPW 
 {
 }

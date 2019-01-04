@@ -22,8 +22,12 @@ ittve
 			www\aComputercss\Styles.css
 		-aMobilecss
 			www\aMobilecss\mStyles.css
-		+Images
+		-Images
 			-Buttons
+				www\Images\Buttons\Java.svg
+				www\Images\Buttons\Lazarus.svg
+				www\Images\Buttons\Menu.svg
+				www\Images\Buttons\Php.svg
 		+js
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
@@ -33,54 +37,12 @@ ittve
 		www\iHtmlEnd.php
 		www\index.php
 		www\Inimem.php
-		www\Java.svg
-		www\Lazarus.svg
-		www\Menu.svg
 		www\MenuAccord.php
-		www\Php.svg
 [Open project files]
-0=www\index.php
-1=www\iHtmlEnd.php
-2=www\aMobilecss\mStyles.css
-3=www\MenuAccord.php
-4=www\aComputercss\Styles.css
-5=www\iGetAbove.php
-6=www\js\IttvePW.js
-7=www\Inimem.php
-8=www\iHtmlBegin.php
-9=www\aComputercss\MenuAccord.css
+0=www\js\IttvePW.js
 [Selected Project Files]
 Main=
 Selected=www\js\IttvePW.js
-[www\index.php]
-TopLine=24
-Caret=38,50
-[www\iHtmlEnd.php]
-TopLine=1
-Caret=21,14
-[www\aMobilecss\mStyles.css]
-TopLine=186
-Caret=1,212
-[www\MenuAccord.php]
-TopLine=3
-Caret=7,14
-[www\aComputercss\Styles.css]
-TopLine=208
-Caret=1,220
-Mark1=1,84
-[www\iGetAbove.php]
-TopLine=1
-Caret=78,7
 [www\js\IttvePW.js]
-TopLine=49
-Caret=44,75
-Mark1=1,86
-[www\Inimem.php]
-TopLine=1
-Caret=72,21
-[www\iHtmlBegin.php]
-TopLine=35
-Caret=1,55
-[www\aComputercss\MenuAccord.css]
-TopLine=23
-Caret=1,33
+TopLine=113
+Caret=1,1

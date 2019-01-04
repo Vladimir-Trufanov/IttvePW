@@ -10,7 +10,6 @@
 //                                                   Дата создания:  05.12.2018
 // Copyright © 2018 tve                              Посл.изменение: 11.12.2018
 
-
 if ($SiteDevice==Mobile) 
 {   
    ?>
@@ -39,17 +38,11 @@ else
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="aComputercss/Styles.css">
       <script src="/js/IttvePW.js"></script>
-      <script> TurnOnHotkeys() </script>
+      <script> 
+         TurnOnHotkeys() 
+      </script>
    </head>
    <body>
-   
-
-   
-   <br><br><br><br>
-   <div id="meter" style="width:10cm">
-   1234567-10-234567-20-234567-30-234567-40-2345
-   67-50-234567-60-234567-70-234567-80-234567-90
-   </div>
    <script>
       ScreenInfo33();
    </script> 
