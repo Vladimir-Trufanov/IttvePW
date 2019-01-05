@@ -17,11 +17,14 @@ Extensions=*.*
 [Project tree]
 ittve
 	+www
-		+aComputercss
+		-aComputercss
 			www\aComputercss\MenuAccord.css
 			www\aComputercss\Styles.css
 		-aMobilecss
 			www\aMobilecss\mStyles.css
+		-aOwncss
+			www\aOwncss\Header.css
+			www\aOwncss\iHeader.css
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
@@ -32,6 +35,12 @@ ittve
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
 		-Pages
+		+Styles
+			www\Styles\Header.css
+			www\Styles\MenuAccord.css
+			www\Styles\mStyles.css
+			www\Styles\Reset.css
+			www\Styles\Styles.css
 		www\iGetAbove.php
 		www\iHtmlBegin.php
 		www\iHtmlEnd.php
@@ -40,21 +49,29 @@ ittve
 		www\MenuAccord.php
 [Open project files]
 0=www\js\IttvePW.js
-1=www\iHtmlBegin.php
-2=www\index.php
-3=www\aComputercss\Styles.css
+1=www\index.php
+2=www\Styles\Styles.css
+3=www\Styles\Header.css
+4=www\Styles\Reset.css
+5=www\iHtmlBegin.php
 [Selected Project Files]
 Main=
-Selected=www\aComputercss\Styles.css
+Selected=www\Styles\Styles.css
 [www\js\IttvePW.js]
-TopLine=113
+TopLine=27
 Caret=1,1
-[www\iHtmlBegin.php]
-TopLine=23
-Caret=12,42
 [www\index.php]
-TopLine=59
-Caret=9,71
-[www\aComputercss\Styles.css]
-TopLine=87
-Caret=83,102
+TopLine=150
+Caret=15,82
+[www\Styles\Styles.css]
+TopLine=224
+Caret=13,245
+[www\Styles\Header.css]
+TopLine=1
+Caret=4,12
+[www\Styles\Reset.css]
+TopLine=60
+Caret=1,80
+[www\iHtmlBegin.php]
+TopLine=1
+Caret=27,53

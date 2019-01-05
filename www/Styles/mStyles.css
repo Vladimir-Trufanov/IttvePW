@@ -1,16 +1,13 @@
-/** HTML5/CSS3, EDGE/CHROME                                  *** Styles.css ***
+/** HTML5/CSS3, EDGE/CHROME                                 *** mStyles.css ***
 
  ******************************************************************************
- * ittve.pw                                        Определить начальные стили *
+ * ittve.pw                 Определить начальные стили мобильной версии сайта *
  ******************************************************************************
 
                                                      Автор:       Труфанов В.Е.
                                                      Дата создания:  25.11.2018
- Copyright © 2018 tve                                Посл.изменение: 25.11.2018
+ Copyright © 2018 tve                                Посл.изменение: 06.12.2018
 */
-
-@import "MenuAccord.css"; 
-
 
 /* Содержим поля в ширине блока (кроме margin) */
 * 
@@ -69,17 +66,18 @@ table
 
 /**
  Определяем базовый шрифт.
+ Для простоты вычислений в качестве базового размера шрифта задаем 10 пикселей 
 */
 html
 {
    font-family: 'Anonymous Pro', monospace;
-   font-size: 16px;
+   font-size: 4mm;
 }
 
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
-   font-size: 1rem;  
+   font-size: 2rem;  
 }
 
 h1 
@@ -90,58 +88,60 @@ h1
 	/*padding-left: 0.5rem;*/
 }
 
+/* Обеспечиваем общее позиционирование секций */
 
-
-/* Оформляем шапку */
 #hBlock
 {
-   display: inline-block;
-   position: fixed;     /* Фиксированное положение */
-   left: 0; top: 0;     /* Правый верхний угол */
-   width: 100%;         /* Ширина слоя */
-   height: 2.8rem;         
-   z-index: 101;
-   //background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
-   background-color: #ffffff;
+   color: #60472E;
+	background-color: #E2D5C5;
 } 
-#Buttons
+
+#lSideTOrSide
 {
+   font-size: 2rem;  
+   /*
+   margin: 4.5rem 0 4.5rem 0; 
+    */
+}
+#lSide 
+{
+   display:none;
+   color: #FFFFFF;
+	background-color: #899504;
+}
+#cCenter  
+{
+   /*
    float: left;
-} 
-#Informs
+   width: 41%; */
+   /* Отодвигаем текст от границ колонки 
+   padding: 0 0.6rem 0.6rem 0.6rem; */
+   /* Отделяем бордюром основную тему страницы справа и слева 
+   border-left:  dashed 0.1rem rgb(153,153,153);
+   border-right: dashed 0.1rem rgb(153,153,153); */
+}
+#rSide  
 {
-   float: right;
-   margin: 0.2rem 0.3rem 0 0.3rem; 
-} 
+}
 /* Оформляем строку параметров сайта */
 #pLine
 {
+   //display:none;
+   //height: 0;
    color: #60472E;
-   text-align: right; 
-   padding: 0 0.3rem 0 0.3rem; 
-	background-color: #899504;
-   // display:none;
-   // height: 0;
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
 {
-   color: #F37313;
-   margin: 0.2rem 0 0 0; 
-   padding: 0.1rem 0.3rem 0.1rem 0.3rem; 
-   text-align: right; 
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
-   // display:none;
-   // height: 0;
+   display:none;
+   height: 0;
 } 
 
-//@import "/../aOwncss/iHeader.css"; 
 
-/* Размещаем кнопки */
-
+// ----
 .btnItPW 
 {
-   margin: 0 0 0 -0.4rem; 
 }
 .imgItPW // в стилях должен идти после контейнера btnItPW
 {
@@ -150,7 +150,6 @@ h1
 }
 #btnMenu 
 {
-   margin: 0 0 0 0.2rem; 
    color: #FFFFFF;
    background: radial-gradient(farthest-side ellipse at top left, #657,  #000);
 }
@@ -208,43 +207,9 @@ h1
 {
    background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
 }
-
-
-/* Позиционируем центральные секции */
-
-#lSideTOrSide
-{
-   margin: 3rem 0 3rem 0; 
-   background-color: #ffffff;
-}
-#lSide 
-{
-   float: left;
-   width: 18%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-}
-
-#cCenter  
-{
-   float: left;
-   width: 41%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-   /* Отделяем бордюром основную тему страницы справа и слева */
-   border-left:  dashed 0.1rem rgb(153,153,153);
-   border-right: dashed 0.1rem rgb(153,153,153);
-}
-#rSide  
-{
-   float: right;
-   width: 41%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 0.6rem 0.6rem; 
-   font-weight: bold;
-}
-
 // ----
+
+
 
 
 /* Оформляем подвал */
@@ -258,7 +223,6 @@ footer
    left: 0; bottom: 0;  /* Левый нижний угол */
    /* padding: 10px;        Поля вокруг текста */
    width: 100%;         /* Ширина слоя */
-   height: 4.8rem;         
 } 
 footer a {
 	color: white;	

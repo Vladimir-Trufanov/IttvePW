@@ -1,0 +1,14 @@
+/* CSS Document */
+
+/* Оформляем шапку */
+#hBlock
+{
+   display: inline-block;
+   position: fixed;     /* Фиксированное положение */
+   left: 0; top: 0;     /* Правый верхний угол */
+   width: 100%;         /* Ширина слоя */
+   height: 2.8rem;         
+   z-index: 101;
+   background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
+   background-color: #ffffff;
+} 
