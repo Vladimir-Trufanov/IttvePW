@@ -17,21 +17,13 @@ Extensions=*.*
 [Project tree]
 ittve
 	+www
-		-aComputercss
-			www\aComputercss\MenuAccord.css
-			www\aComputercss\Styles.css
-		-aMobilecss
-			www\aMobilecss\mStyles.css
-		-aOwncss
-			www\aOwncss\Header.css
-			www\aOwncss\iHeader.css
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
 				www\Images\Buttons\Lazarus.svg
 				www\Images\Buttons\Menu.svg
 				www\Images\Buttons\Php.svg
-		+js
+		-js
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
 		-Pages
@@ -52,26 +44,22 @@ ittve
 1=www\index.php
 2=www\Styles\Styles.css
 3=www\Styles\Header.css
-4=www\Styles\Reset.css
-5=www\iHtmlBegin.php
+4=www\iHtmlBegin.php
 [Selected Project Files]
 Main=
-Selected=www\Styles\Styles.css
+Selected=www\iHtmlBegin.php
 [www\js\IttvePW.js]
 TopLine=27
 Caret=1,1
 [www\index.php]
-TopLine=150
+TopLine=82
 Caret=15,82
 [www\Styles\Styles.css]
-TopLine=224
-Caret=13,245
+TopLine=75
+Caret=23,90
 [www\Styles\Header.css]
 TopLine=1
 Caret=4,12
-[www\Styles\Reset.css]
-TopLine=60
-Caret=1,80
 [www\iHtmlBegin.php]
-TopLine=1
-Caret=27,53
+TopLine=15
+Caret=59,22
