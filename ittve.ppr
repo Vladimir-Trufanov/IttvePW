@@ -28,7 +28,6 @@ ittve
 			www\js\jquery-2.0.1.js
 		-Pages
 		+Styles
-			www\Styles\Header.css
 			www\Styles\MenuAccord.css
 			www\Styles\mStyles.css
 			www\Styles\Reset.css
@@ -43,8 +42,9 @@ ittve
 0=www\js\IttvePW.js
 1=www\index.php
 2=www\Styles\Styles.css
-3=www\Styles\Header.css
-4=www\iHtmlBegin.php
+3=www\iHtmlBegin.php
+4=www\Styles\Reset.css
+5=www\Styles\mStyles.css
 [Selected Project Files]
 Main=
 Selected=www\iHtmlBegin.php
@@ -52,14 +52,17 @@ Selected=www\iHtmlBegin.php
 TopLine=27
 Caret=1,1
 [www\index.php]
-TopLine=82
+TopLine=57
 Caret=15,82
 [www\Styles\Styles.css]
-TopLine=75
-Caret=23,90
-[www\Styles\Header.css]
-TopLine=1
-Caret=4,12
+TopLine=5
+Caret=13,159
 [www\iHtmlBegin.php]
-TopLine=15
-Caret=59,22
+TopLine=19
+Caret=50,45
+[www\Styles\Reset.css]
+TopLine=62
+Caret=17,64
+[www\Styles\mStyles.css]
+TopLine=7
+Caret=1,11

@@ -19,6 +19,7 @@ if ($SiteDevice==Mobile)
       <title>В мобильном программировании моё увлечение!</title>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="Styles/Reset.css">
       <link rel="stylesheet" type="text/css" href="Styles/mStyles.css">
    </head>
    <body>
@@ -36,6 +37,7 @@ else
       <title>В программировании моя жизнь!</title>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="Styles/Reset.css">
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
       <!--
       <link rel="stylesheet" type="text/css" href="Styles/MenuAccord.css">
