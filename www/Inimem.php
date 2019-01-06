@@ -17,8 +17,9 @@ define ("Mobile", "Mobile");     // "Устройство, запросивше�
 define ("Tablet", "Tablet");     // "Устройство, запросившее сайт - планшет"  
 
 // Инициализируем общесайтовые переменные
-$uagent=$_SERVER['HTTP_USER_AGENT'];    // HTTP_USER_AGENT
-$SiteDevice=prown\getSiteDevice();      // 'Computer','Mobile','Tablet'
+$uagent=$_SERVER['HTTP_USER_AGENT'];        // HTTP_USER_AGENT
+$SiteDevice=prown\getSiteDevice();          // 'Computer','Mobile','Tablet'
+$UserName=$_COOKIE['PersName'] ?? "Гость";  // Логин посетителя для авторизации
 
 // Инициализируем сессионные переменные
 if (!isset($_SESSION['Counter'])) $_SESSION['Counter']=0; // Посещения за сессию
@@ -27,6 +28,5 @@ if (!isset($_SESSION['Counter'])) $_SESSION['Counter']=0; // Посещения 
 $BrowEntry=$_COOKIE['BrowEntry'] ?? 1;      // Число запросов сайта из браузера
 $PersEntry=$_COOKIE['PersEntry'] ?? 1;      // Число запросов сайта посетителем
 $PersName=$_COOKIE['PersName'] ?? "Гость";  // Логин посетителя
-$UserName=$_COOKIE['$UserName'] ?? "tve20"; // Логин посетителя после авторизации
 
 // ************************************************************* Inimem.php *** 

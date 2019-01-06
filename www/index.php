@@ -39,6 +39,15 @@ $PersEntry = $PersEntry+1;
 $_SESSION['Counter']++;
 // echo "Вы обновили эту страницу ".$_SESSION['Counter']++." раз. ";
 // echo "<br><a href=".$_SERVER['PHP_SELF'].">обновить"; 
+// Если после авторизации изменилось имя пользователя,
+// то перенастраиваем счетчики
+if ($PersName<>$UserName)
+{
+   $PersEntry = 1;
+   \prown\MakeCookie('PersEntry',$PersEntry); 
+   $PersName=$UserName;
+   \prown\MakeCookie('PersName',$PersName); 
+}
 
 // Разворачиваем страницу
 require_once "iHtmlBegin.php";
