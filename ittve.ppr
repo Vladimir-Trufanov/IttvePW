@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 ittve
-	-www
+	+www
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
@@ -30,8 +30,10 @@ ittve
 		-Reset
 			www\Reset\e404.php
 			www\Reset\index.php
-		-Styles
+		+Styles
+			www\Styles\Buttons.css
 			www\Styles\Fonts.css
+			www\Styles\mButtons.css
 			www\Styles\MenuAccord.css
 			www\Styles\mFonts.css
 			www\Styles\mStyles.css
@@ -47,50 +49,10 @@ ittve
 		www\Inimem.php
 		www\MenuAccord.php
 [Open project files]
-0=www\js\IttvePW.js
-1=www\index.php
-2=www\Styles\Styles.css
-3=www\iHtmlBegin.php
-4=www\Styles\Fonts.css
-5=www\Styles\Reset.css
-6=www\Common.php
-7=www\Reset\index.php
-8=www\Reset\e404.php
-9=www\.htaccess
-10=www\Styles\mStyles.css
+0=www\index.php
 [Selected Project Files]
 Main=
-Selected=www\Styles\mStyles.css
-[www\js\IttvePW.js]
-TopLine=27
-Caret=1,1
+Selected=www\index.php
 [www\index.php]
-TopLine=23
-Caret=15,82
-[www\Styles\Styles.css]
-TopLine=111
-Caret=1,128
-[www\iHtmlBegin.php]
-TopLine=19
-Caret=64,42
-[www\Styles\Fonts.css]
-TopLine=1
-Caret=31,13
-[www\Styles\Reset.css]
-TopLine=35
-Caret=1,1
-[www\Common.php]
-TopLine=1
-Caret=1,13
-[www\Reset\index.php]
 TopLine=1
 Caret=1,1
-[www\Reset\e404.php]
-TopLine=5
-Caret=1,13
-[www\.htaccess]
-TopLine=1
-Caret=34,83
-[www\Styles\mStyles.css]
-TopLine=1
-Caret=1,161

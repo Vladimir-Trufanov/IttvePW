@@ -1,0 +1,77 @@
+
+#Buttons
+{
+   float: left;
+} 
+
+/* Размещаем кнопки */
+
+.btnItPW 
+{
+   margin: 0 0 0 -0.4rem; 
+}
+.imgItPW // в стилях должен идти после контейнера btnItPW
+{
+   width: 2rem;
+   height: 2rem;
+}
+#btnMenu 
+{
+   margin: 0 0 0 0.2rem; 
+   color: #FFFFFF;
+   background: radial-gradient(farthest-side ellipse at top left, #657,  #000);
+}
+#btnMenu:hover 
+{
+   color: #FFFFFF;
+   background: radial-gradient(farthest-side ellipse at top left, #444,  #000);
+}
+#btnMenu:active 
+{
+   color: #FFFFFF; 
+   background: radial-gradient(farthest-side ellipse at top left, #000,  #444);
+}
+#btnLazi 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #faa51a,  #f47a20);
+   /*background: radial-gradient(farthest-side ellipse at top left, #fff,  #f47a20);*/
+}
+#btnLazi:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f88e11,  #f06015);
+}
+#btnLazi:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f47a20,  #faa51a);
+   /*
+   background: -webkit-gradient(radial, farthest-side ellipse at top left, from(#f47a20), to(#faa51a));
+   background: -moz-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background: -ms-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background: -o-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   background-image: -o-radial-gradient(farthest-side ellipse at top left,  #f47a20,  #faa51a);
+   */
+}
+#btnJava 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #fff,  #ededed);
+}
+#btnJava:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #fff,  #dcdcdc);
+}
+#btnJava:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #ededed,  #fff);
+}
+#btnPhp 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #feb1d3,  #f171ab);
+}
+#btnPhp:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f4aacb,  #e86ca4);
+}
+#btnPhp:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
+}

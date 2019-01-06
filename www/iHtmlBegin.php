@@ -21,6 +21,7 @@ if ($SiteDevice==Mobile)
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="Styles/Reset.css">
       <link rel="stylesheet" type="text/css" href="Styles/mFonts.css">
+      <link rel="stylesheet" type="text/css" href="Styles/mButtons.css">
       <link rel="stylesheet" type="text/css" href="Styles/mStyles.css">
    </head>
    <body>
@@ -40,6 +41,7 @@ else
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="Styles/Reset.css">
       <link rel="stylesheet" type="text/css" href="Styles/Fonts.css">
+      <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
       <!--
       <link rel="stylesheet" type="text/css" href="Styles/MenuAccord.css">
