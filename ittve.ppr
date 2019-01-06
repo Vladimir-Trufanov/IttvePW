@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 ittve
-	+www
+	-www
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
@@ -27,13 +27,19 @@ ittve
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
 		-Pages
-		+Styles
+		-Reset
+			www\Reset\e404.php
+			www\Reset\index.php
+		-Styles
 			www\Styles\Fonts.css
 			www\Styles\MenuAccord.css
 			www\Styles\mFonts.css
 			www\Styles\mStyles.css
 			www\Styles\Reset.css
 			www\Styles\Styles.css
+		www\.htaccess
+		www\.user.ini
+		www\Common.php
 		www\iGetAbove.php
 		www\iHtmlBegin.php
 		www\iHtmlEnd.php
@@ -47,24 +53,44 @@ ittve
 3=www\iHtmlBegin.php
 4=www\Styles\Fonts.css
 5=www\Styles\Reset.css
+6=www\Common.php
+7=www\Reset\index.php
+8=www\Reset\e404.php
+9=www\.htaccess
+10=www\Styles\mStyles.css
 [Selected Project Files]
 Main=
-Selected=www\Styles\Fonts.css
+Selected=www\Styles\mStyles.css
 [www\js\IttvePW.js]
 TopLine=27
 Caret=1,1
 [www\index.php]
-TopLine=57
+TopLine=23
 Caret=15,82
 [www\Styles\Styles.css]
-TopLine=133
-Caret=13,159
+TopLine=111
+Caret=1,128
 [www\iHtmlBegin.php]
 TopLine=19
 Caret=64,42
 [www\Styles\Fonts.css]
 TopLine=1
-Caret=17,8
+Caret=31,13
 [www\Styles\Reset.css]
 TopLine=35
 Caret=1,1
+[www\Common.php]
+TopLine=1
+Caret=1,13
+[www\Reset\index.php]
+TopLine=1
+Caret=1,1
+[www\Reset\e404.php]
+TopLine=5
+Caret=1,13
+[www\.htaccess]
+TopLine=1
+Caret=34,83
+[www\Styles\mStyles.css]
+TopLine=1
+Caret=1,161

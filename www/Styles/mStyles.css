@@ -9,60 +9,57 @@
  Copyright © 2018 tve                                Посл.изменение: 06.12.2018
 */
 
-/* Обеспечиваем общее позиционирование секций */
 
+/* Оформляем шапку */
 #hBlock
 {
-   color: #60472E;
-	background-color: #E2D5C5;
+   display: inline-block;
+   position: fixed;     
+   left: 0; top: 0;     
+   width: 100%;        
+   height: 2.8rem;         
+   z-index: 101;
+   //background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
+   background-color: #ffffff;
 } 
 
-#lSideTOrSide
+
+#Buttons
 {
-   font-size: 2rem;  
-   /*
-   margin: 4.5rem 0 4.5rem 0; 
-    */
-}
-#lSide 
-{
-   display:none;
-   color: #FFFFFF;
-	background-color: #899504;
-}
-#cCenter  
-{
-   /*
    float: left;
-   width: 41%; */
-   /* Отодвигаем текст от границ колонки 
-   padding: 0 0.6rem 0.6rem 0.6rem; */
-   /* Отделяем бордюром основную тему страницы справа и слева 
-   border-left:  dashed 0.1rem rgb(153,153,153);
-   border-right: dashed 0.1rem rgb(153,153,153); */
-}
-#rSide  
+} 
+#Informs
 {
-}
+   float: right;
+   margin: 0.2rem 0.3rem 0 0.3rem; 
+} 
 /* Оформляем строку параметров сайта */
 #pLine
 {
-   //display:none;
-   //height: 0;
    color: #60472E;
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
+   text-align: right; 
+   padding: 0 0.3rem 0 0.3rem; 
+	// background-color: #899504;
+   // display:none;
+   // height: 0;
 } 
 /* Оформляем навигацию в глубину сайта */
 #tLine
 {
-   display:none;
-   height: 0;
+   color: #F37313;
+   margin: 0.2rem 0 0 0; 
+   padding: 0.1rem 0.3rem 0.1rem 0.3rem; 
+   text-align: right; 
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
+   // display:none;
+   // height: 0;
 } 
 
+/* Размещаем кнопки */
 
-// ----
 .btnItPW 
 {
+   margin: 0 0 0 -0.4rem; 
 }
 .imgItPW // в стилях должен идти после контейнера btnItPW
 {
@@ -71,6 +68,7 @@
 }
 #btnMenu 
 {
+   margin: 0 0 0 0.2rem; 
    color: #FFFFFF;
    background: radial-gradient(farthest-side ellipse at top left, #657,  #000);
 }
@@ -128,9 +126,38 @@
 {
    background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
 }
-// ----
 
 
+
+
+
+#lSideTOrSide
+{
+   font-size: 2rem;  
+   /*
+   margin: 4.5rem 0 4.5rem 0; 
+    */
+}
+#lSide 
+{
+   display:none;
+   color: #FFFFFF;
+	background-color: #899504;
+}
+#cCenter  
+{
+   /*
+   float: left;
+   width: 41%; */
+   /* Отодвигаем текст от границ колонки 
+   padding: 0 0.6rem 0.6rem 0.6rem; */
+   /* Отделяем бордюром основную тему страницы справа и слева 
+   border-left:  dashed 0.1rem rgb(153,153,153);
+   border-right: dashed 0.1rem rgb(153,153,153); */
+}
+#rSide  
+{
+}
 
 
 /* Оформляем подвал */

@@ -1,0 +1,85 @@
+## PHP-APACHE                                                   *** .htaccess ***
+##
+## ******************************************************************************
+## * kwinflat.ru                   Произвести локальные установки PHP на APACHE *
+## ******************************************************************************
+##
+##                                                     Автор:       Труфанов В.Е.
+##                                                     Дата создания:  01.11.2016
+## Copyright © 2016 tve                                Посл.изменение: 06.01.2019
+
+## Устанавливаем кодировку сайта по умолчанию
+AddDefaultCharset utf-8
+
+## Определяем, что будет использоваться кукис для хранения идентификатора 
+## сессии на стороне клиента. on[boolean] = "включено".
+php_flag session.use_cookies on
+
+## Определяем, что будет использоваться только cookies для хранения идентификатора сессии 
+## на стороне клиента (такой подход предотвращает атаки с использованием идентификатора
+## сессии, размещенного в URL). on[boolean] = "включено"
+php_flag session.use_only_cookies on
+
+## Запрещаем использование прозрачной поддержки sid. 
+## Замечание: Управление сессией на основе URL имеет дополнительные риски безопасности по 
+## сравнению с управлением на основе cookies. В качестве примера можно упомянуть такие ситуации, 
+## когда пользователи могут отправить URL, содержащий идентификатор активной сессии своим 
+## друзьям по электронной почте или сохранить ссылку с идентификатором в закладках и все 
+## время посещать сайт с одним и тем же идентификатором. С PHP 7.1.0, полный путь URL, т.е. 
+## https://php.net/, обрабатывается "trans sid". Ранее обрабатывался только относительный 
+## путь URL. Перезапись целевого хоста задается session.trans_sid_hosts.
+php_flag session.use_trans_sid off
+
+## Определяем, что сессию автоматически при старте не запускать.
+## http://php.net/session.auto-start
+php_flag session.auto_start off
+
+# php_value session.cookie_lifetime 10800
+
+## Запрещаем загрузку базы данных .db3
+<FilesMatch "\.db3$">        
+    Order allow,deny
+    Deny from all     
+</FilesMatch>
+
+## Закрываем доступ к файлам с определенными расширениями
+<FilesMatch "\.(txt|exe|doc|docx)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+## *************************************************************** kwinflat.ru ***
+## 
+## RewriteEngine On
+## 
+## RewriteRule ^Normativy_po_otopleniyu$ Main.php?Com=refNormotop [L]
+## RewriteRule ^Redaktor_tekstov$ /TinyMCE/ [L]
+## RewriteRule ^reset$ /Reset/ [L]
+## 
+## Перенаправляем все запросы с HTTP на HTTPS
+## RewriteCond %{ENV:HTTPS} !on
+## RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+##  
+## Перенаправляем ошибки в файл e404.php
+## ErrorDocument 400 https://kwinflat.ru/Reset/e404.php?err=400 
+## ErrorDocument 403 https://kwinflat.ru/Reset/e404.php?err=403 
+## ErrorDocument 404 https://kwinflat.ru/Reset/e404.php?err=404 
+## ErrorDocument 405 https://kwinflat.ru/Reset/e404.php?err=405 
+## ErrorDocument 408 https://kwinflat.ru/Reset/e404.php?err=408 
+## 
+## ErrorDocument 500 https://kwinflat.ru/Reset/e404.php?err=500 
+## ErrorDocument 502 https://kwinflat.ru/Reset/e404.php?err=502 
+## ErrorDocument 504 https://kwinflat.ru/Reset/e404.php?err=504 
+ 
+## Перенаправляем ошибки в файл e404.php
+ErrorDocument 400 http://ittve.pw/Reset/e404.php?err=400 
+ErrorDocument 403 http://ittve.pw/Reset/e404.php?err=403 
+ErrorDocument 404 http://ittve.pw/Reset/e404.php?err=404 
+ErrorDocument 405 http://ittve.pw/Reset/e404.php?err=405 
+ErrorDocument 408 http://ittve.pw/Reset/e404.php?err=408 
+
+ErrorDocument 500 http://ittve.pw/Reset/e404.php?err=500 
+ErrorDocument 502 http://ittve.pw/Reset/e404.php?err=502 
+ErrorDocument 504 http://ittve.pw/Reset/e404.php?err=504 
+
+## **************************************************************** .htaccess ***
