@@ -214,16 +214,13 @@ PHP прост для освоения, и вместе с тем способе
 Язык PHP постоянно совершенствуется, и ему наверняка обеспечено долгое доминирование в области языков web -программирования, по крайней мере, в ближайшее время.
          </section>
       </aside>
-      
       </div>
       
-      <!--
       <footer id="fBlock">
          Copyright, TinyMce, обратная связь
          <p>Copyright © 2018 tve </p>
          <p>Контакты: <a href="mailto:tve58@inbox.ru">tve58@inbox.ru</a></p>
       </footer>
-      -->
 <?php
 require_once "iHtmlEnd.php";
 

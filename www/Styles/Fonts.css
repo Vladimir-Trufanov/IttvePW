@@ -21,3 +21,8 @@ h1
 	//background: url(../images/underline.png) no-repeat 0px 88%;
 	/*padding-left: 0.5rem;*/
 }
+
+html,body 
+{
+   height: 100%;
+}
