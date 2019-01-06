@@ -9,6 +9,8 @@
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 11.12.2018
 
+session_start(); 
+
 // Инициализируем корневой каталог сайта, надсайтовый каталог, каталог хостинга
 require_once "iGetAbove.php";
 $SiteRoot = $_SERVER['DOCUMENT_ROOT'];  // Корневой каталог сайта
@@ -20,10 +22,23 @@ $SiteHost = iGetAbove($SiteAbove);      // Каталог хостинга
 
 // Подключаем файлы библиотеки прикладных модулей
 require_once $SiteHost."/TPhpPrown/getSiteDevice.php";
+require_once $SiteHost."/TPhpPrown/MakeCookie.php";
 require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
 
 // Выполняем начальную инициализацию
 require_once "Inimem.php";
+
+// ***** Регистрируем новую загрузку страницы
+// Изменяем счетчик запросов сайта из браузера       
+$BrowEntry = $BrowEntry+1;
+\prown\MakeCookie('BrowEntry',$BrowEntry); 
+// Изменяем счетчик посещений текущим посетителем      
+$PersEntry = $PersEntry+1;
+\prown\MakeCookie('PersEntry',$PersEntry); 
+// Изменяем счетчик посещений за сессию                 
+$_SESSION['Counter']++;
+// echo "Вы обновили эту страницу ".$_SESSION['Counter']++." раз. ";
+// echo "<br><a href=".$_SERVER['PHP_SELF'].">обновить"; 
 
 // Разворачиваем страницу
 require_once "iHtmlBegin.php";
@@ -55,12 +70,14 @@ require_once "iHtmlBegin.php";
       <div id="Informs">
          <nav id="pLine">
             <?php 
-               echo $SiteDevice/*.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost*/; 
-               // echo $uagent.'<br>';
+               echo " ".$PersName." ".$_SESSION['Counter'].".".$PersEntry."[".$BrowEntry."]"; 
             ?>
          </nav>
          <nav id="tLine">
-            1234567-10 67888888888888889 90
+            <?php 
+               echo $SiteDevice/*.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost*/; 
+               // echo $uagent.'<br>';
+            ?>
          </nav>
       </div>
       <!--
@@ -76,11 +93,13 @@ require_once "iHtmlBegin.php";
          начинаешь осознавать, что разум — это Будда, 
          что Будда — это сущность разума, 
          и что разум подобен бесконечности.</p>
+         
          <?php
          if ($SiteDevice<>Mobile)
          {   
             //require_once "MenuAccord.php";
          }
+         
          ?>
       </aside>
 
