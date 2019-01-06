@@ -1,0 +1,23 @@
+
+/**
+ Определяем базовый шрифт.
+*/
+html
+{
+   font-family: 'Anonymous Pro', monospace;
+   font-size: 16px;
+}
+
+/* Устанавливаем размеры шрифтов по умолчанию */
+body 
+{
+   font-size: 1rem;  
+}
+
+h1 
+{
+	font: bold italic 1.8rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
+	color: #46874D;
+	//background: url(../images/underline.png) no-repeat 0px 88%;
+	/*padding-left: 0.5rem;*/
+}
