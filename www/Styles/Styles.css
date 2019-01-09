@@ -108,6 +108,15 @@ footer
 footer a {
 	color: white;	
 }
+#Fooleft
+{
+   float: left;
+} 
+#Fooright
+{
+   float: right;
+   //margin: 0.2rem 0.3rem 0 0.3rem; 
+} 
 
 
 /*

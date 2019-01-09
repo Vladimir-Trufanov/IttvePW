@@ -76,3 +76,17 @@
 {
    background: radial-gradient(farthest-side ellipse at top left,  #f171ab,  #feb1d3);
 }
+#btnTiny 
+{
+   color: #FFFFFF;
+   background: radial-gradient(farthest-side ellipse at top left, #faa51a,  #f47a20);
+   margin: -0.08rem 0.3rem 0 0.3rem; 
+}
+#btnTiny:hover 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f88e11,  #f06015);
+}
+#btnTiny:active 
+{
+   background: radial-gradient(farthest-side ellipse at top left, #f47a20,  #faa51a);
+}

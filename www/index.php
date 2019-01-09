@@ -217,9 +217,19 @@ PHP прост для освоения, и вместе с тем способе
       </div>
       
       <footer id="fBlock">
-         Copyright, TinyMce, обратная связь
-         <p>Copyright © 2018 tve </p>
-         <p>Контакты: <a href="mailto:tve58@inbox.ru">tve58@inbox.ru</a></p>
+         <div id="Fooleft">
+            Copyright, TinyMce, обратная связь
+            <p>Copyright © 2018 tve </p>
+            <p>Контакты: <a href="mailto:tve58@inbox.ru">tve58@inbox.ru</a></p>
+         </div>
+
+         <div id="Fooright">
+            <button class="btnItPW" id="btnTiny">
+               <img class="imgItPW" src="Images/Buttons/Tiny.svg" height="32">
+               Tiny
+            </button>
+         </div>
+      
       </footer>
 <?php
 require_once "iHtmlEnd.php";
