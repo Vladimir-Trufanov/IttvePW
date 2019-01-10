@@ -60,11 +60,11 @@ ittve
 Main=
 Selected=www\index.php
 [www\index.php]
-TopLine=87
-Caret=61,228
+TopLine=196
+Caret=12,211
 [www\Inimem.php]
 TopLine=8
-Caret=1,23
+Caret=1,22
 [www\iHtmlBegin.php]
 TopLine=15
 Caret=1,15

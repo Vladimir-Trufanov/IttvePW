@@ -21,6 +21,7 @@ $SiteHost = iGetAbove($SiteAbove);      // Каталог хостинга
 // require_once "iUAparser.php";
 
 // Подключаем файлы библиотеки прикладных модулей
+require_once $SiteHost."/TPhpPrown/getTranslit.php";
 require_once $SiteHost."/TPhpPrown/getSiteDevice.php";
 require_once $SiteHost."/TPhpPrown/MakeCookie.php";
 require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
@@ -186,6 +187,8 @@ require_once "iHtmlBegin.php";
             <!-- Приём переданного значения от JavaScript ------------------ -->
             <?php
                $otJavaScript='Значение не передано!';
+               $SiteDevice=prown\getSiteDevice();          // 'Computer','Mobile','Tablet'
+
                if (IsSet($_GET['idi'])) 
                {
                   $otJavaScript='Передано значение = '.$_GET['idi'];
@@ -202,6 +205,15 @@ require_once "iHtmlBegin.php";
          
          <section class="cSection" id="exPhp">
             <h1>Пример на PHP</h1>
+            
+            <?php
+               //$StringRus='<div 5217 br> Значение не передано! </div';
+               $StringRus="<div> 5217 <br> Значение не передано! </div>";
+               echo '$StringRus='.$StringRus.'<br>'; 
+               $Translit=prown\getTranslit($StringRus);
+               echo '$Translit ='.$Translit.'<br>'.'<br>'; 
+            ?>
+            
             http://www.php.su/php/?php Если вы только начинаете знакомиться с PHP, то вам нужно знать определения. Итак, что же такое PHP?
 PHP – это широко используемый язык сценариев общего назначения с открытым исходным кодом.
 Говоря проще, PHP это язык программирования, специально разработанный для написания web-приложений (сценариев), исполняющихся на Web-сервере.
