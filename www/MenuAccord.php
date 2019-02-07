@@ -7,10 +7,10 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  23.11.2018
-// Copyright © 2018 tve                              Посл.изменение: 06.12.2018
+// Copyright © 2018 tve                              Посл.изменение: 07.02.2019
 
 ?>
-   <div id="wrapper">
+   <div id="MenuAccord">
    <ul class="accordion">
    
       <li id="one" class="files"> <a href="#" class="">Мои файлы<span>495</span></a>
@@ -42,7 +42,7 @@
          </ul>
       </li>
       
-      <li id="four" class="sign"> <a href="#" class="active">Библиотеки классов tTOOLS<span>58</span></a>
+      <li id="four" class="sign"> <a href="#" class="active">Библиотеки классов tTOOLS<span>39</span></a>
          <ul class="sub-menu" style="display: block; ">
          <li><a href="#"><em>01</em>Выход</a></li>
          <li><a href="#"><em>02</em>Удалить профиль</a></li>

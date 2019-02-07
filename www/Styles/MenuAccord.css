@@ -1,5 +1,5 @@
 /* Определяем размеры дива, содержащего меню */
-#wrapper
+#MenuAccord
 {
    list-style: none;
    margin:200px auto; 

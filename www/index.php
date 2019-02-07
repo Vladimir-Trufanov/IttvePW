@@ -107,7 +107,7 @@ require_once "iHtmlBegin.php";
          <?php
          if ($SiteDevice<>Mobile)
          {   
-            //require_once "MenuAccord.php";
+            require_once "MenuAccord.php";
          }
          
          ?>
@@ -236,7 +236,8 @@ PHP прост для освоения, и вместе с тем способе
          </div>
 
          <div id="Fooright">
-            <button class="btnItPW" id="btnTiny">
+            <form id="frmTiny" method="get" action="/TinyMCE/index.php">
+            <button class="btnItPW" id="btnTiny" form="frmTiny">
                <img class="imgItPW" src="Images/Buttons/Tiny.svg" height="32">
                Tiny
             </button>

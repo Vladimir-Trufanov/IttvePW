@@ -43,9 +43,7 @@ else
       <link rel="stylesheet" type="text/css" href="Styles/Fonts.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
-      <!--
       <link rel="stylesheet" type="text/css" href="Styles/MenuAccord.css">
-      -->
       <script src="/js/IttvePW.js"></script>
       <script> 
          TurnOnHotkeys() 
@@ -56,6 +54,7 @@ else
       //ScreenInfo33();
    </script> 
    <?php
+   // <!-- -->
 }
 
 // ********************************************************* iHtmlBegin.php ***

@@ -16,21 +16,24 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 ittve
-	+www
+	-www
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
 				www\Images\Buttons\Lazarus.svg
 				www\Images\Buttons\Menu.svg
 				www\Images\Buttons\Php.svg
+				www\Images\Buttons\Tiny.svg
+			www\Images\Kwinflat.jpg
 		-js
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
 		-Pages
+			-Art
 		-Reset
 			www\Reset\e404.php
 			www\Reset\index.php
-		+Styles
+		-Styles
 			www\Styles\Buttons.css
 			www\Styles\Fonts.css
 			www\Styles\mButtons.css
@@ -39,6 +42,150 @@ ittve
 			www\Styles\mStyles.css
 			www\Styles\Reset.css
 			www\Styles\Styles.css
+		-TinyMCE
+			-langs
+				www\TinyMCE\langs\readme.md
+				www\TinyMCE\langs\ru.js
+			-plugins
+				-advlist
+					www\TinyMCE\plugins\advlist\plugin.min.js
+				-anchor
+					www\TinyMCE\plugins\anchor\plugin.min.js
+				-autolink
+					www\TinyMCE\plugins\autolink\plugin.min.js
+				-autoresize
+					www\TinyMCE\plugins\autoresize\plugin.min.js
+				-autosave
+					www\TinyMCE\plugins\autosave\plugin.min.js
+				-bbcode
+					www\TinyMCE\plugins\bbcode\plugin.min.js
+				-charmap
+					www\TinyMCE\plugins\charmap\plugin.min.js
+				-code
+					www\TinyMCE\plugins\code\plugin.min.js
+				-codesample
+					-css
+						www\TinyMCE\plugins\codesample\css\prism.css
+					www\TinyMCE\plugins\codesample\plugin.min.js
+				-colorpicker
+					www\TinyMCE\plugins\colorpicker\plugin.min.js
+				-contextmenu
+					www\TinyMCE\plugins\contextmenu\plugin.min.js
+				-directionality
+					www\TinyMCE\plugins\directionality\plugin.min.js
+				-emoticons
+					-img
+						www\TinyMCE\plugins\emoticons\img\smiley-cool.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-cry.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-embarassed.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-foot-in-mouth.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-frown.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-innocent.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-kiss.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-laughing.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-money-mouth.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-sealed.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-smile.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-surprised.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-tongue-out.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-undecided.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-wink.gif
+						www\TinyMCE\plugins\emoticons\img\smiley-yell.gif
+					www\TinyMCE\plugins\emoticons\plugin.min.js
+				-fullpage
+					www\TinyMCE\plugins\fullpage\plugin.min.js
+				-fullscreen
+					www\TinyMCE\plugins\fullscreen\plugin.min.js
+				-help
+					-img
+						www\TinyMCE\plugins\help\img\logo.png
+					www\TinyMCE\plugins\help\plugin.min.js
+				-hr
+					www\TinyMCE\plugins\hr\plugin.min.js
+				-image
+					www\TinyMCE\plugins\image\plugin.min.js
+				-imagetools
+					www\TinyMCE\plugins\imagetools\plugin.min.js
+				-importcss
+					www\TinyMCE\plugins\importcss\plugin.min.js
+				-insertdatetime
+					www\TinyMCE\plugins\insertdatetime\plugin.min.js
+				-legacyoutput
+					www\TinyMCE\plugins\legacyoutput\plugin.min.js
+				-link
+					www\TinyMCE\plugins\link\plugin.min.js
+				-lists
+					www\TinyMCE\plugins\lists\plugin.min.js
+				-media
+					www\TinyMCE\plugins\media\plugin.min.js
+				-nonbreaking
+					www\TinyMCE\plugins\nonbreaking\plugin.min.js
+				-noneditable
+					www\TinyMCE\plugins\noneditable\plugin.min.js
+				-pagebreak
+					www\TinyMCE\plugins\pagebreak\plugin.min.js
+				-paste
+					www\TinyMCE\plugins\paste\plugin.min.js
+				-preview
+					www\TinyMCE\plugins\preview\plugin.min.js
+				-print
+					www\TinyMCE\plugins\print\plugin.min.js
+				-save
+					www\TinyMCE\plugins\save\plugin.min.js
+				-searchreplace
+					www\TinyMCE\plugins\searchreplace\plugin.min.js
+				-spellchecker
+					www\TinyMCE\plugins\spellchecker\plugin.min.js
+				-tabfocus
+					www\TinyMCE\plugins\tabfocus\plugin.min.js
+				-table
+					www\TinyMCE\plugins\table\plugin.min.js
+				-template
+					www\TinyMCE\plugins\template\plugin.min.js
+				-textcolor
+					www\TinyMCE\plugins\textcolor\plugin.min.js
+				-textpattern
+					www\TinyMCE\plugins\textpattern\plugin.min.js
+				-toc
+					www\TinyMCE\plugins\toc\plugin.min.js
+				-visualblocks
+					-css
+						www\TinyMCE\plugins\visualblocks\css\visualblocks.css
+					www\TinyMCE\plugins\visualblocks\plugin.min.js
+				-visualchars
+					www\TinyMCE\plugins\visualchars\plugin.min.js
+				-wordcount
+					www\TinyMCE\plugins\wordcount\plugin.min.js
+			-skins
+				-lightgray
+					-fonts
+						www\TinyMCE\skins\lightgray\fonts\tinymce.eot
+						www\TinyMCE\skins\lightgray\fonts\tinymce.svg
+						www\TinyMCE\skins\lightgray\fonts\tinymce.ttf
+						www\TinyMCE\skins\lightgray\fonts\tinymce.woff
+						www\TinyMCE\skins\lightgray\fonts\tinymce-mobile.woff
+						www\TinyMCE\skins\lightgray\fonts\tinymce-small.eot
+						www\TinyMCE\skins\lightgray\fonts\tinymce-small.svg
+						www\TinyMCE\skins\lightgray\fonts\tinymce-small.ttf
+						www\TinyMCE\skins\lightgray\fonts\tinymce-small.woff
+					-img
+						www\TinyMCE\skins\lightgray\img\anchor.gif
+						www\TinyMCE\skins\lightgray\img\loader.gif
+						www\TinyMCE\skins\lightgray\img\object.gif
+						www\TinyMCE\skins\lightgray\img\trans.gif
+					www\TinyMCE\skins\lightgray\content.min.css
+					www\TinyMCE\skins\lightgray\content.mobile.min.css
+					www\TinyMCE\skins\lightgray\skin.min.css
+					www\TinyMCE\skins\lightgray\skin.mobile.min.css
+			-themes
+				-mobile
+					www\TinyMCE\themes\mobile\theme.min.js
+				-modern
+					www\TinyMCE\themes\modern\theme.min.js
+			www\TinyMCE\index.php
+			www\TinyMCE\jquery.tinymce.min.js
+			www\TinyMCE\license.txt
+			www\TinyMCE\tinymce.min.js
 		www\.htaccess
 		www\.user.ini
 		www\Common.php
@@ -50,34 +197,13 @@ ittve
 		www\MenuAccord.php
 [Open project files]
 0=www\index.php
-1=www\Inimem.php
-2=www\iHtmlBegin.php
-3=www\Styles\Reset.css
-4=www\Styles\Styles.css
-5=www\Styles\Fonts.css
-6=www\Styles\Buttons.css
+1=www\TinyMCE\index.php
 [Selected Project Files]
 Main=
-Selected=www\index.php
+Selected=www\TinyMCE\index.php
 [www\index.php]
-TopLine=196
-Caret=12,211
-[www\Inimem.php]
-TopLine=8
-Caret=1,22
-[www\iHtmlBegin.php]
-TopLine=15
-Caret=1,15
-[www\Styles\Reset.css]
-TopLine=13
-Caret=1,1
-[www\Styles\Styles.css]
-TopLine=88
-Caret=1,114
-Mark1=1,114
-[www\Styles\Fonts.css]
-TopLine=7
-Caret=1,15
-[www\Styles\Buttons.css]
-TopLine=64
-Caret=1,82
+TopLine=281
+Caret=20,242
+[www\TinyMCE\index.php]
+TopLine=39
+Caret=31,59
