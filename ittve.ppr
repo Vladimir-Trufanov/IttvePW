@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 ittve
-	-www
+	+www
 		-Images
 			-Buttons
 				www\Images\Buttons\Java.svg
@@ -25,7 +25,7 @@ ittve
 				www\Images\Buttons\Php.svg
 				www\Images\Buttons\Tiny.svg
 			www\Images\Kwinflat.jpg
-		-js
+		+js
 			www\js\IttvePW.js
 			www\js\jquery-2.0.1.js
 		-Pages
@@ -42,7 +42,7 @@ ittve
 			www\Styles\mStyles.css
 			www\Styles\Reset.css
 			www\Styles\Styles.css
-		-TinyMCE
+		+TinyMCE
 			-langs
 				www\TinyMCE\langs\readme.md
 				www\TinyMCE\langs\ru.js
@@ -185,7 +185,9 @@ ittve
 			www\TinyMCE\index.php
 			www\TinyMCE\jquery.tinymce.min.js
 			www\TinyMCE\license.txt
+			www\TinyMCE\TinyMCE.css
 			www\TinyMCE\tinymce.min.js
+			www\TinyMCE\TinyText.php
 		www\.htaccess
 		www\.user.ini
 		www\Common.php
@@ -196,14 +198,26 @@ ittve
 		www\Inimem.php
 		www\MenuAccord.php
 [Open project files]
-0=www\index.php
-1=www\TinyMCE\index.php
+0=www\TinyMCE\TinyText.php
+1=www\TinyMCE\TinyMCE.css
+2=www\iHtmlBegin.php
+3=www\js\IttvePW.js
+4=www\TinyMCE\index.php
 [Selected Project Files]
 Main=
-Selected=www\TinyMCE\index.php
-[www\index.php]
-TopLine=281
-Caret=20,242
+Selected=www\TinyMCE\TinyText.php
+[www\TinyMCE\TinyText.php]
+TopLine=9
+Caret=21,22
+[www\TinyMCE\TinyMCE.css]
+TopLine=1
+Caret=29,3
+[www\iHtmlBegin.php]
+TopLine=25
+Caret=1,48
+[www\js\IttvePW.js]
+TopLine=110
+Caret=45,123
 [www\TinyMCE\index.php]
-TopLine=39
-Caret=31,59
+TopLine=45
+Caret=39,54

@@ -4,11 +4,11 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>KwinFlat-редактор текстов!</title>
-    <link rel="stylesheet" type="text/css" href="Allcss/Reset.css" />
-    <script src="/TinyMCE/tinymce.min.js"></script>
-    <script>tinymce.init
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>KwinFlat-редактор текстов!</title>
+   <link rel="stylesheet" type="text/css" href="Allcss/Reset.css" />
+   <script src="/TinyMCE/tinymce.min.js"></script>
+   <script>tinymce.init
     ({
         selector: '#mytextarea',
         theme: 'modern',
@@ -22,7 +22,7 @@
             'save table contextmenu directionality emoticons template paste',
             'textcolor'
         ],
-        content_css: '/Allcss/TinyMCE.css',
+        content_css: '/TinyMCE/TinyMCE.css',
         language: "ru",
         toolbar:
         [
@@ -44,10 +44,17 @@
 </header>
 
 <article>
-    <?php
-        // advlist - списки
-    ?>
-    <textarea id="mytextarea"> </textarea>    
+   <?php
+      // advlist - списки
+      // <textarea id="mytextarea" name="dor">qwerty</textarea>
+      // <form id="frmTinyText" method="get" action="/TinyMCE/TinyText.php">
+   ?>
+   
+   
+   <form id="frmTinyText" method="post" action="/TinyMCE/TinyText.php">
+      <textarea id="mytextarea" name="dor">qwertyi</textarea>
+   </form>
+   <input type="submit" name='enter' value="ssave" form="frmTinyText">
 </article>
 
 <footer>
