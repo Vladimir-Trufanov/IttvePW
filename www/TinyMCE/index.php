@@ -44,6 +44,19 @@
 </header>
 
 <article>
+
+
+<?php
+// получает содержимое файла в строку
+
+$filename = "../TinyMCE/textfile.html";
+$handle = fopen($filename, "r");
+$contents = fread($handle, filesize($filename));
+fclose($handle);
+echo '888'.$contents.'999';
+?>
+
+
    <?php
       // advlist - списки
       // <textarea id="mytextarea" name="dor">qwerty</textarea>
@@ -52,10 +65,25 @@
    
    
    <form id="frmTinyText" method="post" action="/TinyMCE/TinyText.php">
-      <textarea id="mytextarea" name="dor">qwertyi</textarea>
+
+      <textarea id="mytextarea" name="dor">
+      
+      <?php
+         echo htmlspecialchars($contents);
+      ?> 
+      
+      
+      </textarea>
+
    </form>
    <input type="submit" name='enter' value="ssave" form="frmTinyText">
 </article>
+
+<div>
+<p style="text-align: right;">qwertyiu снова</p>
+<p><img style="margin-right: auto; margin-left: auto; display: block;" src="proba.jpg" alt="Проба" width="200" height="125" /></p>
+<p style="text-align: right;">чистое fgh</p>
+</div>
 
 <footer>
     Copyright &copy; Владимир Труфанов
