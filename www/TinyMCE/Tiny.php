@@ -49,7 +49,8 @@
 <?php
 // получает содержимое файла в строку
 
-$filename = "../TinyMCE/textfile.html";
+//$filename = "../TinyMCE/textfile.html";
+$filename = "textfile.html";
 $handle = fopen($filename, "r");
 $contents = fread($handle, filesize($filename));
 fclose($handle);

@@ -15,7 +15,7 @@ ProjectFilesOnly=0
 HTServer=localhost
 Extensions=*.*
 [Project tree]
-ittve
+IttvePW
 	+www
 		-Images
 			-Buttons
@@ -182,10 +182,11 @@ ittve
 					www\TinyMCE\themes\mobile\theme.min.js
 				-modern
 					www\TinyMCE\themes\modern\theme.min.js
-			www\TinyMCE\index.php
 			www\TinyMCE\jquery.tinymce.min.js
 			www\TinyMCE\license.txt
+			www\TinyMCE\proba.jpg
 			www\TinyMCE\textfile.html
+			www\TinyMCE\Tiny.php
 			www\TinyMCE\TinyMCE.css
 			www\TinyMCE\tinymce.min.js
 			www\TinyMCE\TinyText.php
@@ -200,13 +201,17 @@ ittve
 		www\MenuAccord.php
 [Open project files]
 0=www\TinyMCE\TinyText.php
-1=www\TinyMCE\index.php
+1=www\index.php
+2=www\TinyMCE\Tiny.php
 [Selected Project Files]
 Main=
-Selected=www\TinyMCE\index.php
+Selected=www\index.php
 [www\TinyMCE\TinyText.php]
 TopLine=9
 Caret=21,22
-[www\TinyMCE\index.php]
-TopLine=68
-Caret=45,85
+[www\index.php]
+TopLine=17
+Caret=1,29
+[www\TinyMCE\Tiny.php]
+TopLine=27
+Caret=14,53

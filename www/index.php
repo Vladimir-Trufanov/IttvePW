@@ -236,7 +236,7 @@ PHP прост для освоения, и вместе с тем способе
          </div>
 
          <div id="Fooright">
-            <form id="frmTiny" method="get" action="/TinyMCE/index.php">
+            <form id="frmTiny" method="get" action="/TinyMCE/Tiny.php">
             <button class="btnItPW" id="btnTiny" form="frmTiny">
                <img class="imgItPW" src="Images/Buttons/Tiny.svg" height="32">
                Tiny
