@@ -18,10 +18,8 @@
    top: 0; 
    width: 100%;        
    height: 2.8rem; 
-   background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
+   /*background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);*/
 }
-
-/* 
 #Informs
 {
    float: right;
@@ -32,23 +30,26 @@
 {
    color: #60472E;
    text-align: right; 
-   padding: 0 0.3rem 0 0.3rem; */
-	/* background-color: #899504;
-   // display:none;
-   // height: 0;
-}   */
-/* Оформляем навигацию в глубину сайта 
+   padding: 0 0.3rem 0 0.3rem; 
+	/* 
+   background-color: #899504;
+   display:none;
+   height: 0;
+   */
+}   
+/* Оформляем навигацию в глубину сайта  */
 #tLine
 {
    color: #F37313;
    margin: 0.2rem 0 0 0; 
    padding: 0.1rem 0.3rem 0.1rem 0.3rem; 
    text-align: right; 
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);  */
-   /* display:none;
-   // height: 0; 
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);  
+   /* 
+   display:none;
+   height: 0;
+   */ 
 } 
-*/
 /* Позиционируем центральные секции */
 /*
 #lSideTOrSide

@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	+IttvePW
+	-IttvePW
 		-BP1
 			BP1\IttvePW.bp1
 		-ER1
@@ -381,7 +381,7 @@ IttvePW
 				JS_JQ\эксперименты\содержимое_функции.html
 				JS_JQ\эксперименты\эффекты.html
 			JS_JQ\JS_JQ.ppr
-		+www
+		-www
 			-Images
 				-Buttons
 					www\Images\Buttons\Java.svg
@@ -393,11 +393,16 @@ IttvePW
 			-Pages
 				-Art
 				-Think
+				www\Pages\cCenter.php
+				www\Pages\exJav.php
+				www\Pages\exLaz.php
+				www\Pages\exPhp.php
 				www\Pages\hBlock.php
+				www\Pages\lSide.php
 			-Reset
 				www\Reset\e404.php
 				www\Reset\index.php
-			+Styles
+			-Styles
 				www\Styles\Buttons.css
 				www\Styles\Fonts.css
 				www\Styles\mButtons.css
@@ -571,8 +576,6 @@ IttvePW
 			www\Main.php
 			www\MenuAccord.php
 			www\Site.php
-			www\SiteOld.php
-			www\uSite.php
 		-Картинки для кнопок
 			-Img-прозрачным фоном
 				Картинки для кнопок\Img-прозрачным фоном\favicon16.png
@@ -650,33 +653,34 @@ IttvePW
 				Материалы\Сессии\Увеличить время жизни сессии в PHP.doc
 		-Управление
 			Управление\Параметры и кукисы IttvePW.xls
+		IttvePW.ppr
 		README.md
 		Тезисы.xls
 [Open project files]
-0=Новый1.txt
-1=www\index.php
-2=www\Main.php
-3=www\iHtmlBegin.php
-4=www\Styles\Styles.css
-5=www\uSite.php
+0=www\index.php
+1=www\Main.php
+2=www\iHtmlBegin.php
+3=www\Styles\Styles.css
+4=www\Site.php
+5=www\Pages\exPhp.php
 [Selected Project Files]
 Main=
-Selected=www\Styles\Styles.css
-[Новый1.txt]
-TopLine=1
-Caret=1,1
+Selected=www\Site.php
 [www\index.php]
 TopLine=1
 Caret=1,1
 [www\Main.php]
-TopLine=45
-Caret=17,65
+TopLine=57
+Caret=1,63
 [www\iHtmlBegin.php]
 TopLine=39
 Caret=1,48
 [www\Styles\Styles.css]
-TopLine=11
-Caret=1,22
-[www\uSite.php]
-TopLine=1
-Caret=1,1
+TopLine=9
+Caret=94,21
+[www\Site.php]
+TopLine=51
+Caret=1,71
+[www\Pages\exPhp.php]
+TopLine=27
+Caret=1,41
