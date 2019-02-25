@@ -12,17 +12,18 @@ html
 body 
 {
    font-size: 1rem;  
+   width: 100%;        
 }
 
 h1 
 {
 	font: bold italic 1.8rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
 	color: #46874D;
-	//background: url(../images/underline.png) no-repeat 0px 88%;
+	/*background: url(../images/underline.png) no-repeat 0px 88%; */
 	/*padding-left: 0.5rem;*/
 }
 
 html,body 
 {
-   height: 100%;
+   /* height: 100%; */
 }

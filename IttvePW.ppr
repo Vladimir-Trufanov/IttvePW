@@ -1,12 +1,12 @@
 [Config]
 Compilator.SaveAll=0
 Compilator.Capture=0
-Compilator.HideOutput=0
+Compilator.CompileOnBackground=0
 Compilator.ProgSaveAll=0
 Compilator.ProgRunSelection=0
 Compilator.LogType=0
-DefaultDir=C:\IttvePW\www
-DefaultCPIndex=0
+DefaultDir=C:\IttvePW
+DefaultCP=0
 LogtoEnd=1
 DontOpen=0
 AbsolutePath=0
@@ -16,202 +16,667 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	+www
-		-Images
-			-Buttons
-				www\Images\Buttons\Java.svg
-				www\Images\Buttons\Lazarus.svg
-				www\Images\Buttons\Menu.svg
-				www\Images\Buttons\Php.svg
-				www\Images\Buttons\Tiny.svg
-			www\Images\Kwinflat.jpg
-		-js
-			www\js\IttvePW.js
-			www\js\jquery-2.0.1.js
-		-Pages
-			-Art
-		-Reset
-			www\Reset\e404.php
-			www\Reset\index.php
-		-Styles
-			www\Styles\Buttons.css
-			www\Styles\Fonts.css
-			www\Styles\mButtons.css
-			www\Styles\MenuAccord.css
-			www\Styles\mFonts.css
-			www\Styles\mStyles.css
-			www\Styles\Reset.css
-			www\Styles\Styles.css
-		+TinyMCE
-			-langs
-				www\TinyMCE\langs\readme.md
-				www\TinyMCE\langs\ru.js
-			-plugins
-				-advlist
-					www\TinyMCE\plugins\advlist\plugin.min.js
-				-anchor
-					www\TinyMCE\plugins\anchor\plugin.min.js
-				-autolink
-					www\TinyMCE\plugins\autolink\plugin.min.js
-				-autoresize
-					www\TinyMCE\plugins\autoresize\plugin.min.js
-				-autosave
-					www\TinyMCE\plugins\autosave\plugin.min.js
-				-bbcode
-					www\TinyMCE\plugins\bbcode\plugin.min.js
-				-charmap
-					www\TinyMCE\plugins\charmap\plugin.min.js
-				-code
-					www\TinyMCE\plugins\code\plugin.min.js
-				-codesample
-					-css
-						www\TinyMCE\plugins\codesample\css\prism.css
-					www\TinyMCE\plugins\codesample\plugin.min.js
-				-colorpicker
-					www\TinyMCE\plugins\colorpicker\plugin.min.js
-				-contextmenu
-					www\TinyMCE\plugins\contextmenu\plugin.min.js
-				-directionality
-					www\TinyMCE\plugins\directionality\plugin.min.js
-				-emoticons
-					-img
-						www\TinyMCE\plugins\emoticons\img\smiley-cool.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-cry.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-embarassed.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-foot-in-mouth.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-frown.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-innocent.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-kiss.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-laughing.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-money-mouth.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-sealed.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-smile.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-surprised.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-tongue-out.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-undecided.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-wink.gif
-						www\TinyMCE\plugins\emoticons\img\smiley-yell.gif
-					www\TinyMCE\plugins\emoticons\plugin.min.js
-				-fullpage
-					www\TinyMCE\plugins\fullpage\plugin.min.js
-				-fullscreen
-					www\TinyMCE\plugins\fullscreen\plugin.min.js
-				-help
-					-img
-						www\TinyMCE\plugins\help\img\logo.png
-					www\TinyMCE\plugins\help\plugin.min.js
-				-hr
-					www\TinyMCE\plugins\hr\plugin.min.js
-				-image
-					www\TinyMCE\plugins\image\plugin.min.js
-				-imagetools
-					www\TinyMCE\plugins\imagetools\plugin.min.js
-				-importcss
-					www\TinyMCE\plugins\importcss\plugin.min.js
-				-insertdatetime
-					www\TinyMCE\plugins\insertdatetime\plugin.min.js
-				-legacyoutput
-					www\TinyMCE\plugins\legacyoutput\plugin.min.js
-				-link
-					www\TinyMCE\plugins\link\plugin.min.js
-				-lists
-					www\TinyMCE\plugins\lists\plugin.min.js
-				-media
-					www\TinyMCE\plugins\media\plugin.min.js
-				-nonbreaking
-					www\TinyMCE\plugins\nonbreaking\plugin.min.js
-				-noneditable
-					www\TinyMCE\plugins\noneditable\plugin.min.js
-				-pagebreak
-					www\TinyMCE\plugins\pagebreak\plugin.min.js
-				-paste
-					www\TinyMCE\plugins\paste\plugin.min.js
-				-preview
-					www\TinyMCE\plugins\preview\plugin.min.js
-				-print
-					www\TinyMCE\plugins\print\plugin.min.js
-				-save
-					www\TinyMCE\plugins\save\plugin.min.js
-				-searchreplace
-					www\TinyMCE\plugins\searchreplace\plugin.min.js
-				-spellchecker
-					www\TinyMCE\plugins\spellchecker\plugin.min.js
-				-tabfocus
-					www\TinyMCE\plugins\tabfocus\plugin.min.js
-				-table
-					www\TinyMCE\plugins\table\plugin.min.js
-				-template
-					www\TinyMCE\plugins\template\plugin.min.js
-				-textcolor
-					www\TinyMCE\plugins\textcolor\plugin.min.js
-				-textpattern
-					www\TinyMCE\plugins\textpattern\plugin.min.js
-				-toc
-					www\TinyMCE\plugins\toc\plugin.min.js
-				-visualblocks
-					-css
-						www\TinyMCE\plugins\visualblocks\css\visualblocks.css
-					www\TinyMCE\plugins\visualblocks\plugin.min.js
-				-visualchars
-					www\TinyMCE\plugins\visualchars\plugin.min.js
-				-wordcount
-					www\TinyMCE\plugins\wordcount\plugin.min.js
-			-skins
-				-lightgray
-					-fonts
-						www\TinyMCE\skins\lightgray\fonts\tinymce.eot
-						www\TinyMCE\skins\lightgray\fonts\tinymce.svg
-						www\TinyMCE\skins\lightgray\fonts\tinymce.ttf
-						www\TinyMCE\skins\lightgray\fonts\tinymce.woff
-						www\TinyMCE\skins\lightgray\fonts\tinymce-mobile.woff
-						www\TinyMCE\skins\lightgray\fonts\tinymce-small.eot
-						www\TinyMCE\skins\lightgray\fonts\tinymce-small.svg
-						www\TinyMCE\skins\lightgray\fonts\tinymce-small.ttf
-						www\TinyMCE\skins\lightgray\fonts\tinymce-small.woff
-					-img
-						www\TinyMCE\skins\lightgray\img\anchor.gif
-						www\TinyMCE\skins\lightgray\img\loader.gif
-						www\TinyMCE\skins\lightgray\img\object.gif
-						www\TinyMCE\skins\lightgray\img\trans.gif
-					www\TinyMCE\skins\lightgray\content.min.css
-					www\TinyMCE\skins\lightgray\content.mobile.min.css
-					www\TinyMCE\skins\lightgray\skin.min.css
-					www\TinyMCE\skins\lightgray\skin.mobile.min.css
-			-themes
-				-mobile
-					www\TinyMCE\themes\mobile\theme.min.js
-				-modern
-					www\TinyMCE\themes\modern\theme.min.js
-			www\TinyMCE\jquery.tinymce.min.js
-			www\TinyMCE\license.txt
-			www\TinyMCE\proba.jpg
-			www\TinyMCE\textfile.html
-			www\TinyMCE\Tiny.php
-			www\TinyMCE\TinyMCE.css
-			www\TinyMCE\tinymce.min.js
-			www\TinyMCE\TinyText.php
-		www\.htaccess
-		www\.user.ini
-		www\Common.php
-		www\iGetAbove.php
-		www\iHtmlBegin.php
-		www\iHtmlEnd.php
-		www\index.php
-		www\Inimem.php
-		www\MenuAccord.php
+	+IttvePW
+		-BP1
+			BP1\IttvePW.bp1
+		-ER1
+			ER1\TVESTOCK.BK1
+			ER1\TVESTOCK.ER1
+		-JS_JQ
+			-_css
+				-images
+					JS_JQ\_css\images\animated-overlay.gif
+					JS_JQ\_css\images\ui-bg_diagonals-thick_18_b81900_40x40.png
+					JS_JQ\_css\images\ui-bg_diagonals-thick_20_666666_40x40.png
+					JS_JQ\_css\images\ui-bg_flat_10_000000_40x100.png
+					JS_JQ\_css\images\ui-bg_glass_100_f6f6f6_1x400.png
+					JS_JQ\_css\images\ui-bg_glass_100_fdf5ce_1x400.png
+					JS_JQ\_css\images\ui-bg_glass_65_ffffff_1x400.png
+					JS_JQ\_css\images\ui-bg_gloss-wave_35_f6a828_500x100.png
+					JS_JQ\_css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png
+					JS_JQ\_css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png
+					JS_JQ\_css\images\ui-icons_222222_256x240.png
+					JS_JQ\_css\images\ui-icons_228ef1_256x240.png
+					JS_JQ\_css\images\ui-icons_ef8c08_256x240.png
+					JS_JQ\_css\images\ui-icons_ffd27a_256x240.png
+					JS_JQ\_css\images\ui-icons_ffffff_256x240.png
+				JS_JQ\_css\ColabBol-webfont.eot
+				JS_JQ\_css\ColabBol-webfont.svg
+				JS_JQ\_css\ColabBol-webfont.ttf
+				JS_JQ\_css\ColabBol-webfont.woff
+				JS_JQ\_css\ColabLig-webfont.eot
+				JS_JQ\_css\ColabLig-webfont.svg
+				JS_JQ\_css\ColabLig-webfont.ttf
+				JS_JQ\_css\ColabLig-webfont.woff
+				JS_JQ\_css\ColabMed-webfont.eot
+				JS_JQ\_css\ColabMed-webfont.svg
+				JS_JQ\_css\ColabMed-webfont.ttf
+				JS_JQ\_css\ColabMed-webfont.woff
+				JS_JQ\_css\ColabReg-webfont.eot
+				JS_JQ\_css\ColabReg-webfont.svg
+				JS_JQ\_css\ColabReg-webfont.ttf
+				JS_JQ\_css\ColabReg-webfont.woff
+				JS_JQ\_css\ColabThi-webfont.eot
+				JS_JQ\_css\ColabThi-webfont.svg
+				JS_JQ\_css\ColabThi-webfont.ttf
+				JS_JQ\_css\ColabThi-webfont.woff
+				JS_JQ\_css\Inconsolata-webfont.eot
+				JS_JQ\_css\Inconsolata-webfont.svg
+				JS_JQ\_css\Inconsolata-webfont.ttf
+				JS_JQ\_css\Inconsolata-webfont.woff
+				JS_JQ\_css\jquery-ui.min.css
+				JS_JQ\_css\leaguegothic-condensed-italic-webfont.eot
+				JS_JQ\_css\leaguegothic-condensed-italic-webfont.svg
+				JS_JQ\_css\leaguegothic-condensed-italic-webfont.ttf
+				JS_JQ\_css\leaguegothic-condensed-italic-webfont.woff
+				JS_JQ\_css\leaguegothic-condensed-regular-webfont.eot
+				JS_JQ\_css\leaguegothic-condensed-regular-webfont.svg
+				JS_JQ\_css\leaguegothic-condensed-regular-webfont.ttf
+				JS_JQ\_css\leaguegothic-condensed-regular-webfont.woff
+				JS_JQ\_css\leaguegothic-italic-webfont.eot
+				JS_JQ\_css\leaguegothic-italic-webfont.svg
+				JS_JQ\_css\leaguegothic-italic-webfont.ttf
+				JS_JQ\_css\leaguegothic-italic-webfont.woff
+				JS_JQ\_css\leaguegothic-regular-webfont.eot
+				JS_JQ\_css\leaguegothic-regular-webfont.svg
+				JS_JQ\_css\leaguegothic-regular-webfont.ttf
+				JS_JQ\_css\leaguegothic-regular-webfont.woff
+				JS_JQ\_css\site.css
+			-_images
+				-_notes
+					JS_JQ\_images\_notes\dwsync.xml
+				-large
+					JS_JQ\_images\large\blue.jpg
+					JS_JQ\_images\large\fan.jpg
+					JS_JQ\_images\large\green.jpg
+					JS_JQ\_images\large\milk.jpg
+					JS_JQ\_images\large\orange.jpg
+					JS_JQ\_images\large\purple.jpg
+					JS_JQ\_images\large\red.jpg
+					JS_JQ\_images\large\slide1.jpg
+					JS_JQ\_images\large\slide2.jpg
+					JS_JQ\_images\large\slide3.jpg
+					JS_JQ\_images\large\slide4.jpg
+					JS_JQ\_images\large\slide5.jpg
+					JS_JQ\_images\large\slide6.jpg
+					JS_JQ\_images\large\weight.jpg
+					JS_JQ\_images\large\yellow.jpg
+				-small
+					JS_JQ\_images\small\blue.jpg
+					JS_JQ\_images\small\blue_h.jpg
+					JS_JQ\_images\small\green.jpg
+					JS_JQ\_images\small\green_h.jpg
+					JS_JQ\_images\small\orange.jpg
+					JS_JQ\_images\small\orange_h.jpg
+					JS_JQ\_images\small\purple.jpg
+					JS_JQ\_images\small\purple_h.jpg
+					JS_JQ\_images\small\red.jpg
+					JS_JQ\_images\small\red_h.jpg
+					JS_JQ\_images\small\slide1.jpg
+					JS_JQ\_images\small\slide1_h.jpg
+					JS_JQ\_images\small\slide2.jpg
+					JS_JQ\_images\small\slide2_h.jpg
+					JS_JQ\_images\small\slide3.jpg
+					JS_JQ\_images\small\slide3_h.jpg
+					JS_JQ\_images\small\slide4.jpg
+					JS_JQ\_images\small\slide4_h.jpg
+					JS_JQ\_images\small\slide5.jpg
+					JS_JQ\_images\small\slide5_h.jpg
+					JS_JQ\_images\small\slide6.jpg
+					JS_JQ\_images\small\slide6_h.jpg
+					JS_JQ\_images\small\yellow.jpg
+					JS_JQ\_images\small\yellow_h.jpg
+				JS_JQ\_images\bg_page.png
+				JS_JQ\_images\bg-footer.png
+				JS_JQ\_images\bg-page.png
+				JS_JQ\_images\bg-page2.png
+				JS_JQ\_images\close.png
+				JS_JQ\_images\footer-bg.png
+				JS_JQ\_images\open.png
+				JS_JQ\_images\pencils.jpg
+				JS_JQ\_images\trashcan-empty-icon.png
+				JS_JQ\_images\trashcan-full-icon.png
+			-_js
+				JS_JQ\_js\jquery.min.js
+				JS_JQ\_js\jquery-1.11.0.min.js
+				JS_JQ\_js\jquery-ui.js
+				JS_JQ\_js\jquery-ui.min.js
+				JS_JQ\_js\site.js
+			-глава01
+				JS_JQ\глава01\Неторопливо появляющийся HEADER.html
+			-глава03
+				JS_JQ\глава03\03_01.html
+				JS_JQ\глава03\03_02.html
+				JS_JQ\глава03\03_03.html
+				JS_JQ\глава03\вечер_пятницы.html
+				JS_JQ\глава03\готовый_03_01.html
+				JS_JQ\глава03\готовый_03_02.html
+				JS_JQ\глава03\готовый_03_03.html
+				JS_JQ\глава03\готовый_do-while.html
+			-глава04
+				JS_JQ\глава04\04_01.html
+				JS_JQ\глава04\04_02.html
+				JS_JQ\глава04\готовый_04_02.html
+			-глава05
+				JS_JQ\глава05\05_01.html
+				JS_JQ\глава05\05_02.html
+				JS_JQ\глава05\готовый_05_01.html
+				JS_JQ\глава05\готовый_05_02.html
+				JS_JQ\глава05\список_дел.html
+			-глава06
+				JS_JQ\глава06\06_01.html
+				JS_JQ\глава06\06_02.html
+				JS_JQ\глава06\callback.html
+				JS_JQ\глава06\easing_пример1.html
+				JS_JQ\глава06\easing_пример2.html
+				JS_JQ\глава06\form.html
+				JS_JQ\глава06\jquery-trigger-css-animation1.html
+				JS_JQ\глава06\jquery-trigger-css-animation2.html
+				JS_JQ\глава06\jquery-trigger-css-transition.html
+				JS_JQ\глава06\multiple-callbacks.html
+				JS_JQ\глава06\готовый_06_01.html
+				JS_JQ\глава06\готовый_06_01_2.html
+				JS_JQ\глава06\готовый_06_02.html
+			-глава07
+				-example
+					JS_JQ\глава07\example\1_b.jpg
+					JS_JQ\глава07\example\1_s.jpg
+					JS_JQ\глава07\example\10_b.jpg
+					JS_JQ\глава07\example\10_s.jpg
+					JS_JQ\глава07\example\11_b.jpg
+					JS_JQ\глава07\example\11_s.jpg
+					JS_JQ\глава07\example\12_b.jpg
+					JS_JQ\глава07\example\12_s.jpg
+					JS_JQ\глава07\example\2_b.jpg
+					JS_JQ\глава07\example\2_s.jpg
+					JS_JQ\глава07\example\3_b.jpg
+					JS_JQ\глава07\example\3_s.jpg
+					JS_JQ\глава07\example\4_b.jpg
+					JS_JQ\глава07\example\4_s.jpg
+					JS_JQ\глава07\example\5_b.jpg
+					JS_JQ\глава07\example\5_s.jpg
+					JS_JQ\глава07\example\6_b.jpg
+					JS_JQ\глава07\example\6_s.jpg
+					JS_JQ\глава07\example\7_b.jpg
+					JS_JQ\глава07\example\7_s.jpg
+					JS_JQ\глава07\example\8_b.jpg
+					JS_JQ\глава07\example\8_s.jpg
+					JS_JQ\глава07\example\9_b.jpg
+					JS_JQ\глава07\example\9_s.jpg
+				-smartmenus
+					JS_JQ\глава07\smartmenus\jquery.smartmenus.min.js
+					JS_JQ\глава07\smartmenus\sm-blue.css
+					JS_JQ\глава07\smartmenus\sm-clean.css
+					JS_JQ\глава07\smartmenus\sm-core-css.css
+					JS_JQ\глава07\smartmenus\sm-simple.css
+				JS_JQ\глава07\07_01.html
+				JS_JQ\глава07\07_02.html
+				JS_JQ\глава07\07_03.html
+				JS_JQ\глава07\basic-lightbox.html
+				JS_JQ\глава07\external.html
+				JS_JQ\глава07\lightbox.css
+				JS_JQ\глава07\style.css
+				JS_JQ\глава07\youtube.html
+				JS_JQ\глава07\готовый_07_01.html
+				JS_JQ\глава07\готовый_07_02.html
+				JS_JQ\глава07\готовый_07_03.html
+				JS_JQ\глава07\готовый_07_03_blue.html
+				JS_JQ\глава07\готовый_07_03_clean.html
+				JS_JQ\глава07\готовый_fancybox.html
+				JS_JQ\глава07\готовый_youtube.html
+			-глава08
+				-jquery_validate
+					JS_JQ\глава08\jquery_validate\additional-methods.min.js
+					JS_JQ\глава08\jquery_validate\jquery.validate.min.js
+				JS_JQ\глава08\08_01.html
+				JS_JQ\глава08\08_02.html
+				JS_JQ\глава08\process.html
+				JS_JQ\глава08\готовый_08_01.html
+				JS_JQ\глава08\готовый_08_02.html
+				JS_JQ\глава08\пример_формы.html
+			-глава09
+				-images
+					JS_JQ\глава09\images\map.png
+					JS_JQ\глава09\images\robot.jpg
+				JS_JQ\глава09\09_01.html
+				JS_JQ\глава09\09_02.html
+				JS_JQ\глава09\09_03.html
+				JS_JQ\глава09\09_04.html
+				JS_JQ\глава09\09_05.html
+				JS_JQ\глава09\09_06.html
+				JS_JQ\глава09\09_07.html
+				JS_JQ\глава09\panel1.html
+				JS_JQ\глава09\panel2.html
+				JS_JQ\глава09\panel3.html
+				JS_JQ\глава09\ui-template.html
+				JS_JQ\глава09\готовый_09_01.html
+				JS_JQ\глава09\готовый_09_01_2.html
+				JS_JQ\глава09\готовый_09_02.html
+				JS_JQ\глава09\готовый_09_03.html
+				JS_JQ\глава09\готовый_09_04.html
+				JS_JQ\глава09\готовый_09_05.html
+				JS_JQ\глава09\готовый_09_06.html
+				JS_JQ\глава09\готовый_09_06_02.html
+				JS_JQ\глава09\готовый_09_07.html
+				JS_JQ\глава09\готовый_09_08.html
+				JS_JQ\глава09\готовый_09_08_02.html
+				JS_JQ\глава09\готовый_09_08_03.html
+				JS_JQ\глава09\готовый_диалоговое_окно_тест.html
+				JS_JQ\глава09\открытие_диалогового_окна_пример.html
+				JS_JQ\глава09\удаленные_вкладки.html
+			-глава10
+				JS_JQ\глава10\10_01.html
+				JS_JQ\глава10\10_02.html
+				JS_JQ\глава10\airports.js
+				JS_JQ\глава10\form.css
+				JS_JQ\глава10\готовый_10_01.html
+				JS_JQ\глава10\готовый_10_02.html
+				JS_JQ\глава10\кнопки.html
+				JS_JQ\глава10\цвета.html
+			-глава12
+				JS_JQ\глава12\12_01.html
+				JS_JQ\глава12\12_02.html
+				JS_JQ\глава12\game.css
+				JS_JQ\глава12\interactions.css
+				JS_JQ\глава12\бери_и_бросай.html
+				JS_JQ\глава12\вложенные_сортируемые_списки.html
+				JS_JQ\глава12\готовый_12_01.html
+				JS_JQ\глава12\готовый_12_01_02.html
+				JS_JQ\глава12\готовый_12_02.html
+				JS_JQ\глава12\два_списка.html
+				JS_JQ\глава12\простой_список_воспроизведения.html
+				JS_JQ\глава12\радуга.html
+				JS_JQ\глава12\список_воспроизведения.html
+				JS_JQ\глава12\тест_события_виджета_Sortable.html
+				JS_JQ\глава12\шашки.html
+			-глава13
+				JS_JQ\глава13\13_01.html
+				JS_JQ\глава13\13_02.html
+				JS_JQ\глава13\13_03.html
+				JS_JQ\глава13\flickr_json.txt
+				JS_JQ\глава13\lastweek.html
+				JS_JQ\глава13\login.php
+				JS_JQ\глава13\today.html
+				JS_JQ\глава13\yesterday.html
+				JS_JQ\глава13\готовый_13_01.html
+				JS_JQ\глава13\готовый_13_02.html
+				JS_JQ\глава13\готовый_13_03.html
+				JS_JQ\глава13\готовый_13_03_02.html
+			-глава14
+				-css
+					-images
+						JS_JQ\глава14\css\images\animated-overlay.gif
+						JS_JQ\глава14\css\images\ui-bg_diagonals-thick_18_b81900_40x40.png
+						JS_JQ\глава14\css\images\ui-bg_diagonals-thick_20_666666_40x40.png
+						JS_JQ\глава14\css\images\ui-bg_flat_10_000000_40x100.png
+						JS_JQ\глава14\css\images\ui-bg_glass_100_f6f6f6_1x400.png
+						JS_JQ\глава14\css\images\ui-bg_glass_100_fdf5ce_1x400.png
+						JS_JQ\глава14\css\images\ui-bg_glass_65_ffffff_1x400.png
+						JS_JQ\глава14\css\images\ui-bg_gloss-wave_35_f6a828_500x100.png
+						JS_JQ\глава14\css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png
+						JS_JQ\глава14\css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png
+						JS_JQ\глава14\css\images\ui-icons_222222_256x240.png
+						JS_JQ\глава14\css\images\ui-icons_228ef1_256x240.png
+						JS_JQ\глава14\css\images\ui-icons_ef8c08_256x240.png
+						JS_JQ\глава14\css\images\ui-icons_ffd27a_256x240.png
+						JS_JQ\глава14\css\images\ui-icons_ffffff_256x240.png
+					JS_JQ\глава14\css\jquery-ui.min.css
+					JS_JQ\глава14\css\todo.css
+				-fonts
+					JS_JQ\глава14\fonts\modernpics-webfont.eot
+					JS_JQ\глава14\fonts\modernpics-webfont.svg
+					JS_JQ\глава14\fonts\modernpics-webfont.ttf
+					JS_JQ\глава14\fonts\modernpics-webfont.woff
+				-js
+					JS_JQ\глава14\js\jquery.min.js
+					JS_JQ\глава14\js\jquery-ui.min.js
+				JS_JQ\глава14\complete-index.html
+				JS_JQ\глава14\complete-todo.js
+				JS_JQ\глава14\index.html
+				JS_JQ\глава14\serialize-todo-data.js
+				JS_JQ\глава14\todo.js
+				JS_JQ\глава14\todo-build.html
+			-глава15
+				-images
+					JS_JQ\глава15\images\addressbook.png
+					JS_JQ\глава15\images\attachment.png
+					JS_JQ\глава15\images\bar_chart.png
+					JS_JQ\глава15\images\configuration.png
+					JS_JQ\глава15\images\digital_camera.png
+					JS_JQ\глава15\images\email.png
+					JS_JQ\глава15\images\export.png
+					JS_JQ\глава15\images\group.png
+					JS_JQ\глава15\images\lock.png
+					JS_JQ\глава15\images\newsletter.png
+					JS_JQ\глава15\images\smiley.png
+					JS_JQ\глава15\images\stop_sign.png
+					JS_JQ\глава15\images\support.png
+					JS_JQ\глава15\images\undo.png
+					JS_JQ\глава15\images\upload.png
+					JS_JQ\глава15\images\user.png
+					JS_JQ\глава15\images\vacancy.png
+					JS_JQ\глава15\images\zoom_out.png
+				JS_JQ\глава15\15_01.html
+				JS_JQ\глава15\15_02.html
+				JS_JQ\глава15\15_03.html
+				JS_JQ\глава15\15_04.html
+				JS_JQ\глава15\15_05.html
+				JS_JQ\глава15\15_06.html
+				JS_JQ\глава15\15_07_hover.html
+			-глава16
+				JS_JQ\глава16\getTime.js
+				JS_JQ\глава16\время.html
+				JS_JQ\глава16\пример_регекс.txt
+			-глава17
+				JS_JQ\глава17\17_01.html
+				JS_JQ\глава17\17_02.html
+				JS_JQ\глава17\готовый_17_01.html
+				JS_JQ\глава17\готовый_17_02.html
+			-эксперименты
+				JS_JQ\эксперименты\example_regex.txt
+				JS_JQ\эксперименты\массив_методы.html
+				JS_JQ\эксперименты\регекс_тест.html
+				JS_JQ\эксперименты\селекторы.html
+				JS_JQ\эксперименты\события.html
+				JS_JQ\эксперименты\содержимое_функции.html
+				JS_JQ\эксперименты\эффекты.html
+			JS_JQ\JS_JQ.ppr
+		+www
+			-Images
+				-Buttons
+					www\Images\Buttons\Java.svg
+					www\Images\Buttons\Lazarus.svg
+					www\Images\Buttons\Menu.svg
+					www\Images\Buttons\Php.svg
+					www\Images\Buttons\Tiny.svg
+				www\Images\Kwinflat.jpg
+			-Pages
+				-Art
+				-Think
+				www\Pages\hBlock.php
+			-Reset
+				www\Reset\e404.php
+				www\Reset\index.php
+			+Styles
+				www\Styles\Buttons.css
+				www\Styles\Fonts.css
+				www\Styles\mButtons.css
+				www\Styles\MenuAccord.css
+				www\Styles\mFonts.css
+				www\Styles\mStyles.css
+				www\Styles\Reset.css
+				www\Styles\Styles.css
+			-TinyMCE
+				-langs
+					www\TinyMCE\langs\readme.md
+					www\TinyMCE\langs\ru.js
+				-plugins
+					-advlist
+						www\TinyMCE\plugins\advlist\plugin.min.js
+					-anchor
+						www\TinyMCE\plugins\anchor\plugin.min.js
+					-autolink
+						www\TinyMCE\plugins\autolink\plugin.min.js
+					-autoresize
+						www\TinyMCE\plugins\autoresize\plugin.min.js
+					-autosave
+						www\TinyMCE\plugins\autosave\plugin.min.js
+					-bbcode
+						www\TinyMCE\plugins\bbcode\plugin.min.js
+					-charmap
+						www\TinyMCE\plugins\charmap\plugin.min.js
+					-code
+						www\TinyMCE\plugins\code\plugin.min.js
+					-codesample
+						-css
+							www\TinyMCE\plugins\codesample\css\prism.css
+						www\TinyMCE\plugins\codesample\plugin.min.js
+					-colorpicker
+						www\TinyMCE\plugins\colorpicker\plugin.min.js
+					-contextmenu
+						www\TinyMCE\plugins\contextmenu\plugin.min.js
+					-directionality
+						www\TinyMCE\plugins\directionality\plugin.min.js
+					-emoticons
+						-img
+							www\TinyMCE\plugins\emoticons\img\smiley-cool.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-cry.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-embarassed.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-foot-in-mouth.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-frown.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-innocent.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-kiss.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-laughing.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-money-mouth.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-sealed.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-smile.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-surprised.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-tongue-out.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-undecided.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-wink.gif
+							www\TinyMCE\plugins\emoticons\img\smiley-yell.gif
+						www\TinyMCE\plugins\emoticons\plugin.min.js
+					-fullpage
+						www\TinyMCE\plugins\fullpage\plugin.min.js
+					-fullscreen
+						www\TinyMCE\plugins\fullscreen\plugin.min.js
+					-help
+						-img
+							www\TinyMCE\plugins\help\img\logo.png
+						www\TinyMCE\plugins\help\plugin.min.js
+					-hr
+						www\TinyMCE\plugins\hr\plugin.min.js
+					-image
+						www\TinyMCE\plugins\image\plugin.min.js
+					-imagetools
+						www\TinyMCE\plugins\imagetools\plugin.min.js
+					-importcss
+						www\TinyMCE\plugins\importcss\plugin.min.js
+					-insertdatetime
+						www\TinyMCE\plugins\insertdatetime\plugin.min.js
+					-legacyoutput
+						www\TinyMCE\plugins\legacyoutput\plugin.min.js
+					-link
+						www\TinyMCE\plugins\link\plugin.min.js
+					-lists
+						www\TinyMCE\plugins\lists\plugin.min.js
+					-media
+						www\TinyMCE\plugins\media\plugin.min.js
+					-nonbreaking
+						www\TinyMCE\plugins\nonbreaking\plugin.min.js
+					-noneditable
+						www\TinyMCE\plugins\noneditable\plugin.min.js
+					-pagebreak
+						www\TinyMCE\plugins\pagebreak\plugin.min.js
+					-paste
+						www\TinyMCE\plugins\paste\plugin.min.js
+					-preview
+						www\TinyMCE\plugins\preview\plugin.min.js
+					-print
+						www\TinyMCE\plugins\print\plugin.min.js
+					-save
+						www\TinyMCE\plugins\save\plugin.min.js
+					-searchreplace
+						www\TinyMCE\plugins\searchreplace\plugin.min.js
+					-spellchecker
+						www\TinyMCE\plugins\spellchecker\plugin.min.js
+					-tabfocus
+						www\TinyMCE\plugins\tabfocus\plugin.min.js
+					-table
+						www\TinyMCE\plugins\table\plugin.min.js
+					-template
+						www\TinyMCE\plugins\template\plugin.min.js
+					-textcolor
+						www\TinyMCE\plugins\textcolor\plugin.min.js
+					-textpattern
+						www\TinyMCE\plugins\textpattern\plugin.min.js
+					-toc
+						www\TinyMCE\plugins\toc\plugin.min.js
+					-visualblocks
+						-css
+							www\TinyMCE\plugins\visualblocks\css\visualblocks.css
+						www\TinyMCE\plugins\visualblocks\plugin.min.js
+					-visualchars
+						www\TinyMCE\plugins\visualchars\plugin.min.js
+					-wordcount
+						www\TinyMCE\plugins\wordcount\plugin.min.js
+				-skins
+					-lightgray
+						-fonts
+							www\TinyMCE\skins\lightgray\fonts\tinymce.eot
+							www\TinyMCE\skins\lightgray\fonts\tinymce.svg
+							www\TinyMCE\skins\lightgray\fonts\tinymce.ttf
+							www\TinyMCE\skins\lightgray\fonts\tinymce.woff
+							www\TinyMCE\skins\lightgray\fonts\tinymce-mobile.woff
+							www\TinyMCE\skins\lightgray\fonts\tinymce-small.eot
+							www\TinyMCE\skins\lightgray\fonts\tinymce-small.svg
+							www\TinyMCE\skins\lightgray\fonts\tinymce-small.ttf
+							www\TinyMCE\skins\lightgray\fonts\tinymce-small.woff
+						-img
+							www\TinyMCE\skins\lightgray\img\anchor.gif
+							www\TinyMCE\skins\lightgray\img\loader.gif
+							www\TinyMCE\skins\lightgray\img\object.gif
+							www\TinyMCE\skins\lightgray\img\trans.gif
+						www\TinyMCE\skins\lightgray\content.min.css
+						www\TinyMCE\skins\lightgray\content.mobile.min.css
+						www\TinyMCE\skins\lightgray\skin.min.css
+						www\TinyMCE\skins\lightgray\skin.mobile.min.css
+				-themes
+					-mobile
+						www\TinyMCE\themes\mobile\theme.min.js
+					-modern
+						www\TinyMCE\themes\modern\theme.min.js
+				www\TinyMCE\jquery.tinymce.min.js
+				www\TinyMCE\license.txt
+				www\TinyMCE\proba.jpg
+				www\TinyMCE\textfile.html
+				www\TinyMCE\Tiny.php
+				www\TinyMCE\TinyMCE.css
+				www\TinyMCE\tinymce.min.js
+				www\TinyMCE\TinyText.php
+			-TJsPrown
+				www\TJsPrown\TJsPrown.css
+				www\TJsPrown\TJsPrown.js
+			www\.htaccess
+			www\.user.ini
+			www\Common.php
+			www\favicon.ico
+			www\iGetAbove.php
+			www\iHtmlBegin.php
+			www\iHtmlEnd.php
+			www\iJsJquery.php
+			www\index.php
+			www\Inimem.php
+			www\IttvePW.js
+			www\Main.php
+			www\MenuAccord.php
+			www\Site.php
+			www\SiteOld.php
+			www\uSite.php
+		-Картинки для кнопок
+			-Img-прозрачным фоном
+				Картинки для кнопок\Img-прозрачным фоном\favicon16.png
+				Картинки для кнопок\Img-прозрачным фоном\Java.png
+				Картинки для кнопок\Img-прозрачным фоном\Lazarus.png
+				Картинки для кнопок\Img-прозрачным фоном\Menu.png
+				Картинки для кнопок\Img-прозрачным фоном\Php.png
+				Картинки для кнопок\Img-прозрачным фоном\Tiny.png
+			-Img-черновые
+				-Menu-svg
+					Картинки для кнопок\Img-черновые\Menu-svg\menu1.svg
+					Картинки для кнопок\Img-черновые\Menu-svg\menu2.svg
+					Картинки для кнопок\Img-черновые\Menu-svg\menu3.svg
+					Картинки для кнопок\Img-черновые\Menu-svg\Ссылка на разработчика SVG - Menu.doc
+				Картинки для кнопок\Img-черновые\Java.jpg
+				Картинки для кнопок\Img-черновые\Lazarus1.png
+				Картинки для кнопок\Img-черновые\Lazarus2.png
+				Картинки для кнопок\Img-черновые\Menu.jpg
+				Картинки для кнопок\Img-черновые\Php.jpg
+				Картинки для кнопок\Img-черновые\Php-slon.jpg
+				Картинки для кнопок\Img-черновые\Tiny.png
+				Картинки для кнопок\Img-черновые\TinyLogo.png
+				Картинки для кнопок\Img-черновые\TinyMCE.png
+			-Svg-прозрачным фоном
+				Картинки для кнопок\Svg-прозрачным фоном\Java.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Lazarus.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Menu.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Php.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Tiny.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Tiny1.svg
+				Картинки для кнопок\Svg-прозрачным фоном\Ttt.svg
+		-Материалы
+			-TErrEvent Delphi
+				Материалы\TErrEvent Delphi\erANYMesUni.dcu
+				Материалы\TErrEvent Delphi\erANYMesUni.pas
+				Материалы\TErrEvent Delphi\erBDEMesUni.dcu
+				Материалы\TErrEvent Delphi\erBDEMesUni.pas
+				Материалы\TErrEvent Delphi\erDatabaseMesUni.pas
+				Материалы\TErrEvent Delphi\erDATMesUni.dcu
+				Материалы\TErrEvent Delphi\erDATMesUni.pas
+				Материалы\TErrEvent Delphi\ErrEvent.bmp
+				Материалы\TErrEvent Delphi\ErrEvent.dcr
+				Материалы\TErrEvent Delphi\ErrEvent.dcu
+				Материалы\TErrEvent Delphi\ErrEvent.pas
+				Материалы\TErrEvent Delphi\erTVEMesUni.dcu
+				Материалы\TErrEvent Delphi\erTVEMesUni.pas
+			-TLaziTools
+				-TErrEvent
+					-ErrEventTest
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventTest.ico
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventTest.lpi
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventTest.lpr
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventTest.lps
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventTest.res
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventtestFrm.lfm
+						Материалы\TLaziTools\TErrEvent\ErrEventTest\ErrEventtestFrm.pas
+					Материалы\TLaziTools\TErrEvent\erANYMesUni.pas
+					Материалы\TLaziTools\TErrEvent\ErrEventAlerts.pas
+					Материалы\TLaziTools\TErrEvent\ErrEventClass.pas
+					Материалы\TLaziTools\TErrEvent\Автоматическая обработка ошибок со скриншотом экрана.doc
+					Материалы\TLaziTools\TErrEvent\Стандартные классы исключений.xls
+				Материалы\TLaziTools\LaziprownAlerts.pas
+				Материалы\TLaziTools\LaziprownOutfit.pas
+				Материалы\TLaziTools\LazitoolsOutfit.pas
+			-Кукисы
+				Материалы\Кукисы\Cookies.doc
+				Материалы\Кукисы\Массив в Cookie.doc
+			-Ошибки
+				Материалы\Ошибки\Как найти ошибку в своем коде.doc
+				Материалы\Ошибки\Настройка вывода ошибок PHP.doc
+				Материалы\Ошибки\Решение проблемы - Cannot add header information - headers already sent.doc
+			-Сессии
+				Материалы\Сессии\Настройка сессий во время выполнения.doc
+				Материалы\Сессии\Сессии в PHP.doc
+				Материалы\Сессии\Увеличить время жизни сессии в PHP.doc
+		-Управление
+			Управление\Параметры и кукисы IttvePW.xls
+		README.md
+		Тезисы.xls
 [Open project files]
-0=www\TinyMCE\TinyText.php
+0=Новый1.txt
 1=www\index.php
-2=www\TinyMCE\Tiny.php
+2=www\Main.php
+3=www\iHtmlBegin.php
+4=www\Styles\Styles.css
+5=www\uSite.php
 [Selected Project Files]
 Main=
-Selected=www\index.php
-[www\TinyMCE\TinyText.php]
-TopLine=9
-Caret=21,22
+Selected=www\Styles\Styles.css
+[Новый1.txt]
+TopLine=1
+Caret=1,1
 [www\index.php]
-TopLine=17
-Caret=1,29
-[www\TinyMCE\Tiny.php]
-TopLine=27
-Caret=14,53
+TopLine=1
+Caret=1,1
+[www\Main.php]
+TopLine=45
+Caret=17,65
+[www\iHtmlBegin.php]
+TopLine=39
+Caret=1,48
+[www\Styles\Styles.css]
+TopLine=11
+Caret=1,22
+[www\uSite.php]
+TopLine=1
+Caret=1,1

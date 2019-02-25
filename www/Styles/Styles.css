@@ -14,64 +14,65 @@
 {
    display: inline-block;
    position: fixed;     
-   left: 0; top: 0;     
+   left: 0; 
+   top: 0; 
    width: 100%;        
-   height: 2.8rem;         
-   z-index: 101;
-   //background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
-   background-color: #ffffff;
-} 
+   height: 2.8rem; 
+   background: radial-gradient(farthest-side ellipse at top left,#ffffff 0,#f7f7f7 100%);
+}
+
+/* 
 #Informs
 {
    float: right;
    margin: 0.2rem 0.3rem 0 0.3rem; 
 } 
-/* Оформляем строку параметров сайта */
+ Оформляем строку параметров сайта 
 #pLine
 {
    color: #60472E;
    text-align: right; 
-   padding: 0 0.3rem 0 0.3rem; 
-	// background-color: #899504;
+   padding: 0 0.3rem 0 0.3rem; */
+	/* background-color: #899504;
    // display:none;
    // height: 0;
-} 
-/* Оформляем навигацию в глубину сайта */
+}   */
+/* Оформляем навигацию в глубину сайта 
 #tLine
 {
    color: #F37313;
    margin: 0.2rem 0 0 0; 
    padding: 0.1rem 0.3rem 0.1rem 0.3rem; 
    text-align: right; 
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
-   // display:none;
-   // height: 0;
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);  */
+   /* display:none;
+   // height: 0; 
 } 
-
+*/
 /* Позиционируем центральные секции */
-
+/*
 #lSideTOrSide
 {
    width: 100%;        
    margin: 3rem 0 3rem 0; 
    background-color: #ffffff;
-   
 }
 #lSide 
 {
    float: left;
    width: 18%;
-   /* Отодвигаем текст от границ колонки */
+    Отодвигаем текст от границ колонки 
    padding: 0 0.6rem 3.1rem 0.6rem; 
 }
-
+*/
+/*
 #cCenter  
 {
    float: left;
    width: 35%;
-   /* Отодвигаем текст от границ колонки */
-   padding: 0 0.6rem 3.1rem 0.6rem; 
-   /* Отделяем бордюром основную тему страницы справа и слева */
+    Отодвигаем текст от границ колонки 
+   padding: 0 0.6rem 3.1rem 0.6rem; */ 
+   /* Отделяем бордюром основную тему страницы справа и слева 
    border-left:  dashed 0.1rem rgb(153,153,153);
    border-right: dashed 0.1rem rgb(153,153,153);
 }
@@ -79,18 +80,18 @@
 {
    float: right;
    width: 47%;
-   /* Отодвигаем текст от границ колонки */
    padding: 0 0.6rem 3.1rem 0.6rem; 
    font-weight: bold;
 }
 
 #lSideTOrSide 
 {
-   // http://verstka.pro/notes/prizhatyy-k-nizu-futer.html
    min-height: 100%;
    position: relative;
 }
+*/
 
+/*
 footer 
 {
    position: fixed;
@@ -105,7 +106,8 @@ footer
    bottom: 0;
    padding-top: 0.3rem;
 }
-footer a {
+footer a 
+{
 	color: white;	
 }
 #Fooleft
@@ -115,9 +117,8 @@ footer a {
 #Fooright
 {
    float: right;
-   //margin: 0.2rem 0.3rem 0 0.3rem; 
 } 
-
+*/
 
 /*
  *************************************************************** Styles.css ***

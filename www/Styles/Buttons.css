@@ -1,16 +1,13 @@
-
 #Buttons
 {
    float: left;
 } 
-
 /* Размещаем кнопки */
-
 .btnItPW 
 {
    margin: 0 0 0 -0.4rem; 
 }
-.imgItPW // в стилях должен идти после контейнера btnItPW
+.imgItPW /* в стилях должен идти после контейнера btnItPW  */
 {
    width: 2rem;
    height: 2rem;
@@ -24,7 +21,7 @@
 #btnMenu:hover 
 {
    color: #FFFFFF;
-   //color: red;
+   /* color: red; */
    background: radial-gradient(farthest-side ellipse at top left, #444,  #000);
 }
 #btnMenu:active 

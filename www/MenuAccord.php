@@ -52,7 +52,6 @@
    </ul>
    </div>
    
-   <script type="text/javascript" src="js/jquery-2.0.1.js"></script>
    <script type="text/javascript">
    $(document).ready(function() {
       var accordion_head = $('.accordion > li > a'),
