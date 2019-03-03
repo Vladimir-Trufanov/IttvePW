@@ -20,14 +20,12 @@
 <div id="lSideTOrSide">
 
    <aside id="lSide">
-      lSide<br>
       <?php
          require_once "Pages/lSide.php";
       ?>
    </aside>
    
    <article id="cCenter">
-      cCenter<br>
       <?php
          require_once "Pages/cCenter.php";
       ?>
@@ -35,19 +33,16 @@
    
    <aside id="rSide">
       <section class="cSection" id="exLaz">
-         exLaz<br>
          <?php
             require_once "Pages/exLaz.php";
          ?>
       </section>
       <section class="cSection" id="exJav">
-         exJav<br>
          <?php
             require_once "Pages/exJav.php";
          ?>
       </section>
       <section class="cSection" id="exPhp">
-         exPhp<br>
          <?php
             require_once "Pages/exPhp.php";
          ?>

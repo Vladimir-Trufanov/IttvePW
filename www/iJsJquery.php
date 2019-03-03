@@ -33,7 +33,7 @@
    </script>
    
    <script> MakeCatchyQuotes() </script>
-   <script> TurnOnHotkeys() </script>
+   <script> //TurnOnHotkeys() </script>
 
 <?php
 

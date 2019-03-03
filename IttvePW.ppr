@@ -394,7 +394,7 @@ IttvePW
 				www\JS\IttvePW.js
 				www\JS\TJsPrown.css
 				www\JS\TJsPrown.js
-			-Pages
+			+Pages
 				-Art
 				-Think
 				www\Pages\cCenter.php
@@ -661,26 +661,18 @@ IttvePW
 1=www\Main.php
 2=www\iHtmlBegin.php
 3=www\Site.php
-4=www\Pages\exPhp.php
-5=www\iJsJquery.php
 [Selected Project Files]
 Main=
-Selected=www\iJsJquery.php
+Selected=www\Site.php
 [www\index.php]
 TopLine=1
 Caret=1,1
 [www\Main.php]
-TopLine=47
-Caret=11,56
+TopLine=43
+Caret=22,64
 [www\iHtmlBegin.php]
 TopLine=37
 Caret=1,49
 [www\Site.php]
-TopLine=15
-Caret=48,43
-[www\Pages\exPhp.php]
-TopLine=27
-Caret=1,41
-[www\iJsJquery.php]
-TopLine=19
-Caret=1,40
+TopLine=5
+Caret=1,46
