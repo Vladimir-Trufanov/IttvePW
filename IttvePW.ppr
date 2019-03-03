@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	-IttvePW
+	+IttvePW
 		-BP1
 			BP1\IttvePW.bp1
 		-ER1
@@ -381,7 +381,7 @@ IttvePW
 				JS_JQ\эксперименты\содержимое_функции.html
 				JS_JQ\эксперименты\эффекты.html
 			JS_JQ\JS_JQ.ppr
-		-www
+		+www
 			-Images
 				-Buttons
 					www\Images\Buttons\Java.svg
@@ -390,6 +390,10 @@ IttvePW
 					www\Images\Buttons\Php.svg
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
+			+JS
+				www\JS\IttvePW.js
+				www\JS\TJsPrown.css
+				www\JS\TJsPrown.js
 			-Pages
 				-Art
 				-Think
@@ -559,9 +563,6 @@ IttvePW
 				www\TinyMCE\TinyMCE.css
 				www\TinyMCE\tinymce.min.js
 				www\TinyMCE\TinyText.php
-			-TJsPrown
-				www\TJsPrown\TJsPrown.css
-				www\TJsPrown\TJsPrown.js
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
@@ -572,7 +573,6 @@ IttvePW
 			www\iJsJquery.php
 			www\index.php
 			www\Inimem.php
-			www\IttvePW.js
 			www\Main.php
 			www\MenuAccord.php
 			www\Site.php
@@ -660,27 +660,27 @@ IttvePW
 0=www\index.php
 1=www\Main.php
 2=www\iHtmlBegin.php
-3=www\Styles\Styles.css
-4=www\Site.php
-5=www\Pages\exPhp.php
+3=www\Site.php
+4=www\Pages\exPhp.php
+5=www\iJsJquery.php
 [Selected Project Files]
 Main=
-Selected=www\Site.php
+Selected=www\iJsJquery.php
 [www\index.php]
 TopLine=1
 Caret=1,1
 [www\Main.php]
-TopLine=57
-Caret=1,63
+TopLine=47
+Caret=11,56
 [www\iHtmlBegin.php]
-TopLine=39
-Caret=1,48
-[www\Styles\Styles.css]
-TopLine=9
-Caret=94,21
+TopLine=37
+Caret=1,49
 [www\Site.php]
-TopLine=51
-Caret=1,71
+TopLine=15
+Caret=48,43
 [www\Pages\exPhp.php]
 TopLine=27
 Caret=1,41
+[www\iJsJquery.php]
+TopLine=19
+Caret=1,40

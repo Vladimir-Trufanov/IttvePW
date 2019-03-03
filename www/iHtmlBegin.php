@@ -46,19 +46,15 @@ else
       <link rel="stylesheet" type="text/css" href="Styles/Fonts.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
-      <!--
-      -->
       <link rel="stylesheet" type="text/css" href="Styles/MenuAccord.css">
       <?php 
          require_once "iJsJquery.php"; 
       ?> 
    </head>
    <body>
-   <!--
    <script>
-      ScreenInfo33();
+      //ScreenInfo33();
    </script> 
-   -->   
    <?php
    // <!-- -->
 }

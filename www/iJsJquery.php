@@ -22,29 +22,19 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous">
    </script>
-   <!--
    
-
-   <link rel="stylesheet" type="text/css" href="TJsPrown/TJsPrown.css">
-
-   
+   <link rel="stylesheet" type="text/css" href="JS/TJsPrown.css">
    <script 
-      src="/TJsPrown/TJsPrown.js">
-   </script>
-   <script 
-      src="IttvePW.js">
+      src="/JS/TJsPrown.js"> 
    </script>
    
-   -->
+   <script 
+      src="/JS/IttvePW.js">
+   </script>
+   
+   <script> MakeCatchyQuotes() </script>
+   <script> TurnOnHotkeys() </script>
 
 <?php
-/*
-   <script> 
-      MakeCatchyQuotes() 
-   </script>
-   <script> 
-      TurnOnHotkeys() 
-   </script>
-*/
 
-// ********************************************************** iJsJquery.php ***
+// <!-- --> ************************************************* iJsJquery.php ***
