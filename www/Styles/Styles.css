@@ -12,7 +12,7 @@
 /* Оформляем шапку */
 #hBlock
 {
-   display: inline-block;
+   /*display: inline-block;*/
    position: fixed;     
    left: 0; 
    top: 0; 
@@ -51,32 +51,37 @@
    */ 
 } 
 /* Позиционируем центральные секции */
-/*
+
 #lSideTOrSide
 {
    width: 100%;        
    margin: 3rem 0 3rem 0; 
    background-color: #ffffff;
+   
+   min-height: 100%;
+   position: relative;
 }
+
 #lSide 
 {
    float: left;
    width: 18%;
-    Отодвигаем текст от границ колонки 
+   /* Отодвигаем текст от границ колонки */
    padding: 0 0.6rem 3.1rem 0.6rem; 
 }
-*/
-/*
+
+
 #cCenter  
 {
    float: left;
    width: 35%;
-    Отодвигаем текст от границ колонки 
-   padding: 0 0.6rem 3.1rem 0.6rem; */ 
-   /* Отделяем бордюром основную тему страницы справа и слева 
+   /* Отодвигаем текст от границ колонки */
+   padding: 0 0.6rem 3.1rem 0.6rem;  
+   /* Отделяем бордюром основную тему страницы справа и слева */ 
    border-left:  dashed 0.1rem rgb(153,153,153);
    border-right: dashed 0.1rem rgb(153,153,153);
 }
+
 #rSide  
 {
    float: right;
@@ -85,14 +90,6 @@
    font-weight: bold;
 }
 
-#lSideTOrSide 
-{
-   min-height: 100%;
-   position: relative;
-}
-*/
-
-/*
 footer 
 {
    position: fixed;
@@ -119,7 +116,6 @@ footer a
 {
    float: right;
 } 
-*/
 
 /*
  *************************************************************** Styles.css ***
