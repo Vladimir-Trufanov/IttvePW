@@ -1,0 +1,82 @@
+/** HTML5/CSS3, EDGE/CHROME                                  *** Styles.css ***
+
+ ******************************************************************************
+ * KwinTiny         Определить стили документа за границами области редактора *
+ ******************************************************************************
+
+                                                     Автор:       Труфанов В.Е.
+                                                     Дата создания:  07.01.2019
+ Copyright © 2019 tve                                Посл.изменение: 10.02.2019
+*/
+
+/** 
+  Определяем базовый шрифт 
+*/
+html
+{
+   font-family:'Anonymous Pro',monospace;
+   font-size:10px;
+}
+/** 
+  Устанавливаем размеры шрифтов по умолчанию 
+*/
+body 
+{
+   font-size:1rem;  
+   /*background:yellow;*/
+}
+/**
+  Позиционируем секции редактора
+*/
+.Info
+{
+   height:92%;
+   /*background:red;*/     
+}
+.InfoLeft
+{
+   float:left;
+   /*background:green;*/ 
+}
+.InfoRight
+{
+   float:right;
+   text-align:right;
+   /*background:blue;*/ 
+}
+.InfoLeft, .InfoRight
+{
+}
+/**
+  Позиционируем секции подвала
+*/
+.Footer
+{
+   height:8%;
+   width:100%;
+   position:fixed;
+   bottom:0;
+}
+#KwinLogo
+{
+   height:100%;
+}
+.LeftFooter
+{
+   height:100%;
+   width:24%;
+   float:left;
+   /*background:yellow;*/ 
+}
+.RightFooter
+{
+   height:100%;
+   width:76%;
+   float:right;
+   /*background:green;*/ 
+}
+/*
+ *************************************************************** Styles.css ***
+*/	
+	
+

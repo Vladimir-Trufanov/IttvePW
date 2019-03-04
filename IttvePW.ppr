@@ -661,10 +661,10 @@ IttvePW
 1=www\Main.php
 2=www\iHtmlBegin.php
 3=www\Site.php
-4=www\Pages\exPhp.php
+4=www\Styles\Styles.css
 [Selected Project Files]
 Main=
-Selected=www\Pages\exPhp.php
+Selected=www\Styles\Styles.css
 [www\index.php]
 TopLine=1
 Caret=1,1
@@ -675,8 +675,8 @@ Caret=22,64
 TopLine=39
 Caret=1,61
 [www\Site.php]
-TopLine=40
+TopLine=47
 Caret=10,24
-[www\Pages\exPhp.php]
-TopLine=27
-Caret=9,36
+[www\Styles\Styles.css]
+TopLine=5
+Caret=1,96

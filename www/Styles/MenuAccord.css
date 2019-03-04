@@ -4,6 +4,7 @@
    list-style: none;
    margin:200px auto; 
    width: 300px;
+   background-color: red;
 }
 /* Укладываем плотно меню в див */ 
 .accordion,

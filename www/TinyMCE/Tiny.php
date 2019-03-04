@@ -1,19 +1,44 @@
-<!DOCTYPE html> 
+<?php
+
+// Записываем материал в файл при запросе 
+if(isset($_POST['enter']))
+{
+   // Открыть текстовый файл
+   $f = fopen("../KwinTiny/Arc/textfile.html","w");
+   // Записать текст
+   fwrite($f, $_POST['dor']); 
+   // Закрыть текстовый файл
+   fclose($f);
+}
+?>
+
+<!DOCTYPE html>
 <!-- 
 -->
-<html>
-
+<html lang="ru">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>KwinFlat-редактор текстов!</title>
-   <link rel="stylesheet" type="text/css" href="Allcss/Reset.css" />
+   <title>KwinTiny-редактор материалов!</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <meta name="description" content="Труфанов Владимир Евгеньевич, редактор материалов TinyMCE">
+   <meta name="keywords" content="Труфанов Владимир Евгеньевич,KwinTiny,TinyMCE,редактор материалов">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;
+      subset=cyrillic">
+   <link rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="/TinyMCE/Styles.css">
+
+   <!-- 
+        theme: 'modern',
+   -->
+
    <script src="/TinyMCE/tinymce.min.js"></script>
    <script>tinymce.init
     ({
         selector: '#mytextarea',
-        theme: 'modern',
-        width:  860,
-        height: 300,
+        height: 420,
+        width:  810,
+        content_css: '/TinyMCE/TinyMCE.css',
         plugins:
         [ 
             'advlist autolink link image imagetools lists charmap print preview hr anchor',
@@ -22,7 +47,6 @@
             'save table contextmenu directionality emoticons template paste',
             'textcolor'
         ],
-        content_css: '/TinyMCE/TinyMCE.css',
         language: "ru",
         toolbar:
         [
@@ -36,59 +60,41 @@
 </head>
 
 <body>
+<div class="Info">
 
-<header>
-    <div class="header-bg">
-    <img src="../Images/Kwinflat.jpg" alt="Kwinflat-близкий всем!" />
-    </div>
-</header>
-
-<article>
-
-
-<?php
-// получает содержимое файла в строку
-
-//$filename = "../TinyMCE/textfile.html";
-$filename = "textfile.html";
-$handle = fopen($filename, "r");
-$contents = fread($handle, filesize($filename));
-fclose($handle);
-echo '888'.$contents.'999';
-?>
-
-
-   <?php
-      // advlist - списки
-      // <textarea id="mytextarea" name="dor">qwerty</textarea>
-      // <form id="frmTinyText" method="get" action="/TinyMCE/TinyText.php">
-   ?>
-   
-   
-   <form id="frmTinyText" method="post" action="/TinyMCE/TinyText.php">
-
-      <textarea id="mytextarea" name="dor">
-      
+   <div class="InfoLeft">
       <?php
-         echo htmlspecialchars($contents);
-      ?> 
+      // Извлекаем прежнее содержимое материала в переменную
+      $filename="../KwinTiny/Arc/textfile.html";
+      $handle = fopen($filename, "r");
+      $contents = fread($handle, filesize($filename));
+      fclose($handle);
+      // Показываем содержимое материала в переменной
+      // echo '888'.$contents.'999';
+      ?>
       
-      
-      </textarea>
-
-   </form>
-   <input type="submit" name='enter' value="ssave" form="frmTinyText">
-</article>
-
-<div>
-<p style="text-align: right;">qwertyiu снова</p>
-<p><img style="margin-right: auto; margin-left: auto; display: block;" src="proba.jpg" alt="Проба" width="200" height="125" /></p>
-<p style="text-align: right;">чистое fgh</p>
+      <form id="frmTinyText" method="post" action="/TinyMCE/Tiny.php">
+         <textarea id="mytextarea" name="dor">
+         <?php
+            echo htmlspecialchars($contents);
+         ?> 
+         </textarea>
+      </form>
+   </div>
+   
+   <div class="InfoRight">
+      <input type="submit" name='enter' value="Сохранить материал" form="frmTinyText">
+   </div>
 </div>
 
-<footer>
-    Copyright &copy; Владимир Труфанов
-</footer>
+<div class="Footer">
+   <div class="LeftFooter">
+      <img id="KwinLogo" src="../Images/Kwinflat.jpg" alt="Kwinflat-близкий всем!"/>
+   </div>
+   <div class="RightFooter">
+      Copyright &copy; Владимир Труфанов
+   </div>
+</div>
 
 </body>
 </html>
