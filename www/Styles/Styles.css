@@ -43,9 +43,9 @@
    color: #F37313;
    margin: 0.2rem 0 0 0; 
    padding: 0.1rem 0.3rem 0.1rem 0.3rem; 
-   text-align: right; 
-   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);  
+   text-align: right;
    /* 
+   background: radial-gradient(farthest-side ellipse at top left,#f9f6f1 0,#d7d0c5 100%);
    display:none;
    height: 0;
    */ 

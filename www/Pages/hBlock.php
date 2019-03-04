@@ -38,8 +38,9 @@
    </nav>
    <nav id="tLine">
    <?php 
-      echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
-      // echo $uagent.'<br>';
+      // echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
+      // echo $SiteDevice.': '.$uagent.'<br>';
+      echo $SiteDevice;
    ?>
    </nav>
 </div>
