@@ -38,7 +38,7 @@ if(isset($_POST['enter']))
         selector: '#mytextarea',
         height: 420,
         width:  810,
-        content_css: '/TinyMCE/TinyMCE.css',
+        content_css: '/TinyMCE/TinyMCE.css, /TinyMCE/TinyIttvePW.css',
         plugins:
         [ 
             'advlist autolink link image imagetools lists charmap print preview hr anchor',
