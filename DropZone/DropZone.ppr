@@ -1,0 +1,177 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Webservers\DropZone
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+DropZone
+	+DropZone
+		-dropzone-master
+			-dropzone-master
+				-src
+					dropzone-master\dropzone-master\src\basic.scss
+					dropzone-master\dropzone-master\src\dropzone.js
+					dropzone-master\dropzone-master\src\dropzone.scss
+				-test
+					dropzone-master\dropzone-master\test\.gitignore
+					dropzone-master\dropzone-master\test\test.html
+					dropzone-master\dropzone-master\test\test.js
+					dropzone-master\dropzone-master\test\test-prebuilt.html
+				-tool
+					dropzone-master\dropzone-master\tool\AMD_footer
+					dropzone-master\dropzone-master\tool\AMD_header
+					dropzone-master\dropzone-master\tool\build_configuration_doc.js
+					dropzone-master\dropzone-master\tool\build_site_from_readme.js
+				-website
+					-_assets
+						dropzone-master\dropzone-master\website\_assets\arrows.sketch
+					-_includes
+						dropzone-master\dropzone-master\website\_includes\.gitignore
+						dropzone-master\dropzone-master\website\_includes\_for_hire.html
+						dropzone-master\dropzone-master\website\_includes\_social_buttons.html
+						dropzone-master\dropzone-master\website\_includes\configuration-options.template.html
+						dropzone-master\dropzone-master\website\_includes\event-list.html
+						dropzone-master\dropzone-master\website\_includes\index.template.md
+					-_layouts
+						dropzone-master\dropzone-master\website\_layouts\default.html
+					-css
+						dropzone-master\dropzone-master\website\css\_pygments.scss
+						dropzone-master\dropzone-master\website\css\_reset.scss
+						dropzone-master\dropzone-master\website\css\dropzone.scss
+						dropzone-master\dropzone-master\website\css\style.scss
+					-examples
+						dropzone-master\dropzone-master\website\examples\simple.html
+					-favicons
+						-_source
+							dropzone-master\dropzone-master\website\favicons\_source\favicon.png
+							dropzone-master\dropzone-master\website\favicons\_source\favicon-ios.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-114x114.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-120x120.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-144x144.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-152x152.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-180x180.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-57x57.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-60x60.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-72x72.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-76x76.png
+						dropzone-master\dropzone-master\website\favicons\apple-touch-icon-precomposed.png
+						dropzone-master\dropzone-master\website\favicons\browserconfig.xml
+						dropzone-master\dropzone-master\website\favicons\favicon.ico
+						dropzone-master\dropzone-master\website\favicons\favicon-160x160.png
+						dropzone-master\dropzone-master\website\favicons\favicon-16x16.png
+						dropzone-master\dropzone-master\website\favicons\favicon-192x192.png
+						dropzone-master\dropzone-master\website\favicons\favicon-32x32.png
+						dropzone-master\dropzone-master\website\favicons\favicon-96x96.png
+						dropzone-master\dropzone-master\website\favicons\mstile-144x144.png
+						dropzone-master\dropzone-master\website\favicons\mstile-150x150.png
+						dropzone-master\dropzone-master\website\favicons\mstile-310x150.png
+						dropzone-master\dropzone-master\website\favicons\mstile-310x310.png
+						dropzone-master\dropzone-master\website\favicons\mstile-70x70.png
+					-fonts
+						dropzone-master\dropzone-master\website\fonts\league-gothic.eot
+						dropzone-master\dropzone-master\website\fonts\league-gothic.svg
+						dropzone-master\dropzone-master\website\fonts\league-gothic.ttf
+						dropzone-master\dropzone-master\website\fonts\league-gothic.woff
+					-images
+						dropzone-master\dropzone-master\website\images\_logo.sketch
+						dropzone-master\dropzone-master\website\images\arrow.png
+						dropzone-master\dropzone-master\website\images\arrow.svg
+						dropzone-master\dropzone-master\website\images\arrow@2x.png
+						dropzone-master\dropzone-master\website\images\arrow-hover.svg
+						dropzone-master\dropzone-master\website\images\available-for-hire@2x.png
+						dropzone-master\dropzone-master\website\images\background.png
+						dropzone-master\dropzone-master\website\images\check.svg
+						dropzone-master\dropzone-master\website\images\dropzonejs.png
+						dropzone-master\dropzone-master\website\images\dropzonejs@2x.png
+						dropzone-master\dropzone-master\website\images\error.svg
+						dropzone-master\dropzone-master\website\images\fork-me.png
+						dropzone-master\dropzone-master\website\images\fork-me@2x.png
+						dropzone-master\dropzone-master\website\images\loading.png
+						dropzone-master\dropzone-master\website\images\loading@2x.png
+						dropzone-master\dropzone-master\website\images\logo.png
+						dropzone-master\dropzone-master\website\images\logo@2x.png
+						dropzone-master\dropzone-master\website\images\new-logo.png
+						dropzone-master\dropzone-master\website\images\new-logo.svg
+						dropzone-master\dropzone-master\website\images\new-logo-icon.svg
+						dropzone-master\dropzone-master\website\images\new-logo-white.svg
+						dropzone-master\dropzone-master\website\images\preview.png
+						dropzone-master\dropzone-master\website\images\spritemap.png
+						dropzone-master\dropzone-master\website\images\spritemap@2x.png
+					-js
+						dropzone-master\dropzone-master\website\js\app.js
+						dropzone-master\dropzone-master\website\js\dropzone.js
+						dropzone-master\dropzone-master\website\js\fastclick.js
+					dropzone-master\dropzone-master\website\.gitignore
+					dropzone-master\dropzone-master\website\_config.yml
+					dropzone-master\dropzone-master\website\bootstrap.html
+					dropzone-master\dropzone-master\website\CNAME
+					dropzone-master\dropzone-master\website\Gruntfile.js
+					dropzone-master\dropzone-master\website\Makefile
+					dropzone-master\dropzone-master\website\package.json
+					dropzone-master\dropzone-master\website\test.sh
+				dropzone-master\dropzone-master\.babelrc
+				dropzone-master\dropzone-master\.gitignore
+				dropzone-master\dropzone-master\.gitlab-ci.yml
+				dropzone-master\dropzone-master\.npmignore
+				dropzone-master\dropzone-master\.README.md.swp
+				dropzone-master\dropzone-master\.tagconfig
+				dropzone-master\dropzone-master\.travis.yml
+				dropzone-master\dropzone-master\bower.json
+				dropzone-master\dropzone-master\CHANGELOG.md
+				dropzone-master\dropzone-master\composer.json
+				dropzone-master\dropzone-master\CONTRIBUTING.md
+				dropzone-master\dropzone-master\Gruntfile.js
+				dropzone-master\dropzone-master\LICENSE
+				dropzone-master\dropzone-master\package.json
+				dropzone-master\dropzone-master\README.md
+		-html5_drag_and_drop
+		+www
+			-uploads
+			www\dropzone.css
+			www\dropzone.js
+			www\index.html
+			www\upload.php
+		+www1
+			-upload
+			www1\dropzone.js
+			www1\index.html
+			www1\script.js
+			www1\style.css
+			www1\upload.php
+		-Дистрибутивы
+			-Ver1
+				Дистрибутивы\Ver1\dropzone.css
+				Дистрибутивы\Ver1\dropzone.js
+		-Материалы
+			Материалы\~$opzone-PHP.doc
+			Материалы\~WRL1513.tmp
+			Материалы\Dropzone-PHP.doc
+		dropzone.js
+		DropZone.ppr
+		dropzone-master.zip
+		html5_drag_and_drop (1).zip
+		html5_drag_and_drop.zip
+[Open project files]
+0=www\index.html
+1=www1\index.html
+[Selected Project Files]
+Main=
+Selected=www1\index.html
+[www\index.html]
+TopLine=1
+Caret=1,8
+[www1\index.html]
+TopLine=1
+Caret=16,17
