@@ -52,6 +52,14 @@ if(isset($_POST['enter']))
         [
             'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
         ],
+        
+        style_formats: 
+        [
+            {title: 'Большой заголовок', block: 'p', classes: 'font_big_head'},
+            {title: 'Мелкий текст', inline: 'span', classes: 'font_mini'},
+            {title: 'Код', block: 'p', classes: 'font_block_code'}
+        ],
+        
         a_plugin_option: true,
         a_configuration_option: 400
     });

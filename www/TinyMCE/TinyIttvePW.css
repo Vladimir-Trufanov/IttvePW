@@ -33,6 +33,35 @@ h1
 	color: #46874D;   
 }
 
+/**
+ * Устанавливаем собственные стили 
+ */
+p.font_big_head
+{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: black;
+}
+span.font_mini
+{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: gray;
+}
+p.font_block_code
+{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 10pt;
+   font-style: normal;
+   line-height: normal;
+   font-weight: normal;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding: 3px;
+   background-color: #EFEFF5;
+}
 /*
  ********************************************************** TinyIttvePW.css ***
 */	
