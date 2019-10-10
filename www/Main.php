@@ -8,12 +8,10 @@
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 11.12.2018
-
 session_start(); 
-
 // Инициализируем корневой каталог сайта, надсайтовый каталог, каталог хостинга
 require_once "iGetAbove.php";
-$SiteRoot = $_SERVER['DOCUMENT_ROOT'];  // Корневой каталог сайта
+//$SiteRoot = $_SERVER['DOCUMENT_ROOT'];  // Корневой каталог сайта
 $SiteAbove = iGetAbove($SiteRoot);      // Надсайтовый каталог
 $SiteHost = iGetAbove($SiteAbove);      // Каталог хостинга
                                                                                    
@@ -28,7 +26,7 @@ require_once $SiteHost."/TPhpPrown/MakeUserError.php";
 require_once $SiteHost."/TPhpPrown/ViewGlobal.php";
 
 // Подключаем файлы прикладных классов
-require_once $SiteHost."/TPhpTools/TException/ExceptionClass.php";
+//require_once $SiteHost."/TPhpTools/TException/ExceptionClass.php";
 
 // Выполняем начальную инициализацию
 require_once "Inimem.php";
@@ -55,27 +53,9 @@ if ($PersName<>$UserName)
 }
 
 // Разворачиваем страницу
-$w2e = new Exceptionizer(E_ALL);
-try 
-{
-   $ModeError=2;
-   require_once "iHtmlBegin.php";
-   require_once "Site.php";
-   require_once "iHtmlEnd.php";
-}
-catch (E_EXCEPTION $e) 
-{
-   
-   echo "{$e->getMessage()}";
-   echo '<pre>';
-   echo $e->getTraceAsString();
-   echo '</pre>';
-   
-   // При необходимости выводим дополнительную информацию
-   // Header("Content-type: text/plain");
-   // $headers = getallheaders();
-   // print_r($headers);
-   // print_r($_SERVER);
-}
+$ModeError=2;
+require_once "iHtmlBegin.php";
+require_once "Site.php";
+require_once "iHtmlEnd.php";
 
 // *************************************************************** Main.php ***

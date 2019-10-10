@@ -421,7 +421,7 @@ IttvePW
 				www\Styles\mStyles.css
 				www\Styles\Reset.css
 				www\Styles\Styles.css
-			+TinyMCE
+			-TinyMCE
 				-langs
 					www\TinyMCE\langs\readme.md
 					www\TinyMCE\langs\ru.js
@@ -750,34 +750,14 @@ IttvePW
 		README.md
 		Тезисы.xls
 [Open project files]
-0=www\index.php
-1=www\Main.php
-2=www\iHtmlBegin.php
-3=www\Site.php
-4=www\TinyMCE\TinyMCE.css
-5=www\TinyMCE\Tiny.php
-6=www\TinyMCE\TinyIttvePW.css
+0=www\Main.php
+1=www\index.php
 [Selected Project Files]
 Main=
-Selected=www\TinyMCE\TinyIttvePW.css
-[www\index.php]
-TopLine=1
-Caret=1,1
+Selected=www\index.php
 [www\Main.php]
-TopLine=43
-Caret=22,64
-[www\iHtmlBegin.php]
-TopLine=39
+TopLine=37
 Caret=1,61
-[www\Site.php]
-TopLine=6
-Caret=10,24
-[www\TinyMCE\TinyMCE.css]
-TopLine=55
-Caret=1,1
-[www\TinyMCE\Tiny.php]
-TopLine=51
-Caret=9,62
-[www\TinyMCE\TinyIttvePW.css]
-TopLine=19
-Caret=1,1
+[www\index.php]
+TopLine=5
+Caret=1,21

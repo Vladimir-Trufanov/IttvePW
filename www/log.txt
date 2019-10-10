@@ -1,0 +1,1 @@
+[10-Oct-2019 15:46:13 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\IttvePW\www\Main.php on line 55
