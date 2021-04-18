@@ -1,0 +1,110 @@
+body
+{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*Оболочка*/
+#wrapper
+{
+    width: 900px;
+    margin: 15px auto;
+    border: 1px solid #999;
+}
+
+/*Блок кода на языке C99*/
+pre.c99
+{
+    display: inline-block;
+    text-align: left;
+    width: 698px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Consolas , "Courier New" , Courier , monospace;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 5px 0px;
+    padding: 7px 0 5px;
+    line-height: 1;
+    background-color: #fff;
+}
+
+/*Ключевые слова*/
+pre.c99 span.kw
+{
+    color: blue;
+}
+
+/*Директивы препроцессора*/
+pre.c99 span.pd
+{
+    color: #0080ff;
+}
+
+/*Комментарии*/
+pre.c99 span.cm
+{
+    color: green;
+}
+
+/*Строковые литералы*/
+pre.c99 span.st
+{
+    color: #b38a00;
+}
+
+/*Символьные литералы*/
+pre.c99 span.ch
+{
+    color: #808040;
+}
+
+/*Числовые литералы*/
+pre.c99 span.nm
+{
+    color: #880015;
+}
+
+/*Номера строк*/
+pre.num span:first-child
+{
+    background-color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 4px;
+    color: #aaa;
+    -moz-user-select: none;
+}
+
+/*Строки*/
+pre.c99 div
+{
+    margin-top: -7px;
+    margin-bottom: -7px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+/*Нумерованные строки*/
+pre.num div
+{
+    margin-left: 4px;
+}
+
+/*Ненумерованные строки*/
+pre.not_num div
+{
+    padding-left: 4px;
+}
+
+/*Нечётные строки*/
+pre div:nth-child(odd)
+{
+    background-color: #eee;
+}
+
+/*Чётные строки*/
+pre div:nth-child(even)
+{
+    background-color: #fff;
+}
