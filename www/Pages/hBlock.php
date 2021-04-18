@@ -40,7 +40,7 @@
    <?php 
       // echo $SiteDevice.': '.$SiteRoot.'-'.$SiteAbove.'-'.$SiteHost; 
       // echo $SiteDevice.': '.$uagent.'<br>';
-      echo $SiteDevice;
+      echo $SiteDevice.', v2.0';
    ?>
    </nav>
 </div>

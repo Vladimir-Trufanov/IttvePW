@@ -400,7 +400,7 @@ IttvePW
 					www\KwinTiny\Arc\textfile.html
 					www\KwinTiny\Arc\textfile.htmlo
 				-Temp
-			-Pages
+			+Pages
 				-Art
 				-Think
 				www\Pages\cCenter.php
@@ -752,12 +752,28 @@ IttvePW
 [Open project files]
 0=www\Main.php
 1=www\index.php
+2=www\Site.php
+3=www\iHtmlBegin.php
+4=www\Pages\cCenter.php
+5=www\Pages\hBlock.php
 [Selected Project Files]
 Main=
-Selected=www\index.php
+Selected=www\Site.php
 [www\Main.php]
-TopLine=37
+TopLine=41
 Caret=1,61
 [www\index.php]
 TopLine=5
 Caret=1,21
+[www\Site.php]
+TopLine=5
+Caret=30,30
+[www\iHtmlBegin.php]
+TopLine=11
+Caret=1,1
+[www\Pages\cCenter.php]
+TopLine=5
+Caret=1,1
+[www\Pages\hBlock.php]
+TopLine=17
+Caret=32,43

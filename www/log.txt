@@ -1,1 +1,12 @@
 [10-Oct-2019 15:46:13 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\IttvePW\www\Main.php on line 55
+[10-Oct-2019 15:59:29 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:01:57 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:14:57 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:31:41 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:31:57 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:37:32 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[10-Oct-2019 16:42:08 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[29-Jan-2020 15:24:29 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pagesi/cCenter.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Site.php on line 30
+[06-Feb-2020 22:04:48 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpPrown/getTranslit.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Main.php on line 22
+[06-Feb-2020 22:20:36 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpPrown/getTranslit.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Main.php on line 22
+[09-Apr-2020 07:22:07 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpPrown/getTranslit.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Main.php on line 22
