@@ -1,32 +1,32 @@
-<?php namespace common;
-
+<?php                                           
 // PHP7/HTML5, EDGE/CHROME                                   *** Common.php ***
-
 // ****************************************************************************
 // * ittve.pw                                       Блок общесайтовых функций *
 // ****************************************************************************
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  24.02.2018
-// Copyright © 2018 tve                              Посл.изменение: 06.01.2019
+// Copyright © 2018 tve                              Посл.изменение: 20.04.2021
 
 // ****************************************************************************
-// *                 Послать заголовок с настройкой на HTTPS                  *
+// *                      Определить - работаем ли на сайте                   *
 // ****************************************************************************
-function Headeri($page)
+function isIttvepw()
 {
-    if ($_SERVER['HTTP_HOST']=='kwinflat.ru')
-    {
-        //echo "Location: https://".$_SERVER['HTTP_HOST'].$page;
-        Header("Location: https://".$_SERVER['HTTP_HOST'].$page);
-    }
-    else 
-    {
-        //echo "Location: http://".$_SERVER['HTTP_HOST'].$page;
-        Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
-    }
+   $Result=false;
+   if ($_SERVER['HTTP_HOST']=='ittve.pw') $Result=true;
+   return $Result;
 }
-
-
-// ************************************************************* Common.php ***
-
+// ****************************************************************************
+// *                     Определить - работаем ли на хостинге                 *
+// ****************************************************************************
+function isNichost()
+{ 
+   $Result=false;
+   if (($_SERVER['HTTP_HOST']=='ittve.pw')||($_SERVER['HTTP_HOST']=='kwinflatht.nichost.ru'))
+   {
+      $Result=true;
+   }
+   return $Result;
+}
+// ************************************************************* Common.php *** 

@@ -27,7 +27,7 @@
    
    <article id="cCenter">
       <?php
-         require_once "Pagesi/cCenter.php";
+         require_once "Pages/cCenter.php";
       ?>
    </article>
    

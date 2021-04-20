@@ -17,11 +17,26 @@ Extensions=*.*
 [Project tree]
 IttvePW
 	+IttvePW
+		-backlight
+			backlight\c99-styles.css
+			backlight\example.c
+			backlight\index.php
+			backlight\styles.css
+			backlight\template.php
+			backlight\Раскраска кода - 1 часть.doc
+			backlight\Раскраска кода - 2 часть.doc
+			backlight\Раскраска кода - 3 часть.doc
 		-BP1
 			BP1\IttvePW.bp1
 		-ER1
 			ER1\TVESTOCK.BK1
 			ER1\TVESTOCK.ER1
+		-Favicon
+			-Simple
+				Favicon\Simple\favicon.ico
+			Favicon\favicon_package_v0.16.zip
+			Favicon\ittvepw.png
+			Favicon\IttvePW-favicon.doc
 		-JS_JQ
 			-_css
 				-images
@@ -382,6 +397,17 @@ IttvePW
 				JS_JQ\эксперименты\эффекты.html
 			JS_JQ\JS_JQ.ppr
 		+www
+			-favicon260x260
+				www\favicon260x260\android-chrome-192x192.png
+				www\favicon260x260\android-chrome-256x256.png
+				www\favicon260x260\android-chrome-512x512.png
+				www\favicon260x260\apple-touch-icon.png
+				www\favicon260x260\browserconfig.xml
+				www\favicon260x260\favicon.ico
+				www\favicon260x260\favicon-16x16.png
+				www\favicon260x260\favicon-32x32.png
+				www\favicon260x260\mstile-150x150.png
+				www\favicon260x260\safari-pinned-tab.svg
 			-Images
 				-Buttons
 					www\Images\Buttons\Java.svg
@@ -400,7 +426,9 @@ IttvePW
 					www\KwinTiny\Arc\textfile.html
 					www\KwinTiny\Arc\textfile.htmlo
 				-Temp
-			+Pages
+			-old
+				www\old\Site.php
+			-Pages
 				-Art
 				-Think
 				www\Pages\cCenter.php
@@ -412,6 +440,80 @@ IttvePW
 			-Reset
 				www\Reset\e404.php
 				www\Reset\index.php
+			-smv-110
+				-addons
+					-bootstrap
+						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.css
+						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.js
+						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.min.js
+					-bootstrap-4
+						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.css
+						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.js
+						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.min.js
+					-keyboard
+						www\smv-110\addons\keyboard\jquery.smartmenus.keyboard.js
+						www\smv-110\addons\keyboard\jquery.smartmenus.keyboard.min.js
+				-css
+					-sm-blue
+						-mixins
+							www\smv-110\css\sm-blue\mixins\_round-corners-last-item.scss
+							www\smv-110\css\sm-blue\mixins\_sub-items-indentation.scss
+						www\smv-110\css\sm-blue\_mixins.scss
+						www\smv-110\css\sm-blue\_sm-blue-theme.scss
+						www\smv-110\css\sm-blue\sm-blue.css
+						www\smv-110\css\sm-blue\sm-blue.css.map
+						www\smv-110\css\sm-blue\sm-blue.scss
+					-sm-clean
+						-mixins
+							www\smv-110\css\sm-clean\mixins\_round-corners-last-item.scss
+							www\smv-110\css\sm-clean\mixins\_sub-items-indentation.scss
+						www\smv-110\css\sm-clean\_mixins.scss
+						www\smv-110\css\sm-clean\_sm-clean-theme.scss
+						www\smv-110\css\sm-clean\sm-clean.css
+						www\smv-110\css\sm-clean\sm-clean.css.map
+						www\smv-110\css\sm-clean\sm-clean.scss
+					-sm-mint
+						-mixins
+							www\smv-110\css\sm-mint\mixins\_sub-items-indentation.scss
+						www\smv-110\css\sm-mint\_mixins.scss
+						www\smv-110\css\sm-mint\_sm-mint-theme.scss
+						www\smv-110\css\sm-mint\sm-mint.css
+						www\smv-110\css\sm-mint\sm-mint.css.map
+						www\smv-110\css\sm-mint\sm-mint.scss
+					-sm-simple
+						-mixins
+							www\smv-110\css\sm-simple\mixins\_sub-items-indentation.scss
+						www\smv-110\css\sm-simple\_mixins.scss
+						www\smv-110\css\sm-simple\_sm-simple-theme.scss
+						www\smv-110\css\sm-simple\sm-simple.css
+						www\smv-110\css\sm-simple\sm-simple.css.map
+						www\smv-110\css\sm-simple\sm-simple.scss
+					www\smv-110\css\sm-core-css.css
+				-demo
+					www\smv-110\demo\bootstrap-4-navbar.html
+					www\smv-110\demo\bootstrap-4-navbar-fixed-bottom.html
+					www\smv-110\demo\bootstrap-4-navbar-fixed-top.html
+					www\smv-110\demo\bootstrap-4-navbar-static-top.html
+					www\smv-110\demo\bootstrap-navbar.html
+					www\smv-110\demo\bootstrap-navbar-fixed-bottom.html
+					www\smv-110\demo\bootstrap-navbar-fixed-top.html
+					www\smv-110\demo\bootstrap-navbar-static-top.html
+					www\smv-110\demo\index.html
+					www\smv-110\demo\keyboard-navigation.html
+				-libs
+					-demo-assets
+						-shjs
+							www\smv-110\libs\demo-assets\shjs\shjs.css
+							www\smv-110\libs\demo-assets\shjs\shjs.js
+						www\smv-110\libs\demo-assets\demo.css
+						www\smv-110\libs\demo-assets\readme.txt
+						www\smv-110\libs\demo-assets\themes-switcher.js
+					-jquery
+						www\smv-110\libs\jquery\jquery.js
+				www\smv-110\jquery.smartmenus.js
+				www\smv-110\jquery.smartmenus.min.js
+				www\smv-110\LICENSE-MIT
+				www\smv-110\README.md
 			-Styles
 				www\Styles\Buttons.css
 				www\Styles\Fonts.css
@@ -659,16 +761,14 @@ IttvePW
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
-			www\favicon.ico
-			www\iGetAbove.php
-			www\iHtmlBegin.php
-			www\iHtmlEnd.php
 			www\iJsJquery.php
 			www\index.php
-			www\Inimem.php
+			www\iniMem.php
+			www\iniWorkSpace.php
+			www\log.txt
 			www\Main.php
-			www\MenuAccord.php
-			www\Site.php
+			www\manifest.json
+			www\UpSite.php
 		-Картинки для кнопок
 			-Img-прозрачным фоном
 				Картинки для кнопок\Img-прозрачным фоном\favicon16.png
@@ -750,30 +850,22 @@ IttvePW
 		README.md
 		Тезисы.xls
 [Open project files]
-0=www\Main.php
-1=www\index.php
-2=www\Site.php
-3=www\iHtmlBegin.php
-4=www\Pages\cCenter.php
-5=www\Pages\hBlock.php
+0=www\index.php
+1=www\Main.php
+2=www\iniMem.php
+3=www\UpSite.php
 [Selected Project Files]
 Main=
-Selected=www\Site.php
-[www\Main.php]
-TopLine=41
-Caret=1,61
+Selected=www\UpSite.php
 [www\index.php]
+TopLine=33
+Caret=4,34
+[www\Main.php]
+TopLine=35
+Caret=1,52
+[www\iniMem.php]
 TopLine=5
-Caret=1,21
-[www\Site.php]
-TopLine=5
-Caret=30,30
-[www\iHtmlBegin.php]
-TopLine=11
-Caret=1,1
-[www\Pages\cCenter.php]
-TopLine=5
-Caret=1,1
-[www\Pages\hBlock.php]
-TopLine=17
-Caret=32,43
+Caret=23,23
+[www\UpSite.php]
+TopLine=61
+Caret=26,37

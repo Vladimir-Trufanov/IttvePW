@@ -1,5 +1,6 @@
 <?php 
-// PHP7/HTML5, EDGE/CHROME                                   *** Inimem.php ***
+
+// PHP7/HTML5, EDGE/CHROME                                   *** iniMem.php ***
 
 // ****************************************************************************
 // * ittve.pw                    Произвести установки общесайтовых переменных *
@@ -7,26 +8,25 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  03.12.2018
-// Copyright © 2018 tve                              Посл.изменение: 06.01.2019
+// Copyright © 2018 tve                              Посл.изменение: 20.04.2021
 
 // Определяем сайтовые константы
-define ("Atfirst",    "atf");    // Перевести расчет в начальные условия  
 define ("ChangeSize", "chs");    // "Изменить размер базового шрифта"  
-define ("Computer", "Computer"); // "Устройство, запросившее сайт - компьютер"  
-define ("Mobile", "Mobile");     // "Устройство, запросившее сайт - смартфон"  
-define ("Tablet", "Tablet");     // "Устройство, запросившее сайт - планшет"  
-
-// Инициализируем общесайтовые переменные
-$uagent=$_SERVER['HTTP_USER_AGENT'];        // HTTP_USER_AGENT
-$SiteDevice=prown\getSiteDevice();          // 'Computer','Mobile','Tablet'
-$UserName=$_COOKIE['PersName'] ?? "Гость";  // Логин посетителя для авторизации
-
-// Инициализируем сессионные переменные
-if (!isset($_SESSION['Counter'])) $_SESSION['Counter']=0; // Посещения за сессию
 
 // Инициализируем переменные-кукисы
-$BrowEntry=$_COOKIE['BrowEntry'] ?? 1;      // Число запросов сайта из браузера
-$PersEntry=$_COOKIE['PersEntry'] ?? 1;      // Число запросов сайта посетителем
-$PersName=$_COOKIE['PersName'] ?? "Гость";  // Логин посетителя
+$c_UserName=prown\MakeCookie('UserName',"Гость",tStr,true);   // логин авторизованного посетителя
+$c_PersName=prown\MakeCookie('PersName',"Гость",tStr,true);   // логин посетителя
+$c_BrowEntry=prown\MakeCookie('BrowEntry',0,tInt,true);       // число запросов сайта из браузера
+$c_PersEntry=prown\MakeCookie('PersEntry',0,tInt,true);       // счетчик посещений текущим посетителем
 
-// ************************************************************* Inimem.php *** 
+// Инициализируем сессионные переменные (сессионные переменные инициируются после
+// переменных-кукисов, так как некоторые переменные-кукисы переопределяются появившимися
+// сессионными переменными)
+$s_Counter=prown\MakeSession('Counter',0,tInt,true);          // посещения за сессию
+
+// Инициализируем общесайтовые переменные
+$ModeError=2;                               // режим вывода сообщений об ошибках
+if (isNichost()) $SpecSite="http://".$_SERVER['HTTP_HOST'];  
+else $SpecSite="http://localhost:88";       // спецификация сайта                                 
+
+// ************************************************************* iniMem.php *** 
