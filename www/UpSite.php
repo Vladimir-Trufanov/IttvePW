@@ -46,24 +46,24 @@ echo '
 if ($SiteDevice==Mobile) 
 {   
    echo '<title>В мобильном программировании моё увлечение!</title>';
-   /*
    echo '
+      <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
+      <!-- 
       <link rel="stylesheet" type="text/css" href="Styles/Fontsm.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttonsm.css">
-      <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
+      -->
    ';
-   */
 }
 else 
 {   
    echo '<title>В программировании моя жизнь!</title>';
-   /*
    echo '
+      <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
+      <!-- 
       <link rel="stylesheet" type="text/css" href="Styles/Fonts.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
-      <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
+      -->
    ';
-   */
 }
 
 //require_once "iJsJquery.php";
@@ -78,59 +78,9 @@ echo '<body>';
    </script> 
 <?php
 
-echo 'Привет Вам! <br>';
+require_once 'Site.php';
+//echo 'Привет Вам! <br>';
 
-
-// Проверяем не требуется ли просто вывести изображение и выводим его
-/*
-if ($ImageFile<>NULL)
-{
-   require_once "ViewImage.php";
-}
-// Выводим другие страницы сайта
-else
-{
-   // Выбираем страницу для отправки сообщения автору
-   if (prown\isComRequest('Inbox','Com'))
-   {
-      //echo 'Отправить сообщение автору'.'<br>';
-      $page='/DetmanPage/www/index1.php';
-      Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
-   }
-   // Выбираем страницу для изменения настроек
-   else if (prown\isComRequest('Tuning','Com'))
-   {
-      //echo 'Изменить настройки сайта в браузере'.'<br>';
-      //$page='/DownUpLoad/index_01.php';
-      //$page='/DownUpLoad/ProbaTest.php';
-      $page='/DetmanBase/indexBase.php';
-      Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
-   }
-   // Выбираем страницу для входа по логину или для регистрации
-   else if (prown\isComRequest('Signup','Com'))
-   {
-      echo 'Войти или зарегистрироваться'.'<br>';
-   }
-   // Выбираем страницу для редактирования или создания материала
-   else if (prown\isComRequest('ЕditМaterial','Com'))
-   {
-      require_once "EditText.php";
-   }
-   // Запускаем страницу с активным материалом
-   else
-   {
-      require_once "Site.php";
-   }
-   // Выводим меню
-   if (prown\isComRequest('LifeMenu','Com'))
-   {
-      //require_once "Html/iniHtmlLifeMenu.php";
-      //require_once "iniHtml1.php";
-      //echo 'Жизнь и путешествия!'.'<br>';
-      //require_once "Nastr.php";
-   }
-}
-*/
 /*
 // При необходимости показываем кукисы и переменные сессий
 prown\ViewGlobal(avgSESSION);
@@ -140,4 +90,4 @@ prown\ViewGlobal(avgCOOKIE);
 echo '</body>'; 
 echo '</html>';
 
-// <!-- --> **************************************************** UpSite.php ***
+// *** <!-- --> ************************************************ UpSite.php ***

@@ -426,15 +426,33 @@ IttvePW
 					www\KwinTiny\Arc\textfile.html
 					www\KwinTiny\Arc\textfile.htmlo
 				-Temp
-			-old
-				www\old\Site.php
-			-Pages
+			+old
+				-Pages
+					-Art
+					-Think
+					www\old\Pages\cCenter.php
+					www\old\Pages\exJav.php
+					www\old\Pages\exLaz.php
+					www\old\Pages\exPhp.php
+					www\old\Pages\fBlock.php
+					www\old\Pages\hBlock.php
+					www\old\Pages\lSide.php
+				+Styles
+					www\old\Styles\Buttons.css
+					www\old\Styles\Fonts.css
+					www\old\Styles\mButtons.css
+					www\old\Styles\mFonts.css
+					www\old\Styles\Reset.css
+					www\old\Styles\Styles.css
+					www\old\Styles\Stylesm.css
+			+Pages
 				-Art
 				-Think
 				www\Pages\cCenter.php
 				www\Pages\exJav.php
 				www\Pages\exLaz.php
 				www\Pages\exPhp.php
+				www\Pages\fBlock.php
 				www\Pages\hBlock.php
 				www\Pages\lSide.php
 			-Reset
@@ -514,15 +532,10 @@ IttvePW
 				www\smv-110\jquery.smartmenus.min.js
 				www\smv-110\LICENSE-MIT
 				www\smv-110\README.md
-			-Styles
-				www\Styles\Buttons.css
-				www\Styles\Fonts.css
-				www\Styles\mButtons.css
-				www\Styles\MenuAccord.css
-				www\Styles\mFonts.css
-				www\Styles\mStyles.css
+			+Styles
 				www\Styles\Reset.css
 				www\Styles\Styles.css
+				www\Styles\Stylesm.css
 			-TinyMCE
 				-langs
 					www\TinyMCE\langs\readme.md
@@ -768,6 +781,7 @@ IttvePW
 			www\log.txt
 			www\Main.php
 			www\manifest.json
+			www\Site.php
 			www\UpSite.php
 		-Картинки для кнопок
 			-Img-прозрачным фоном
@@ -854,18 +868,37 @@ IttvePW
 1=www\Main.php
 2=www\iniMem.php
 3=www\UpSite.php
+4=www\Site.php
+5=www\Styles\Styles.css
+6=www\Pages\cCenter.php
+7=www\Pages\exPhp.php
 [Selected Project Files]
 Main=
-Selected=www\UpSite.php
+Selected=www\Styles\Styles.css
 [www\index.php]
 TopLine=33
 Caret=4,34
 [www\Main.php]
-TopLine=35
-Caret=1,52
+TopLine=15
+Caret=9,117
 [www\iniMem.php]
-TopLine=5
-Caret=23,23
+TopLine=11
+Caret=20,18
 [www\UpSite.php]
 TopLine=61
-Caret=26,37
+Caret=1,66
+[www\Site.php]
+TopLine=51
+Caret=48,65
+Mark1=1,79
+Mark2=1,79
+Mark3=1,79
+[www\Styles\Styles.css]
+TopLine=55
+Caret=22,62
+[www\Pages\cCenter.php]
+TopLine=27
+Caret=5,44
+[www\Pages\exPhp.php]
+TopLine=13
+Caret=1,36

@@ -1,16 +1,11 @@
-/* HTML5/CSS3, EDGE/CHROME                                    *** Reset.css ***
 
- ******************************************************************************
- * ittve.pw                        Выполнить начальную установку стилей сайта *
- ******************************************************************************
-
-                                                     Автор:       Труфанов В.Е.
-                                                     Дата создания:  07.01.2019
- Copyright © 2019 tve                                Посл.изменение: 21.04.2021
-*/
 
 /* Содержим поля в ширине блока (кроме margin) */
-* {box-sizing: border-box;}
+* 
+{
+   box-sizing: border-box;
+}
+ 
 /* Выравниваем базовую линию блока по базовой линии родителя */
 html, body,
 a, abbr, acronym, address, article, aside, audio, b, big, blockquote,
@@ -28,18 +23,35 @@ table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
 	border: 0;
 	vertical-align: baseline;
 }
+
 /* Снимаем умалчиваемый стили браузеров при фокусировании на поле ввода */
-*:focus {outline: none;}
+*:focus 
+{
+   outline: none;
+}
+
 /* Все секции представляем, как блоки */
 article, aside, details, div, figcaption, figure, footer, header, hgroup, 
 menu, nav, section 
-{display: block;}
+{
+	display: block;
+}
+
 /* Нумеруем списки арабскими числами (1,2,3,4,...) */
-ol{list-style: decimal;}
+ol 
+{ 
+	list-style: decimal;
+}
+
 /* Ставим маркер в виде квадрата в маркированных списках */
-ul{list-style: square;}
+ul 
+{
+	list-style: square;
+}
+
 /* Склеиваем линии между ячейками */
-table{border-collapse: collapse;} 
-/*
- **************************************************************** Reset.css ***
-*/	
+table 
+{
+	border-collapse: collapse;
+} 
+

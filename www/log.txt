@@ -6,3 +6,6 @@ Stack trace:
 #2 {main}
   thrown in C:\IttvePW\www\iniMem.php on line 25
 [20-Apr-2021 19:10:22 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '*', expecting end of file in C:\IttvePW\www\Main.php on line 61
+[21-Apr-2021 14:46:41 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\iniMem.php on line 34
+[21-Apr-2021 16:02:37 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
+[21-Apr-2021 16:03:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
