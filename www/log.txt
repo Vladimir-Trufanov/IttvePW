@@ -9,3 +9,4 @@ Stack trace:
 [21-Apr-2021 14:46:41 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\iniMem.php on line 34
 [21-Apr-2021 16:02:37 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
 [21-Apr-2021 16:03:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
+[22-Apr-2021 14:41:15 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'sm' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 72

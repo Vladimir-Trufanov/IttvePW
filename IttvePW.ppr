@@ -396,6 +396,84 @@ IttvePW
 				JS_JQ\эксперименты\содержимое_функции.html
 				JS_JQ\эксперименты\эффекты.html
 			JS_JQ\JS_JQ.ppr
+		-MenuAccord
+			MenuAccord\lSide.php
+			MenuAccord\MenuAccord.css
+			MenuAccord\MenuAccord.php
+		-SmartMenus
+			-addons
+				-bootstrap
+					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.css
+					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.js
+					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.min.js
+				-bootstrap-4
+					SmartMenus\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.css
+					SmartMenus\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.js
+					SmartMenus\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.min.js
+				-keyboard
+					SmartMenus\addons\keyboard\jquery.smartmenus.keyboard.js
+					SmartMenus\addons\keyboard\jquery.smartmenus.keyboard.min.js
+			-css
+				-sm-blue
+					-mixins
+						SmartMenus\css\sm-blue\mixins\_round-corners-last-item.scss
+						SmartMenus\css\sm-blue\mixins\_sub-items-indentation.scss
+					SmartMenus\css\sm-blue\_mixins.scss
+					SmartMenus\css\sm-blue\_sm-blue-theme.scss
+					SmartMenus\css\sm-blue\sm-blue.css
+					SmartMenus\css\sm-blue\sm-blue.css.map
+					SmartMenus\css\sm-blue\sm-blue.scss
+				-sm-clean
+					-mixins
+						SmartMenus\css\sm-clean\mixins\_round-corners-last-item.scss
+						SmartMenus\css\sm-clean\mixins\_sub-items-indentation.scss
+					SmartMenus\css\sm-clean\_mixins.scss
+					SmartMenus\css\sm-clean\_sm-clean-theme.scss
+					SmartMenus\css\sm-clean\sm-clean.css
+					SmartMenus\css\sm-clean\sm-clean.css.map
+					SmartMenus\css\sm-clean\sm-clean.scss
+				-sm-mint
+					-mixins
+						SmartMenus\css\sm-mint\mixins\_sub-items-indentation.scss
+					SmartMenus\css\sm-mint\_mixins.scss
+					SmartMenus\css\sm-mint\_sm-mint-theme.scss
+					SmartMenus\css\sm-mint\sm-mint.css
+					SmartMenus\css\sm-mint\sm-mint.css.map
+					SmartMenus\css\sm-mint\sm-mint.scss
+				-sm-simple
+					-mixins
+						SmartMenus\css\sm-simple\mixins\_sub-items-indentation.scss
+					SmartMenus\css\sm-simple\_mixins.scss
+					SmartMenus\css\sm-simple\_sm-simple-theme.scss
+					SmartMenus\css\sm-simple\sm-simple.css
+					SmartMenus\css\sm-simple\sm-simple.css.map
+					SmartMenus\css\sm-simple\sm-simple.scss
+				SmartMenus\css\sm-core-css.css
+			-demo
+				SmartMenus\demo\bootstrap-4-navbar.html
+				SmartMenus\demo\bootstrap-4-navbar-fixed-bottom.html
+				SmartMenus\demo\bootstrap-4-navbar-fixed-top.html
+				SmartMenus\demo\bootstrap-4-navbar-static-top.html
+				SmartMenus\demo\bootstrap-navbar.html
+				SmartMenus\demo\bootstrap-navbar-fixed-bottom.html
+				SmartMenus\demo\bootstrap-navbar-fixed-top.html
+				SmartMenus\demo\bootstrap-navbar-static-top.html
+				SmartMenus\demo\index.html
+				SmartMenus\demo\keyboard-navigation.html
+			-libs
+				-demo-assets
+					-shjs
+						SmartMenus\libs\demo-assets\shjs\shjs.css
+						SmartMenus\libs\demo-assets\shjs\shjs.js
+					SmartMenus\libs\demo-assets\demo.css
+					SmartMenus\libs\demo-assets\readme.txt
+					SmartMenus\libs\demo-assets\themes-switcher.js
+				-jquery
+					SmartMenus\libs\jquery\jquery.js
+			SmartMenus\jquery.smartmenus.js
+			SmartMenus\jquery.smartmenus.min.js
+			SmartMenus\LICENSE-MIT
+			SmartMenus\README.md
 		+www
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
@@ -416,17 +494,19 @@ IttvePW
 					www\Images\Buttons\Php.svg
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
-			-JS
-				www\JS\IttvePW.js
-				www\JS\TJsPrown.css
-				www\JS\TJsPrown.js
+			-Js
+				www\Js\IttvePW.js
+				www\Js\jquery.js
+				www\Js\jquery.smartmenus.js
+				www\Js\TJsPrown.css
+				www\Js\TJsPrown.js
 			-KwinTiny
 				-Arc
 					www\KwinTiny\Arc\proba.jpg
 					www\KwinTiny\Arc\textfile.html
 					www\KwinTiny\Arc\textfile.htmlo
 				-Temp
-			+old
+			-old
 				-Pages
 					-Art
 					-Think
@@ -437,15 +517,13 @@ IttvePW
 					www\old\Pages\fBlock.php
 					www\old\Pages\hBlock.php
 					www\old\Pages\lSide.php
-				+Styles
+				-Styles
 					www\old\Styles\Buttons.css
-					www\old\Styles\Fonts.css
 					www\old\Styles\mButtons.css
-					www\old\Styles\mFonts.css
 					www\old\Styles\Reset.css
 					www\old\Styles\Styles.css
 					www\old\Styles\Stylesm.css
-			+Pages
+			-Pages
 				-Art
 				-Think
 				www\Pages\cCenter.php
@@ -458,81 +536,11 @@ IttvePW
 			-Reset
 				www\Reset\e404.php
 				www\Reset\index.php
-			-smv-110
-				-addons
-					-bootstrap
-						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.css
-						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.js
-						www\smv-110\addons\bootstrap\jquery.smartmenus.bootstrap.min.js
-					-bootstrap-4
-						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.css
-						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.js
-						www\smv-110\addons\bootstrap-4\jquery.smartmenus.bootstrap-4.min.js
-					-keyboard
-						www\smv-110\addons\keyboard\jquery.smartmenus.keyboard.js
-						www\smv-110\addons\keyboard\jquery.smartmenus.keyboard.min.js
-				-css
-					-sm-blue
-						-mixins
-							www\smv-110\css\sm-blue\mixins\_round-corners-last-item.scss
-							www\smv-110\css\sm-blue\mixins\_sub-items-indentation.scss
-						www\smv-110\css\sm-blue\_mixins.scss
-						www\smv-110\css\sm-blue\_sm-blue-theme.scss
-						www\smv-110\css\sm-blue\sm-blue.css
-						www\smv-110\css\sm-blue\sm-blue.css.map
-						www\smv-110\css\sm-blue\sm-blue.scss
-					-sm-clean
-						-mixins
-							www\smv-110\css\sm-clean\mixins\_round-corners-last-item.scss
-							www\smv-110\css\sm-clean\mixins\_sub-items-indentation.scss
-						www\smv-110\css\sm-clean\_mixins.scss
-						www\smv-110\css\sm-clean\_sm-clean-theme.scss
-						www\smv-110\css\sm-clean\sm-clean.css
-						www\smv-110\css\sm-clean\sm-clean.css.map
-						www\smv-110\css\sm-clean\sm-clean.scss
-					-sm-mint
-						-mixins
-							www\smv-110\css\sm-mint\mixins\_sub-items-indentation.scss
-						www\smv-110\css\sm-mint\_mixins.scss
-						www\smv-110\css\sm-mint\_sm-mint-theme.scss
-						www\smv-110\css\sm-mint\sm-mint.css
-						www\smv-110\css\sm-mint\sm-mint.css.map
-						www\smv-110\css\sm-mint\sm-mint.scss
-					-sm-simple
-						-mixins
-							www\smv-110\css\sm-simple\mixins\_sub-items-indentation.scss
-						www\smv-110\css\sm-simple\_mixins.scss
-						www\smv-110\css\sm-simple\_sm-simple-theme.scss
-						www\smv-110\css\sm-simple\sm-simple.css
-						www\smv-110\css\sm-simple\sm-simple.css.map
-						www\smv-110\css\sm-simple\sm-simple.scss
-					www\smv-110\css\sm-core-css.css
-				-demo
-					www\smv-110\demo\bootstrap-4-navbar.html
-					www\smv-110\demo\bootstrap-4-navbar-fixed-bottom.html
-					www\smv-110\demo\bootstrap-4-navbar-fixed-top.html
-					www\smv-110\demo\bootstrap-4-navbar-static-top.html
-					www\smv-110\demo\bootstrap-navbar.html
-					www\smv-110\demo\bootstrap-navbar-fixed-bottom.html
-					www\smv-110\demo\bootstrap-navbar-fixed-top.html
-					www\smv-110\demo\bootstrap-navbar-static-top.html
-					www\smv-110\demo\index.html
-					www\smv-110\demo\keyboard-navigation.html
-				-libs
-					-demo-assets
-						-shjs
-							www\smv-110\libs\demo-assets\shjs\shjs.css
-							www\smv-110\libs\demo-assets\shjs\shjs.js
-						www\smv-110\libs\demo-assets\demo.css
-						www\smv-110\libs\demo-assets\readme.txt
-						www\smv-110\libs\demo-assets\themes-switcher.js
-					-jquery
-						www\smv-110\libs\jquery\jquery.js
-				www\smv-110\jquery.smartmenus.js
-				www\smv-110\jquery.smartmenus.min.js
-				www\smv-110\LICENSE-MIT
-				www\smv-110\README.md
-			+Styles
+			+sm-mint
+				www\sm-mint\sm-core-css.css
+				www\sm-mint\sm-mint.css
+				www\sm-mint\sm-mint.css.map
+			-Styles
 				www\Styles\Reset.css
 				www\Styles\Styles.css
 				www\Styles\Stylesm.css
@@ -872,6 +880,8 @@ IttvePW
 5=www\Styles\Styles.css
 6=www\Pages\cCenter.php
 7=www\Pages\exPhp.php
+8=www\Pages\hBlock.php
+9=www\sm-mint\sm-mint.css
 [Selected Project Files]
 Main=
 Selected=www\Styles\Styles.css
@@ -879,26 +889,30 @@ Selected=www\Styles\Styles.css
 TopLine=33
 Caret=4,34
 [www\Main.php]
-TopLine=15
+TopLine=89
 Caret=9,117
 [www\iniMem.php]
 TopLine=11
 Caret=20,18
 [www\UpSite.php]
-TopLine=61
-Caret=1,66
+TopLine=42
+Caret=17,52
 [www\Site.php]
-TopLine=51
+TopLine=5
 Caret=48,65
 Mark1=1,79
-Mark2=1,79
-Mark3=1,79
 [www\Styles\Styles.css]
-TopLine=55
-Caret=22,62
+TopLine=21
+Caret=24,27
 [www\Pages\cCenter.php]
 TopLine=27
 Caret=5,44
 [www\Pages\exPhp.php]
 TopLine=13
 Caret=1,36
+[www\Pages\hBlock.php]
+TopLine=3
+Caret=33,18
+[www\sm-mint\sm-mint.css]
+TopLine=1
+Caret=3,401

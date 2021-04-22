@@ -43,13 +43,25 @@ echo '
  <link rel="stylesheet" 
    href="https://kwinflat.ru/font-awesome-4.7.0/css/font-awesome.min.css">
 ';
+// Подключаем jQuery
+echo '
+   <script src="/Js/jquery.js" type="text/javascript"></script>
+   <script src="/Js/jquery.smartmenus.js" type="text/javascript"></script>
+   <script type="text/javascript"> $(function() 
+   {
+		$("#main-menu").smartmenus({
+			subMenusSubOffsetX: 6,
+			subMenusSubOffsetY: -8
+		});
+	});
+</script>
+';
 if ($SiteDevice==Mobile) 
 {   
    echo '<title>В мобильном программировании моё увлечение!</title>';
    echo '
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
       <!-- 
-      <link rel="stylesheet" type="text/css" href="Styles/Fontsm.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttonsm.css">
       -->
    ';
@@ -60,10 +72,24 @@ else
    echo '
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
       <!-- 
-      <link rel="stylesheet" type="text/css" href="Styles/Fonts.css">
       <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
       -->
    ';
+   // Подключаем smartmenus
+   echo "
+      <link href='sm-mint/sm-core-css.css' rel='stylesheet' type='text/css' />
+      <link href='sm-mint/sm-mint.css' rel='stylesheet' type='text/css' />
+      <style type='text/css'> @media (min-width: 768px) 
+      {#main-menu > li 
+         {
+			   float: none;
+			   display: table-cell;
+			   width: 1%;
+			   text-align: center;
+		   }
+	   }
+      </style>
+   ";
 }
 
 //require_once "iJsJquery.php";
