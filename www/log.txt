@@ -10,3 +10,12 @@ Stack trace:
 [21-Apr-2021 16:02:37 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
 [21-Apr-2021 16:03:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected end of file in C:\IttvePW\www\Site.php on line 60
 [22-Apr-2021 14:41:15 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'sm' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 72
+[23-Apr-2021 17:17:33 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in C:\IttvePW\www\UpSite.php on line 122
+[23-Apr-2021 17:35:40 Asia/Kuwait] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SiteMarkup(), 0 passed in C:\IttvePW\www\Site.php on line 14 and exactly 1 expected in C:\IttvePW\www\UpSite.php:120
+Stack trace:
+#0 C:\IttvePW\www\Site.php(14): SiteMarkup()
+#1 C:\IttvePW\www\UpSite.php(106): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(102): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\UpSite.php on line 120

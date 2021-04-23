@@ -9,27 +9,41 @@
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 22.04.2021
 
-//echo 'hBlock';
-echo '
-<nav id="main-nav">
-<ul id="main-menu" class="sm sm-mint">
-  <li><a href="#">ММС Лада-Нива</a>
-    <ul>
-      <li><a href="#">С чего все началось</a></li>
-      <li><a href="#">А что внутри?</a></li>
-      <li><a href="#">Эксперименты со строками</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Стиль программирования</a></li>
-  <li><a href="#">Структурное проектирование</a></li>
-  <li><a href="#">Учебники</a></li>
-  <li><a href="#">О сайте</a></li>
-</ul>
+if ($SiteDevice==Mobile) 
+{   
+   echo '
+   <style>
+   #custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+   }
+   </style>
+   
+   
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+<div id="custom-border-radius">
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+</div>
+';
+}
+else
+{
+   echo '
+   <nav id="main-nav">
+   <ul id="main-menu" class="sm sm-mint">
+      <li><a href="#">ММС Лада-Нива</a>
+         <ul>
+            <li><a href="#">С чего все началось</a></li>
+            <li><a href="#">А что внутри?</a></li>
+            <li><a href="#">Эксперименты со строками</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Стиль</a></li>
+      <li><a href="#">Моделирование</a></li>
+      <li><a href="#">Учебники</a></li>
+      <li><a href="#">О сайте</a></li>
+   </ul>
 </nav>
 ';
-
-
-
-?>
-<?php
+}
 // *** <!-- --> ************************************************ nBlock.php ***

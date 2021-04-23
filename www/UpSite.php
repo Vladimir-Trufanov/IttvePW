@@ -7,11 +7,11 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  13.01.2019
-// Copyright © 2019 tve                              Посл.изменение: 20.04.2021
+// Copyright © 2019 tve                              Посл.изменение: 23.04.2021
 
 // ****************************************************************************
-// *              Формируем общие начальные теги разметки страницы,           *
-// *           разбираем параметры запроса и открываем страницу сайта         *
+// *            Сформировать общие начальные теги разметки страницы,          *
+// *            разобрать параметры запроса и открыть страницу сайта          *
 // ****************************************************************************
 echo '<!DOCTYPE html>';
 echo '<html lang="ru">';
@@ -45,25 +45,21 @@ echo '
 ';
 // Подключаем jQuery
 echo '
+   <!-- 
    <script src="/Js/jquery.js" type="text/javascript"></script>
-   <script src="/Js/jquery.smartmenus.js" type="text/javascript"></script>
-   <script type="text/javascript"> $(function() 
-   {
-		$("#main-menu").smartmenus({
-			subMenusSubOffsetX: 6,
-			subMenusSubOffsetY: -8
-		});
-	});
-</script>
+   -->
+   <script src="/Js/jquery-1.11.1.min.js"></script>
 ';
 if ($SiteDevice==Mobile) 
 {   
    echo '<title>В мобильном программировании моё увлечение!</title>';
    echo '
+      <link rel="stylesheet" href="Js/jquery.mobile-1.4.5.min.css" />
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
       <!-- 
       <link rel="stylesheet" type="text/css" href="Styles/Buttonsm.css">
       -->
+      <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
    ';
 }
 else 
@@ -79,6 +75,15 @@ else
    echo "
       <link href='sm-mint/sm-core-css.css' rel='stylesheet' type='text/css' />
       <link href='sm-mint/sm-mint.css' rel='stylesheet' type='text/css' />
+      <script src='/Js/jquery.smartmenus.js' type='text/javascript'></script>
+      <script type='text/javascript'> $(function() 
+      {
+		   $('#main-menu').smartmenus({
+			   subMenusSubOffsetX: 6,
+			   subMenusSubOffsetY: -8
+		   });
+	   });
+      </script>
       <style type='text/css'> @media (min-width: 768px) 
       {#main-menu > li 
          {
@@ -97,16 +102,14 @@ else
 // Начинаем html-страницу
 echo '</head>'; 
 echo '<body>'; 
-
 ?>
    <script>
       //ScreenInfo33();
    </script> 
 <?php
-
-require_once 'Site.php';
+if ($SiteDevice==Mobile) require_once 'Sitem.php';
+else require_once 'Site.php';
 //echo 'Привет Вам! <br>';
-
 /*
 // При необходимости показываем кукисы и переменные сессий
 prown\ViewGlobal(avgSESSION);
@@ -115,5 +118,51 @@ prown\ViewGlobal(avgCOOKIE);
 // Выводим завершающие теги страницы
 echo '</body>'; 
 echo '</html>';
+
+// ****************************************************************************
+// *                      Сформировать разметку страницы                      *
+// ****************************************************************************
+function SiteMarkup($SiteMode,$SiteDevice)
+{
+  echo         '<div id="hBlock">';
+  require_once 'Pages/hBlock.php';
+  echo         '</div>';
+
+  echo         '<div id="lSideTOrSide">';
+  
+  if ($SiteMode==rzmWithLeft)
+  {
+    echo          '<div id="lSide">';
+    require_once  'Pages/lSide.php';
+    echo          '</div>';
+  }
+  
+  echo            '<div id="cCenter">';
+  require_once    'Pages/cCenter.php';
+  echo            '</div>';
+
+  echo            '<div id="rSide">';
+
+  if ($SiteMode==rzmCompare)
+  {
+    echo              '<div class="cSection" id="exLaz">';
+    require_once      'Pages/exLaz.php';
+    echo              '</div>';
+
+    echo              '<div class="cSection" id="exJav">';
+    require_once      'Pages/exJav.php';
+    echo              '</div>';
+  }
+  echo                '<div class="cSection" id="exPhp">';
+  require_once        'Pages/exPhp.php';
+  echo                '</div>';
+
+  echo            '</div>';
+  echo         '</div>';
+
+  echo         '<footer id="fBlock">';
+  require_once 'Pages/fBlock.php';
+  echo         '</footer>';
+}
 
 // *** <!-- --> ************************************************ UpSite.php ***
