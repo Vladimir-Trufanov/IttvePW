@@ -53,13 +53,24 @@ echo '
 if ($SiteDevice==Mobile) 
 {   
    echo '<title>В мобильном программировании моё увлечение!</title>';
+   // Включаем набор meta-тегов для сайтов с адаптивным дизайном:
+   // константой device-width задаёт ширину страницы в соответствии с размером 
+   // экрана и определяем неизменный начальный масштаб страницы;
+   // указываем, что страница оптимизирована под мобильные устройства на Palm 
+   // и Blackberry, в таком браузере как AvantGo и других;
+   // для мобильных браузеров IE Mobile или Pocket IE определяем ширина страницы
+   // в соответствии с размером экрана, аналог device-width; 
+   // позволяем работать в полноэкранном режиме на мобильных устройствах Apple.
+   echo "
+      <meta name='viewport' content='width=device-width,initial-scale=1'/>
+      <meta content='true' name='HandheldFriendly'/>
+      <meta content='width' name='MobileOptimized'/>
+      <meta content='yes' name='apple-mobile-web-app-capable'/>
+   ";
    echo '
       <link rel="stylesheet" href="Js/jquery-ui.min.css" />
       <link rel="stylesheet" href="Js/jquery.mobile-1.4.5.min.css" />
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
-      <!-- 
-      <link rel="stylesheet" type="text/css" href="Styles/Buttonsm.css">
-      -->
       <script src="/Js/jquery-ui.min.js"></script>
       <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
    ';
@@ -69,9 +80,6 @@ else
    echo '<title>В программировании моя жизнь!</title>';
    echo '
       <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
-      <!-- 
-      <link rel="stylesheet" type="text/css" href="Styles/Buttons.css">
-      -->
    ';
    // Подключаем smartmenus
    echo "

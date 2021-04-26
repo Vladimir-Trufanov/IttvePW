@@ -41,7 +41,7 @@ function markupMobileSite($SiteMode)
       <div data-role = "header">
          <h4>Header</h4>
       </div>
-      <div role = "main" class = "ui-content">
+      <div role="main" class="ui-content" id="cCenter">
    ';
    require_once 'Pages/cCenter.php';
    echo '
@@ -54,9 +54,9 @@ function markupMobileSite($SiteMode)
    echo '
    <div data-role = "page" id = "page2">
       <div data-role = "header">
-         <h1>Header Text</h1>
+         <h4>Header Text</h4>
       </div>
-      <div role = "main" class = "ui-content">
+      <div role="main" class="ui-content" id="exPhp">
    ';
    require_once 'Pages/exPhp.php';
    echo '
