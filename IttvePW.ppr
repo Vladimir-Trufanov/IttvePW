@@ -16,7 +16,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	-IttvePW
+	+IttvePW
 		-backlight
 			backlight\c99-styles.css
 			backlight\example.c
@@ -1869,7 +1869,7 @@ IttvePW
 			SmartMenus\jquery.smartmenus.min.js
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
-		-www
+		+www
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -2275,16 +2275,16 @@ IttvePW
 1=www\Main.php
 2=www\iniMem.php
 3=www\UpSite.php
-4=www\Sitem.php
-5=www\Styles\Styles.css
-6=www\Pages\cCenter.php
-7=www\Pages\exPhp.php
-8=www\Pages\hBlock.php
-9=www\Styles\Stylesm.css
-10=www\Site.php
+4=www\Styles\Styles.css
+5=www\Pages\cCenter.php
+6=www\Pages\exPhp.php
+7=www\Pages\hBlock.php
+8=www\Styles\Stylesm.css
+9=www\Site.php
+10=www\Sitem.php
 [Selected Project Files]
 Main=
-Selected=www\UpSite.php
+Selected=www\Sitem.php
 [www\index.php]
 TopLine=33
 Caret=4,34
@@ -2295,12 +2295,8 @@ Caret=9,117
 TopLine=11
 Caret=20,18
 [www\UpSite.php]
-TopLine=31
-Caret=7,62
-[www\Sitem.php]
-TopLine=9
-Caret=35,14
-Mark1=1,38
+TopLine=107
+Caret=1,123
 [www\Styles\Styles.css]
 TopLine=27
 Caret=24,27
@@ -2317,5 +2313,8 @@ Caret=12,20
 TopLine=1
 Caret=80,9
 [www\Site.php]
-TopLine=5
-Caret=12,29
+TopLine=62
+Caret=1,76
+[www\Sitem.php]
+TopLine=29
+Caret=1,69

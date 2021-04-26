@@ -54,11 +54,13 @@ if ($SiteDevice==Mobile)
 {   
    echo '<title>В мобильном программировании моё увлечение!</title>';
    echo '
+      <link rel="stylesheet" href="Js/jquery-ui.min.css" />
       <link rel="stylesheet" href="Js/jquery.mobile-1.4.5.min.css" />
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
       <!-- 
       <link rel="stylesheet" type="text/css" href="Styles/Buttonsm.css">
       -->
+      <script src="/Js/jquery-ui.min.js"></script>
       <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
    ';
 }
@@ -118,51 +120,5 @@ prown\ViewGlobal(avgCOOKIE);
 // Выводим завершающие теги страницы
 echo '</body>'; 
 echo '</html>';
-
-// ****************************************************************************
-// *                      Сформировать разметку страницы                      *
-// ****************************************************************************
-function SiteMarkup($SiteMode,$SiteDevice)
-{
-  echo         '<div id="hBlock">';
-  require_once 'Pages/hBlock.php';
-  echo         '</div>';
-
-  echo         '<div id="lSideTOrSide">';
-  
-  if ($SiteMode==rzmWithLeft)
-  {
-    echo          '<div id="lSide">';
-    require_once  'Pages/lSide.php';
-    echo          '</div>';
-  }
-  
-  echo            '<div id="cCenter">';
-  require_once    'Pages/cCenter.php';
-  echo            '</div>';
-
-  echo            '<div id="rSide">';
-
-  if ($SiteMode==rzmCompare)
-  {
-    echo              '<div class="cSection" id="exLaz">';
-    require_once      'Pages/exLaz.php';
-    echo              '</div>';
-
-    echo              '<div class="cSection" id="exJav">';
-    require_once      'Pages/exJav.php';
-    echo              '</div>';
-  }
-  echo                '<div class="cSection" id="exPhp">';
-  require_once        'Pages/exPhp.php';
-  echo                '</div>';
-
-  echo            '</div>';
-  echo         '</div>';
-
-  echo         '<footer id="fBlock">';
-  require_once 'Pages/fBlock.php';
-  echo         '</footer>';
-}
 
 // *** <!-- --> ************************************************ UpSite.php ***
