@@ -62,7 +62,8 @@ if ($SiteDevice==Mobile)
    // в соответствии с размером экрана, аналог device-width; 
    // позволяем работать в полноэкранном режиме на мобильных устройствах Apple.
    echo "
-      <meta name='viewport' content='width=device-width,initial-scale=1'/>
+      <!-- <meta name='viewport' content='width=device-width,initial-scale=1'/> -->
+      <meta name='viewport' content='width=310,initial-scale=1'/>
       <meta content='true' name='HandheldFriendly'/>
       <meta content='width' name='MobileOptimized'/>
       <meta content='yes' name='apple-mobile-web-app-capable'/>

@@ -40,11 +40,15 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain)
    <div data-role = "page" id = "page1">
       <div data-role = "header">
          <div data-role="controlgroup" data-type="horizontal"> 
-         <button id="bTasks"><i id="iTasks" class="fa fa-tasks fa-lg" aria-hidden="true"> </i></button>
+         <div id="bTasks" class="dibtn">
+         <a href="https://kwinflat.ru"><i class="fa fa-tasks fa-lg" aria-hidden="true"> </i></a>
+         </div>
    ';
    echo  '<div id="cTitle"> <h1>'.$TitleMain.'</h1></div>';
    echo '
-         <button id="bHandoright"><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"> </i></button>
+         <div id="bHandoright" class="dibtn">
+         <a href="#"><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"> </i></a>
+         </div>
          </div>
       </div>
       <div role="main" class="ui-content" id="cCenter">
@@ -61,7 +65,17 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain)
    echo '
    <div data-role = "page" id = "page2">
       <div data-role = "header">
-         <h4>Header Text</h4>
+         <div data-role="controlgroup" data-type="horizontal"> 
+         <div id="bTasks" class="dibtn">
+         <a href="https://kwinflat.ru"><i class="fa fa-hand-o-left fa-lg" aria-hidden="true"> </i></a>
+         </div>
+   ';
+   echo  '<div id="cTitle"> <h1>Текст фрагмента программы</h1></div>';
+   echo '
+         <div id="bHandoright" class="dibtn">
+         <a href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"> </i></a>
+         </div>
+         </div>
       </div>
       <div role="main" class="ui-content" id="exPhp">
    ';
@@ -74,4 +88,4 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain)
    </div>
    ';
 }
-// ************************************************************** Sitem.php ***
+// *** <!-- --> ************************************************* Sitem.php ***

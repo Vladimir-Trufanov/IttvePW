@@ -16,6 +16,9 @@ html
 /* Устанавливаем размеры шрифтов по умолчанию */
 body 
 {
+  /*<meta name='viewport' content='width=310,initial-scale=1'/>*/
+  /*background-color:#CCFFFF;*/
+
   font-size: 1rem;  
   width: 100%;        
 }
@@ -26,30 +29,33 @@ h1
   color: #46874D;
   text-align: center;
 }
-/* Закругляем кнопки */
-#bTasks, #bHandoright
+ 
+.dibtn, #bTasks, #bHandoright
 { 
-  border-radius: .5rem;
-  width: 2rem; 
-}
-#iTasks
-{
-  margin-left: 0;
-  
+  border-radius: 5px;
+  width: 35px; 
+  border: 4px double #3388CC; 
+  padding: 3px 3px 3px 3px; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  text-align: center;
 }
 #bTasks
 {
-float: left;
-  margin-left: .5rem;
+  float: left;
+  margin-left: 5px;
 }
 #cTitle
 {
-float: left;
+  float: left;
+  margin-left: 5px;
+  width: 222px;
 }
 #bHandoright
 {
-float: right;
+  float: left;
+  margin-left: 5px;
 }
+
 #cCenter  
 {
   text-align: justify;
