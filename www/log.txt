@@ -19,3 +19,8 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\UpSite.php on line 120
+[26-Apr-2021 20:57:05 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
+[26-Apr-2021 21:00:30 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
+[26-Apr-2021 21:03:25 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
+[26-Apr-2021 21:07:36 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
+[27-Apr-2021 14:55:21 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'bCtrl' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\Sitem.php on line 46

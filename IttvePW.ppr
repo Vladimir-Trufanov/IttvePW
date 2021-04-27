@@ -37,1401 +37,6 @@ IttvePW
 			Favicon\favicon_package_v0.16.zip
 			Favicon\ittvepw.png
 			Favicon\IttvePW-favicon.doc
-		-jqMobile
-			-jqMobile
-				-jqMobile Exp1
-					-www
-						-_assets
-							-css
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\css\jqm-demos.css
-							-img
-								-glyphish-icons
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\09-chat2.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\100-coffee.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\18-envelope.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\19-gear.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\21-skull.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\30-key.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\34-coffee.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\88-beermug.png
-									jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\glyphish-icons\Read me first - license.txt
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-af.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-ag.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-bb.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-bk.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-hc.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-k.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-mg.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-ok.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-p.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-rh.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-ws.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\album-xx.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\apple.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\bg-pattern.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\bike.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\blackberry_10.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\bmw.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\bmw-thumb.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\buenosaires.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\capetown.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\de.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\devices.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\fi.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\firefox_os.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\firefox-logo.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\galaxy_express.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\gb.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\gf.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\jquery-logo.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\landrover.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\landrover-thumb.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\lumia_800.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\newyork.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\nexus_7.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\paris.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\phone_galaxy3.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\phone_iphone5.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\phone_lumia920.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\phone_onex.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\photo-landscape.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\photo-portrait.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\photo-run.jpeg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\seoul.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\sydney.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\tesla.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\tesla-thumb.jpg
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\tizen.png
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\img\us.png
-							-js
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\js\h2widget.js
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\js\index.html
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\js\index.js
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\js\jqm-demos.js
-								jqMobile\jqMobile\jqMobile Exp1\www\_assets\js\view-source.js
-						-_search
-							jqMobile\jqMobile\jqMobile Exp1\www\_search\index.html
-						-css
-							-themes
-								-default
-									-images
-										-icons-png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\action-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\action-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\alert-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\alert-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-l-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-l-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-r-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-r-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-d-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-l-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-l-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-r-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-r-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-l-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-l-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-r-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-r-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\arrow-u-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\audio-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\audio-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\back-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\back-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\bars-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\bars-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\bullets-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\bullets-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\calendar-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\calendar-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\camera-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\camera-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-d-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-d-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-l-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-l-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-r-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-r-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-u-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\carat-u-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\check-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\check-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\clock-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\clock-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\cloud-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\cloud-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\comment-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\comment-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\delete-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\delete-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\edit-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\edit-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\eye-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\eye-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\forbidden-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\forbidden-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\forward-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\forward-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\gear-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\gear-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\grid-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\grid-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\heart-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\heart-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\home-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\home-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\info-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\info-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\location-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\location-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\lock-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\lock-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\mail-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\mail-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\minus-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\minus-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\navigation-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\navigation-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\phone-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\phone-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\plus-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\plus-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\power-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\power-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\recycle-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\recycle-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\refresh-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\refresh-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\search-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\search-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\shop-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\shop-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\star-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\star-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\tag-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\tag-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\user-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\user-white.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\video-black.png
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-png\video-white.png
-										-icons-svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\action-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\action-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\alert-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\alert-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-l-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-l-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-r-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-r-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-d-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-l-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-l-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-r-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-r-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-l-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-l-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-r-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-r-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\arrow-u-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\audio-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\audio-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\back-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\back-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\bars-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\bars-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\bullets-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\bullets-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\calendar-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\calendar-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\camera-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\camera-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-d-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-d-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-l-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-l-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-r-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-r-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-u-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\carat-u-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\check-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\check-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\clock-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\clock-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\cloud-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\cloud-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\comment-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\comment-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\delete-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\delete-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\edit-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\edit-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\eye-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\eye-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\forbidden-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\forbidden-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\forward-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\forward-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\gear-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\gear-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\grid-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\grid-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\heart-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\heart-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\home-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\home-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\info-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\info-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\location-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\location-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\lock-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\lock-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\mail-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\mail-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\minus-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\minus-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\navigation-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\navigation-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\phone-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\phone-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\plus-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\plus-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\power-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\power-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\recycle-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\recycle-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\refresh-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\refresh-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\search-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\search-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\shop-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\shop-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\star-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\star-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\tag-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\tag-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\user-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\user-white.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\video-black.svg
-											jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\icons-svg\video-white.svg
-										jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\images\ajax-loader.gif
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.external-png-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.icons-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.inline-png-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.inline-svg-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.structure-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile.theme-1.4.5.min.css
-									jqMobile\jqMobile\jqMobile Exp1\www\css\themes\default\jquery.mobile-1.4.5.min.css
-						-js
-							jqMobile\jqMobile\jqMobile Exp1\www\js\jquery.js
-							jqMobile\jqMobile\jqMobile Exp1\www\js\jquery.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\js\jquery.mobile-1.4.5.js
-							jqMobile\jqMobile\jqMobile Exp1\www\js\jquery.mobile-1.4.5.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\js\jquery.mobile-1.4.5.min.map
-						-Jsold
-							-images
-								-icons-png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\action-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\action-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\alert-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\alert-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-l-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-l-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-r-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-r-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-d-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-l-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-l-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-r-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-r-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-l-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-l-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-r-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-r-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\arrow-u-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\audio-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\audio-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\back-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\back-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\bars-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\bars-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\bullets-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\bullets-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\calendar-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\calendar-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\camera-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\camera-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-d-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-d-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-l-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-l-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-r-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-r-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-u-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\carat-u-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\check-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\check-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\clock-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\clock-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\cloud-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\cloud-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\comment-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\comment-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\delete-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\delete-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\edit-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\edit-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\eye-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\eye-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\forbidden-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\forbidden-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\forward-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\forward-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\gear-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\gear-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\grid-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\grid-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\heart-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\heart-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\home-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\home-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\info-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\info-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\location-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\location-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\lock-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\lock-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\mail-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\mail-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\minus-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\minus-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\navigation-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\navigation-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\phone-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\phone-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\plus-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\plus-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\power-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\power-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\recycle-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\recycle-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\refresh-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\refresh-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\search-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\search-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\shop-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\shop-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\star-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\star-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\tag-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\tag-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\user-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\user-white.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\video-black.png
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-png\video-white.png
-								-icons-svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\action-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\action-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\alert-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\alert-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-l-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-l-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-r-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-r-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-d-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-l-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-l-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-r-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-r-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-l-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-l-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-r-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-r-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\arrow-u-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\audio-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\audio-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\back-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\back-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\bars-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\bars-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\bullets-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\bullets-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\calendar-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\calendar-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\camera-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\camera-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-d-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-d-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-l-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-l-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-r-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-r-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-u-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\carat-u-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\check-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\check-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\clock-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\clock-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\cloud-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\cloud-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\comment-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\comment-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\delete-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\delete-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\edit-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\edit-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\eye-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\eye-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\forbidden-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\forbidden-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\forward-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\forward-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\gear-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\gear-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\grid-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\grid-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\heart-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\heart-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\home-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\home-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\info-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\info-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\location-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\location-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\lock-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\lock-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\mail-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\mail-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\minus-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\minus-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\navigation-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\navigation-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\phone-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\phone-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\plus-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\plus-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\power-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\power-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\recycle-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\recycle-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\refresh-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\refresh-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\search-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\search-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\shop-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\shop-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\star-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\star-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\tag-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\tag-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\user-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\user-white.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\video-black.svg
-									jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\icons-svg\video-white.svg
-								jqMobile\jqMobile\jqMobile Exp1\www\Jsold\images\ajax-loader.gif
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.external-png-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.icons-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.inline-png-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.inline-svg-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.structure-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile.theme-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile-1.0a1.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile-1.0a1.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile-1.4.5.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile-1.4.5.min.css
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery.mobile-1.4.5.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery-1.11.1.min.js
-							jqMobile\jqMobile\jqMobile Exp1\www\Jsold\jquery-1.4.3.min.js
-						jqMobile\jqMobile\jqMobile Exp1\www\favicon.ico
-						jqMobile\jqMobile\jqMobile Exp1\www\index.php
-						jqMobile\jqMobile\jqMobile Exp1\www\index1.php
-				-jqMobile Exp2
-					-www
-						-images
-							jqMobile\jqMobile\jqMobile Exp2\www\images\ajax-loader.gif
-						jqMobile\jqMobile\jqMobile Exp2\www\favicon.ico
-						jqMobile\jqMobile\jqMobile Exp2\www\index.html
-						jqMobile\jqMobile\jqMobile Exp2\www\jquery.mobile-1.4.5.min.css
-						jqMobile\jqMobile\jqMobile Exp2\www\jquery.mobile-1.4.5.min.js
-						jqMobile\jqMobile\jqMobile Exp2\www\jquery.mobile-1.4.5.min.map
-						jqMobile\jqMobile\jqMobile Exp2\www\jquery-1.10.2.min.js
-					jqMobile\jqMobile\jqMobile Exp2\Cобытия Java Script на смартфоне ОПЫТ2.doc
-				-jqMobile Exp3
-					-www
-						-images
-							jqMobile\jqMobile\jqMobile Exp3\www\images\ajax-loader.gif
-						jqMobile\jqMobile\jqMobile Exp3\www\favicon.ico
-						jqMobile\jqMobile\jqMobile Exp3\www\index.php
-						jqMobile\jqMobile\jqMobile Exp3\www\jquery.mobile-1.4.5.min.css
-						jqMobile\jqMobile\jqMobile Exp3\www\jquery.mobile-1.4.5.min.js
-						jqMobile\jqMobile\jqMobile Exp3\www\jquery.mobile-1.4.5.min.map
-						jqMobile\jqMobile\jqMobile Exp3\www\jquery-1.10.2.min.js
-					jqMobile\jqMobile\jqMobile Exp3\Cобытия Java Script на смартфоне ОПЫТ3.doc
-				-jqMobile Exp4
-					-www
-						-images
-							jqMobile\jqMobile\jqMobile Exp4\www\images\ajax-loader.gif
-						jqMobile\jqMobile\jqMobile Exp4\www\favicon.ico
-						jqMobile\jqMobile\jqMobile Exp4\www\index.php
-						jqMobile\jqMobile\jqMobile Exp4\www\jquery.mobile-1.4.5.min.css
-						jqMobile\jqMobile\jqMobile Exp4\www\jquery.mobile-1.4.5.min.js
-						jqMobile\jqMobile\jqMobile Exp4\www\jquery.mobile-1.4.5.min.map
-						jqMobile\jqMobile\jqMobile Exp4\www\jquery-1.10.2.min.js
-						jqMobile\jqMobile\jqMobile Exp4\www\jquery-1.11.1.min.js
-				-www
-					-images
-						jqMobile\jqMobile\www\images\ajax-loader.gif
-					jqMobile\jqMobile\www\favicon.ico
-					jqMobile\jqMobile\www\index.php
-					jqMobile\jqMobile\www\jquery-1.10.2.min.js
-				jqMobile\jqMobile\jqMobile.ppr
-			-jquery.mobile-1.4.5
-				-demos
-					-_assets
-						-css
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\css\jqm-demos.css
-						-img
-							-glyphish-icons
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\09-chat2.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\100-coffee.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\18-envelope.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\19-gear.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\21-skull.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\30-key.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\34-coffee.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\88-beermug.png
-								jqMobile\jquery.mobile-1.4.5\demos\_assets\img\glyphish-icons\Read me first - license.txt
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-af.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-ag.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-bb.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-bk.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-hc.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-k.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-mg.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-ok.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-p.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-rh.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-ws.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\album-xx.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\apple.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\bg-pattern.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\bike.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\blackberry_10.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\bmw.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\bmw-thumb.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\buenosaires.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\capetown.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\de.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\devices.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\fi.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\firefox_os.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\firefox-logo.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\galaxy_express.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\gb.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\gf.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\jquery-logo.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\landrover.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\landrover-thumb.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\lumia_800.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\newyork.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\nexus_7.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\paris.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\phone_galaxy3.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\phone_iphone5.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\phone_lumia920.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\phone_onex.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\photo-landscape.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\photo-portrait.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\photo-run.jpeg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\seoul.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\sydney.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\tesla.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\tesla-thumb.jpg
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\tizen.png
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\img\us.png
-						-js
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\js\h2widget.js
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\js\index.html
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\js\index.js
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\js\jqm-demos.js
-							jqMobile\jquery.mobile-1.4.5\demos\_assets\js\view-source.js
-					-_search
-						jqMobile\jquery.mobile-1.4.5\demos\_search\index.html
-					-backbone-requirejs
-						-js
-							-collections
-								jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\js\collections\CategoriesCollection.js
-							-models
-								jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\js\models\CategoryModel.js
-							-routers
-								jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\js\routers\mobileRouter.js
-							-views
-								jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\js\views\CategoryView.js
-							jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\js\main.js
-						jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\backbone-require.html
-						jqMobile\jquery.mobile-1.4.5\demos\backbone-requirejs\index.html
-					-body-bar-classes
-						jqMobile\jquery.mobile-1.4.5\demos\body-bar-classes\index.html
-					-button
-						jqMobile\jquery.mobile-1.4.5\demos\button\index.html
-					-button-markup
-						jqMobile\jquery.mobile-1.4.5\demos\button-markup\index.html
-					-checkboxradio-checkbox
-						jqMobile\jquery.mobile-1.4.5\demos\checkboxradio-checkbox\index.html
-					-checkboxradio-radio
-						jqMobile\jquery.mobile-1.4.5\demos\checkboxradio-radio\index.html
-					-collapsible
-						jqMobile\jquery.mobile-1.4.5\demos\collapsible\index.html
-					-collapsible-dynamic
-						jqMobile\jquery.mobile-1.4.5\demos\collapsible-dynamic\index.html
-					-collapsibleset
-						jqMobile\jquery.mobile-1.4.5\demos\collapsibleset\index.html
-					-controlgroup
-						jqMobile\jquery.mobile-1.4.5\demos\controlgroup\index.html
-					-controlgroup-dynamic
-						jqMobile\jquery.mobile-1.4.5\demos\controlgroup-dynamic\index.html
-					-css
-						-themes
-							-default
-								-images
-									-icons-png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\action-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\action-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\alert-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\alert-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-l-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-l-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-r-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-r-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-d-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-l-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-l-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-r-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-r-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-l-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-l-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-r-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-r-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\arrow-u-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\audio-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\audio-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\back-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\back-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\bars-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\bars-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\bullets-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\bullets-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\calendar-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\calendar-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\camera-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\camera-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-d-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-d-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-l-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-l-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-r-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-r-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-u-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\carat-u-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\check-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\check-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\clock-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\clock-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\cloud-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\cloud-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\comment-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\comment-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\delete-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\delete-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\edit-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\edit-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\eye-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\eye-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\forbidden-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\forbidden-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\forward-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\forward-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\gear-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\gear-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\grid-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\grid-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\heart-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\heart-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\home-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\home-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\info-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\info-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\location-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\location-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\lock-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\lock-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\mail-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\mail-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\minus-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\minus-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\navigation-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\navigation-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\phone-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\phone-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\plus-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\plus-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\power-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\power-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\recycle-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\recycle-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\refresh-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\refresh-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\search-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\search-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\shop-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\shop-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\star-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\star-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\tag-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\tag-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\user-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\user-white.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\video-black.png
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-png\video-white.png
-									-icons-svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\action-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\action-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\alert-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\alert-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-l-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-l-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-r-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-r-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-d-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-l-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-l-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-r-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-r-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-l-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-l-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-r-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-r-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\arrow-u-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\audio-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\audio-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\back-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\back-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\bars-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\bars-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\bullets-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\bullets-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\calendar-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\calendar-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\camera-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\camera-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-d-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-d-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-l-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-l-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-r-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-r-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-u-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\carat-u-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\check-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\check-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\clock-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\clock-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\cloud-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\cloud-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\comment-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\comment-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\delete-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\delete-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\edit-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\edit-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\eye-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\eye-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\forbidden-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\forbidden-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\forward-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\forward-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\gear-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\gear-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\grid-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\grid-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\heart-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\heart-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\home-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\home-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\info-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\info-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\location-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\location-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\lock-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\lock-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\mail-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\mail-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\minus-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\minus-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\navigation-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\navigation-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\phone-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\phone-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\plus-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\plus-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\power-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\power-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\recycle-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\recycle-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\refresh-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\refresh-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\search-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\search-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\shop-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\shop-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\star-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\star-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\tag-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\tag-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\user-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\user-white.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\video-black.svg
-										jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\icons-svg\video-white.svg
-									jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\images\ajax-loader.gif
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.external-png-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.icons-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.inline-png-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.inline-svg-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.structure-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile.theme-1.4.5.min.css
-								jqMobile\jquery.mobile-1.4.5\demos\css\themes\default\jquery.mobile-1.4.5.min.css
-					-datepicker
-						jqMobile\jquery.mobile-1.4.5\demos\datepicker\index.html
-					-filterable
-						jqMobile\jquery.mobile-1.4.5\demos\filterable\index.html
-					-flipswitch
-						jqMobile\jquery.mobile-1.4.5\demos\flipswitch\index.html
-					-forms
-						jqMobile\jquery.mobile-1.4.5\demos\forms\index.html
-					-forms-disabled
-						jqMobile\jquery.mobile-1.4.5\demos\forms-disabled\index.html
-					-forms-field-contain
-						jqMobile\jquery.mobile-1.4.5\demos\forms-field-contain\fieldcontain-hide-label-deprecated.html
-						jqMobile\jquery.mobile-1.4.5\demos\forms-field-contain\index.html
-					-forms-gallery
-						jqMobile\jquery.mobile-1.4.5\demos\forms-gallery\index.html
-					-forms-label-hidden-accessible
-						jqMobile\jquery.mobile-1.4.5\demos\forms-label-hidden-accessible\index.html
-					-grids
-						jqMobile\jquery.mobile-1.4.5\demos\grids\index.html
-					-grids-buttons
-						jqMobile\jquery.mobile-1.4.5\demos\grids-buttons\index.html
-					-grids-custom-responsive
-						jqMobile\jquery.mobile-1.4.5\demos\grids-custom-responsive\index.html
-					-icons
-						jqMobile\jquery.mobile-1.4.5\demos\icons\index.html
-					-icons-grunticon
-						jqMobile\jquery.mobile-1.4.5\demos\icons-grunticon\index.html
-					-intro
-						jqMobile\jquery.mobile-1.4.5\demos\intro\index.html
-					-js
-						jqMobile\jquery.mobile-1.4.5\demos\js\jquery.js
-						jqMobile\jquery.mobile-1.4.5\demos\js\jquery.min.js
-						jqMobile\jquery.mobile-1.4.5\demos\js\jquery.mobile-1.4.5.js
-						jqMobile\jquery.mobile-1.4.5\demos\js\jquery.mobile-1.4.5.min.js
-						jqMobile\jquery.mobile-1.4.5\demos\js\jquery.mobile-1.4.5.min.map
-					-listview
-						jqMobile\jquery.mobile-1.4.5\demos\listview\index.html
-					-listview-autocomplete
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autocomplete\index.html
-					-listview-autocomplete-remote
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autocomplete-remote\index.html
-					-listview-autodividers-linkbar
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autodividers-linkbar\autodividers-linkbar.css
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autodividers-linkbar\autodividers-linkbar.js
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autodividers-linkbar\autodividers-linkbar-demo.html
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autodividers-linkbar\index.html
-					-listview-autodividers-selector
-						jqMobile\jquery.mobile-1.4.5\demos\listview-autodividers-selector\index.html
-					-listview-collapsible-item-flat
-						jqMobile\jquery.mobile-1.4.5\demos\listview-collapsible-item-flat\index.html
-					-listview-collapsible-item-indented
-						jqMobile\jquery.mobile-1.4.5\demos\listview-collapsible-item-indented\index.html
-					-listview-grid
-						jqMobile\jquery.mobile-1.4.5\demos\listview-grid\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\listview-grid\listview-grid.css
-						jqMobile\jquery.mobile-1.4.5\demos\listview-grid\listview-grid.html
-					-listview-nested-lists
-						jqMobile\jquery.mobile-1.4.5\demos\listview-nested-lists\index.html
-					-loader
-						jqMobile\jquery.mobile-1.4.5\demos\loader\index.html
-					-map-geolocation
-						jqMobile\jquery.mobile-1.4.5\demos\map-geolocation\index.html
-					-map-list-toggle
-						jqMobile\jquery.mobile-1.4.5\demos\map-list-toggle\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\map-list-toggle\jquery.gmap.js
-						jqMobile\jquery.mobile-1.4.5\demos\map-list-toggle\showMore.html
-					-navbar
-						jqMobile\jquery.mobile-1.4.5\demos\navbar\index.html
-					-navigation
-						jqMobile\jquery.mobile-1.4.5\demos\navigation\demo.js
-						jqMobile\jquery.mobile-1.4.5\demos\navigation\index.html
-					-navigation-hash-processing
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-hash-processing\index.html
-					-navigation-linking-pages
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-linking-pages\index.html
-					-navigation-php-redirect
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-php-redirect\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-php-redirect\redirect.php
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-php-redirect\redirect-target.php
-						jqMobile\jquery.mobile-1.4.5\demos\navigation-php-redirect\source.php
-					-old-faq-pages
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\controls-in-header-footer.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\disabling-a-button-does-not-work.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\dom-ready-not-working.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-can-i-stop-auto-enhancement-of-a-block-of-elements.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-can-i-stop-auto-enhancement-of-elements.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-configure-phonegap-cordova.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-does-theming-work.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-do-i-control-page-titles.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-do-i-load-a-page.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-do-i-scroll-to-a-position.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-do-i-turn-off-url-hiding.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\how-do-i-use-touch-mouse-events.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\injected-content-is-not-enhanced.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\my-html-5-inputs-look-different-in-browsers.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\my-range-search-input-type-is-being-changed.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\pass-query-params-to-page.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\pass-via-the-hash-to-page.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\scripts-and-styles-not-loading.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\sometimes-custom-select-shows-as-dialog-popup.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\the-application-cache-is-not-working.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\triggering-create-on-injected-content-does-not-work.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\updating-the-value-of-enhanced-form-elements-does-not-work.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\why-is-only-the-first-page-loaded.html
-						jqMobile\jquery.mobile-1.4.5\demos\old-faq-pages\why-wont-my-css-styles-apply-correctly-to-a-widget.html
-					-page-events
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents-2.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents-2.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents-3.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\alertevents-3.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\docs.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\docs.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents-2.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents-2.php
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents-3.html
-						jqMobile\jquery.mobile-1.4.5\demos\page-events\logevents-3.php
-					-pages
-						jqMobile\jquery.mobile-1.4.5\demos\pages\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages\samepagetransition.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages\startpage.html
-					-pages-dialog
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-alt.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-buttons.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-corners.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-noclosebtn.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-overlay.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-rightclosebtn.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-success.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\dialog-with-select.html
-						jqMobile\jquery.mobile-1.4.5\demos\pages-dialog\index.html
-					-pages-multi-page
-						jqMobile\jquery.mobile-1.4.5\demos\pages-multi-page\index.html
-					-pages-single-page
-						jqMobile\jquery.mobile-1.4.5\demos\pages-single-page\index.html
-					-panel
-						jqMobile\jquery.mobile-1.4.5\demos\panel\index.html
-					-panel-external
-						jqMobile\jquery.mobile-1.4.5\demos\panel-external\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\panel-external\page-b.html
-					-panel-external-internal
-						jqMobile\jquery.mobile-1.4.5\demos\panel-external-internal\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\panel-external-internal\page-b.html
-						jqMobile\jquery.mobile-1.4.5\demos\panel-external-internal\page-c.html
-					-panel-fixed
-						jqMobile\jquery.mobile-1.4.5\demos\panel-fixed\index.html
-					-panel-responsive
-						jqMobile\jquery.mobile-1.4.5\demos\panel-responsive\index.html
-					-panel-styling
-						jqMobile\jquery.mobile-1.4.5\demos\panel-styling\index.html
-					-panel-swipe-open
-						jqMobile\jquery.mobile-1.4.5\demos\panel-swipe-open\index.html
-					-popup
-						jqMobile\jquery.mobile-1.4.5\demos\popup\index.html
-					-popup-alignment
-						jqMobile\jquery.mobile-1.4.5\demos\popup-alignment\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\popup-alignment\popup.alignment.js
-					-popup-arrow-size
-						jqMobile\jquery.mobile-1.4.5\demos\popup-arrow-size\index.html
-					-popup-dynamic
-						jqMobile\jquery.mobile-1.4.5\demos\popup-dynamic\index.html
-					-popup-iframe
-						jqMobile\jquery.mobile-1.4.5\demos\popup-iframe\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\popup-iframe\map.html
-						jqMobile\jquery.mobile-1.4.5\demos\popup-iframe\popup-iframe-map.js
-						jqMobile\jquery.mobile-1.4.5\demos\popup-iframe\popup-iframe-video.js
-					-popup-image-scaling
-						jqMobile\jquery.mobile-1.4.5\demos\popup-image-scaling\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\popup-image-scaling\popup-image-scaling.js
-					-popup-outside-multipage
-						jqMobile\jquery.mobile-1.4.5\demos\popup-outside-multipage\index.html
-					-rangeslider
-						jqMobile\jquery.mobile-1.4.5\demos\rangeslider\index.html
-					-rwd
-						jqMobile\jquery.mobile-1.4.5\demos\rwd\index.html
-					-selectmenu
-						jqMobile\jquery.mobile-1.4.5\demos\selectmenu\index.html
-					-selectmenu-custom
-						jqMobile\jquery.mobile-1.4.5\demos\selectmenu-custom\index.html
-					-selectmenu-custom-filter
-						jqMobile\jquery.mobile-1.4.5\demos\selectmenu-custom-filter\index.html
-					-slider
-						jqMobile\jquery.mobile-1.4.5\demos\slider\index.html
-					-slider-flipswitch
-						jqMobile\jquery.mobile-1.4.5\demos\slider-flipswitch\index.html
-					-slider-tooltip
-						jqMobile\jquery.mobile-1.4.5\demos\slider-tooltip\index.html
-					-swipe-list
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-list\index.html
-					-swipe-page
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\buenosaires.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\capetown.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\newyork.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\paris.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\seoul.html
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\swipe-page.css
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\swipe-page.js
-						jqMobile\jquery.mobile-1.4.5\demos\swipe-page\sydney.html
-					-table-column-toggle
-						jqMobile\jquery.mobile-1.4.5\demos\table-column-toggle\index.html
-					-table-column-toggle-example
-						jqMobile\jquery.mobile-1.4.5\demos\table-column-toggle-example\index.html
-					-table-column-toggle-heading-groups
-						jqMobile\jquery.mobile-1.4.5\demos\table-column-toggle-heading-groups\index.html
-					-table-column-toggle-options
-						jqMobile\jquery.mobile-1.4.5\demos\table-column-toggle-options\index.html
-					-table-reflow
-						jqMobile\jquery.mobile-1.4.5\demos\table-reflow\index.html
-					-table-reflow-heading-groups
-						jqMobile\jquery.mobile-1.4.5\demos\table-reflow-heading-groups\index.html
-					-table-reflow-stripes-strokes
-						jqMobile\jquery.mobile-1.4.5\demos\table-reflow-stripes-strokes\index.html
-					-table-reflow-styling
-						jqMobile\jquery.mobile-1.4.5\demos\table-reflow-styling\index.html
-					-tabs
-						jqMobile\jquery.mobile-1.4.5\demos\tabs\ajax-content-ignore.html
-						jqMobile\jquery.mobile-1.4.5\demos\tabs\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\tabs\tabbed-content.html
-					-textinput
-						jqMobile\jquery.mobile-1.4.5\demos\textinput\index.html
-					-theme-classic
-						-images
-							jqMobile\jquery.mobile-1.4.5\demos\theme-classic\images\ajax-loader.gif
-						jqMobile\jquery.mobile-1.4.5\demos\theme-classic\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\theme-classic\theme-classic.css
-					-theme-default
-						jqMobile\jquery.mobile-1.4.5\demos\theme-default\index.html
-					-toolbar
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar\index.html
-					-toolbar-dynamic
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-dynamic\index.html
-					-toolbar-external
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-external\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-external\index2.html
-					-toolbar-fixed
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed\index.html
-					-toolbar-fixed-external
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-external\index.html
-					-toolbar-fixed-forms
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-forms\index.html
-					-toolbar-fixed-fullscreen
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-fullscreen\index.html
-					-toolbar-fixed-persistent
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent\page-b.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent\page-c.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent\page-d.html
-					-toolbar-fixed-persistent-optimized
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent-optimized\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent-optimized\page-b.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent-optimized\page-c.html
-						jqMobile\jquery.mobile-1.4.5\demos\toolbar-fixed-persistent-optimized\page-d.html
-					-transitions
-						jqMobile\jquery.mobile-1.4.5\demos\transitions\index.html
-						jqMobile\jquery.mobile-1.4.5\demos\transitions\page-transitions-dialog.html
-						jqMobile\jquery.mobile-1.4.5\demos\transitions\page-transitions-page.html
-					jqMobile\jquery.mobile-1.4.5\demos\favicon.ico
-					jqMobile\jquery.mobile-1.4.5\demos\index.html
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-contents.html
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-contents.php
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-navmenu.html
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-navmenu.php
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-search.html
-					jqMobile\jquery.mobile-1.4.5\demos\jqm-search.php
-				-images
-					-icons-png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\action-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\action-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\alert-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\alert-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-l-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-l-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-r-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-r-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-d-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-l-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-l-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-r-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-r-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-l-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-l-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-r-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-r-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\arrow-u-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\audio-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\audio-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\back-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\back-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\bars-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\bars-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\bullets-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\bullets-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\calendar-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\calendar-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\camera-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\camera-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-d-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-d-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-l-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-l-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-r-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-r-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-u-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\carat-u-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\check-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\check-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\clock-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\clock-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\cloud-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\cloud-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\comment-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\comment-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\delete-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\delete-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\edit-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\edit-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\eye-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\eye-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\forbidden-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\forbidden-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\forward-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\forward-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\gear-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\gear-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\grid-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\grid-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\heart-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\heart-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\home-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\home-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\info-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\info-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\location-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\location-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\lock-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\lock-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\mail-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\mail-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\minus-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\minus-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\navigation-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\navigation-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\phone-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\phone-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\plus-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\plus-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\power-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\power-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\recycle-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\recycle-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\refresh-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\refresh-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\search-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\search-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\shop-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\shop-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\star-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\star-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\tag-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\tag-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\user-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\user-white.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\video-black.png
-						jqMobile\jquery.mobile-1.4.5\images\icons-png\video-white.png
-					-icons-svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\action-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\action-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\alert-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\alert-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-l-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-l-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-r-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-r-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-d-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-l-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-l-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-r-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-r-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-l-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-l-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-r-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-r-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\arrow-u-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\audio-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\audio-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\back-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\back-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\bars-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\bars-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\bullets-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\bullets-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\calendar-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\calendar-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\camera-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\camera-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-d-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-d-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-l-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-l-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-r-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-r-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-u-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\carat-u-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\check-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\check-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\clock-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\clock-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\cloud-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\cloud-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\comment-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\comment-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\delete-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\delete-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\edit-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\edit-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\eye-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\eye-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\forbidden-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\forbidden-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\forward-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\forward-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\gear-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\gear-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\grid-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\grid-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\heart-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\heart-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\home-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\home-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\info-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\info-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\location-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\location-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\lock-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\lock-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\mail-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\mail-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\minus-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\minus-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\navigation-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\navigation-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\phone-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\phone-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\plus-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\plus-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\power-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\power-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\recycle-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\recycle-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\refresh-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\refresh-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\search-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\search-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\shop-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\shop-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\star-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\star-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\tag-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\tag-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\user-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\user-white.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\video-black.svg
-						jqMobile\jquery.mobile-1.4.5\images\icons-svg\video-white.svg
-					jqMobile\jquery.mobile-1.4.5\images\ajax-loader.gif
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.external-png-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.external-png-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.icons-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.icons-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.inline-png-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.inline-png-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.inline-svg-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.inline-svg-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.structure-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.structure-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.theme-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile.theme-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile-1.4.5.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile-1.4.5.js
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.css
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.js
-				jqMobile\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.map
-			-JqueryFW
-				-debugging
-					jqMobile\JqueryFW\debugging\jquery.mobile-1.4.5.css
-					jqMobile\JqueryFW\debugging\jquery.mobile-1.4.5.js
-					jqMobile\JqueryFW\debugging\jquery-3.5.1.js
-					jqMobile\JqueryFW\debugging\jquery-3.5.1.min.map
-				-deploy
-					-images
-						jqMobile\JqueryFW\deploy\images\ajax-loader.gif
-					-JqueryFW 2-2-4
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery.mobile.structure-1.3.2.min.css
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery.mobile-1.3.2.css
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery.mobile-1.3.2.js
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery.mobile-1.3.2.min.css
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery-2.2.4.js
-						jqMobile\JqueryFW\deploy\JqueryFW 2-2-4\jquery-2.2.4.min.js
-					jqMobile\JqueryFW\deploy\jquery.mobile-1.4.5.min.css
-					jqMobile\JqueryFW\deploy\jquery.mobile-1.4.5.min.js
-					jqMobile\JqueryFW\deploy\jquery-1.11.1.js
-					jqMobile\JqueryFW\deploy\jquery-1.11.1.min.js
-					jqMobile\JqueryFW\deploy\jquery-1.11.1.min.map
-					jqMobile\JqueryFW\deploy\jquery-3.5.1.min.js
-			jqMobile\Cобытия Java Script на смартфоне ОПЫТ1.doc
-			jqMobile\jquery-1.11.1.min.js
-			jqMobile\Введение в jQuery Mobile.doc
-			jqMobile\Как сделать редирект на мобильную версию сайта.doc
-			jqMobile\Что такое UTM-метки и как их применять.doc
 		-JS_JQ
 			-_css
 				-images
@@ -1890,13 +495,219 @@ IttvePW
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
 			-Js
+				-images
+					-icons-png
+						www\Js\images\icons-png\action-black.png
+						www\Js\images\icons-png\action-white.png
+						www\Js\images\icons-png\alert-black.png
+						www\Js\images\icons-png\alert-white.png
+						www\Js\images\icons-png\arrow-d-black.png
+						www\Js\images\icons-png\arrow-d-l-black.png
+						www\Js\images\icons-png\arrow-d-l-white.png
+						www\Js\images\icons-png\arrow-d-r-black.png
+						www\Js\images\icons-png\arrow-d-r-white.png
+						www\Js\images\icons-png\arrow-d-white.png
+						www\Js\images\icons-png\arrow-l-black.png
+						www\Js\images\icons-png\arrow-l-white.png
+						www\Js\images\icons-png\arrow-r-black.png
+						www\Js\images\icons-png\arrow-r-white.png
+						www\Js\images\icons-png\arrow-u-black.png
+						www\Js\images\icons-png\arrow-u-l-black.png
+						www\Js\images\icons-png\arrow-u-l-white.png
+						www\Js\images\icons-png\arrow-u-r-black.png
+						www\Js\images\icons-png\arrow-u-r-white.png
+						www\Js\images\icons-png\arrow-u-white.png
+						www\Js\images\icons-png\audio-black.png
+						www\Js\images\icons-png\audio-white.png
+						www\Js\images\icons-png\back-black.png
+						www\Js\images\icons-png\back-white.png
+						www\Js\images\icons-png\bars-black.png
+						www\Js\images\icons-png\bars-white.png
+						www\Js\images\icons-png\bullets-black.png
+						www\Js\images\icons-png\bullets-white.png
+						www\Js\images\icons-png\calendar-black.png
+						www\Js\images\icons-png\calendar-white.png
+						www\Js\images\icons-png\camera-black.png
+						www\Js\images\icons-png\camera-white.png
+						www\Js\images\icons-png\carat-d-black.png
+						www\Js\images\icons-png\carat-d-white.png
+						www\Js\images\icons-png\carat-l-black.png
+						www\Js\images\icons-png\carat-l-white.png
+						www\Js\images\icons-png\carat-r-black.png
+						www\Js\images\icons-png\carat-r-white.png
+						www\Js\images\icons-png\carat-u-black.png
+						www\Js\images\icons-png\carat-u-white.png
+						www\Js\images\icons-png\check-black.png
+						www\Js\images\icons-png\check-white.png
+						www\Js\images\icons-png\clock-black.png
+						www\Js\images\icons-png\clock-white.png
+						www\Js\images\icons-png\cloud-black.png
+						www\Js\images\icons-png\cloud-white.png
+						www\Js\images\icons-png\comment-black.png
+						www\Js\images\icons-png\comment-white.png
+						www\Js\images\icons-png\delete-black.png
+						www\Js\images\icons-png\delete-white.png
+						www\Js\images\icons-png\edit-black.png
+						www\Js\images\icons-png\edit-white.png
+						www\Js\images\icons-png\eye-black.png
+						www\Js\images\icons-png\eye-white.png
+						www\Js\images\icons-png\forbidden-black.png
+						www\Js\images\icons-png\forbidden-white.png
+						www\Js\images\icons-png\forward-black.png
+						www\Js\images\icons-png\forward-white.png
+						www\Js\images\icons-png\gear-black.png
+						www\Js\images\icons-png\gear-white.png
+						www\Js\images\icons-png\grid-black.png
+						www\Js\images\icons-png\grid-white.png
+						www\Js\images\icons-png\heart-black.png
+						www\Js\images\icons-png\heart-white.png
+						www\Js\images\icons-png\home-black.png
+						www\Js\images\icons-png\home-white.png
+						www\Js\images\icons-png\info-black.png
+						www\Js\images\icons-png\info-white.png
+						www\Js\images\icons-png\location-black.png
+						www\Js\images\icons-png\location-white.png
+						www\Js\images\icons-png\lock-black.png
+						www\Js\images\icons-png\lock-white.png
+						www\Js\images\icons-png\mail-black.png
+						www\Js\images\icons-png\mail-white.png
+						www\Js\images\icons-png\minus-black.png
+						www\Js\images\icons-png\minus-white.png
+						www\Js\images\icons-png\navigation-black.png
+						www\Js\images\icons-png\navigation-white.png
+						www\Js\images\icons-png\phone-black.png
+						www\Js\images\icons-png\phone-white.png
+						www\Js\images\icons-png\plus-black.png
+						www\Js\images\icons-png\plus-white.png
+						www\Js\images\icons-png\power-black.png
+						www\Js\images\icons-png\power-white.png
+						www\Js\images\icons-png\recycle-black.png
+						www\Js\images\icons-png\recycle-white.png
+						www\Js\images\icons-png\refresh-black.png
+						www\Js\images\icons-png\refresh-white.png
+						www\Js\images\icons-png\search-black.png
+						www\Js\images\icons-png\search-white.png
+						www\Js\images\icons-png\shop-black.png
+						www\Js\images\icons-png\shop-white.png
+						www\Js\images\icons-png\star-black.png
+						www\Js\images\icons-png\star-white.png
+						www\Js\images\icons-png\tag-black.png
+						www\Js\images\icons-png\tag-white.png
+						www\Js\images\icons-png\user-black.png
+						www\Js\images\icons-png\user-white.png
+						www\Js\images\icons-png\video-black.png
+						www\Js\images\icons-png\video-white.png
+					-icons-svg
+						www\Js\images\icons-svg\action-black.svg
+						www\Js\images\icons-svg\action-white.svg
+						www\Js\images\icons-svg\alert-black.svg
+						www\Js\images\icons-svg\alert-white.svg
+						www\Js\images\icons-svg\arrow-d-black.svg
+						www\Js\images\icons-svg\arrow-d-l-black.svg
+						www\Js\images\icons-svg\arrow-d-l-white.svg
+						www\Js\images\icons-svg\arrow-d-r-black.svg
+						www\Js\images\icons-svg\arrow-d-r-white.svg
+						www\Js\images\icons-svg\arrow-d-white.svg
+						www\Js\images\icons-svg\arrow-l-black.svg
+						www\Js\images\icons-svg\arrow-l-white.svg
+						www\Js\images\icons-svg\arrow-r-black.svg
+						www\Js\images\icons-svg\arrow-r-white.svg
+						www\Js\images\icons-svg\arrow-u-black.svg
+						www\Js\images\icons-svg\arrow-u-l-black.svg
+						www\Js\images\icons-svg\arrow-u-l-white.svg
+						www\Js\images\icons-svg\arrow-u-r-black.svg
+						www\Js\images\icons-svg\arrow-u-r-white.svg
+						www\Js\images\icons-svg\arrow-u-white.svg
+						www\Js\images\icons-svg\audio-black.svg
+						www\Js\images\icons-svg\audio-white.svg
+						www\Js\images\icons-svg\back-black.svg
+						www\Js\images\icons-svg\back-white.svg
+						www\Js\images\icons-svg\bars-black.svg
+						www\Js\images\icons-svg\bars-white.svg
+						www\Js\images\icons-svg\bullets-black.svg
+						www\Js\images\icons-svg\bullets-white.svg
+						www\Js\images\icons-svg\calendar-black.svg
+						www\Js\images\icons-svg\calendar-white.svg
+						www\Js\images\icons-svg\camera-black.svg
+						www\Js\images\icons-svg\camera-white.svg
+						www\Js\images\icons-svg\carat-d-black.svg
+						www\Js\images\icons-svg\carat-d-white.svg
+						www\Js\images\icons-svg\carat-l-black.svg
+						www\Js\images\icons-svg\carat-l-white.svg
+						www\Js\images\icons-svg\carat-r-black.svg
+						www\Js\images\icons-svg\carat-r-white.svg
+						www\Js\images\icons-svg\carat-u-black.svg
+						www\Js\images\icons-svg\carat-u-white.svg
+						www\Js\images\icons-svg\check-black.svg
+						www\Js\images\icons-svg\check-white.svg
+						www\Js\images\icons-svg\clock-black.svg
+						www\Js\images\icons-svg\clock-white.svg
+						www\Js\images\icons-svg\cloud-black.svg
+						www\Js\images\icons-svg\cloud-white.svg
+						www\Js\images\icons-svg\comment-black.svg
+						www\Js\images\icons-svg\comment-white.svg
+						www\Js\images\icons-svg\delete-black.svg
+						www\Js\images\icons-svg\delete-white.svg
+						www\Js\images\icons-svg\edit-black.svg
+						www\Js\images\icons-svg\edit-white.svg
+						www\Js\images\icons-svg\eye-black.svg
+						www\Js\images\icons-svg\eye-white.svg
+						www\Js\images\icons-svg\forbidden-black.svg
+						www\Js\images\icons-svg\forbidden-white.svg
+						www\Js\images\icons-svg\forward-black.svg
+						www\Js\images\icons-svg\forward-white.svg
+						www\Js\images\icons-svg\gear-black.svg
+						www\Js\images\icons-svg\gear-white.svg
+						www\Js\images\icons-svg\grid-black.svg
+						www\Js\images\icons-svg\grid-white.svg
+						www\Js\images\icons-svg\heart-black.svg
+						www\Js\images\icons-svg\heart-white.svg
+						www\Js\images\icons-svg\home-black.svg
+						www\Js\images\icons-svg\home-white.svg
+						www\Js\images\icons-svg\info-black.svg
+						www\Js\images\icons-svg\info-white.svg
+						www\Js\images\icons-svg\location-black.svg
+						www\Js\images\icons-svg\location-white.svg
+						www\Js\images\icons-svg\lock-black.svg
+						www\Js\images\icons-svg\lock-white.svg
+						www\Js\images\icons-svg\mail-black.svg
+						www\Js\images\icons-svg\mail-white.svg
+						www\Js\images\icons-svg\minus-black.svg
+						www\Js\images\icons-svg\minus-white.svg
+						www\Js\images\icons-svg\navigation-black.svg
+						www\Js\images\icons-svg\navigation-white.svg
+						www\Js\images\icons-svg\phone-black.svg
+						www\Js\images\icons-svg\phone-white.svg
+						www\Js\images\icons-svg\plus-black.svg
+						www\Js\images\icons-svg\plus-white.svg
+						www\Js\images\icons-svg\power-black.svg
+						www\Js\images\icons-svg\power-white.svg
+						www\Js\images\icons-svg\recycle-black.svg
+						www\Js\images\icons-svg\recycle-white.svg
+						www\Js\images\icons-svg\refresh-black.svg
+						www\Js\images\icons-svg\refresh-white.svg
+						www\Js\images\icons-svg\search-black.svg
+						www\Js\images\icons-svg\search-white.svg
+						www\Js\images\icons-svg\shop-black.svg
+						www\Js\images\icons-svg\shop-white.svg
+						www\Js\images\icons-svg\star-black.svg
+						www\Js\images\icons-svg\star-white.svg
+						www\Js\images\icons-svg\tag-black.svg
+						www\Js\images\icons-svg\tag-white.svg
+						www\Js\images\icons-svg\user-black.svg
+						www\Js\images\icons-svg\user-white.svg
+						www\Js\images\icons-svg\video-black.svg
+						www\Js\images\icons-svg\video-white.svg
+					www\Js\images\ajax-loader.gif
 				www\Js\IttvePW.js
-				www\Js\jquery.js
 				www\Js\jquery.mobile-1.4.5.min.css
 				www\Js\jquery.mobile-1.4.5.min.js
 				www\Js\jquery.mobile-1.4.5.min.map
 				www\Js\jquery.smartmenus.js
 				www\Js\jquery-1.11.1.min.js
+				www\Js\jquery-1.11.1.min.map
+				www\Js\jquery-ui.min.css
+				www\Js\jquery-ui.min.js
 				www\Js\TJsPrown.css
 				www\Js\TJsPrown.js
 			-KwinTiny
@@ -1916,11 +727,6 @@ IttvePW
 					www\old\Pages\fBlock.php
 					www\old\Pages\hBlock.php
 					www\old\Pages\lSide.php
-				-Styles
-					www\old\Styles\Buttons.css
-					www\old\Styles\mButtons.css
-					www\old\Styles\Reset.css
-					www\old\Styles\Stylesm.css
 			+Pages
 				-Art
 				-Think
@@ -1931,6 +737,7 @@ IttvePW
 				www\Pages\fBlock.php
 				www\Pages\hBlock.php
 				www\Pages\lSide.php
+				www\Pages\MobIcons.php
 			-Reset
 				www\Reset\e404.php
 				www\Reset\index.php
@@ -2267,6 +1074,10 @@ IttvePW
 				Материалы\Сессии\Увеличить время жизни сессии в PHP.doc
 			-Управление
 				Материалы\Управление\Параметры и кукисы IttvePW.xls
+			Материалы\Cобытия Java Script на смартфоне ОПЫТ1.doc
+			Материалы\Как сделать редирект на мобильную версию сайта.doc
+			Материалы\Что такое UTM-метки и как их применять.doc
+		.gitignore
 		IttvePW.ppr
 		README.md
 		Тезисы.xls
@@ -2276,45 +1087,53 @@ IttvePW
 2=www\iniMem.php
 3=www\UpSite.php
 4=www\Styles\Styles.css
-5=www\Pages\cCenter.php
+5=www\Pages\MobIcons.php
 6=www\Pages\exPhp.php
 7=www\Pages\hBlock.php
 8=www\Styles\Stylesm.css
 9=www\Site.php
 10=www\Sitem.php
+11=www\Pages\cCenter.php
+12=www\Common.php
 [Selected Project Files]
 Main=
 Selected=www\Styles\Stylesm.css
 [www\index.php]
-TopLine=33
+TopLine=6
 Caret=4,34
 [www\Main.php]
-TopLine=89
+TopLine=3
 Caret=9,117
 [www\iniMem.php]
-TopLine=11
-Caret=20,18
+TopLine=15
+Caret=11,37
 [www\UpSite.php]
-TopLine=43
-Caret=1,74
+TopLine=40
+Caret=10,44
 [www\Styles\Styles.css]
-TopLine=19
-Caret=1,79
-[www\Pages\cCenter.php]
-TopLine=27
-Caret=5,44
+TopLine=51
+Caret=3,66
+[www\Pages\MobIcons.php]
+TopLine=36
+Caret=62,48
 [www\Pages\exPhp.php]
-TopLine=9
-Caret=1,36
+TopLine=11
+Caret=70,13
 [www\Pages\hBlock.php]
-TopLine=7
-Caret=12,20
+TopLine=5
+Caret=16,12
 [www\Styles\Stylesm.css]
-TopLine=9
-Caret=21,27
+TopLine=33
+Caret=21,43
 [www\Site.php]
-TopLine=50
-Caret=24,58
+TopLine=8
+Caret=43,14
 [www\Sitem.php]
-TopLine=21
-Caret=29,57
+TopLine=37
+Caret=103,43
+[www\Pages\cCenter.php]
+TopLine=67
+Caret=8,74
+[www\Common.php]
+TopLine=7
+Caret=1,1

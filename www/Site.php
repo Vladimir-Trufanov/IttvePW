@@ -11,7 +11,7 @@
 
 // Устанавливаем режим работы сайта и настройки разметки 
 iniDesktopSite($c_SiteMode);
-markupDesctopSite($c_SiteMode,$SiteDevice);
+markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain);
 
 // ****************************************************************************
 // *           Установить режим работы сайта и настройки разметки             *
@@ -40,7 +40,7 @@ function iniDesktopSite($SiteMode)
 // ****************************************************************************
 // *                      Сформировать разметку страницы                      *
 // ****************************************************************************
-function markupDesctopSite($SiteMode,$SiteDevice)
+function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain)
 {
   echo         '<div id="hBlock">';
   require_once 'Pages/hBlock.php';
@@ -56,6 +56,7 @@ function markupDesctopSite($SiteMode,$SiteDevice)
   }
   
   echo            '<div id="cCenter">';
+  echo            '<h1>'.$TitleMain.'</h1>';
   require_once    'Pages/cCenter.php';
   echo            '</div>';
 
@@ -71,6 +72,7 @@ function markupDesctopSite($SiteMode,$SiteDevice)
     require_once      'Pages/exJav.php';
     echo              '</div>';
   }
+  echo                '<h1>Текст фрагмента программы</h1>';  // "Исходный код, как есть"
   echo                '<div class="cSection" id="exPhp">';
   require_once        'Pages/exPhp.php';
   echo                '</div>';

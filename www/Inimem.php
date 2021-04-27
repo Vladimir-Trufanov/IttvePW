@@ -34,5 +34,5 @@ $s_Counter=prown\MakeSession('Counter',0,tInt,true);          // посещен�
 $ModeError=2;                               // режим вывода сообщений об ошибках
 if (isNichost()) $SpecSite="http://".$_SERVER['HTTP_HOST'];  
 else $SpecSite="http://localhost:88";       // спецификация сайта  
-
+$TitleMain="";                              // заголовок статьи
 // ************************************************************* iniMem.php *** 

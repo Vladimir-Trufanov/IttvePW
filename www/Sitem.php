@@ -11,7 +11,7 @@
 
 // Устанавливаем режим работы сайта и настройки разметки 
 iniMobileSite($c_SiteMode);
-markupMobileSite($c_SiteMode,$SiteDevice);
+markupMobileSite($c_SiteMode,$SiteDevice,$TitleMain);
 
 // ****************************************************************************
 // *           Установить режим работы сайта и настройки разметки             *
@@ -34,16 +34,23 @@ function iniMobileSite($SiteMode)
    $Result=true;
    return $Result;
 }
-function markupMobileSite($SiteMode)
+function markupMobileSite($SiteMode,$SiteDevice,$TitleMain)
 {
    echo '
    <div data-role = "page" id = "page1">
       <div data-role = "header">
-         <h4>Header</h4>
+         <div data-role="controlgroup" data-type="horizontal"> 
+         <button id="bTasks"><i id="iTasks" class="fa fa-tasks fa-lg" aria-hidden="true"> </i></button>
+   ';
+   echo  '<div id="cTitle"> <h1>'.$TitleMain.'</h1></div>';
+   echo '
+         <button id="bHandoright"><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"> </i></button>
+         </div>
       </div>
       <div role="main" class="ui-content" id="cCenter">
    ';
    require_once 'Pages/cCenter.php';
+   //require_once 'Pages/MobIcons.php';
    echo '
       </div>
       <div data-role = "footer">

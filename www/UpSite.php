@@ -41,7 +41,7 @@ echo '
 // Подключаем font-awesome/4.7.0
 echo '
  <link rel="stylesheet" 
-   href="https://kwinflat.ru/font-awesome-4.7.0/css/font-awesome.min.css">
+   href="/font-awesome-4.7.0/css/font-awesome.min.css">
 ';
 // Подключаем jQuery
 echo '
@@ -117,6 +117,7 @@ echo '<body>';
       //ScreenInfo33();
    </script> 
 <?php
+$TitleMain='Основная тема страницы';
 if ($SiteDevice==Mobile) require_once 'Sitem.php';
 else require_once 'Site.php';
 //echo 'Привет Вам! <br>';

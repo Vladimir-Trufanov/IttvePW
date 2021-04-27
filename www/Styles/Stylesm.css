@@ -26,6 +26,30 @@ h1
   color: #46874D;
   text-align: center;
 }
+/* Закругляем кнопки */
+#bTasks, #bHandoright
+{ 
+  border-radius: .5rem;
+  width: 2rem; 
+}
+#iTasks
+{
+  margin-left: 0;
+  
+}
+#bTasks
+{
+float: left;
+  margin-left: .5rem;
+}
+#cTitle
+{
+float: left;
+}
+#bHandoright
+{
+float: right;
+}
 #cCenter  
 {
   text-align: justify;
@@ -34,7 +58,6 @@ h1
 {
   text-align: justify;
 }
-
 
 /*
  ************************************************************** Stylesm.css ***
