@@ -11,7 +11,7 @@
 
 // Устанавливаем режим работы сайта и настройки разметки 
 iniMobileSite($c_SiteMode);
-markupMobileSite($c_SiteMode,$SiteDevice,$TitleMain);
+markupMobileSite($c_SiteMode,$SiteDevice,$TitleMain,$isCalc);
 
 // ****************************************************************************
 // *           Установить режим работы сайта и настройки разметки             *
@@ -34,7 +34,7 @@ function iniMobileSite($SiteMode)
    $Result=true;
    return $Result;
 }
-function markupMobileSite($SiteMode,$SiteDevice,$TitleMain)
+function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
 {
    echo '
    <div data-role = "page" id = "page1">

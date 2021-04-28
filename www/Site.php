@@ -11,7 +11,7 @@
 
 // Устанавливаем режим работы сайта и настройки разметки 
 iniDesktopSite($c_SiteMode);
-markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain);
+markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain,$isCalc);
 
 // ****************************************************************************
 // *           Установить режим работы сайта и настройки разметки             *
@@ -40,7 +40,7 @@ function iniDesktopSite($SiteMode)
 // ****************************************************************************
 // *                      Сформировать разметку страницы                      *
 // ****************************************************************************
-function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain)
+function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
 {
   echo         '<div id="hBlock">';
   require_once 'Pages/hBlock.php';

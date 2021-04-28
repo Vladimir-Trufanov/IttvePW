@@ -24,3 +24,16 @@ Stack trace:
 [26-Apr-2021 21:03:25 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
 [26-Apr-2021 21:07:36 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Pages/IconsMobile.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\Sitem.php on line 47
 [27-Apr-2021 14:55:21 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'bCtrl' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\Sitem.php on line 46
+[28-Apr-2021 12:12:04 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function isCalcInBrowser() in C:\IttvePW\www\iniMem.php:38
+Stack trace:
+#0 C:\IttvePW\www\Main.php(31): require_once()
+#1 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#2 {main}
+  thrown in C:\IttvePW\www\iniMem.php on line 38
+[28-Apr-2021 12:15:31 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function isCalcInBrowser() in C:\IttvePW\www\iniMem.php:38
+Stack trace:
+#0 C:\IttvePW\www\Main.php(31): require_once()
+#1 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#2 {main}
+  thrown in C:\IttvePW\www\iniMem.php on line 38
+[28-Apr-2021 12:16:35 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in C:\IttvePW\www\Pages\exPhp.php on line 12

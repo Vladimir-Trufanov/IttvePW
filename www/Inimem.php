@@ -35,4 +35,5 @@ $ModeError=2;                               // режим вывода сооб�
 if (isNichost()) $SpecSite="http://".$_SERVER['HTTP_HOST'];  
 else $SpecSite="http://localhost:88";       // спецификация сайта  
 $TitleMain="";                              // заголовок статьи
+$isCalc=prown\isCalcInBrowser($UserAgent);
 // ************************************************************* iniMem.php *** 
