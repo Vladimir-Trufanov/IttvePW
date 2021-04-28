@@ -486,6 +486,48 @@ IttvePW
 				www\favicon260x260\favicon-32x32.png
 				www\favicon260x260\mstile-150x150.png
 				www\favicon260x260\safari-pinned-tab.svg
+			-font-awesome-4.7.0
+				-css
+					www\font-awesome-4.7.0\css\font-awesome.css
+					www\font-awesome-4.7.0\css\font-awesome.min.css
+				-fonts
+					www\font-awesome-4.7.0\fonts\FontAwesome.otf
+					www\font-awesome-4.7.0\fonts\fontawesome-webfont.eot
+					www\font-awesome-4.7.0\fonts\fontawesome-webfont.svg
+					www\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf
+					www\font-awesome-4.7.0\fonts\fontawesome-webfont.woff
+					www\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2
+				-less
+					www\font-awesome-4.7.0\less\animated.less
+					www\font-awesome-4.7.0\less\bordered-pulled.less
+					www\font-awesome-4.7.0\less\core.less
+					www\font-awesome-4.7.0\less\fixed-width.less
+					www\font-awesome-4.7.0\less\font-awesome.less
+					www\font-awesome-4.7.0\less\icons.less
+					www\font-awesome-4.7.0\less\larger.less
+					www\font-awesome-4.7.0\less\list.less
+					www\font-awesome-4.7.0\less\mixins.less
+					www\font-awesome-4.7.0\less\path.less
+					www\font-awesome-4.7.0\less\rotated-flipped.less
+					www\font-awesome-4.7.0\less\screen-reader.less
+					www\font-awesome-4.7.0\less\stacked.less
+					www\font-awesome-4.7.0\less\variables.less
+				-scss
+					www\font-awesome-4.7.0\scss\_animated.scss
+					www\font-awesome-4.7.0\scss\_bordered-pulled.scss
+					www\font-awesome-4.7.0\scss\_core.scss
+					www\font-awesome-4.7.0\scss\_fixed-width.scss
+					www\font-awesome-4.7.0\scss\_icons.scss
+					www\font-awesome-4.7.0\scss\_larger.scss
+					www\font-awesome-4.7.0\scss\_list.scss
+					www\font-awesome-4.7.0\scss\_mixins.scss
+					www\font-awesome-4.7.0\scss\_path.scss
+					www\font-awesome-4.7.0\scss\_rotated-flipped.scss
+					www\font-awesome-4.7.0\scss\_screen-reader.scss
+					www\font-awesome-4.7.0\scss\_stacked.scss
+					www\font-awesome-4.7.0\scss\_variables.scss
+					www\font-awesome-4.7.0\scss\font-awesome.scss
+				www\font-awesome-4.7.0\HELP-US-OUT.txt
 			-Images
 				-Buttons
 					www\Images\Buttons\Java.svg
@@ -731,6 +773,7 @@ IttvePW
 				-Art
 				-Think
 				www\Pages\cCenter.php
+				www\Pages\DisplayParm.php
 				www\Pages\exJav.php
 				www\Pages\exLaz.php
 				www\Pages\exPhp.php
@@ -1078,6 +1121,7 @@ IttvePW
 			Материалы\Как сделать редирект на мобильную версию сайта.doc
 			Материалы\Что такое UTM-метки и как их применять.doc
 		.gitignore
+		DisplayParm.php
 		IttvePW.ppr
 		README.md
 		Тезисы.xls
@@ -1094,22 +1138,22 @@ IttvePW
 9=www\Site.php
 10=www\Sitem.php
 11=www\Pages\cCenter.php
-12=www\Common.php
+12=www\Pages\DisplayParm.php
 [Selected Project Files]
 Main=
-Selected=www\Sitem.php
+Selected=www\UpSite.php
 [www\index.php]
-TopLine=30
+TopLine=20
 Caret=11,20
 [www\Main.php]
 TopLine=17
 Caret=1,18
 [www\iniMem.php]
-TopLine=13
+TopLine=22
 Caret=8,38
 [www\UpSite.php]
-TopLine=102
-Caret=68,66
+TopLine=74
+Caret=37,80
 [www\Styles\Styles.css]
 TopLine=51
 Caret=3,66
@@ -1123,17 +1167,17 @@ Caret=38,12
 TopLine=5
 Caret=16,12
 [www\Styles\Stylesm.css]
-TopLine=1
+TopLine=11
 Caret=61,27
 [www\Site.php]
-TopLine=25
+TopLine=1
 Caret=60,43
 [www\Sitem.php]
-TopLine=9
-Caret=60,14
+TopLine=1
+Caret=6,81
 [www\Pages\cCenter.php]
-TopLine=46
+TopLine=58
 Caret=17,74
-[www\Common.php]
-TopLine=7
-Caret=1,1
+[www\Pages\DisplayParm.php]
+TopLine=1
+Caret=5,3

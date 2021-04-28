@@ -54,7 +54,6 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
       <div role="main" class="ui-content" id="cCenter">
    ';
    require_once 'Pages/cCenter.php';
-   //require_once 'Pages/MobIcons.php';
    echo '
       </div>
       <div data-role = "footer">
@@ -79,7 +78,9 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
       </div>
       <div role="main" class="ui-content" id="exPhp">
    ';
-   require_once 'Pages/exPhp.php';
+   //require_once 'Pages/exPhp.php';
+   //require_once 'Pages/MobIcons.php';
+   require_once 'Pages/DisplayParm.php';
    echo '
       </div>
       <div data-role = "footer">

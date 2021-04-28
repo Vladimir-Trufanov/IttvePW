@@ -45,9 +45,6 @@ echo '
 ';
 // Подключаем jQuery
 echo '
-   <!-- 
-   <script src="/Js/jquery.js" type="text/javascript"></script>
-   -->
    <script src="/Js/jquery-1.11.1.min.js"></script>
 ';
 if ($SiteDevice==Mobile) 
@@ -74,7 +71,15 @@ if ($SiteDevice==Mobile)
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
       <script src="/Js/jquery-ui.min.js"></script>
       <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
+      <script src="/Js/TJsPrown.js"></script>
    ';
+   // Подключаем скрипты по завершению загрузки страницы
+   echo '<script>$(document).ready(function() 
+     {
+        aScreenInfo=getScreenInfo(false);  
+        MakeScreenInfo(aScreenInfo);
+     });</script>';
+
 }
 else 
 {   
