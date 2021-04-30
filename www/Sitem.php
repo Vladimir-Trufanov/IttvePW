@@ -44,7 +44,7 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
          <a href="https://kwinflat.ru"><i class="fa fa-tasks fa-lg" aria-hidden="true"> </i></a>
          </div>
    ';
-   echo  '<div id="cTitle"> <h1>'.$TitleMain.'</h1></div>';
+   echo  '<div id="c1Title"> <h1>'.$TitleMain.'</h1></div>';
    echo '
          <div id="bHandoright" class="dibtn">
          <a href="#"><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"> </i></a>
@@ -69,7 +69,7 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
          <a href="https://kwinflat.ru"><i class="fa fa-hand-o-left fa-lg" aria-hidden="true"> </i></a>
          </div>
    ';
-   echo  '<div id="cTitle"> <h1>Текст фрагмента программы</h1></div>';
+   echo  '<div id="c2Title"> <h1>Текст фрагмента программы</h1></div>';
    echo '
          <div id="bHandoright" class="dibtn">
          <a href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"> </i></a>
@@ -81,6 +81,7 @@ function markupMobileSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
    //require_once 'Pages/exPhp.php';
    //require_once 'Pages/MobIcons.php';
    require_once 'Pages/DisplayParm.php';
+   //require_once 'Pages/MobIcons.php';
    echo '
       </div>
       <div data-role = "footer">

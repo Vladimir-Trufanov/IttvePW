@@ -168,5 +168,3 @@ function MakeScreenInfo(aScreenInfo)
    elem = document.getElementById("DevicePixelRatio");
    elem.innerHTML = aScreenInfo[10];
 }
-
-

@@ -536,7 +536,7 @@ IttvePW
 					www\Images\Buttons\Php.svg
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
-			-Js
+			+Js
 				-images
 					-icons-png
 						www\Js\images\icons-png\action-black.png
@@ -788,7 +788,7 @@ IttvePW
 				www\sm-mint\sm-core-css.css
 				www\sm-mint\sm-mint.css
 				www\sm-mint\sm-mint.css.map
-			-Styles
+			+Styles
 				www\Styles\Reset.css
 				www\Styles\Styles.css
 				www\Styles\Stylesm.css
@@ -1130,18 +1130,18 @@ IttvePW
 1=www\Main.php
 2=www\iniMem.php
 3=www\UpSite.php
-4=www\Styles\Styles.css
-5=www\Pages\MobIcons.php
-6=www\Pages\exPhp.php
-7=www\Pages\hBlock.php
-8=www\Styles\Stylesm.css
-9=www\Site.php
-10=www\Sitem.php
-11=www\Pages\cCenter.php
-12=www\Pages\DisplayParm.php
+4=www\Pages\exPhp.php
+5=www\Pages\hBlock.php
+6=www\Site.php
+7=www\Sitem.php
+8=www\Pages\cCenter.php
+9=www\Pages\DisplayParm.php
+10=www\Js\TJsPrown.js
+11=www\Styles\Stylesm.css
+12=www\Js\IttvePW.js
 [Selected Project Files]
 Main=
-Selected=www\UpSite.php
+Selected=www\Js\IttvePW.js
 [www\index.php]
 TopLine=20
 Caret=11,20
@@ -1152,32 +1152,33 @@ Caret=1,18
 TopLine=22
 Caret=8,38
 [www\UpSite.php]
-TopLine=74
-Caret=37,80
-[www\Styles\Styles.css]
-TopLine=51
-Caret=3,66
-[www\Pages\MobIcons.php]
-TopLine=36
-Caret=74,44
+TopLine=65
+Caret=22,82
 [www\Pages\exPhp.php]
 TopLine=11
 Caret=38,12
 [www\Pages\hBlock.php]
 TopLine=5
 Caret=16,12
-[www\Styles\Stylesm.css]
-TopLine=11
-Caret=61,27
 [www\Site.php]
-TopLine=1
+TopLine=15
 Caret=60,43
 [www\Sitem.php]
-TopLine=1
-Caret=6,81
+TopLine=45
+Caret=22,72
 [www\Pages\cCenter.php]
 TopLine=58
 Caret=17,74
 [www\Pages\DisplayParm.php]
 TopLine=1
 Caret=5,3
+[www\Js\TJsPrown.js]
+TopLine=163
+Caret=1,171
+[www\Styles\Stylesm.css]
+TopLine=35
+Caret=14,46
+Mark1=1,32
+[www\Js\IttvePW.js]
+TopLine=7
+Caret=57,29

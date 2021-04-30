@@ -26,10 +26,9 @@ body
 h1 
 {
   font: bold italic 1.4rem Baskerville, "Palatino Linotype", "Times New Roman", serif;
-  color: #46874D;
+  /*color: #46874D;*/
   text-align: center;
 }
- 
 .dibtn, #bTasks, #bHandoright
 { 
   border-radius: 5px;
@@ -44,18 +43,16 @@ h1
   float: left;
   margin-left: 5px;
 }
-#cTitle
+#c1Title, #c2Title
 {
   float: left;
   margin-left: 5px;
-  width: 222px;
 }
 #bHandoright
 {
   float: left;
   margin-left: 5px;
 }
-
 #cCenter  
 {
   text-align: justify;

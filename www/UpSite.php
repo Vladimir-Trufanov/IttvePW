@@ -72,14 +72,15 @@ if ($SiteDevice==Mobile)
       <script src="/Js/jquery-ui.min.js"></script>
       <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
       <script src="/Js/TJsPrown.js"></script>
+      <script src="/Js/IttvePW.js"></script>
    ';
    // Подключаем скрипты по завершению загрузки страницы
    echo '<script>$(document).ready(function() 
      {
         aScreenInfo=getScreenInfo(false);  
         MakeScreenInfo(aScreenInfo);
+        ApartButtons();
      });</script>';
-
 }
 else 
 {   
