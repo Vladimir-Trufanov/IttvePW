@@ -31,15 +31,20 @@ else
    echo '
    <nav id="main-nav">
    <ul id="main-menu" class="sm sm-mint">
-      <li><a href="#">ММС Лада-Нива</a>
+      <li><a href="/">ММС Лада-Нива</a>
          <ul>
-            <li><a href="#">С чего все началось</a></li>
-            <li><a href="#">А что внутри?</a></li>
-            <li><a href="#">Эксперименты со строками</a></li>
+            <li><a href="?Com=s-chego-vse-nachalos">С чего все началось</a></li>     
+            <li><a href="index.php?Com=s-chego-vse-nachalos">А что внутри?</a></li>
+            <li><a href="/">Эксперименты со строками</a></li>
          </ul>
       </li>
-      <li><a href="#">Стиль</a></li>
-      <li><a href="#">Моделирование</a></li>
+      <li><a href="/">Стиль</a>
+         <ul>
+            <li><a href="/">Элементы стиля программирования</a></li>
+            <li><a href="/">Пишите программы просто</a></li>
+         </ul>
+      </li>
+      <li><a href="?Com=s-chego-vse-nachalos">Моделирование</a></li>
       <li><a href="#">Учебники</a></li>
       <li><a href="#">О сайте</a></li>
    </ul>

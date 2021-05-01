@@ -113,21 +113,12 @@ else
       </style>
    ";
 }
-
-//require_once "iJsJquery.php";
- 
 // Начинаем html-страницу
 echo '</head>'; 
 echo '<body>'; 
-?>
-   <script>
-      //ScreenInfo33();
-   </script> 
-<?php
 $TitleMain='Основная тема страницы';
 if ($SiteDevice==Mobile) require_once 'Sitem.php';
 else require_once 'Site.php';
-//echo 'Привет Вам! <br>';
 /*
 // При необходимости показываем кукисы и переменные сессий
 prown\ViewGlobal(avgSESSION);

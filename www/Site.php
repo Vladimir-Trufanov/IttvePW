@@ -57,6 +57,14 @@ function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
   
   echo            '<div id="cCenter">';
   echo            '<h1>'.$TitleMain.'</h1>';
+  // При необходимости транслитируем некоторый заголовок
+  // echo  prown\getTranslit('ММС Лада-Нива').'<br>';
+  // echo  prown\getTranslit('Стиль').'<br>';
+  // echo  prown\getTranslit('Моделирование').'<br>';
+  // echo  prown\getTranslit('Учебники').'<br>';
+  // echo  prown\getTranslit('О сайте').'<br>';
+   echo  prown\getTranslit('Пишите программы просто').'<br>';
+   echo  prown\getTranslit('С чего все началось').'<br>';
   require_once    'Pages/cCenter.php';
   echo            '</div>';
 
