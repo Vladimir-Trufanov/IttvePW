@@ -40,13 +40,22 @@ else
       </li>
       <li><a href="/">Стиль</a>
          <ul>
-            <li><a href="/">Элементы стиля программирования</a></li>
-            <li><a href="/">Пишите программы просто</a></li>
+            <li><a href="?Com=ehlementy-stilya-programmirovaniya">Элементы стиля программирования</a></li>
+            <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>
          </ul>
       </li>
       <li><a href="?Com=s-chego-vse-nachalos">Моделирование</a></li>
       <li><a href="#">Учебники</a></li>
-      <li><a href="#">О сайте</a></li>
+      <li><a href="#">Сайт</a>
+         <ul>
+            <li><a href="/">Авторизоваться</a></li>
+            <li><a href="/">Зарегистрироваться</a></li>
+            <li><a href="/">О сайте</a></li>
+            <li><a href="/">Редактировать материал</a></li>
+            <li><a href="/">Изменить настройки</a></li>
+            <li><a href="/">Отключиться</a></li>
+         </ul>
+      </li>
    </ul>
 </nav>
 ';

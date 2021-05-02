@@ -116,13 +116,18 @@ else
 // Начинаем html-страницу
 echo '</head>'; 
 echo '<body>'; 
-$TitleMain='Основная тема страницы';
-if ($SiteDevice==Mobile) require_once 'Sitem.php';
-else require_once 'Site.php';
+require_once $NamePage;
 /*
 // При необходимости показываем кукисы и переменные сессий
 prown\ViewGlobal(avgSESSION);
 prown\ViewGlobal(avgCOOKIE);
+*/
+// При необходимости выводим дополнительную информацию
+/*
+Header("Content-type: text/plain");
+$headers = getallheaders();
+print_r($headers);
+print_r($_SERVER);
 */
 // Выводим завершающие теги страницы
 echo '</body>'; 

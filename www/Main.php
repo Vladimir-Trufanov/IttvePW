@@ -48,77 +48,34 @@ if ($c_PersName<>$c_UserName)
    $s_Counter=prown\MakeSession('Counter',1,tInt); 
    $c_PersName=prown\MakeCookie('PersName',$c_UserName,tStr);
 }
-
+// Выводим меню
+if (prown\isComRequest('LifeMenu','Com'))
+{
+   //require_once "Html/iniHtmlLifeMenu.php";
+   //require_once "iniHtml1.php";
+   //echo 'Жизнь и путешествия!'.'<br>';
+   //require_once "Nastr.php";
+}
 // Выбираем страницу для отправки сообщения автору
-if (prown\isComRequest('Inbox','Com'))
+else if (prown\isComRequest('Inbox','Com'))
 {
-      //echo 'Отправить сообщение автору'.'<br>';
-      //$page='/DetmanPage/www/index1.php';
-     // Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
+   //echo 'Отправить сообщение автору'.'<br>';
+   //$page='/DetmanPage/www/index1.php';
+   // Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
 }
-
-
-// Проверяем не требуется ли просто вывести изображение и выводим его
-/*
-if ($ImageFile<>NULL)
+// Выбираем страницу для редактирования или создания материала
+else if (prown\isComRequest('ЕditМaterial','Com'))
 {
-   require_once "ViewImage.php";
+   $NamePage="EditText.php";
 }
-// Выводим другие страницы сайта
+// Запускаем страницу с активным материалом
 else
 {
-   // Выбираем страницу для отправки сообщения автору
-   if (prown\isComRequest('Inbox','Com'))
-   {
-      //echo 'Отправить сообщение автору'.'<br>';
-      $page='/DetmanPage/www/index1.php';
-      Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
-   }
-   // Выбираем страницу для изменения настроек
-   else if (prown\isComRequest('Tuning','Com'))
-   {
-      //echo 'Изменить настройки сайта в браузере'.'<br>';
-      //$page='/DownUpLoad/index_01.php';
-      //$page='/DownUpLoad/ProbaTest.php';
-      $page='/DetmanBase/indexBase.php';
-      Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
-   }
-   // Выбираем страницу для входа по логину или для регистрации
-   else if (prown\isComRequest('Signup','Com'))
-   {
-      echo 'Войти или зарегистрироваться'.'<br>';
-   }
-   // Выбираем страницу для редактирования или создания материала
-   else if (prown\isComRequest('ЕditМaterial','Com'))
-   {
-      require_once "EditText.php";
-   }
-   // Запускаем страницу с активным материалом
-   else
-   {
-      require_once "Site.php";
-   }
-   // Выводим меню
-   if (prown\isComRequest('LifeMenu','Com'))
-   {
-      //require_once "Html/iniHtmlLifeMenu.php";
-      //require_once "iniHtml1.php";
-      //echo 'Жизнь и путешествия!'.'<br>';
-      //require_once "Nastr.php";
-   }
+   $TitleMain='Основная тема страницы';
+   if ($SiteDevice==Mobile) $NamePage='Sitem.php';
+   else $NamePage='Site.php';
 }
-*/
-
 require_once "UpSite.php";
-   
-// При необходимости выводим дополнительную информацию
-/*
-Header("Content-type: text/plain");
-$headers = getallheaders();
-print_r($headers);
-print_r($_SERVER);
-*/
-
 /**
  * Сайт работает следующим образом:
  * 

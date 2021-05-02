@@ -11,7 +11,7 @@
 
 // Устанавливаем режим работы сайта и настройки разметки 
 iniDesktopSite($c_SiteMode);
-markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain,$isCalc);
+markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain);
 
 // ****************************************************************************
 // *           Установить режим работы сайта и настройки разметки             *
@@ -40,7 +40,7 @@ function iniDesktopSite($SiteMode)
 // ****************************************************************************
 // *                      Сформировать разметку страницы                      *
 // ****************************************************************************
-function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
+function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain)
 {
   echo         '<div id="hBlock">';
   require_once 'Pages/hBlock.php';
@@ -64,7 +64,7 @@ function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain,$isCalc)
   // echo  prown\getTranslit('Учебники').'<br>';
   // echo  prown\getTranslit('О сайте').'<br>';
    echo  prown\getTranslit('Пишите программы просто').'<br>';
-   echo  prown\getTranslit('С чего все началось').'<br>';
+   echo  prown\getTranslit('Элементы стиля программирования').'<br>';
   require_once    'Pages/cCenter.php';
   echo            '</div>';
 
