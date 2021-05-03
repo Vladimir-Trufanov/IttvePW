@@ -475,6 +475,19 @@ IttvePW
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
 		+www
+			+EdisiteArticle
+				-_Current
+				+_Edit
+					www\EdisiteArticle\_Edit\EdisiteArticle.css
+					www\EdisiteArticle\_Edit\EdisiteArticle.php
+					www\EdisiteArticle\_Edit\GalleryNews.php
+				-mms-lada-niva
+					www\EdisiteArticle\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
+				-modelirovanie
+				-sajt
+				-stil
+					www\EdisiteArticle\stil\itpw02-001-pishite-programmy-prosto-20210501.php
+				-uchebniki
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -528,6 +541,7 @@ IttvePW
 					www\font-awesome-4.7.0\scss\_variables.scss
 					www\font-awesome-4.7.0\scss\font-awesome.scss
 				www\font-awesome-4.7.0\HELP-US-OUT.txt
+			-GalleryProba
 			-Images
 				-Buttons
 					www\Images\Buttons\Java.svg
@@ -537,23 +551,10 @@ IttvePW
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
 			-ittveNews
-				www\ittveNews\GalleryNews.php
 				www\ittveNews\ittve01-001-20130201-Особенности-устройства-винтиков-в-моей-голове.html
 				www\ittveNews\ittve01-001-На-Сампо.jpg
 				www\ittveNews\ittve01-001-Подъём-настроения.jpg
 				www\ittveNews\ittve01-001-С-заботой-и-к-мамам.jpg
-			+IttvePW
-				-_Current
-				+_Edit
-					www\IttvePW\_Edit\EdisiteArticle.css
-					www\IttvePW\_Edit\EdisiteArticle.php
-				-mms-lada-niva
-					www\IttvePW\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
-				-modelirovanie
-				-sajt
-				-stil
-					www\IttvePW\stil\itpw02-001-pishite-programmy-prosto-20210501.php
-				-uchebniki
 			-Js
 				-images
 					-icons-png
@@ -1152,17 +1153,20 @@ IttvePW
 6=www\Sitem.php
 7=www\Pages\cCenter.php
 8=www\iniMem.php
+9=www\EdisiteArticle\_Edit\EdisiteArticle.php
+10=www\EdisiteArticle\_Edit\GalleryNews.php
+11=www\Common.php
 [Selected Project Files]
 Main=
-Selected=www\UpSite.php
+Selected=www\Main.php
 [www\index.php]
 TopLine=8
 Caret=1,18
 [www\Main.php]
-TopLine=42
-Caret=29,69
+TopLine=40
+Caret=50,53
 [www\UpSite.php]
-TopLine=30
+TopLine=28
 Caret=66,41
 [www\Pages\exPhp.php]
 TopLine=3
@@ -1180,5 +1184,14 @@ Caret=59,37
 TopLine=46
 Caret=17,74
 [www\iniMem.php]
-TopLine=11
-Caret=54,36
+TopLine=7
+Caret=1,31
+[www\EdisiteArticle\_Edit\EdisiteArticle.php]
+TopLine=19
+Caret=7,21
+[www\EdisiteArticle\_Edit\GalleryNews.php]
+TopLine=3
+Caret=80,10
+[www\Common.php]
+TopLine=25
+Caret=1,32

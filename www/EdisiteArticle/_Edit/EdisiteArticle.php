@@ -15,6 +15,11 @@
  *   --- При вызове из галереи задается режим вывода на странице - vimOnPage.
  *   --- Для возможного вызова картинки их данного модуля, в конце этого модуля 
  * меняется режим страничного вывода на полноформатный и наоборот.
+ * 
+ * Передаваемые общесайтовые переменные
+ *    $ImgdirSite="C:/IttveIMG/IttvePW/";  // каталог изображений сайта
+ *    $PrefSite="itpw";                    // префикс изображений и статей сайта
+
 */
 
 ?>
@@ -23,7 +28,7 @@
 -->
    <div id="NewGallery">
       <?php
-      require_once "ittveNews/GalleryNews.php";
+      require_once "GalleryNews.php";
       ?>
    </div>
 
@@ -102,4 +107,63 @@
 -->
 
 <?php
+// ****************************************************************************
+// *            Вывести (определить HTML-разметку) одну карточку галереи      *
+// ****************************************************************************
+function GViewImage($FileName,$Comment,$AreaText=false,$Action='Image')
+{
+   echo 
+      '<div class="Card"> '.
+      '<button class="bCard" type="submit" name="'.$Action.'" value="'.$FileName.'">'.
+      '<img class="imgCard" src="'.$FileName.'" alt="'.$FileName.'">'.
+      '</button>';
+   // Выводим существующий комментарий или 
+   // текст для редактирования
+   if ($AreaText) 
+   {
+      echo '
+         <textarea class="taCard" name="aream">Текст комментария к картинке</textarea>
+         ';
+   }
+   else echo '<p class="pCard">'.$Comment.'</p>';
+   echo 
+      '</div>';
+}
+function GLoadImage($FileName,$Comment,$AreaText=false,$Action='Image')
+{
+   /*
+   ?>
+   <!-- -->
+   <div class="Card">
+   <!-- 
+   <button class="bCard" type="submit" name="Upload" value="FileName">
+   -->
+   <input type="file" name="image" id="image">
+   <img class="imgCard" src="sampo.jpg" alt="FileName">
+   <input type="submit" name="upload" id="upload" value="Upload">
+   <!-- 
+   </button>
+   -->
+   <textarea class="taCard" name="aream">Текст комментария к картинке</textarea>
+   </div>
+   <?php
+   */
+      ?>
+   <!-- -->
+   <div class="Card">
+   <button class="bCard" type="submit" name="upload" value="FileName">
+   <input type="hidden" name="MAX_FILE_SIZE" value="57200">
+   <input type="file" name="image" id="image">
+   <img class="imgCard" src="sampo.jpg" alt="FileName">
+   <!-- 
+   <input type="submit" name="upload" id="upload" value="Upload">
+   -->
+   </button>
+   <textarea class="taCard" name="aream">Текст комментария к картинке</textarea>
+   </div>
+   <?php
+}
+
+
+
 // *********************************************************** EditText.php ***
