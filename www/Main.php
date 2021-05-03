@@ -64,9 +64,9 @@ else if (prown\isComRequest('Inbox','Com'))
    // Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
 }
 // Выбираем страницу для редактирования или создания материала
-else if (prown\isComRequest('ЕditМaterial','Com'))
+else if (prown\isComRequest('redaktirovat-material','Com'))
 {
-   $NamePage="EditText.php";
+   $NamePage="EdisiteArticle/_Edit/EdisiteArticle.php";
 }
 // Запускаем страницу с активным материалом
 else

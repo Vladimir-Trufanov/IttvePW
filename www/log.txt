@@ -37,3 +37,28 @@ Stack trace:
 #2 {main}
   thrown in C:\IttvePW\www\iniMem.php on line 38
 [28-Apr-2021 12:16:35 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in C:\IttvePW\www\Pages\exPhp.php on line 12
+[02-May-2021 08:19:53 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function GViewImage() in C:\IttvePW\www\ittveNews\GalleryNews.php:17
+Stack trace:
+#0 C:\IttvePW\www\EditText.php(26): require_once()
+#1 C:\IttvePW\www\UpSite.php(119): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(78): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittveNews\GalleryNews.php on line 17
+[03-May-2021 07:29:26 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function GViewImage() in C:\IttvePW\www\ittveNews\GalleryNews.php:17
+Stack trace:
+#0 C:\IttvePW\www\EditText.php(26): require_once()
+#1 C:\IttvePW\www\UpSite.php(119): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(78): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittveNews\GalleryNews.php on line 17
+[03-May-2021 08:06:04 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Class 'ttools\UploadToServer' not found in C:\IttvePW\www\EditText.php:48
+Stack trace:
+#0 C:\IttvePW\www\UpSite.php(121): require_once()
+#1 C:\IttvePW\www\Main.php(78): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EditText.php on line 48
+[03-May-2021 09:13:46 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '/IttvePW/_Edit/EdisiteArticle.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 121
+[03-May-2021 10:03:42 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'IttvePW/_Edit/EdisiteArticle.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 122

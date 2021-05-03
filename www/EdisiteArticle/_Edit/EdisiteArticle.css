@@ -1,0 +1,185 @@
+/** HTML5/CSS3, EDGE/CHROME                          *** EdisiteArticle.css ***
+
+ ******************************************************************************
+ * ittve.me             Спозиционировать справа галерею изображений и сделать *
+ *            только одну колонку для статей (как правило, новостных статей). * 
+ *         Сделать общие настройки по внутренним фонтам и их позиционированю. *
+ ******************************************************************************
+
+                                                     Автор:       Труфанов В.Е.
+                                                     Дата создания:  07.01.2019
+ Copyright © 2019 tve                                Посл.изменение: 03.05.2021
+*/
+#News,#Life,#Menu 
+{ 
+   position:fixed; 
+   overflow:auto; 
+   top:0; 
+   bottom:5.8rem;
+   padding:0 .5rem 0 .5rem;
+   text-align:justify;
+   right:33%;
+   width:67%; 
+}
+#News
+{ 
+   /*display:none;*/ 
+   background:transparent; /*blue;*/ 
+}
+#Life                                                                   
+{ 
+   /*display:none;*/ 
+   background:transparent; /*teal;*/ 
+}
+#Menu                                                                   
+{ 
+   /*display:none;*/ 
+   background:#e0e3ec url(../Images/Menu/bgnoise_lg.jpg) repeat top left;
+}
+#Gallery, #NewGallery
+{
+   margin-left:67%;
+   width:33%;
+}
+#Footer
+{
+   position:fixed; 
+   width:67%;
+   right:33%;
+   height:4.4rem;
+   bottom:0; 
+   margin-bottom:1.4rem;
+   background:transparent; /*green;*/ 
+}
+#Info
+{
+   position:fixed; 
+   width:67%;
+   right:33%;
+   bottom:0; 
+   height:1.4rem;
+   margin-bottom:0;
+   background:transparent; /*yellow*/; 
+}
+
+
+
+/* 
+ Позиционируем секции сайта при создании или редактировании страницы
+*/
+#TitleArea
+{ 
+   position:fixed; 
+   overflow:auto; 
+   top:0; 
+   bottom:96%;
+   padding:0 .5rem 0 .5rem;
+   text-align:center;
+   background:gray; 
+   right:33%;
+   width:67%; 
+}
+#EditDebug
+{ 
+   position:fixed; 
+   /*overflow:auto;*/ 
+   top:4%; 
+   bottom:56%;
+   padding:0 .5rem 0 .5rem;
+   /*text-align:justify;
+   background:red;*/ 
+   right:33%;
+   width:67%; 
+}
+#ContentArea
+{ 
+   position:fixed; 
+   overflow:auto; 
+   top:44%; 
+   bottom:4%;
+   padding:0 .5rem 0 .5rem;
+   text-align:justify;
+   background:yellow; 
+   right:33%;
+   width:67%; 
+}
+#InputArea
+{ 
+   position:fixed; 
+   overflow:auto; 
+   top:96%; 
+   bottom:0%;
+   padding:0 .5rem 0 .5rem;
+   text-align:center;
+   background:gray; 
+   right:33%;
+   width:67%; 
+}
+
+#Gallery, #NewGallery
+{
+   background:transparent; /*red*/
+   align-items:center;
+}
+.Card
+{
+   background:#E2ECE4;
+   border:.4rem double gray;
+   margin-bottom:.2rem;  /* расстояние между карточками */
+}
+.bCard
+{
+   background:transparent; /*green*/
+   cursor:pointer;
+}
+.imgCard
+{
+   background:transparent; /*lime;*/
+   width:100%;
+}
+.pCard
+{
+   background:transparent; /*yellow;*/ 
+   font-size:1.4rem; 
+   text-align: center;
+   padding:.1rem .5rem .1rem .5rem;
+   margin-bottom:.4rem;
+}
+.taCard
+{
+   width:100%;
+   height:10rem;
+}
+.Card:hover 
+{
+   color: #993300; 
+   font-weight: 600;
+}
+
+/**
+ *  Cтили изображения, выбранной в галерее картинки, на отдельной странице в
+ *  ее рамках или в натуральную величину 
+**/
+#fImg
+{
+   background:transparent; /*green;*/
+} 
+/* убрано 13.11.2020 мешало qupzille переключать между размерами изображений
+html,body,#bImg
+{
+   height:100%;
+}
+*/
+#ExtImg
+{
+   background-color:transparent; /*red;*/
+}
+#bImg 
+{ 
+   border:0;
+   background-color:transparent; /*blue*/;
+}
+
+/*
+ ******************************************************* EdisiteArticle.css ***
+*/	

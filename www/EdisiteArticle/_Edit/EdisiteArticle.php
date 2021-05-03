@@ -60,7 +60,7 @@
       echo '<div id="EditDebug">
             <p><b>Создать материал или редактировать его</b></p>';
       echo '<br>';
-      prown\ViewGlobal(avgPOST);
+      //prown\ViewGlobal(avgPOST);
       
       // Выводим сообщения по итогам загрузки файла
       if (isset($result)) 

@@ -38,6 +38,7 @@ echo '
       href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&amp;subset=cyrillic"> 
    <link rel="stylesheet" type="text/css" href="Styles/Reset.css">
 ';
+echo '<link rel="stylesheet" type="text/css" href="EdisiteArticle/_Edit/EdisiteArticle.css">';
 // Подключаем font-awesome/4.7.0
 echo '
  <link rel="stylesheet" 

@@ -51,7 +51,7 @@ else
             <li><a href="/">Авторизоваться</a></li>
             <li><a href="/">Зарегистрироваться</a></li>
             <li><a href="/">О сайте</a></li>
-            <li><a href="/">Редактировать материал</a></li>
+            <li><a href="?Com=redaktirovat-material">Редактировать материал</a></li>
             <li><a href="/">Изменить настройки</a></li>
             <li><a href="/">Отключиться</a></li>
          </ul>

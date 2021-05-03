@@ -536,7 +536,25 @@ IttvePW
 					www\Images\Buttons\Php.svg
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
-			+Js
+			-ittveNews
+				www\ittveNews\GalleryNews.php
+				www\ittveNews\ittve01-001-20130201-Особенности-устройства-винтиков-в-моей-голове.html
+				www\ittveNews\ittve01-001-На-Сампо.jpg
+				www\ittveNews\ittve01-001-Подъём-настроения.jpg
+				www\ittveNews\ittve01-001-С-заботой-и-к-мамам.jpg
+			+IttvePW
+				-_Current
+				+_Edit
+					www\IttvePW\_Edit\EdisiteArticle.css
+					www\IttvePW\_Edit\EdisiteArticle.php
+				-mms-lada-niva
+					www\IttvePW\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
+				-modelirovanie
+				-sajt
+				-stil
+					www\IttvePW\stil\itpw02-001-pishite-programmy-prosto-20210501.php
+				-uchebniki
+			-Js
 				-images
 					-icons-png
 						www\Js\images\icons-png\action-black.png
@@ -769,9 +787,7 @@ IttvePW
 					www\old\Pages\fBlock.php
 					www\old\Pages\hBlock.php
 					www\old\Pages\lSide.php
-			+Pages
-				-Art
-				-Think
+			-Pages
 				www\Pages\cCenter.php
 				www\Pages\DisplayParm.php
 				www\Pages\exJav.php
@@ -788,7 +804,7 @@ IttvePW
 				www\sm-mint\sm-core-css.css
 				www\sm-mint\sm-mint.css
 				www\sm-mint\sm-mint.css.map
-			+Styles
+			-Styles
 				www\Styles\Reset.css
 				www\Styles\Styles.css
 				www\Styles\Stylesm.css
@@ -1037,6 +1053,7 @@ IttvePW
 			www\log.txt
 			www\Main.php
 			www\manifest.json
+			www\sampo.jpg
 			www\Site.php
 			www\Sitem.php
 			www\UpSite.php
@@ -1120,65 +1137,48 @@ IttvePW
 			Материалы\Cобытия Java Script на смартфоне ОПЫТ1.doc
 			Материалы\Как сделать редирект на мобильную версию сайта.doc
 			Материалы\Что такое UTM-метки и как их применять.doc
+			Материалы\Элементы стиля программирования by Керниган Б., Плоджер Ф. (z-lib.org).djvu
 		.gitignore
-		DisplayParm.php
 		IttvePW.ppr
+		IttvePW.xls
 		README.md
-		Тезисы.xls
 [Open project files]
 0=www\index.php
 1=www\Main.php
-2=www\iniMem.php
-3=www\UpSite.php
-4=www\Pages\exPhp.php
-5=www\Pages\hBlock.php
-6=www\Site.php
-7=www\Sitem.php
-8=www\Pages\cCenter.php
-9=www\Pages\DisplayParm.php
-10=www\Js\TJsPrown.js
-11=www\Styles\Stylesm.css
-12=www\Js\IttvePW.js
+2=www\UpSite.php
+3=www\Pages\exPhp.php
+4=www\Pages\hBlock.php
+5=www\Site.php
+6=www\Sitem.php
+7=www\Pages\cCenter.php
+8=www\iniMem.php
 [Selected Project Files]
 Main=
-Selected=www\Sitem.php
+Selected=www\UpSite.php
 [www\index.php]
 TopLine=8
-Caret=11,20
+Caret=1,18
 [www\Main.php]
-TopLine=70
-Caret=1,79
-[www\iniMem.php]
-TopLine=22
-Caret=10,38
+TopLine=42
+Caret=29,69
 [www\UpSite.php]
-TopLine=111
-Caret=1,132
+TopLine=30
+Caret=66,41
 [www\Pages\exPhp.php]
 TopLine=3
 Caret=1,12
 [www\Pages\hBlock.php]
-TopLine=37
-Caret=47,55
+TopLine=32
+Caret=26,54
 [www\Site.php]
-TopLine=73
-Caret=60,43
+TopLine=53
+Caret=2,66
 [www\Sitem.php]
-TopLine=69
+TopLine=37
 Caret=59,37
 [www\Pages\cCenter.php]
 TopLine=46
 Caret=17,74
-[www\Pages\DisplayParm.php]
-TopLine=1
-Caret=5,3
-[www\Js\TJsPrown.js]
-TopLine=163
-Caret=1,171
-[www\Styles\Stylesm.css]
-TopLine=35
-Caret=14,46
-Mark1=1,32
-[www\Js\IttvePW.js]
-TopLine=5
-Caret=57,29
+[www\iniMem.php]
+TopLine=11
+Caret=54,36
