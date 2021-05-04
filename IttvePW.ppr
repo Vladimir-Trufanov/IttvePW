@@ -1170,11 +1170,11 @@ Caret=66,41
 TopLine=3
 Caret=1,12
 [www\Pages\hBlock.php]
-TopLine=23
-Caret=1,50
+TopLine=37
+Caret=27,53
 [www\Site.php]
 TopLine=43
-Caret=30,69
+Caret=27,68
 [www\Sitem.php]
 TopLine=10
 Caret=59,37
@@ -1182,7 +1182,7 @@ Caret=59,37
 TopLine=47
 Caret=17,74
 [www\iniMem.php]
-TopLine=1
+TopLine=20
 Caret=100,47
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
 TopLine=88
@@ -1194,5 +1194,5 @@ Caret=72,10
 TopLine=25
 Caret=1,32
 [www\CreateBase.php]
-TopLine=16
-Caret=1,32
+TopLine=105
+Caret=34,117

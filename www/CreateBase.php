@@ -18,7 +18,7 @@ function UnlinkFile($filename)
    {
       if (!unlink($filename))
       {
-         // Выводим сообщение о неудачном удалении файла базы данных в случаях:
+         // Выводится сообщение о неудачном удалении файла базы данных в случаях:
          // а) база данных подключена к стороннему приложению;
          // б) база данных еще привязана к другому объекту класса;
          // в) прочее
@@ -27,75 +27,103 @@ function UnlinkFile($filename)
    } 
 }
 // ****************************************************************************
-// *               Создать базу данных itpw.db3 в начальном состоянии         *
+// *                         Создать таблицы базы данных                      *
 // ****************************************************************************
-echo '<br>';  
-// Проверяется существование и удаляется файл базы данных 
-$filename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
-UnlinkFile($filename);
-echo 'Проверено существование и удалён старый файл базы данных: itpw.db3<br>';  
-
-// Создается объект PDO и файл базы данных
-$pathBase='sqlite:'.$filename; 
-$username='tve';
-$password='23ety17';     
-// Подключаем PDO к базе
-$pdo = new PDO(
-   $pathBase, 
-   $username,
-   $password,
-   array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
-);
-echo 'Создан объект PDO и файл базы данных<br>'; 
-
-// Строятся таблицы базы данных
-try 
+function CreateTables($pdo)
 {
-   $pdo->beginTransaction();
-   // Создаём таблицу разделов   
-   $sql='CREATE TABLE charter ('.
-      'IdCharter      INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
-      'NameCharter    VARCHAR,'.
-      'TranslitCarter VARCHAR )';
-   $st = $pdo->query($sql);
-   // Создаём таблицу указателей наличия примеров   
-   $sql='CREATE TABLE cue ('.
-      'IdCue          INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
-      'NameCue        VARCHAR )';
-   $st = $pdo->query($sql);
-   // Включаем действие внешних ключей
-   $sql='PRAGMA foreign_keys=on;';
-   $st = $pdo->query($sql);
-   // Создаём таблицу материалов   
-   $sql='CREATE TABLE stock ('.
-      'Numb           INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'.
-      'IdCharter      INTEGER NOT NULL REFERENCES charter(IdCharter),'.
-      'IdCue          INTEGER NOT NULL REFERENCES cue(IdCue),'.
-      'NameArt        VARCHAR,'.
-      'Translit       VARCHAR,'.
-      'Art            VARCHAR )';
-   $st = $pdo->query($sql);
-
-   
-   /*   
-      $sql='CREATE TABLE colours (
-         [id-colour] INTEGER PRIMARY KEY,
-         colour      TEXT
-      )';
+   try 
+   {
+      $pdo->beginTransaction();
+      // Создаём таблицу разделов   
+      $sql='CREATE TABLE charter ('.
+         'IdCharter      INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
+         'NameCharter    VARCHAR,'.
+         'TranslitCarter VARCHAR )';
       $st = $pdo->query($sql);
-      
-      $sql='CREATE TABLE produkts (
-         name        TEXT PRIMARY KEY,
-         [id-colour] INTEGER NOT NULL REFERENCES colours ([id-colour]),
-         calories    NUMERIC( 5, 1 ),
-         [id-vid]    INTEGER
-      )';
+      // Создаём таблицу указателей типов статей   
+      $sql='CREATE TABLE cue ('.
+         'IdCue          INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
+         'NameCue        VARCHAR )';
       $st = $pdo->query($sql);
-      
-      // https://art-life-spb.ru/kaiioraz_frukty
-      // https://sostavproduktov.ru/produkty/yagody
-      // https://sostavproduktov.ru/potrebitelyu/vidy-produktov/frukty
+      // Включаем действие внешних ключей
+      $sql='PRAGMA foreign_keys=on;';
+      $st = $pdo->query($sql);
+      // Создаём таблицу материалов   
+      $sql='CREATE TABLE stock ('.
+         'Numb           INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'.
+         'IdCharter      INTEGER NOT NULL REFERENCES charter(IdCharter),'.
+         'IdCue          INTEGER NOT NULL REFERENCES cue(IdCue),'.
+         'NameArt        VARCHAR,'.
+         'Translit       VARCHAR,'.
+         'Art            VARCHAR )';
+      $st = $pdo->query($sql);
+      $pdo->commit();
+   } 
+   catch (Exception $e) 
+   {
+      // Если в транзакции, то делаем откат изменений
+      if ($pdo->inTransaction()) 
+      {
+         $pdo->rollback();
+      }
+      // Продолжаем исключение
+     throw $e;
+   }
+}
+// ****************************************************************************
+// *                  Выполнить начальное заполнение таблиц                   *
+// ****************************************************************************
+function Befill($pdo)
+{
+   // https://art-life-spb.ru/kaiioraz_frukty
+   // https://sostavproduktov.ru/produkty/yagody
+   // https://sostavproduktov.ru/potrebitelyu/vidy-produktov/frukty
+   try 
+   {
+      $pdo->beginTransaction();
+      // Заполняем таблицу разделов
+      $aCharters=[
+         [ 1,'ММС Лада-Нива', ''],
+         [ 2,'Стиль',         ''],
+         [ 3,'Моделирование', ''],
+         [ 4,'Учебники',      ''],
+         [ 5,'Сайт',          '']
+      ];
+      $statement = $pdo->prepare("INSERT INTO [charter] ".
+         "([IdCharter], [NameCharter], [TranslitCarter]) VALUES ".
+         "(:IdCharter,  :NameCharter,  :TranslitCarter);");
+      $i=0;
+      foreach ($aCharters as [$IdCharter,$NameCharter,$TranslitCarter])
+      $statement->execute([
+         "IdCharter"      => $IdCharter, 
+         "NameCharter"    => $NameCharter, 
+         "TranslitCarter" => prown\getTranslit($NameCharter)
+      ]);
+      // Заполняем таблицу указателей типов статей
+      $aСues=[
+         [ 0,'Основная статья'],
+         [ 1,'Пример на умалчиваемом языке (по статье)'],
+         [ 2,'Пример на PHP'],
+         [ 4,'Пример на JavaScript'],
+         [ 8,'Пример на Лазарусе/Delphi']
+      ];
+      $statement = $pdo->prepare("INSERT INTO [cue] ".
+         "([IdCue], [NameCue]) VALUES ".
+         "(:IdCue,  :NameCue);");
+      $i=0;
+      foreach ($aСues as [$IdCue,$NameCue])
+      $statement->execute([
+         "IdCue"      => $IdCue, 
+         "NameCue"    => $NameCue
+      ]);
 
+      
+      
+      
+      
+      
+      
+   /*
       $sql="INSERT INTO [vids] ([id-vid], [vid]) VALUES ('1', 'фрукты');";
       $st = $pdo->query($sql);
       $sql="INSERT INTO [vids] ([id-vid], [vid]) VALUES ('2', 'ягоды');";
@@ -127,21 +155,50 @@ try
       foreach ($aProducts as [$name,$idcolor,$calories,$idvid])
       $statement->execute(["name"=>$name, "idcolour"=>$idcolor, "calories"=>$calories, "idvid"=>$idvid]);
    */   
-   $pdo->commit();
-} 
-catch (Exception $e) 
-{
-   // Если в транзакции, то делаем откат изменений
-   if ($pdo->inTransaction()) 
+
+
+
+      $pdo->commit();
+   } 
+   catch (Exception $e) 
    {
-      $pdo->rollback();
+      // Если в транзакции, то делаем откат изменений
+      if ($pdo->inTransaction()) 
+      {
+         $pdo->rollback();
+      }
+      // Продолжаем исключение
+     throw $e;
    }
-   // Продолжаем исключение
-   throw $e;
 }
+// ****************************************************************************
+// *               Создать базу данных itpw.db3 в начальном состоянии         *
+// ****************************************************************************
+echo '<br>';  
+// Проверяется существование и удаляется файл базы данных 
+$filename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
+UnlinkFile($filename);
+echo 'Проверено существование и удалён старый файл базы данных: itpw.db3<br>';  
 
+// Создается объект PDO и файл базы данных
+$pathBase='sqlite:'.$filename; 
+$username='tve';
+$password='23ety17';     
+// Подключаем PDO к базе
+$pdo = new PDO(
+   $pathBase, 
+   $username,
+   $password,
+   array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
+);
+echo 'Создан объект PDO и файл базы данных<br>'; 
 
-
+// Создаются таблицы базы данных
+CreateTables($pdo);
+echo 'Созданы таблицы базы данных<br>'; 
+// Выполняется начальное заполнение таблиц
+Befill($pdo);
+echo 'Выполнено начальное заполнение таблиц<br>'; 
 
 echo '<br>';  
 // ********************************************************* CreateBase.php ***
