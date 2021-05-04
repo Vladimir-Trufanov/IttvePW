@@ -65,7 +65,7 @@ function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain)
   // echo  prown\getTranslit('О сайте').'<br>';
   // echo  prown\getTranslit('Пишите программы просто').'<br>';
   // echo  prown\getTranslit('Элементы стиля программирования').'<br>';
-  echo  prown\getTranslit('Редактировать материал').'<br>';
+  echo  prown\getTranslit('Особенности устройства винтиков в моей голове').'<br>';
   require_once    'Pages/cCenter.php';
   echo            '</div>';
 

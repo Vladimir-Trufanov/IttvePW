@@ -62,3 +62,11 @@ Stack trace:
   thrown in C:\IttvePW\www\EditText.php on line 48
 [03-May-2021 09:13:46 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '/IttvePW/_Edit/EdisiteArticle.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 121
 [03-May-2021 10:03:42 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'IttvePW/_Edit/EdisiteArticle.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 122
+[04-May-2021 09:45:08 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function GLoadImage() in C:\IttvePW\www\EdisiteArticle\_Edit\GalleryNews.php:21
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php(31): require_once()
+#1 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(85): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\_Edit\GalleryNews.php on line 21

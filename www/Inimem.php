@@ -27,7 +27,8 @@ $c_PersName=prown\MakeCookie('PersName',"Гость",tStr,true);   // логин
 $c_BrowEntry=prown\MakeCookie('BrowEntry',0,tInt,true);       // число запросов сайта из браузера
 $c_PersEntry=prown\MakeCookie('PersEntry',0,tInt,true);       // счетчик посещений текущим посетителем
 $c_SiteMode=prown\MakeCookie('SiteMode',rzmMain,tInt,true);   // режимы работы сайта и настройки разметки
-$c_NameCharter=prown\MakeCookie('NameCharter','Заголовок новой статьи',tStr,true);  
+$c_NameCharter=prown\MakeCookie('NameCharter','Наименование раздела',tStr,true);  
+$c_NameArt=prown\MakeCookie('NameArt','Заголовок новой статьи',tStr,true);  
 
 // Инициализируем сессионные переменные (сессионные переменные инициируются после
 // переменных-кукисов, так как некоторые переменные-кукисы переопределяются появившимися
@@ -41,8 +42,12 @@ $ModeError=2;                        // режим вывода сообщени
 $SpecSite="http://localhost:88";     // спецификация сайта  
 $TitleMain="";                       // заголовок статьи
 $NamePage="";                        // имя файла загружаемой страницы
+
 $ImgdirSite="C:/IttveIMG/IttvePW/";  // каталог изображений сайта
 $PrefSite="itpw";                    // префикс изображений и статей сайта
+$Translit="";                        // транслит текущей статьи
+$TranslitCharter="";                 // транслит раздела
+
 // Переопределяем общесайтовые переменные, в зависимости от площадки сайта
 if (isNichost()) 
 {

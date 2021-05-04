@@ -44,7 +44,11 @@ else
             <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>
          </ul>
       </li>
-      <li><a href="?Com=s-chego-vse-nachalos">Моделирование</a></li>
+      <li><a href="?Com=s-chego-vse-nachalos">Моделирование</a>
+         <ul>
+            <li><a href="?Com=ehlementy-stilya-programmirovaniya">Элементы стиля программирования</a></li>
+         </ul>
+      </li>
       <li><a href="#">Учебники</a></li>
       <li><a href="#">Сайт</a>
          <ul>

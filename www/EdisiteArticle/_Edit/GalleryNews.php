@@ -12,7 +12,7 @@
 //echo '<form id="fGallery" action="'.$SpecSite.'">';
 echo '<form action="" method="post" enctype="multipart/form-data" id="uploadiImage">';
 
-$FileName="ittveNews/ittve01-001-Подъём-настроения.jpg";
+$FileName="EdisiteArticle/_Current/Подъем настроения.jpg";
 $Comment="Ночная прогулка по Ладоге до рассвета и подъёма настроения.";
 GViewImage($FileName,$Comment);
 
@@ -20,8 +20,8 @@ $FileName="ittveNews/ittve01-001-С-заботой-и-к-мамам.jpg";
 $Comment="'С заботой и к мамам' - такой мамочкин хвостик.";
 GLoadImage($FileName,$Comment,true,"Upload");
 
-$FileName="ittveNews/ittve01-001-На-Сампо.jpg";
-$Comment="На горе Сампо всем хорошо!";
+$FileName="EdisiteArticle/_Current/С заботой и к мамам.jpg";
+$Comment="'С заботой и к мамам' - такой мамочкин хвостик.";
 GViewImage($FileName,$Comment);
 
 echo '</form>';

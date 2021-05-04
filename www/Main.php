@@ -48,9 +48,12 @@ if ($c_PersName<>$c_UserName)
    $s_Counter=prown\MakeSession('Counter',1,tInt); 
    $c_PersName=prown\MakeCookie('PersName',$c_UserName,tStr);
 }
-// Уточняем редактируемую статью
-$c_NameCharter=prown\MakeCookie('NameCharter',
-   'Особенности устройства винтиков в моей голове',tStr,true);  
+// Уточняем раздел и редактируемую статью
+$c_NameCharter=prown\MakeCookie('NameCharter','Моделирование',tStr,true);  
+$TranslitCharter=prown\getTranslit($c_NameCharter);
+$c_NameArt=prown\MakeCookie('NameCharter',
+   'Особенности устройства винтиков в моей голове',tStr,true);
+$Translit=prown\getTranslit($c_NameArt);  
 
 // Выводим меню
 if (prown\isComRequest('LifeMenu','Com'))
