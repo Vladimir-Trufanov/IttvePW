@@ -70,3 +70,4 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\EdisiteArticle\_Edit\GalleryNews.php on line 21
+[04-May-2021 13:10:22 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'Особенности устройства винтиков в моей голове.html' (include_path='.;C:\php\pear') in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 115
