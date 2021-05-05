@@ -475,8 +475,8 @@ IttvePW
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
 		+www
-			+EdisiteArticle
-				+_Current
+			-EdisiteArticle
+				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
 					www\EdisiteArticle\_Current\С заботой и к мамам.jpg
@@ -485,6 +485,7 @@ IttvePW
 					www\EdisiteArticle\_Edit\EdisiteArticle.php
 					www\EdisiteArticle\_Edit\GalleryNews.php
 					www\EdisiteArticle\_Edit\ImgTemplate.jpg
+					www\EdisiteArticle\_Edit\Особенности устройства винтиков в моей голове.html
 				-mms-lada-niva
 					www\EdisiteArticle\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
 				-modelirovanie
@@ -1045,15 +1046,18 @@ IttvePW
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
+			www\CreateBase.php
 			www\iJsJquery.php
 			www\index.php
 			www\iniMem.php
 			www\iniWorkSpace.php
+			www\itpw.db3
 			www\log.txt
 			www\Main.php
 			www\manifest.json
 			www\Site.php
 			www\Sitem.php
+			www\TreeActions.php
 			www\UpSite.php
 		-Материалы
 			-TErrEvent Delphi
@@ -1151,21 +1155,20 @@ IttvePW
 7=www\Pages\cCenter.php
 8=www\iniMem.php
 9=www\EdisiteArticle\_Edit\EdisiteArticle.php
-10=www\EdisiteArticle\_Edit\GalleryNews.php
-11=www\Common.php
-12=www\CreateBase.php
+10=www\TreeActions.php
+11=www\CreateBase.php
 [Selected Project Files]
 Main=
-Selected=www\CreateBase.php
+Selected=www\TreeActions.php
 [www\index.php]
-TopLine=8
+TopLine=14
 Caret=1,18
 [www\Main.php]
-TopLine=1
+TopLine=51
 Caret=1,11
 [www\UpSite.php]
-TopLine=28
-Caret=66,41
+TopLine=108
+Caret=1,131
 [www\Pages\exPhp.php]
 TopLine=3
 Caret=1,12
@@ -1173,8 +1176,8 @@ Caret=1,12
 TopLine=37
 Caret=27,53
 [www\Site.php]
-TopLine=43
-Caret=27,68
+TopLine=5
+Caret=31,70
 [www\Sitem.php]
 TopLine=10
 Caret=59,37
@@ -1185,14 +1188,11 @@ Caret=17,74
 TopLine=20
 Caret=100,47
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=88
+TopLine=38
 Caret=8,115
-[www\EdisiteArticle\_Edit\GalleryNews.php]
-TopLine=1
-Caret=72,10
-[www\Common.php]
-TopLine=25
-Caret=1,32
+[www\TreeActions.php]
+TopLine=176
+Caret=1,196
 [www\CreateBase.php]
-TopLine=105
-Caret=34,117
+TopLine=151
+Caret=62,100

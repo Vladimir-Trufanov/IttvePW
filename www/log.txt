@@ -125,3 +125,24 @@ Stack trace:
 #5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #6 {main}
   thrown in C:\IttvePW\www\CreateBase.php on line 25
+[05-May-2021 09:06:08 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ')', expecting ']' in C:\IttvePW\www\TreeActions.php on line 90
+[05-May-2021 09:12:30 Asia/Kuwait] PHP Fatal error:  Uncaught Exception: Не удалось удалить файл C:\IttvePW\www/olegmorozov.db3! in C:\IttvePW\www\TreeActions.php:26
+Stack trace:
+#0 C:\IttvePW\www\TreeActions.php(111): UnlinkFile('C:\\IttvePW\\www/...')
+#1 C:\IttvePW\www\Site.php(70): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Site.php(14): markupDesktopSite('1', 'Computer', '\xD0\x9E\xD1\x81\xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBD\xD0\xB0\xD1...')
+#3 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\Main.php(85): require_once('C:\\IttvePW\\www\\...')
+#5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#6 {main}
+  thrown in C:\IttvePW\www\TreeActions.php on line 26
+[05-May-2021 09:18:29 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: Test in C:\IttvePW\www\TreeActions.php:132
+Stack trace:
+#0 C:\IttvePW\www\TreeActions.php(132): PDO->query('SELECT * FROM T...')
+#1 C:\IttvePW\www\Site.php(70): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Site.php(14): markupDesktopSite('1', 'Computer', '\xD0\x9E\xD1\x81\xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBD\xD0\xB0\xD1...')
+#3 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\Main.php(85): require_once('C:\\IttvePW\\www\\...')
+#5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#6 {main}
+  thrown in C:\IttvePW\www\TreeActions.php on line 132
