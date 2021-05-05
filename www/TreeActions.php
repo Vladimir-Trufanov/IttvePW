@@ -107,17 +107,18 @@ function recursive(&$array,$data,$pid = 0,$level = 0)
       if ($row['pid'] == $pid)   
       { 
          // Собираем строку в ассоциативный массив
-         $_row['uid']= $row['uid'];
-         $_row['pid']= $row['pid'];
+         $_row['uid']=$row['uid'];
+         $_row['pid']=$row['pid'];
          // Функцией str_pad добавляем точки
          $_row['name']=$_row['name']=str_pad('', $level*3, '.').$row['name']; 
          // Добавляем уровень
          $_row['level']=$level;      
+         $_row['groups']=$row['access'];
          // Прибавляем каждую строку к выходному массиву
-         $array[] = $_row; 
+         $array[]=$_row; 
          // Строка обработана, теперь запустим эту же функцию для текущего uid, то есть
          // пойдёт обратотка дочерней строки (у которой этот uid является pid-ом)
-         recursive($array,$data, $row['uid'], $level + 1);
+         recursive($array,$data,$row['uid'],$level + 1);
       }
    }
 }
@@ -134,7 +135,8 @@ function ViewLevel($array)
    echo '<td>'.str_pad('PID',4," ",STR_PAD_LEFT).'</td>'; 
    echo '<td> NAME</td>'; 
    echo '<td>LEVEL</td>'; 
-   echo '</tr>';
+   echo '<td>'.str_pad('GROUPS',14," ",STR_PAD_LEFT).'</td>'; 
+   echo '</tr>';        
    // Выводим данные
    foreach ($array as $value)
    {
@@ -149,13 +151,108 @@ function ViewLevel($array)
       echo ' '.$value['name']; 
       echo '</td>'; 
       echo '<td>'; 
-      echo str_pad($value['level'],3," ",STR_PAD_LEFT);
+      echo str_pad($value['level'],5," ",STR_PAD_LEFT);
+      echo '</td>'; 
+      echo '<td>'; 
+      echo str_pad($value['groups'],14," ",STR_PAD_LEFT);
       echo '</td>'; 
       echo '</tr>';
    }
    echo '</table>';
    echo '</pre>';
 }
+// ****************************************************************************
+// *   Сформировать массив представления таблицы c указанием путей и доступа  *
+// ****************************************************************************
+function recursiveM(&$array,&$array_idx_lvl,
+   $data,$pid=0,$level=0,$path="",$access_parent="inherit")
+{
+  // Перебираем строки
+  foreach ($data as $row)
+  {
+    // Работаем со строками, pid которых передан в функцию (с 0, с корня сайта)
+    if ($row['pid'] == $pid)
+    {
+      // Собираем строку в ассоциативный массив
+      $_row['uid']    = $row['uid'];
+      $_row['pid']    = $row['pid'];
+      $_row['name']   = str_pad('', $level*3, '.').$row['name'];
+      $_row['level']  = $level;                   // добавляем уровень
+      $_row['path']   = $path."/".$row['name'];   // добавляем имя к пути
+      $_row['view']   = ".";
+      $_row['groups']=$row['access'];
+      $_row['access'] = $access_parent;
+      // Разруливаем доступы
+      if ($row['access'] == 'inherit')
+      {
+         $_row['access'] = $access_parent; // Если наследование, делаем как у родителя
+      }
+      else 
+      {
+         if ($row['access'] == 'ADGroupSecret') $_row['access']='deny'; 
+         else $_row['access']='allow'; 
+      }
+      $array[$row['uid']] = $_row;   // Результирующий массив индексируемый по uid
+      // Для быстрой выборки по level, формируем индекс
+      $array_idx_lvl[$level][$row['uid']] = $row['uid'];
+      // Строка обработана, теперь запустим эту же функцию для текущего uid, то есть
+      // пойдёт обработка дочерней строки (у которой этот uid является pid-ом)
+      recursiveM($array,$array_idx_lvl,$data,$row['uid'], $level + 1,$_row['path'],$_row['access']);
+    } 
+  }
+}
+// ****************************************************************************
+// *           Вывести содержимое массива в первом виде - до уровня           *
+// ****************************************************************************
+function ViewAccess($array)
+{
+   echo '<pre>';
+   // Выводим шапку
+   echo '<table border=2>';
+   echo '<tr>';
+   echo '<td>UID</td>'; 
+   echo '<td>'.str_pad('PID',4," ",STR_PAD_LEFT).'</td>'; 
+   echo '<td> NAME</td>'; 
+   echo '<td>LEVEL</td>'; 
+   echo '<td> PATH</td>'; 
+   // echo '<td>'.str_pad('GROUPS',14," ",STR_PAD_LEFT).'</td>'; 
+   echo '<td>ACCESS</td>'; 
+   echo '<td> VIEW</td>'; 
+   echo '</tr>';  
+    // Выводим данные
+   foreach ($array as $value)
+   {
+      echo '<tr>';
+      echo '<td>'; 
+      echo str_pad($value['uid'],3," ",STR_PAD_LEFT);
+      echo '</td>'; 
+      echo '<td>'; 
+      echo str_pad($value['pid'],4," ",STR_PAD_LEFT);
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['name']; 
+      echo '</td>'; 
+      echo '<td>'; 
+      echo str_pad($value['level'],5," ",STR_PAD_LEFT);
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['path'];
+      echo '</td>'; 
+      //echo '<td>'; 
+      //echo str_pad($value['groups'],14," ",STR_PAD_LEFT);
+      //echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['access'];
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['view'];
+      echo '</td>'; 
+      echo '</tr>';
+   }
+   echo '</table>';
+   echo '</pre>';
+}
+
 // ****************************************************************************
 // *           Создать базу данных olegmorozov.db3 в начальном состоянии      *
 // ****************************************************************************
@@ -193,6 +290,17 @@ recursive($array,$table);
 echo 'Сформирован массив для представления таблицы<br>'; 
 echo '<br>';  
 ViewLevel($array);
+echo '<br>'; 
+
+// Формируем массив c указанием путей и доступа 
+$array = array();                         // выходной массив
+$array_idx_lvl = array();                 // индекс по полю level
+recursiveM($array,$array_idx_lvl,$table); 
+echo 'Сформирован массив c указанием путей и доступа<br>'; 
 echo '<br>';  
+ViewAccess($array);
+echo '<br>';  
+
+ 
 echo '<br>';  
 // ******************************************************** TreeActions.php ***

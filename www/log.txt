@@ -146,3 +146,5 @@ Stack trace:
 #5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #6 {main}
   thrown in C:\IttvePW\www\TreeActions.php on line 132
+[05-May-2021 17:32:41 Asia/Kuwait] PHP Fatal error:  Cannot redeclare recursive() (previously declared in C:\IttvePW\www\TreeActions.php:101) in C:\IttvePW\www\TreeActions.php on line 189
+[05-May-2021 17:52:18 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\IttvePW\www\TreeActions.php on line 159

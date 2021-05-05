@@ -1164,7 +1164,7 @@ Selected=www\TreeActions.php
 TopLine=14
 Caret=1,18
 [www\Main.php]
-TopLine=51
+TopLine=11
 Caret=1,11
 [www\UpSite.php]
 TopLine=108
@@ -1176,7 +1176,7 @@ Caret=1,12
 TopLine=37
 Caret=27,53
 [www\Site.php]
-TopLine=5
+TopLine=42
 Caret=31,70
 [www\Sitem.php]
 TopLine=10
@@ -1188,11 +1188,11 @@ Caret=17,74
 TopLine=20
 Caret=100,47
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=38
+TopLine=87
 Caret=8,115
 [www\TreeActions.php]
-TopLine=176
-Caret=1,196
+TopLine=283
+Caret=15,220
 [www\CreateBase.php]
-TopLine=151
+TopLine=100
 Caret=62,100
