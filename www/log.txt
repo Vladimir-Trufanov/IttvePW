@@ -148,3 +148,13 @@ Stack trace:
   thrown in C:\IttvePW\www\TreeActions.php on line 132
 [05-May-2021 17:32:41 Asia/Kuwait] PHP Fatal error:  Cannot redeclare recursive() (previously declared in C:\IttvePW\www\TreeActions.php:101) in C:\IttvePW\www\TreeActions.php on line 189
 [05-May-2021 17:52:18 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\IttvePW\www\TreeActions.php on line 159
+[06-May-2021 17:10:26 Asia/Kuwait] PHP Fatal error:  Uncaught Exception: Не удалось удалить файл C:\IttvePW\www/itpw.db3! in C:\IttvePW\www\CreateBase.php:25
+Stack trace:
+#0 C:\IttvePW\www\CreateBase.php(148): UnlinkFile('C:\\IttvePW\\www/...')
+#1 C:\IttvePW\www\Site.php(63): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Site.php(14): markupDesktopSite('1', 'Computer', '\xD0\x9E\xD1\x81\xD0\xBD\xD0\xBE\xD0\xB2\xD0\xBD\xD0\xB0\xD1...')
+#3 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\Main.php(85): require_once('C:\\IttvePW\\www\\...')
+#5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#6 {main}
+  thrown in C:\IttvePW\www\CreateBase.php on line 25

@@ -27,7 +27,7 @@ function UnlinkFile($filename)
    } 
 }
 // ****************************************************************************
-// *                         Создать таблицы базы данных                      *
+// *      Создать таблицы базы данных и выполнить начальное заполнение        *
 // ****************************************************************************
 function CreateTables($pdo)
 {
@@ -65,12 +65,12 @@ function CreateTables($pdo)
       ]);
 
       // Создаём таблицу материалов   
-      $sql='CREATE TABLE stock ('.
+      $sql='CREATE TABLE stockpw ('.
          'uid      INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'.  // идентификатор пункта меню (раздел или статья сайта)
          'pid      INTEGER NOT NULL,'.                            // указатель элемента уровнем выше - uid родителя	
          'IdCue    INTEGER NOT NULL REFERENCES cue(IdCue),'.      // указатель типа статьи
-         'NameArt  VARCHAR,'.                                     // заголовок материала = статьи сайта
-         'Translit VARCHAR,'.                                     // транслит заголовка
+         'NameArt  VARCHAR NOT NULL,'.                            // заголовок материала = статьи сайта
+         'Translit VARCHAR NOT NULL,'.                            // транслит заголовка
          'DateArt  DATETIME,'.                                    // дата\время статьи сайта
          'Art      TEXT)';                                        // материал = статья сайта
       $st = $pdo->query($sql);
@@ -95,106 +95,37 @@ function CreateTables($pdo)
          [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  0,''],
          [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      0,'']
       ];
-      
-      /*
-      $statement = $pdo->prepare("INSERT INTO [charter] ".
-         "([IdCharter], [NameCharter], [TranslitCarter]) VALUES ".
-         "(:IdCharter,  :NameCharter,  :TranslitCarter);");
+
+      $statement = $pdo->prepare("INSERT INTO [stockpw] ".
+         "([uid], [pid], [IdCue], [NameArt], [Translit], [DateArt], [Art]) VALUES ".
+         "(:uid,  :pid,  :IdCue,  :NameArt,  :Translit,  :DateArt,  :Art);");
       $i=0;
-      foreach ($aCharters as [$IdCharter,$NameCharter,$TranslitCarter])
+      foreach ($aCharters as
+          [$uid,  $pid,  $IdCue,  $NameArt,  $Translit,  $DateArt,  $Art])
       $statement->execute([
-         "IdCharter"      => $IdCharter, 
-         "NameCharter"    => $NameCharter, 
-         "TranslitCarter" => prown\getTranslit($NameCharter)
-      ]);
-      */
-      
-      
-      
-      $pdo->commit();
-   } 
-   catch (Exception $e) 
-   {
-      // Если в транзакции, то делаем откат изменений
-      if ($pdo->inTransaction()) 
-      {
-         $pdo->rollback();
-      }
-      // Продолжаем исключение
-     throw $e;
-   }
-}
-// ****************************************************************************
-// *                  Выполнить начальное заполнение таблиц                   *
-// ****************************************************************************
-function Befill($pdo)
-{
-   // https://art-life-spb.ru/kaiioraz_frukty
-   // https://sostavproduktov.ru/produkty/yagody
-   // https://sostavproduktov.ru/potrebitelyu/vidy-produktov/frukty
-   try 
-   {
-      $pdo->beginTransaction();
-      // Заполняем таблицу разделов
-      $aCharters=[
-         [ 1,'ММС Лада-Нива', ''],
-         [ 2,'Стиль',         ''],
-         [ 3,'Моделирование', ''],
-         [ 4,'Учебники',      ''],
-         [ 5,'Сайт',          '']
-      ];
-      $statement = $pdo->prepare("INSERT INTO [charter] ".
-         "([IdCharter], [NameCharter], [TranslitCarter]) VALUES ".
-         "(:IdCharter,  :NameCharter,  :TranslitCarter);");
-      $i=0;
-      foreach ($aCharters as [$IdCharter,$NameCharter,$TranslitCarter])
-      $statement->execute([
-         "IdCharter"      => $IdCharter, 
-         "NameCharter"    => $NameCharter, 
-         "TranslitCarter" => prown\getTranslit($NameCharter)
+         "uid"      => $uid, 
+         "pid"      => $pid, 
+         "IdCue"    => $IdCue, 
+         "NameArt"  => $NameArt, 
+         "Translit" => $Translit, 
+         "DateArt"  => $DateArt, 
+         "Art"      => $Art
       ]);
 
-      
-      
-      
-      
-      
-      
-   /*
-      $sql="INSERT INTO [vids] ([id-vid], [vid]) VALUES ('1', 'фрукты');";
-      $st = $pdo->query($sql);
-      $sql="INSERT INTO [vids] ([id-vid], [vid]) VALUES ('2', 'ягоды');";
+      // Создаём таблицу для списка изображений   
+      $sql='CREATE TABLE picturepw ('.
+         'uid         INTEGER NOT NULL REFERENCES stockpw(uid),'.  // идентификатор пункта меню (раздел или статья сайта)
+         'NamePic     VARCHAR NOT NULL,'.                          // заголовок изображения к статье сайта
+         'TranslitPic VARCHAR NOT NULL,'.                          // транслит заголовка изображения
+         'DatePic     DATETIME,'.                                  // дата\время изображения
+         'Сomment     TEXT)';                                      // комментарий к изображению
       $st = $pdo->query($sql);
 
-      $sql="INSERT INTO [colours] ([id-colour], [colour]) VALUES (1, 'красные');";
+      // Создаём контрольную таблицу базы данных   
+      $sql='CREATE TABLE ctrlpw ('.
+         'bid         VARCHAR NOT NULL,'.    // наименование базы данных
+         'СommBase    TEXT)';                // комментарий по базе данных
       $st = $pdo->query($sql);
-      $sql="INSERT INTO [colours] ([id-colour], [colour]) VALUES (2, 'голубые');";
-      $st = $pdo->query($sql);
-      $sql="INSERT INTO [colours] ([id-colour], [colour]) VALUES (3, 'жёлтые');";
-      $st = $pdo->query($sql);
-      $sql="INSERT INTO [colours] ([id-colour], [colour]) VALUES (4, 'оранжевые');";
-      $st = $pdo->query($sql);
-      $sql="INSERT INTO [colours] ([id-colour], [colour]) VALUES (5, 'зелёные');";
-      $st = $pdo->query($sql);
-
-      $aProducts=[
-         ['голубика',  2, 41, 2],
-         ['брусника',  1, 41, 2],
-         ['груши',     3, 42, 1],
-         ['земляника', 1, 34, 2],
-         ['рябина',    4, 81, 2],
-         ['виноград',  5, 70, 1]
-      ];
-      $statement = $pdo->prepare("INSERT INTO [produkts] ".
-         "([name], [id-colour], [calories], [id-vid]) VALUES ".
-         "(:name,  :idcolour,   :calories,  :idvid);");
-      $i=0;
-      foreach ($aProducts as [$name,$idcolor,$calories,$idvid])
-      $statement->execute(["name"=>$name, "idcolour"=>$idcolor, "calories"=>$calories, "idvid"=>$idvid]);
-   */   
-
-
-
       $pdo->commit();
    } 
    catch (Exception $e) 
@@ -232,10 +163,7 @@ echo 'Создан объект PDO и файл базы данных<br>';
 
 // Создаются таблицы базы данных
 CreateTables($pdo);
-echo 'Созданы таблицы базы данных<br>'; 
-// Выполняется начальное заполнение таблиц
-//Befill($pdo);
-//echo 'Выполнено начальное заполнение таблиц<br>'; 
+echo 'Созданы таблицы и выполнено начальное заполнение<br>'; 
 
 echo '<br>';  
 // ********************************************************* CreateBase.php ***
