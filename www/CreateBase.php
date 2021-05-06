@@ -7,7 +7,7 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  04.05.2021
-// Copyright © 2021 tve                              Посл.изменение: 04.05.2021
+// Copyright © 2021 tve                              Посл.изменение: 06.05.2021
 
 // ****************************************************************************
 // *          Проверить существование и удалить файл из файловой системы      *
@@ -34,29 +34,83 @@ function CreateTables($pdo)
    try 
    {
       $pdo->beginTransaction();
-      // Создаём таблицу разделов   
-      $sql='CREATE TABLE charter ('.
-         'IdCharter      INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
-         'NameCharter    VARCHAR,'.
-         'TranslitCarter VARCHAR )';
+
+      // Включаем действие внешних ключей
+      $sql='PRAGMA foreign_keys=on;';
       $st = $pdo->query($sql);
+
       // Создаём таблицу указателей типов статей   
       $sql='CREATE TABLE cue ('.
          'IdCue          INTEGER PRIMARY KEY NOT NULL UNIQUE,'.
          'NameCue        VARCHAR )';
       $st = $pdo->query($sql);
-      // Включаем действие внешних ключей
-      $sql='PRAGMA foreign_keys=on;';
-      $st = $pdo->query($sql);
+
+      // Заполняем таблицу указателей типов статей
+      $aСues=[
+         [ -1, 'Раздел'],
+         [  0, 'Статья для сайта = материал'],
+         [  1, 'Пример на умалчиваемом языке (по статье)'],
+         [  2, 'Пример на PHP'],
+         [  4, 'Пример на JavaScript'],
+         [  8, 'Пример на Лазарусе/Delphi']
+      ];
+      $statement = $pdo->prepare("INSERT INTO [cue] ".
+         "([IdCue], [NameCue]) VALUES ".
+         "(:IdCue,  :NameCue);");
+      $i=0;
+      foreach ($aСues as [$IdCue,$NameCue])
+      $statement->execute([
+         "IdCue"      => $IdCue, 
+         "NameCue"    => $NameCue
+      ]);
+
       // Создаём таблицу материалов   
       $sql='CREATE TABLE stock ('.
-         'Numb           INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'.
-         'IdCharter      INTEGER NOT NULL REFERENCES charter(IdCharter),'.
-         'IdCue          INTEGER NOT NULL REFERENCES cue(IdCue),'.
-         'NameArt        VARCHAR,'.
-         'Translit       VARCHAR,'.
-         'Art            VARCHAR )';
+         'uid      INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'.  // идентификатор пункта меню (раздел или статья сайта)
+         'pid      INTEGER NOT NULL,'.                            // указатель элемента уровнем выше - uid родителя	
+         'IdCue    INTEGER NOT NULL REFERENCES cue(IdCue),'.      // указатель типа статьи
+         'NameArt  VARCHAR,'.                                     // заголовок материала = статьи сайта
+         'Translit VARCHAR,'.                                     // транслит заголовка
+         'DateArt  DATETIME,'.                                    // дата\время статьи сайта
+         'Art      TEXT)';                                        // материал = статья сайта
       $st = $pdo->query($sql);
+      
+      // Заполняем таблицу материалов в начальном состоянии
+      $aCharters=[
+         [ 1, 0,-1, 'Сайт ittve.pw',                      'sajt-ittvepw',                       0,''],
+         [ 2, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      0,''],
+         [ 3, 2, 0,    'С чего все началось',             's-chego-vse-nachalos',               0,''],
+         [ 4, 2, 0,    'А что внутри?',                   'a-chto-vnutri',                      0,''],
+         [ 5, 2, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          0,''],
+         [ 6, 1,-1, 'Стиль',                              'stil',                               0,''],
+         [ 7, 6, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', 0,''],
+         [ 8, 6, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           0,''],
+         [ 9, 1,-1, 'Моделирование',                      'modelirovanie',                      0,''],
+         [10, 1,-1, 'Учебники',                           'uchebniki',                          0,''],
+         [11, 1,-1, 'Сайт',                               'sajt',                               0,''],
+         [12,11, 0,    'Авторизоваться',                  'avtorizovatsya',                     0,''],
+         [13,11, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 0,''],
+         [14,11, 0,    'О сайте',                         'o-sajte',                            0,''],
+         [15,11, 0,    'Редактировать материал',          'redaktirovat-material',              0,''],
+         [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  0,''],
+         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      0,'']
+      ];
+      
+      /*
+      $statement = $pdo->prepare("INSERT INTO [charter] ".
+         "([IdCharter], [NameCharter], [TranslitCarter]) VALUES ".
+         "(:IdCharter,  :NameCharter,  :TranslitCarter);");
+      $i=0;
+      foreach ($aCharters as [$IdCharter,$NameCharter,$TranslitCarter])
+      $statement->execute([
+         "IdCharter"      => $IdCharter, 
+         "NameCharter"    => $NameCharter, 
+         "TranslitCarter" => prown\getTranslit($NameCharter)
+      ]);
+      */
+      
+      
+      
       $pdo->commit();
    } 
    catch (Exception $e) 
@@ -98,23 +152,6 @@ function Befill($pdo)
          "IdCharter"      => $IdCharter, 
          "NameCharter"    => $NameCharter, 
          "TranslitCarter" => prown\getTranslit($NameCharter)
-      ]);
-      // Заполняем таблицу указателей типов статей
-      $aСues=[
-         [ 0,'Основная статья'],
-         [ 1,'Пример на умалчиваемом языке (по статье)'],
-         [ 2,'Пример на PHP'],
-         [ 4,'Пример на JavaScript'],
-         [ 8,'Пример на Лазарусе/Delphi']
-      ];
-      $statement = $pdo->prepare("INSERT INTO [cue] ".
-         "([IdCue], [NameCue]) VALUES ".
-         "(:IdCue,  :NameCue);");
-      $i=0;
-      foreach ($aСues as [$IdCue,$NameCue])
-      $statement->execute([
-         "IdCue"      => $IdCue, 
-         "NameCue"    => $NameCue
       ]);
 
       
@@ -197,8 +234,8 @@ echo 'Создан объект PDO и файл базы данных<br>';
 CreateTables($pdo);
 echo 'Созданы таблицы базы данных<br>'; 
 // Выполняется начальное заполнение таблиц
-Befill($pdo);
-echo 'Выполнено начальное заполнение таблиц<br>'; 
+//Befill($pdo);
+//echo 'Выполнено начальное заполнение таблиц<br>'; 
 
 echo '<br>';  
 // ********************************************************* CreateBase.php ***

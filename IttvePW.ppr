@@ -474,7 +474,7 @@ IttvePW
 			SmartMenus\jquery.smartmenus.min.js
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
-		+www
+		-www
 			-EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
@@ -1055,11 +1055,11 @@ IttvePW
 			www\log.txt
 			www\Main.php
 			www\manifest.json
+			www\olegmorozov.db3
 			www\Site.php
 			www\Sitem.php
-			www\TreeActions.php
 			www\UpSite.php
-		-Материалы
+		+Материалы
 			-TErrEvent Delphi
 				Материалы\TErrEvent Delphi\erANYMesUni.dcu
 				Материалы\TErrEvent Delphi\erANYMesUni.pas
@@ -1092,6 +1092,12 @@ IttvePW
 				Материалы\TLaziTools\LaziprownAlerts.pas
 				Материалы\TLaziTools\LaziprownOutfit.pas
 				Материалы\TLaziTools\LazitoolsOutfit.pas
+			+TreeActions
+				-www
+					Материалы\TreeActions\www\index.php
+					Материалы\TreeActions\www\olegmorozov.db3
+				Материалы\TreeActions\TreeActions.php
+				Материалы\TreeActions\Рекурсия на PHP — алгоритм, применение.doc
 			-Картинки для кнопок
 				-Img-прозрачным фоном
 					Материалы\Картинки для кнопок\Img-прозрачным фоном\favicon16.png
@@ -1155,11 +1161,11 @@ IttvePW
 7=www\Pages\cCenter.php
 8=www\iniMem.php
 9=www\EdisiteArticle\_Edit\EdisiteArticle.php
-10=www\TreeActions.php
-11=www\CreateBase.php
+10=www\CreateBase.php
+11=Материалы\TreeActions\TreeActions.php
 [Selected Project Files]
 Main=
-Selected=www\TreeActions.php
+Selected=www\CreateBase.php
 [www\index.php]
 TopLine=14
 Caret=1,18
@@ -1173,11 +1179,11 @@ Caret=1,131
 TopLine=3
 Caret=1,12
 [www\Pages\hBlock.php]
-TopLine=37
-Caret=27,53
+TopLine=35
+Caret=40,56
 [www\Site.php]
-TopLine=42
-Caret=31,70
+TopLine=50
+Caret=39,61
 [www\Sitem.php]
 TopLine=10
 Caret=59,37
@@ -1190,9 +1196,10 @@ Caret=100,47
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
 TopLine=87
 Caret=8,115
-[www\TreeActions.php]
-TopLine=200
-Caret=15,220
 [www\CreateBase.php]
-TopLine=100
-Caret=62,100
+TopLine=84
+Caret=97,96
+Mark1=1,114
+[Материалы\TreeActions\TreeActions.php]
+TopLine=41
+Caret=1,59
