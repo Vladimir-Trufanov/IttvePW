@@ -5,6 +5,7 @@ Compilator.CompileOnBackground=0
 Compilator.ProgSaveAll=0
 Compilator.ProgRunSelection=0
 Compilator.LogType=0
+Compilator.LogEncoding=0
 DefaultDir=C:\IttvePW
 DefaultCP=0
 LogtoEnd=1
@@ -474,7 +475,7 @@ IttvePW
 			SmartMenus\jquery.smartmenus.min.js
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
-		-www
+		+www
 			-EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
@@ -1052,14 +1053,14 @@ IttvePW
 			www\iniMem.php
 			www\iniWorkSpace.php
 			www\itpw.db3
+			www\ittvepw.php
 			www\log.txt
 			www\Main.php
 			www\manifest.json
-			www\olegmorozov.db3
 			www\Site.php
 			www\Sitem.php
 			www\UpSite.php
-		+Материалы
+		-Материалы
 			-TErrEvent Delphi
 				Материалы\TErrEvent Delphi\erANYMesUni.dcu
 				Материалы\TErrEvent Delphi\erANYMesUni.pas
@@ -1092,7 +1093,7 @@ IttvePW
 				Материалы\TLaziTools\LaziprownAlerts.pas
 				Материалы\TLaziTools\LaziprownOutfit.pas
 				Материалы\TLaziTools\LazitoolsOutfit.pas
-			+TreeActions
+			-TreeActions
 				-www
 					Материалы\TreeActions\www\index.php
 					Материалы\TreeActions\www\olegmorozov.db3
@@ -1162,16 +1163,16 @@ IttvePW
 8=www\iniMem.php
 9=www\EdisiteArticle\_Edit\EdisiteArticle.php
 10=www\CreateBase.php
-11=Материалы\TreeActions\TreeActions.php
+11=www\ittvepw.php
 [Selected Project Files]
 Main=
-Selected=www\CreateBase.php
+Selected=www\ittvepw.php
 [www\index.php]
 TopLine=14
 Caret=1,18
 [www\Main.php]
-TopLine=11
-Caret=1,11
+TopLine=25
+Caret=32,32
 [www\UpSite.php]
 TopLine=108
 Caret=1,131
@@ -1183,7 +1184,7 @@ TopLine=35
 Caret=40,56
 [www\Site.php]
 TopLine=50
-Caret=39,61
+Caret=3,63
 [www\Sitem.php]
 TopLine=10
 Caret=59,37
@@ -1194,12 +1195,12 @@ Caret=17,74
 TopLine=20
 Caret=100,47
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=87
+TopLine=115
 Caret=8,115
 [www\CreateBase.php]
-TopLine=113
-Caret=1,129
-Mark1=1,129
-[Материалы\TreeActions\TreeActions.php]
-TopLine=35
-Caret=1,59
+TopLine=151
+Caret=1,162
+Mark1=1,112
+[www\ittvepw.php]
+TopLine=70
+Caret=33,90
