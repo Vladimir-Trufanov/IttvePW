@@ -39,7 +39,7 @@ ol{list-style: decimal;}
 /* Ставим маркер в виде квадрата в маркированных списках */
 ul{list-style: square;}
 /* Склеиваем линии между ячейками */
-table{border-collapse: collapse;} 
+/* table{border-collapse: collapse;} */ 
 /*
  **************************************************************** Reset.css ***
 */	

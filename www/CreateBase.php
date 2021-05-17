@@ -54,43 +54,45 @@ function CreateTables($pdo)
          'IdCue    INTEGER NOT NULL REFERENCES cue(IdCue),'.      // указатель типа статьи
          'NameArt  VARCHAR NOT NULL,'.                            // заголовок материала = статьи сайта
          'Translit VARCHAR NOT NULL,'.                            // транслит заголовка
+         'access   INTEGER NOT NULL,'.                            // доступ к пунктам меню (All/Autor)
          'DateArt  DATETIME,'.                                    // дата\время статьи сайта
          'Art      TEXT)';                                        // материал = статья сайта
       $st = $pdo->query($sql);
       
       // Заполняем таблицу материалов в начальном состоянии
       $aCharters=[
-         [ 1, 0,-1, 'Сайт ittve.pw',                      'sajt-ittvepw',                       0,''],
-         [ 2, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      0,''],
-         [ 3, 2, 0,    'С чего все началось',             's-chego-vse-nachalos',               0,''],
-         [ 4, 2, 0,    'А что внутри?',                   'a-chto-vnutri',                      0,''],
-         [ 5, 2, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          0,''],
-         [ 6, 1,-1, 'Стиль',                              'stil',                               0,''],
-         [ 7, 6, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', 0,''],
-         [ 8, 6, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           0,''],
-         [ 9, 1,-1, 'Моделирование',                      'modelirovanie',                      0,''],
-         [10, 1,-1, 'Учебники',                           'uchebniki',                          0,''],
-         [11, 1,-1, 'Сайт',                               'sajt',                               0,''],
-         [12,11, 0,    'Авторизоваться',                  'avtorizovatsya',                     0,''],
-         [13,11, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 0,''],
-         [14,11, 0,    'О сайте',                         'o-sajte',                            0,''],
-         [15,11, 0,    'Редактировать материал',          'redaktirovat-material',              0,''],
-         [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  0,''],
-         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      0,'']
+         [ 1, 0,-1, 'ittve.pw',                           'ittvepw',                            acsAll,  0,''],
+         [ 2, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      acsAll,  0,''],
+         [ 3, 2, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,  0,''],
+         [ 4, 2, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,  0,''],
+         [ 5, 2, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,  0,''],
+         [ 6, 1,-1, 'Стиль',                              'stil',                               acsAll,  0,''],
+         [ 7, 6, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', acsAll,  0,''],
+         [ 8, 6, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           acsAll,  0,''],
+         [ 9, 1,-1, 'Моделирование',                      'modelirovanie',                      acsAll,  0,''],
+         [10, 1,-1, 'Учебники',                           'uchebniki',                          acsAll,  0,''],
+         [11, 1,-1, 'Сайт',                               'sajt',                               acsAll,  0,''],
+         [12,11, 0,    'Авторизоваться',                  'avtorizovatsya',                     acsAll,  0,''],
+         [13,11, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 acsAll,  0,''],
+         [14,11, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
+         [15,11, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
+         [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
+         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,'']
       ];
 
       $statement = $pdo->prepare("INSERT INTO [stockpw] ".
-         "([uid], [pid], [IdCue], [NameArt], [Translit], [DateArt], [Art]) VALUES ".
-         "(:uid,  :pid,  :IdCue,  :NameArt,  :Translit,  :DateArt,  :Art);");
+         "([uid], [pid], [IdCue], [NameArt], [Translit], [access], [DateArt], [Art]) VALUES ".
+         "(:uid,  :pid,  :IdCue,  :NameArt,  :Translit,  :access,  :DateArt,  :Art);");
       $i=0;
       foreach ($aCharters as
-          [$uid,  $pid,  $IdCue,  $NameArt,  $Translit,  $DateArt,  $Art])
+          [$uid,  $pid,  $IdCue,  $NameArt,  $Translit,  $access,  $DateArt,  $Art])
       $statement->execute([
          "uid"      => $uid, 
          "pid"      => $pid, 
          "IdCue"    => $IdCue, 
          "NameArt"  => $NameArt, 
          "Translit" => $Translit, 
+         "access"   => $access, 
          "DateArt"  => $DateArt, 
          "Art"      => $Art
       ]);
@@ -126,6 +128,8 @@ function CreateTables($pdo)
 // *               Создать базу данных itpw.db3 в начальном состоянии         *
 // ****************************************************************************
 echo '<br>';  
+echo '<br>';  
+echo '<br>';  
 // Проверяется существование и удаляется файл базы данных 
 $filename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
 UnlinkFile($filename);
@@ -155,12 +159,17 @@ echo 'Выбрана таблица из базы данных<br>';
 
 // Формируется массив для представления таблицы
 $array = array(); 
-recursive($array,$table); 
+aRecursLevel($array,$table); 
 echo 'Сформирован массив для представления таблицы<br>'; 
-echo '<br>';  
-ViewLevel($array);
-echo '<br>'; 
+//echo '<br>';  
+//aViewLevel($array);
+//echo '<br>'; 
 
-
+// Формируем массив c указанием путей  
+$array = array();                         // выходной массив
+$array_idx_lvl = array();                 // индекс по полю level
+aRecursPath($array,$array_idx_lvl,$table); 
+echo 'Сформирован массив c указанием путей и транслита<br>'; 
 echo '<br>';  
+aViewPath($array);
 // ********************************************************* CreateBase.php ***

@@ -9,6 +9,7 @@
 //                                                   Дата создания:  23.11.2018
 // Copyright © 2018 tve                              Посл.изменение: 23.04.2021
 
+// require_once    'CreateBase.php';
 // Устанавливаем режим работы сайта и настройки разметки 
 iniDesktopSite($c_SiteMode);
 markupDesktopSite($c_SiteMode,$SiteDevice,$TitleMain);
@@ -60,7 +61,6 @@ function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain)
   // При необходимости транслитируем некоторый заголовок
   echo  prown\getTranslit('Отключиться').'<br>';
   // Загружаем материал
-  require_once    'CreateBase.php';
   require_once    'Pages/cCenter.php';
   echo            '</div>';
 
