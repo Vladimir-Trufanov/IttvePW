@@ -29,35 +29,13 @@ if ($SiteDevice==Mobile)
 else
 {
    echo '
-   <nav id="main-nav">
-   <ul id="main-menu" class="sm sm-mint">
-      <li><a href="/">ММС Лада-Нива</a>
-         <ul>
-            <li><a href="?Com=s-chego-vse-nachalos">С чего все началось</a></li>     
-            <li><a href="index.php?Com=s-chego-vse-nachalos">А что внутри?</a></li>
-            <li><a href="/">Эксперименты со строками</a></li>
-         </ul>
-      </li>
-      <li><a href="/">Стиль</a>
-         <ul>
-            <li><a href="?Com=ehlementy-stilya-programmirovaniya">Элементы стиля программирования</a></li>
-            <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>
-         </ul>
-      </li>
-      <li><a href="?Com=s-chego-vse-nachalos">Моделирование</a></li>
-      <li><a href="#">Учебники</a></li>
-      <li><a href="#">Сайт</a>
-         <ul>
-            <li><a href="/">Авторизоваться</a></li>
-            <li><a href="/">Зарегистрироваться</a></li>
-            <li><a href="/">О сайте</a></li>
-            <li><a href="?Com=redaktirovat-material">Редактировать материал</a></li>
-            <li><a href="/">Изменить настройки</a></li>
-            <li><a href="/">Отключиться</a></li>
-         </ul>
-      </li>
-   </ul>
-</nav>
-';
+      <nav id="main-nav">
+      <ul id="main-menu" class="sm sm-mint">
+   ';
+   echo $Menu; // html-текст меню
+   echo '
+      </ul>
+      </nav>
+   ';
 }
 // *** <!-- --> ************************************************ nBlock.php ***

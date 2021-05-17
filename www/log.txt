@@ -169,3 +169,4 @@ Stack trace:
 #5 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #6 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 54
+[17-May-2021 20:11:14 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ':' in C:\IttvePW\www\ittvepw.php on line 225

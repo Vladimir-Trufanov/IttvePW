@@ -158,12 +158,12 @@ $table = $stmt->fetchAll();
 echo 'Выбрана таблица из базы данных<br>'; 
 
 // Формируется массив для представления таблицы
-$array = array(); 
-aRecursLevel($array,$table); 
+$arrayl = array(); 
+aRecursLevel($arrayl,$table); 
 echo 'Сформирован массив для представления таблицы<br>'; 
-//echo '<br>';  
-//aViewLevel($array);
-//echo '<br>'; 
+echo '<br>';  
+aViewLevel($arrayl);
+echo '<br>'; 
 
 // Формируем массив c указанием путей  
 $array = array();                         // выходной массив
