@@ -186,18 +186,4 @@ function aViewPath($array)
    echo '</table>';
    echo '</pre>';
 }
-// ****************************************************************************
-// *           Вывести содержимое массива в первом виде - до уровня           *
-// ****************************************************************************
-function aViewMenu($array)
-{
-   $Result='';
-   // Выводим данные
-   foreach ($array as $value)
-   {
-      $Result=$Result.'(';
-      $Result=$Result.strval($value['level']).' -'.$value['Translit'].'='.$value['Name'].'-)<br>';
-   }
-   return $Result;
-}
 // ************************************************************ ittvepw.php ***

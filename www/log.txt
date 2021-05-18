@@ -170,3 +170,11 @@ Stack trace:
 #6 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 54
 [17-May-2021 20:11:14 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ':' in C:\IttvePW\www\ittvepw.php on line 225
+[18-May-2021 16:06:10 Asia/Kuwait] PHP Fatal error:  Uncaught Exception: Не удалось удалить файл C:\IttvePW\www/itpw.db3! in C:\IttvePW\www\ittvepw.php:27
+Stack trace:
+#0 C:\IttvePW\www\CreateBase.php(135): UnlinkFile('C:\\IttvePW\\www/...')
+#1 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 27

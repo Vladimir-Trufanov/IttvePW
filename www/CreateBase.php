@@ -77,7 +77,15 @@ function CreateTables($pdo)
          [14,11, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
          [15,11, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
          [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
-         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,'']
+         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,''],
+
+         [18, 1,-1, 'Проба',                              'proba',                              acsAll,  0,''],
+         [19,18, 0,    'Проба21',                         'proba21',                            acsAll,  0,''],
+         [20,18, 0,    'Проба22',                         'proba22',                            acsAll,  0,''],
+         [21,18,-1,    'Проба23',                         'proba23',                            acsAll,  0,''],
+         [22,21, 0,       'Проба31',                      'proba31',                            acsAll,  0,''],
+         [23,21, 0,       'Проба32',                      'proba32',                            acsAll,  0,''],
+         [24, 1,-1, 'Проба11',                            'proba11',                            acsAll,  0,''],
       ];
 
       $statement = $pdo->prepare("INSERT INTO [stockpw] ".

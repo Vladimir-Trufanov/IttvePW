@@ -805,7 +805,7 @@ IttvePW
 				www\sm-mint\sm-core-css.css
 				www\sm-mint\sm-mint.css
 				www\sm-mint\sm-mint.css.map
-			+Styles
+			-Styles
 				www\Styles\Reset.css
 				www\Styles\Styles.css
 				www\Styles\Stylesm.css
@@ -1051,6 +1051,7 @@ IttvePW
 			www\iJsJquery.php
 			www\index.php
 			www\iniMem.php
+			www\iniMenu.php
 			www\iniWorkSpace.php
 			www\itpw.db3
 			www\ittvepw.php
@@ -1060,7 +1061,7 @@ IttvePW
 			www\Site.php
 			www\Sitem.php
 			www\UpSite.php
-		+Материалы
+		-Материалы
 			-TErrEvent Delphi
 				Материалы\TErrEvent Delphi\erANYMesUni.dcu
 				Материалы\TErrEvent Delphi\erANYMesUni.pas
@@ -1093,7 +1094,7 @@ IttvePW
 				Материалы\TLaziTools\LaziprownAlerts.pas
 				Материалы\TLaziTools\LaziprownOutfit.pas
 				Материалы\TLaziTools\LazitoolsOutfit.pas
-			+TreeActions
+			-TreeActions
 				-www
 					Материалы\TreeActions\www\index.php
 					Материалы\TreeActions\www\olegmorozov.db3
@@ -1162,25 +1163,26 @@ IttvePW
 7=www\Pages\cCenter.php
 8=www\iniMem.php
 9=www\EdisiteArticle\_Edit\EdisiteArticle.php
-10=www\ittvepw.php
+10=www\iniMenu.php
 11=www\CreateBase.php
+12=www\ittvepw.php
 [Selected Project Files]
 Main=
-Selected=www\ittvepw.php
+Selected=www\CreateBase.php
 [www\index.php]
 TopLine=14
 Caret=1,18
 [www\Main.php]
-TopLine=32
-Caret=32,32
+TopLine=101
+Caret=13,21
 [www\UpSite.php]
-TopLine=144
-Caret=24,122
+TopLine=117
+Caret=51,116
 [www\Pages\exPhp.php]
 TopLine=3
 Caret=1,12
 [www\Pages\hBlock.php]
-TopLine=5
+TopLine=7
 Caret=1,35
 [www\Site.php]
 TopLine=27
@@ -1192,14 +1194,17 @@ Caret=59,37
 TopLine=47
 Caret=17,74
 [www\iniMem.php]
-TopLine=39
-Caret=6,50
+TopLine=11
+Caret=19,24
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
 TopLine=115
 Caret=8,115
-[www\ittvepw.php]
-TopLine=187
-Caret=45,199
+[www\iniMenu.php]
+TopLine=31
+Caret=33,46
 [www\CreateBase.php]
-TopLine=156
-Caret=1,166
+TopLine=70
+Caret=94,88
+[www\ittvepw.php]
+TopLine=53
+Caret=116,117
