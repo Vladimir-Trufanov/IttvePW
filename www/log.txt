@@ -178,3 +178,6 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 27
+[18-May-2021 20:51:01 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\iniMenu.php on line 136
+[18-May-2021 20:51:33 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\IttvePW\www\iniMenu.php on line 137
+[18-May-2021 20:51:57 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\iniMenu.php on line 137
