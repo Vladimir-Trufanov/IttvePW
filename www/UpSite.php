@@ -120,8 +120,9 @@ echo '<body>';
 require_once 'CreateBase.php';
 
 $Menu=aViewMenu($arrayl); 
-echo '<br>'.$Menu.'<br>';
+//echo '<br>'.$Menu.'<br>';
 
+/*
    // Выбираем и заполняем текст меню
    $Menu='
       <li><a href="/">ММС Лада-Нива</a>
@@ -150,7 +151,7 @@ echo '<br>'.$Menu.'<br>';
          </ul>
       </li>
    ';
-
+*/
 require_once $NamePage;
 /*
 // При необходимости показываем кукисы и переменные сессий

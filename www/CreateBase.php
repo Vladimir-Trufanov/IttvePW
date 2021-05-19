@@ -83,7 +83,7 @@ function CreateTables($pdo)
          [18,15, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
          [19,15, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
          [20,15, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
-         [21,15, 0,    'Отключиться и',                     'otklyuchitsya',                      acsAll,  0,''],
+         [21,15, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,''],
          /*
          [22, 1,-1, 'Проба',                              'proba',                              acsAll,  0,''],
          [23,22, 0,    'Проба21',                         'proba21',                            acsAll,  0,''],
