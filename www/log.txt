@@ -181,3 +181,21 @@ Stack trace:
 [18-May-2021 20:51:01 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\iniMenu.php on line 136
 [18-May-2021 20:51:33 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\IttvePW\www\iniMenu.php on line 137
 [18-May-2021 20:51:57 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\iniMenu.php on line 137
+[19-May-2021 14:09:31 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: stockpw.uid in C:\IttvePW\www\CreateBase.php:113
+Stack trace:
+#0 C:\IttvePW\www\CreateBase.php(113): PDOStatement->execute(Array)
+#1 C:\IttvePW\www\CreateBase.php(168): CreateTables(Object(PDO))
+#2 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#5 {main}
+  thrown in C:\IttvePW\www\CreateBase.php on line 113
+[19-May-2021 14:09:45 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: stockpw.uid in C:\IttvePW\www\CreateBase.php:113
+Stack trace:
+#0 C:\IttvePW\www\CreateBase.php(113): PDOStatement->execute(Array)
+#1 C:\IttvePW\www\CreateBase.php(168): CreateTables(Object(PDO))
+#2 C:\IttvePW\www\UpSite.php(120): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#5 {main}
+  thrown in C:\IttvePW\www\CreateBase.php on line 113

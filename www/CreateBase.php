@@ -62,30 +62,38 @@ function CreateTables($pdo)
       // Заполняем таблицу материалов в начальном состоянии
       $aCharters=[
          [ 1, 0,-1, 'ittve.pw',                           'ittvepw',                            acsAll,  0,''],
-         [ 2, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      acsAll,  0,''],
-         [ 3, 2, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,  0,''],
-         [ 4, 2, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,  0,''],
-         [ 5, 2, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,  0,''],
-         [ 6, 1,-1, 'Стиль',                              'stil',                               acsAll,  0,''],
-         [ 7, 6, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', acsAll,  0,''],
-         [ 8, 6, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           acsAll,  0,''],
-         [ 9, 1,-1, 'Моделирование',                      'modelirovanie',                      acsAll,  0,''],
-         [10, 1,-1, 'Учебники',                           'uchebniki',                          acsAll,  0,''],
-         [11, 1,-1, 'Сайт',                               'sajt',                               acsAll,  0,''],
-         [12,11, 0,    'Авторизоваться',                  'avtorizovatsya',                     acsAll,  0,''],
-         [13,11, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 acsAll,  0,''],
-         [14,11, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
-         [15,11, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
-         [16,11, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
-         [17,11, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,''],
-
-         [18, 1,-1, 'Проба',                              'proba',                              acsAll,  0,''],
-         [19,18, 0,    'Проба21',                         'proba21',                            acsAll,  0,''],
-         [20,18, 0,    'Проба22',                         'proba22',                            acsAll,  0,''],
-         [21,18,-1,    'Проба23',                         'proba23',                            acsAll,  0,''],
-         [22,21, 0,       'Проба31',                      'proba31',                            acsAll,  0,''],
-         [23,21, 0,       'Проба32',                      'proba32',                            acsAll,  0,''],
-         [24, 1,-1, 'Проба11',                            'proba11',                            acsAll,  0,''],
+         /*
+         [ 2, 1,-1, 'Проба0',                             'proba0',                             acsAll,  0,''],
+         [ 3, 2, 0,    'Проба01',                         'proba01',                            acsAll,  0,''],
+         [ 4, 2,-1,    'Проба02',                         'proba02',                            acsAll,  0,''],
+         [ 5, 4,-1,       'Проба03',                      'proba03',                            acsAll,  0,''],
+         */
+         [ 6, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      acsAll,  0,''],
+         [ 7, 6, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,  0,''],
+         [ 8, 6, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,  0,''],
+         [ 9, 6, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,  0,''],
+         [10, 1,-1, 'Стиль',                              'stil',                               acsAll,  0,''],
+         [11,10, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', acsAll,  0,''],
+         [12,10, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           acsAll,  0,''],
+         [13, 1,-1, 'Моделирование',                      'modelirovanie',                      acsAll,  0,''],
+         [14, 1,-1, 'Учебники',                           'uchebniki',                          acsAll,  0,''],
+         [15, 1,-1, 'Сайт',                               'sajt',                               acsAll,  0,''],
+         [16,15, 0,    'Авторизоваться',                  'avtorizovatsya',                     acsAll,  0,''],
+         [17,15, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 acsAll,  0,''],
+         [18,15, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
+         [19,15, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
+         [20,15, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
+         [21,15, 0,    'Отключиться и',                     'otklyuchitsya',                      acsAll,  0,''],
+         /*
+         [22, 1,-1, 'Проба',                              'proba',                              acsAll,  0,''],
+         [23,22, 0,    'Проба21',                         'proba21',                            acsAll,  0,''],
+         [24,22, 0,    'Проба22',                         'proba22',                            acsAll,  0,''],
+         [25,22,-1,    'Проба23',                         'proba23',                            acsAll,  0,''],
+         [26,25, 0,       'Проба31',                      'proba31',                            acsAll,  0,''],
+         [27,25, 0,       'Проба32',                      'proba32',                            acsAll,  0,''],
+         [28, 1,-1, 'Проба11',                            'proba11',                            acsAll,  0,''],
+         */
+         [29, 1,-1, 'ittve.end',                          'ittveend',                           acsAll,  0,'']
       ];
 
       $statement = $pdo->prepare("INSERT INTO [stockpw] ".

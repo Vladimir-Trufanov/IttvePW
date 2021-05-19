@@ -84,7 +84,8 @@ function MakeEul($level,$levelOldi,&$isUL)
 // ****************************************************************************
 function aViewMenu($array)
 {
-   $Result='';
+   $Result='';   // html-текст формируемого меню
+   $Resold='';   // html-текст меню, сформированный на предыдущем шаге
    $levelOld=0;
    $isUL=true;
    // Выводим данные
@@ -93,37 +94,25 @@ function aViewMenu($array)
       // Строку с названием сайта = нулевой уровень не обрабатываем
       if (!$value['level']==0)
       {
-         /*
-         // Если новый уровень меньше старого, то формируем /ul
-         $Result=$Result.MakeEul($value['level'],$levelOld);
-         // Формируем смещение для пункта меню
-         $Result=$Result.MakeSpases($value['level']); 
-         // Если новый уровень больше старого, то формируем ul
-         if (($value['level']>$levelOld)and($levelOld>0)) $Result=$Result.iul.MakeSpases($value['level']);
-         // Формируем li
-         if ($value['IdCue']==tisRazdel)
-         {
-            // Формируем li пункта меню с разделом
-            $Result=$Result.ili.ia.ihref."/".ehref.$value['Name'].ea.eli;
-         }
-         else
-         {
-            // Формируем обычную li пункта меню c материалом
-            $Result=$Result.ili.ia.ihref.com.$value['Translit'].ehref.$value['Name'].ea.eli;
-         }
-         */
-
          // Если новый уровень меньше старого, то формируем /ul
          $Result=$Result.MakeEul($value['level'],$levelOld,$isUL);
-         // Формируем смещение для пункта меню
-         $Result=$Result.MakeSpases($value['level']); 
          // Если новый уровень больше старого, то формируем ul
+         // и отрезаем /li
          if (($value['level']>$levelOld)and($levelOld>0)) 
          {
-            $Result=$Result.iul.MakeSpases($value['level']);
-            $isUL=false;
+            // Отрезаем /li
+            $Result=$Resold.ibr; 
+            // Формируем смещение для html-строки меню
+            $Result=$Result.MakeSpases($value['level']); 
+            // Добавляем ul
+            $Result=$Result.iul;
+            //$isUL=false;
          }
-         // Формируем li
+         // Формируем смещение для li
+         $Result=$Result.MakeSpases($value['level']); 
+         // Формируем li (если не граничная строка 'ittve.end')
+         if (!($value['Name']=='ittve.end'))
+         {
          if ($value['IdCue']==tisRazdel)
          {
             // Формируем li пункта меню с разделом
@@ -134,8 +123,12 @@ function aViewMenu($array)
             // Формируем обычную li пункта меню c материалом
             $Result=$Result.ili.ia.ihref.com.$value['Translit'].ehref.$value['Name'].ea;
          }
-         if ($isUL) $Result=$Result.ibr;
-         else $Result=$Result.eli;
+         // Запоминаем текст меню без последнего /li 
+         // для возможного использования на следующем шаге
+         $Resold=$Result;   
+         // Добавляем /li
+         $Result=$Result.eli;
+         }
          // Запоминаем текущий обработанный уровень
          $levelOld=$value['level'];
       }
