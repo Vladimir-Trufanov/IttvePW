@@ -60,6 +60,7 @@ $ImgdirSite="C:/IttveIMG/IttvePW/";  // каталог изображений с
 $PrefSite="itpw";                    // префикс изображений и статей сайта, а также имя базы данных
 $Translit="";                        // транслит текущей статьи
 $TranslitCharter="";                 // транслит раздела
+$basename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
 
 // Переопределяем общесайтовые переменные, в зависимости от площадки сайта
 if (isNichost()) 

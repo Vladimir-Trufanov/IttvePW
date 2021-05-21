@@ -199,3 +199,11 @@ Stack trace:
 #4 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #5 {main}
   thrown in C:\IttvePW\www\CreateBase.php on line 113
+[20-May-2021 18:59:58 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: stockpw in C:\IttvePW\www\ittvepw.php:204
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(204): PDO->query('SELECT * FROM s...')
+#1 C:\IttvePW\www\UpSite.php(121): ProbaMenu()
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 204

@@ -24,7 +24,7 @@ require_once $TPhpPrown."/TPhpPrown/ViewGlobal.php";
 $TPhpTools=$SiteHost.'/TPhpTools';
 //require_once $TPhpTools."/TPhpTools/TDownloadFromServer/DownloadFromServerClass.php";
 //require_once $TPhpTools."/TPhpTools/TUploadToServer/UploadToServerClass.php";
-//require_once $TPhpTools."/TPhpTools/TBaseMaker/BaseMakerClass.php";
+require_once $TPhpTools."/TPhpTools/TBaseMaker/BaseMakerClass.php";
 
 // Выполняем начальную инициализацию
 require_once "Common.php";     // Всегда 1-ый корневой модуль в списке
@@ -58,7 +58,7 @@ $c_NameArt=prown\MakeCookie('NameCharter',
 $Translit=prown\getTranslit($c_NameArt);  
 
 // Выводим меню
-if (prown\isComRequest('LifeMenu','Com'))
+if (prown\isComRequest('LifeMenu','com'))
 {
    //require_once "Html/iniHtmlLifeMenu.php";
    //require_once "iniHtml1.php";
@@ -66,14 +66,14 @@ if (prown\isComRequest('LifeMenu','Com'))
    //require_once "Nastr.php";
 }
 // Выбираем страницу для отправки сообщения автору
-else if (prown\isComRequest('Inbox','Com'))
+else if (prown\isComRequest('Inbox','com'))
 {
    //echo 'Отправить сообщение автору'.'<br>';
    //$page='/DetmanPage/www/index1.php';
    // Header("Location: http://".$_SERVER['HTTP_HOST'].$page);
 }
 // Выбираем страницу для редактирования или создания материала
-else if (prown\isComRequest('redaktirovat-material','Com'))
+else if (prown\isComRequest('redaktirovat-material','com'))
 {
    $NamePage="EdisiteArticle/_Edit/EdisiteArticle.php";
 }

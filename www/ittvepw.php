@@ -186,4 +186,27 @@ function aViewPath($array)
    echo '</table>';
    echo '</pre>';
 }
+
+function ProbaMenu($filename)
+{
+   // Создается объект PDO и файл базы данных
+   $pathBase='sqlite:'.$filename; 
+   $username='tve';
+   $password='23ety17';     
+   // Подключаем PDO к базе
+   $pdo = new PDO(
+      $pathBase, 
+      $username,
+      $password,
+      array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
+   );
+   // Выбирается таблица для меню из базы данных
+   $stmt = $pdo->query("SELECT * FROM stockpw");
+   $table = $stmt->fetchAll();          
+   // Формируется массив для представления таблицы
+   $arrayl = array(); 
+   aRecursLevel($arrayl,$table); 
+   return $arrayl;
+}
+
 // ************************************************************ ittvepw.php ***
