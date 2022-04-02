@@ -489,11 +489,8 @@ IttvePW
 					www\EdisiteArticle\_Edit\Особенности устройства винтиков в моей голове.html
 				-mms-lada-niva
 					www\EdisiteArticle\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
-				-modelirovanie
-				-sajt
 				-stil
 					www\EdisiteArticle\stil\itpw02-001-pishite-programmy-prosto-20210501.php
-				-uchebniki
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -555,232 +552,224 @@ IttvePW
 					www\Images\Buttons\Php.svg
 					www\Images\Buttons\Tiny.svg
 				www\Images\Kwinflat.jpg
-			-Js
+			-JS
 				-images
 					-icons-png
-						www\Js\images\icons-png\action-black.png
-						www\Js\images\icons-png\action-white.png
-						www\Js\images\icons-png\alert-black.png
-						www\Js\images\icons-png\alert-white.png
-						www\Js\images\icons-png\arrow-d-black.png
-						www\Js\images\icons-png\arrow-d-l-black.png
-						www\Js\images\icons-png\arrow-d-l-white.png
-						www\Js\images\icons-png\arrow-d-r-black.png
-						www\Js\images\icons-png\arrow-d-r-white.png
-						www\Js\images\icons-png\arrow-d-white.png
-						www\Js\images\icons-png\arrow-l-black.png
-						www\Js\images\icons-png\arrow-l-white.png
-						www\Js\images\icons-png\arrow-r-black.png
-						www\Js\images\icons-png\arrow-r-white.png
-						www\Js\images\icons-png\arrow-u-black.png
-						www\Js\images\icons-png\arrow-u-l-black.png
-						www\Js\images\icons-png\arrow-u-l-white.png
-						www\Js\images\icons-png\arrow-u-r-black.png
-						www\Js\images\icons-png\arrow-u-r-white.png
-						www\Js\images\icons-png\arrow-u-white.png
-						www\Js\images\icons-png\audio-black.png
-						www\Js\images\icons-png\audio-white.png
-						www\Js\images\icons-png\back-black.png
-						www\Js\images\icons-png\back-white.png
-						www\Js\images\icons-png\bars-black.png
-						www\Js\images\icons-png\bars-white.png
-						www\Js\images\icons-png\bullets-black.png
-						www\Js\images\icons-png\bullets-white.png
-						www\Js\images\icons-png\calendar-black.png
-						www\Js\images\icons-png\calendar-white.png
-						www\Js\images\icons-png\camera-black.png
-						www\Js\images\icons-png\camera-white.png
-						www\Js\images\icons-png\carat-d-black.png
-						www\Js\images\icons-png\carat-d-white.png
-						www\Js\images\icons-png\carat-l-black.png
-						www\Js\images\icons-png\carat-l-white.png
-						www\Js\images\icons-png\carat-r-black.png
-						www\Js\images\icons-png\carat-r-white.png
-						www\Js\images\icons-png\carat-u-black.png
-						www\Js\images\icons-png\carat-u-white.png
-						www\Js\images\icons-png\check-black.png
-						www\Js\images\icons-png\check-white.png
-						www\Js\images\icons-png\clock-black.png
-						www\Js\images\icons-png\clock-white.png
-						www\Js\images\icons-png\cloud-black.png
-						www\Js\images\icons-png\cloud-white.png
-						www\Js\images\icons-png\comment-black.png
-						www\Js\images\icons-png\comment-white.png
-						www\Js\images\icons-png\delete-black.png
-						www\Js\images\icons-png\delete-white.png
-						www\Js\images\icons-png\edit-black.png
-						www\Js\images\icons-png\edit-white.png
-						www\Js\images\icons-png\eye-black.png
-						www\Js\images\icons-png\eye-white.png
-						www\Js\images\icons-png\forbidden-black.png
-						www\Js\images\icons-png\forbidden-white.png
-						www\Js\images\icons-png\forward-black.png
-						www\Js\images\icons-png\forward-white.png
-						www\Js\images\icons-png\gear-black.png
-						www\Js\images\icons-png\gear-white.png
-						www\Js\images\icons-png\grid-black.png
-						www\Js\images\icons-png\grid-white.png
-						www\Js\images\icons-png\heart-black.png
-						www\Js\images\icons-png\heart-white.png
-						www\Js\images\icons-png\home-black.png
-						www\Js\images\icons-png\home-white.png
-						www\Js\images\icons-png\info-black.png
-						www\Js\images\icons-png\info-white.png
-						www\Js\images\icons-png\location-black.png
-						www\Js\images\icons-png\location-white.png
-						www\Js\images\icons-png\lock-black.png
-						www\Js\images\icons-png\lock-white.png
-						www\Js\images\icons-png\mail-black.png
-						www\Js\images\icons-png\mail-white.png
-						www\Js\images\icons-png\minus-black.png
-						www\Js\images\icons-png\minus-white.png
-						www\Js\images\icons-png\navigation-black.png
-						www\Js\images\icons-png\navigation-white.png
-						www\Js\images\icons-png\phone-black.png
-						www\Js\images\icons-png\phone-white.png
-						www\Js\images\icons-png\plus-black.png
-						www\Js\images\icons-png\plus-white.png
-						www\Js\images\icons-png\power-black.png
-						www\Js\images\icons-png\power-white.png
-						www\Js\images\icons-png\recycle-black.png
-						www\Js\images\icons-png\recycle-white.png
-						www\Js\images\icons-png\refresh-black.png
-						www\Js\images\icons-png\refresh-white.png
-						www\Js\images\icons-png\search-black.png
-						www\Js\images\icons-png\search-white.png
-						www\Js\images\icons-png\shop-black.png
-						www\Js\images\icons-png\shop-white.png
-						www\Js\images\icons-png\star-black.png
-						www\Js\images\icons-png\star-white.png
-						www\Js\images\icons-png\tag-black.png
-						www\Js\images\icons-png\tag-white.png
-						www\Js\images\icons-png\user-black.png
-						www\Js\images\icons-png\user-white.png
-						www\Js\images\icons-png\video-black.png
-						www\Js\images\icons-png\video-white.png
+						www\JS\images\icons-png\action-black.png
+						www\JS\images\icons-png\action-white.png
+						www\JS\images\icons-png\alert-black.png
+						www\JS\images\icons-png\alert-white.png
+						www\JS\images\icons-png\arrow-d-black.png
+						www\JS\images\icons-png\arrow-d-l-black.png
+						www\JS\images\icons-png\arrow-d-l-white.png
+						www\JS\images\icons-png\arrow-d-r-black.png
+						www\JS\images\icons-png\arrow-d-r-white.png
+						www\JS\images\icons-png\arrow-d-white.png
+						www\JS\images\icons-png\arrow-l-black.png
+						www\JS\images\icons-png\arrow-l-white.png
+						www\JS\images\icons-png\arrow-r-black.png
+						www\JS\images\icons-png\arrow-r-white.png
+						www\JS\images\icons-png\arrow-u-black.png
+						www\JS\images\icons-png\arrow-u-l-black.png
+						www\JS\images\icons-png\arrow-u-l-white.png
+						www\JS\images\icons-png\arrow-u-r-black.png
+						www\JS\images\icons-png\arrow-u-r-white.png
+						www\JS\images\icons-png\arrow-u-white.png
+						www\JS\images\icons-png\audio-black.png
+						www\JS\images\icons-png\audio-white.png
+						www\JS\images\icons-png\back-black.png
+						www\JS\images\icons-png\back-white.png
+						www\JS\images\icons-png\bars-black.png
+						www\JS\images\icons-png\bars-white.png
+						www\JS\images\icons-png\bullets-black.png
+						www\JS\images\icons-png\bullets-white.png
+						www\JS\images\icons-png\calendar-black.png
+						www\JS\images\icons-png\calendar-white.png
+						www\JS\images\icons-png\camera-black.png
+						www\JS\images\icons-png\camera-white.png
+						www\JS\images\icons-png\carat-d-black.png
+						www\JS\images\icons-png\carat-d-white.png
+						www\JS\images\icons-png\carat-l-black.png
+						www\JS\images\icons-png\carat-l-white.png
+						www\JS\images\icons-png\carat-r-black.png
+						www\JS\images\icons-png\carat-r-white.png
+						www\JS\images\icons-png\carat-u-black.png
+						www\JS\images\icons-png\carat-u-white.png
+						www\JS\images\icons-png\check-black.png
+						www\JS\images\icons-png\check-white.png
+						www\JS\images\icons-png\clock-black.png
+						www\JS\images\icons-png\clock-white.png
+						www\JS\images\icons-png\cloud-black.png
+						www\JS\images\icons-png\cloud-white.png
+						www\JS\images\icons-png\comment-black.png
+						www\JS\images\icons-png\comment-white.png
+						www\JS\images\icons-png\delete-black.png
+						www\JS\images\icons-png\delete-white.png
+						www\JS\images\icons-png\edit-black.png
+						www\JS\images\icons-png\edit-white.png
+						www\JS\images\icons-png\eye-black.png
+						www\JS\images\icons-png\eye-white.png
+						www\JS\images\icons-png\forbidden-black.png
+						www\JS\images\icons-png\forbidden-white.png
+						www\JS\images\icons-png\forward-black.png
+						www\JS\images\icons-png\forward-white.png
+						www\JS\images\icons-png\gear-black.png
+						www\JS\images\icons-png\gear-white.png
+						www\JS\images\icons-png\grid-black.png
+						www\JS\images\icons-png\grid-white.png
+						www\JS\images\icons-png\heart-black.png
+						www\JS\images\icons-png\heart-white.png
+						www\JS\images\icons-png\home-black.png
+						www\JS\images\icons-png\home-white.png
+						www\JS\images\icons-png\info-black.png
+						www\JS\images\icons-png\info-white.png
+						www\JS\images\icons-png\location-black.png
+						www\JS\images\icons-png\location-white.png
+						www\JS\images\icons-png\lock-black.png
+						www\JS\images\icons-png\lock-white.png
+						www\JS\images\icons-png\mail-black.png
+						www\JS\images\icons-png\mail-white.png
+						www\JS\images\icons-png\minus-black.png
+						www\JS\images\icons-png\minus-white.png
+						www\JS\images\icons-png\navigation-black.png
+						www\JS\images\icons-png\navigation-white.png
+						www\JS\images\icons-png\phone-black.png
+						www\JS\images\icons-png\phone-white.png
+						www\JS\images\icons-png\plus-black.png
+						www\JS\images\icons-png\plus-white.png
+						www\JS\images\icons-png\power-black.png
+						www\JS\images\icons-png\power-white.png
+						www\JS\images\icons-png\recycle-black.png
+						www\JS\images\icons-png\recycle-white.png
+						www\JS\images\icons-png\refresh-black.png
+						www\JS\images\icons-png\refresh-white.png
+						www\JS\images\icons-png\search-black.png
+						www\JS\images\icons-png\search-white.png
+						www\JS\images\icons-png\shop-black.png
+						www\JS\images\icons-png\shop-white.png
+						www\JS\images\icons-png\star-black.png
+						www\JS\images\icons-png\star-white.png
+						www\JS\images\icons-png\tag-black.png
+						www\JS\images\icons-png\tag-white.png
+						www\JS\images\icons-png\user-black.png
+						www\JS\images\icons-png\user-white.png
+						www\JS\images\icons-png\video-black.png
+						www\JS\images\icons-png\video-white.png
 					-icons-svg
-						www\Js\images\icons-svg\action-black.svg
-						www\Js\images\icons-svg\action-white.svg
-						www\Js\images\icons-svg\alert-black.svg
-						www\Js\images\icons-svg\alert-white.svg
-						www\Js\images\icons-svg\arrow-d-black.svg
-						www\Js\images\icons-svg\arrow-d-l-black.svg
-						www\Js\images\icons-svg\arrow-d-l-white.svg
-						www\Js\images\icons-svg\arrow-d-r-black.svg
-						www\Js\images\icons-svg\arrow-d-r-white.svg
-						www\Js\images\icons-svg\arrow-d-white.svg
-						www\Js\images\icons-svg\arrow-l-black.svg
-						www\Js\images\icons-svg\arrow-l-white.svg
-						www\Js\images\icons-svg\arrow-r-black.svg
-						www\Js\images\icons-svg\arrow-r-white.svg
-						www\Js\images\icons-svg\arrow-u-black.svg
-						www\Js\images\icons-svg\arrow-u-l-black.svg
-						www\Js\images\icons-svg\arrow-u-l-white.svg
-						www\Js\images\icons-svg\arrow-u-r-black.svg
-						www\Js\images\icons-svg\arrow-u-r-white.svg
-						www\Js\images\icons-svg\arrow-u-white.svg
-						www\Js\images\icons-svg\audio-black.svg
-						www\Js\images\icons-svg\audio-white.svg
-						www\Js\images\icons-svg\back-black.svg
-						www\Js\images\icons-svg\back-white.svg
-						www\Js\images\icons-svg\bars-black.svg
-						www\Js\images\icons-svg\bars-white.svg
-						www\Js\images\icons-svg\bullets-black.svg
-						www\Js\images\icons-svg\bullets-white.svg
-						www\Js\images\icons-svg\calendar-black.svg
-						www\Js\images\icons-svg\calendar-white.svg
-						www\Js\images\icons-svg\camera-black.svg
-						www\Js\images\icons-svg\camera-white.svg
-						www\Js\images\icons-svg\carat-d-black.svg
-						www\Js\images\icons-svg\carat-d-white.svg
-						www\Js\images\icons-svg\carat-l-black.svg
-						www\Js\images\icons-svg\carat-l-white.svg
-						www\Js\images\icons-svg\carat-r-black.svg
-						www\Js\images\icons-svg\carat-r-white.svg
-						www\Js\images\icons-svg\carat-u-black.svg
-						www\Js\images\icons-svg\carat-u-white.svg
-						www\Js\images\icons-svg\check-black.svg
-						www\Js\images\icons-svg\check-white.svg
-						www\Js\images\icons-svg\clock-black.svg
-						www\Js\images\icons-svg\clock-white.svg
-						www\Js\images\icons-svg\cloud-black.svg
-						www\Js\images\icons-svg\cloud-white.svg
-						www\Js\images\icons-svg\comment-black.svg
-						www\Js\images\icons-svg\comment-white.svg
-						www\Js\images\icons-svg\delete-black.svg
-						www\Js\images\icons-svg\delete-white.svg
-						www\Js\images\icons-svg\edit-black.svg
-						www\Js\images\icons-svg\edit-white.svg
-						www\Js\images\icons-svg\eye-black.svg
-						www\Js\images\icons-svg\eye-white.svg
-						www\Js\images\icons-svg\forbidden-black.svg
-						www\Js\images\icons-svg\forbidden-white.svg
-						www\Js\images\icons-svg\forward-black.svg
-						www\Js\images\icons-svg\forward-white.svg
-						www\Js\images\icons-svg\gear-black.svg
-						www\Js\images\icons-svg\gear-white.svg
-						www\Js\images\icons-svg\grid-black.svg
-						www\Js\images\icons-svg\grid-white.svg
-						www\Js\images\icons-svg\heart-black.svg
-						www\Js\images\icons-svg\heart-white.svg
-						www\Js\images\icons-svg\home-black.svg
-						www\Js\images\icons-svg\home-white.svg
-						www\Js\images\icons-svg\info-black.svg
-						www\Js\images\icons-svg\info-white.svg
-						www\Js\images\icons-svg\location-black.svg
-						www\Js\images\icons-svg\location-white.svg
-						www\Js\images\icons-svg\lock-black.svg
-						www\Js\images\icons-svg\lock-white.svg
-						www\Js\images\icons-svg\mail-black.svg
-						www\Js\images\icons-svg\mail-white.svg
-						www\Js\images\icons-svg\minus-black.svg
-						www\Js\images\icons-svg\minus-white.svg
-						www\Js\images\icons-svg\navigation-black.svg
-						www\Js\images\icons-svg\navigation-white.svg
-						www\Js\images\icons-svg\phone-black.svg
-						www\Js\images\icons-svg\phone-white.svg
-						www\Js\images\icons-svg\plus-black.svg
-						www\Js\images\icons-svg\plus-white.svg
-						www\Js\images\icons-svg\power-black.svg
-						www\Js\images\icons-svg\power-white.svg
-						www\Js\images\icons-svg\recycle-black.svg
-						www\Js\images\icons-svg\recycle-white.svg
-						www\Js\images\icons-svg\refresh-black.svg
-						www\Js\images\icons-svg\refresh-white.svg
-						www\Js\images\icons-svg\search-black.svg
-						www\Js\images\icons-svg\search-white.svg
-						www\Js\images\icons-svg\shop-black.svg
-						www\Js\images\icons-svg\shop-white.svg
-						www\Js\images\icons-svg\star-black.svg
-						www\Js\images\icons-svg\star-white.svg
-						www\Js\images\icons-svg\tag-black.svg
-						www\Js\images\icons-svg\tag-white.svg
-						www\Js\images\icons-svg\user-black.svg
-						www\Js\images\icons-svg\user-white.svg
-						www\Js\images\icons-svg\video-black.svg
-						www\Js\images\icons-svg\video-white.svg
-					www\Js\images\ajax-loader.gif
-				www\Js\IttvePW.js
-				www\Js\jquery.mobile-1.4.5.min.css
-				www\Js\jquery.mobile-1.4.5.min.js
-				www\Js\jquery.mobile-1.4.5.min.map
-				www\Js\jquery.smartmenus.js
-				www\Js\jquery-1.11.1.min.js
-				www\Js\jquery-1.11.1.min.map
-				www\Js\jquery-ui.min.css
-				www\Js\jquery-ui.min.js
-				www\Js\TJsPrown.css
-				www\Js\TJsPrown.js
-			-KwinTiny
-				-Arc
-					www\KwinTiny\Arc\proba.jpg
-					www\KwinTiny\Arc\textfile.html
-					www\KwinTiny\Arc\textfile.htmlo
-				-Temp
+						www\JS\images\icons-svg\action-black.svg
+						www\JS\images\icons-svg\action-white.svg
+						www\JS\images\icons-svg\alert-black.svg
+						www\JS\images\icons-svg\alert-white.svg
+						www\JS\images\icons-svg\arrow-d-black.svg
+						www\JS\images\icons-svg\arrow-d-l-black.svg
+						www\JS\images\icons-svg\arrow-d-l-white.svg
+						www\JS\images\icons-svg\arrow-d-r-black.svg
+						www\JS\images\icons-svg\arrow-d-r-white.svg
+						www\JS\images\icons-svg\arrow-d-white.svg
+						www\JS\images\icons-svg\arrow-l-black.svg
+						www\JS\images\icons-svg\arrow-l-white.svg
+						www\JS\images\icons-svg\arrow-r-black.svg
+						www\JS\images\icons-svg\arrow-r-white.svg
+						www\JS\images\icons-svg\arrow-u-black.svg
+						www\JS\images\icons-svg\arrow-u-l-black.svg
+						www\JS\images\icons-svg\arrow-u-l-white.svg
+						www\JS\images\icons-svg\arrow-u-r-black.svg
+						www\JS\images\icons-svg\arrow-u-r-white.svg
+						www\JS\images\icons-svg\arrow-u-white.svg
+						www\JS\images\icons-svg\audio-black.svg
+						www\JS\images\icons-svg\audio-white.svg
+						www\JS\images\icons-svg\back-black.svg
+						www\JS\images\icons-svg\back-white.svg
+						www\JS\images\icons-svg\bars-black.svg
+						www\JS\images\icons-svg\bars-white.svg
+						www\JS\images\icons-svg\bullets-black.svg
+						www\JS\images\icons-svg\bullets-white.svg
+						www\JS\images\icons-svg\calendar-black.svg
+						www\JS\images\icons-svg\calendar-white.svg
+						www\JS\images\icons-svg\camera-black.svg
+						www\JS\images\icons-svg\camera-white.svg
+						www\JS\images\icons-svg\carat-d-black.svg
+						www\JS\images\icons-svg\carat-d-white.svg
+						www\JS\images\icons-svg\carat-l-black.svg
+						www\JS\images\icons-svg\carat-l-white.svg
+						www\JS\images\icons-svg\carat-r-black.svg
+						www\JS\images\icons-svg\carat-r-white.svg
+						www\JS\images\icons-svg\carat-u-black.svg
+						www\JS\images\icons-svg\carat-u-white.svg
+						www\JS\images\icons-svg\check-black.svg
+						www\JS\images\icons-svg\check-white.svg
+						www\JS\images\icons-svg\clock-black.svg
+						www\JS\images\icons-svg\clock-white.svg
+						www\JS\images\icons-svg\cloud-black.svg
+						www\JS\images\icons-svg\cloud-white.svg
+						www\JS\images\icons-svg\comment-black.svg
+						www\JS\images\icons-svg\comment-white.svg
+						www\JS\images\icons-svg\delete-black.svg
+						www\JS\images\icons-svg\delete-white.svg
+						www\JS\images\icons-svg\edit-black.svg
+						www\JS\images\icons-svg\edit-white.svg
+						www\JS\images\icons-svg\eye-black.svg
+						www\JS\images\icons-svg\eye-white.svg
+						www\JS\images\icons-svg\forbidden-black.svg
+						www\JS\images\icons-svg\forbidden-white.svg
+						www\JS\images\icons-svg\forward-black.svg
+						www\JS\images\icons-svg\forward-white.svg
+						www\JS\images\icons-svg\gear-black.svg
+						www\JS\images\icons-svg\gear-white.svg
+						www\JS\images\icons-svg\grid-black.svg
+						www\JS\images\icons-svg\grid-white.svg
+						www\JS\images\icons-svg\heart-black.svg
+						www\JS\images\icons-svg\heart-white.svg
+						www\JS\images\icons-svg\home-black.svg
+						www\JS\images\icons-svg\home-white.svg
+						www\JS\images\icons-svg\info-black.svg
+						www\JS\images\icons-svg\info-white.svg
+						www\JS\images\icons-svg\location-black.svg
+						www\JS\images\icons-svg\location-white.svg
+						www\JS\images\icons-svg\lock-black.svg
+						www\JS\images\icons-svg\lock-white.svg
+						www\JS\images\icons-svg\mail-black.svg
+						www\JS\images\icons-svg\mail-white.svg
+						www\JS\images\icons-svg\minus-black.svg
+						www\JS\images\icons-svg\minus-white.svg
+						www\JS\images\icons-svg\navigation-black.svg
+						www\JS\images\icons-svg\navigation-white.svg
+						www\JS\images\icons-svg\phone-black.svg
+						www\JS\images\icons-svg\phone-white.svg
+						www\JS\images\icons-svg\plus-black.svg
+						www\JS\images\icons-svg\plus-white.svg
+						www\JS\images\icons-svg\power-black.svg
+						www\JS\images\icons-svg\power-white.svg
+						www\JS\images\icons-svg\recycle-black.svg
+						www\JS\images\icons-svg\recycle-white.svg
+						www\JS\images\icons-svg\refresh-black.svg
+						www\JS\images\icons-svg\refresh-white.svg
+						www\JS\images\icons-svg\search-black.svg
+						www\JS\images\icons-svg\search-white.svg
+						www\JS\images\icons-svg\shop-black.svg
+						www\JS\images\icons-svg\shop-white.svg
+						www\JS\images\icons-svg\star-black.svg
+						www\JS\images\icons-svg\star-white.svg
+						www\JS\images\icons-svg\tag-black.svg
+						www\JS\images\icons-svg\tag-white.svg
+						www\JS\images\icons-svg\user-black.svg
+						www\JS\images\icons-svg\user-white.svg
+						www\JS\images\icons-svg\video-black.svg
+						www\JS\images\icons-svg\video-white.svg
+					www\JS\images\ajax-loader.gif
+				www\JS\IttvePW.js
+				www\JS\jquery.mobile-1.4.5.min.css
+				www\JS\jquery.mobile-1.4.5.min.js
+				www\JS\jquery.mobile-1.4.5.min.map
+				www\JS\jquery.smartmenus.js
+				www\JS\jquery-1.11.1.min.js
+				www\JS\jquery-1.11.1.min.map
+				www\JS\jquery-ui.min.css
+				www\JS\jquery-ui.min.js
+				www\JS\TJsPrown.css
+				www\JS\TJsPrown.js
 			-old
 				-Pages
-					-Art
-					-Think
 					www\old\Pages\cCenter.php
 					www\old\Pages\exJav.php
 					www\old\Pages\exLaz.php
@@ -1050,7 +1039,7 @@ IttvePW
 			www\CreateBase.php
 			www\iJsJquery.php
 			www\index.php
-			www\iniMem.php
+			www\Inimem.php
 			www\iniMenu.php
 			www\iniWorkSpace.php
 			www\itpw.db3
@@ -1097,7 +1086,6 @@ IttvePW
 			-TreeActions
 				-www
 					Материалы\TreeActions\www\index.php
-					Материалы\TreeActions\www\olegmorozov.db3
 				Материалы\TreeActions\TreeActions.php
 				Материалы\TreeActions\Рекурсия на PHP — алгоритм, применение.doc
 			-Картинки для кнопок
@@ -1156,55 +1144,31 @@ IttvePW
 0=www\index.php
 1=www\Main.php
 2=www\UpSite.php
-3=www\Pages\exPhp.php
-4=www\Pages\hBlock.php
+3=www\ittvepw.php
+4=www\CreateBase.php
 5=www\Site.php
-6=www\Sitem.php
-7=www\Pages\cCenter.php
-8=www\iniMem.php
-9=www\EdisiteArticle\_Edit\EdisiteArticle.php
-10=www\iniMenu.php
-11=www\CreateBase.php
-12=www\ittvepw.php
+6=www\iniMenu.php
 [Selected Project Files]
 Main=
-Selected=www\ittvepw.php
+Selected=www\UpSite.php
 [www\index.php]
-TopLine=14
+TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=48
+TopLine=74
 Caret=55,76
 [www\UpSite.php]
-TopLine=110
-Caret=36,121
-[www\Pages\exPhp.php]
-TopLine=3
-Caret=1,12
-[www\Pages\hBlock.php]
-TopLine=25
-Caret=1,35
-[www\Site.php]
-TopLine=27
-Caret=66,43
-[www\Sitem.php]
-TopLine=24
-Caret=59,37
-[www\Pages\cCenter.php]
-TopLine=47
-Caret=17,74
-[www\iniMem.php]
-TopLine=42
-Caret=10,63
-[www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=87
-Caret=8,115
-[www\iniMenu.php]
-TopLine=100
-Caret=1,117
-[www\CreateBase.php]
-TopLine=138
-Caret=1,152
+TopLine=105
+Caret=3,121
 [www\ittvepw.php]
-TopLine=189
-Caret=29,190
+TopLine=174
+Caret=19,190
+[www\CreateBase.php]
+TopLine=55
+Caret=93,65
+[www\Site.php]
+TopLine=37
+Caret=34,64
+[www\iniMenu.php]
+TopLine=53
+Caret=1,1

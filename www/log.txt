@@ -207,3 +207,37 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 204
+[02-Apr-2022 20:51:36 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: stockpw in C:\IttvePW\www\ittvepw.php:204
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(204): PDO->query('SELECT * FROM s...')
+#1 C:\IttvePW\www\UpSite.php(121): ProbaMenu('C:\\IttvePW\\www/...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 204
+[02-Apr-2022 20:51:36 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: stockpw in C:\IttvePW\www\ittvepw.php:204
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(204): PDO->query('SELECT * FROM s...')
+#1 C:\IttvePW\www\UpSite.php(121): ProbaMenu('C:\\IttvePW\\www/...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 204
+[02-Apr-2022 20:56:14 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: stockpw in C:\IttvePW\www\ittvepw.php:204
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(204): PDO->query('SELECT * FROM s...')
+#1 C:\IttvePW\www\UpSite.php(121): ProbaMenu('C:\\IttvePW\\www/...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 204
+[02-Apr-2022 21:02:05 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '⿠' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 91
+[02-Apr-2022 21:08:32 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such table: stockpw in C:\IttvePW\www\ittvepw.php:204
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(204): PDO->query('SELECT * FROM s...')
+#1 C:\IttvePW\www\UpSite.php(121): ProbaMenu('C:\\IttvePW\\www/...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 204
+[02-Apr-2022 21:11:08 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '⿠' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 91

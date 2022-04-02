@@ -62,13 +62,11 @@ function CreateTables($pdo)
       // Заполняем таблицу материалов в начальном состоянии
       $aCharters=[
          [ 1, 0,-1, 'ittve.pw',                           'ittvepw',                            acsAll,  0,''],
-         /*
-         [ 2, 1,-1, 'Проба0',                             'proba0',                             acsAll,  0,''],
-         [ 3, 2, 0,    'Проба01',                         'proba01',                            acsAll,  0,''],
-         [ 4, 2,-1,    'Проба02',                         'proba02',                            acsAll,  0,''],
-         [ 5, 4,-1,       'Проба03',                      'proba03',                            acsAll,  0,''],
-         */
-         [ 6, 1,-1, 'ММС Лада-Нива',                      'mms-lada-niva',                      acsAll,  0,''],
+         [ 2, 1,-1, 'Ардуино',                            'arduino',                            acsAll,  0,''],
+         [ 3, 2, 0,    'Как было',                        'kak-bylo',                           acsAll,  0,''],
+         [ 4, 2, 0,    'Вид из окна',                     'vid-iz-okna',                        acsAll,  0,''],
+         [ 5, 2, 0,    'Погода',                          'pogoda',                             acsAll,  0,''],
+         [ 6, 1,-1, 'Лада-Нива',                          'lada-niva',                          acsAll,  0,''],
          [ 7, 6, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,  0,''],
          [ 8, 6, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,  0,''],
          [ 9, 6, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,  0,''],

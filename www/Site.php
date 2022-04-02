@@ -58,7 +58,10 @@ function markupDesktopSite($SiteMode,$SiteDevice,$TitleMain,$Menu)
   echo            '<div id="cCenter">';
   echo            '<h1>'.$TitleMain.'</h1>';
   // При необходимости транслитируем некоторый заголовок
-  echo  prown\getTranslit('Отключиться').'<br>';
+  echo  prown\getTranslit('Ардуино').'<br>';
+  echo  prown\getTranslit('Как было').'<br>';
+  echo  prown\getTranslit('Вид из окна').'<br>';
+  echo  prown\getTranslit('Погода').'<br>';
   // Загружаем материал
   require_once    'Pages/cCenter.php';
   echo            '</div>';

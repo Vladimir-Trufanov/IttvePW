@@ -117,9 +117,11 @@ else
 // Начинаем html-страницу
 echo '</head>'; 
 echo '<body>';
+echo $basename.'<br>';
 //require_once 'CreateBase.php';
 $Menu=aViewMenu(ProbaMenu($basename)); 
 //echo '<br>'.$Menu.'<br>';
+//echo '$NamePage='.$NamePage.'<br>';
 require_once $NamePage;
 /*
 // При необходимости показываем кукисы и переменные сессий
