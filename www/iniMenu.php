@@ -18,7 +18,7 @@ define ("eul",'</ul>');
 define ("ia",'<a ');        
 define ("ea",'</a>'); 
 define ("ihref",'href="');        
-define ("com",'?com='); 
+define ("comequ",'?com='); 
 define ("ehref",'">'); 
 define ("ibr",''); 
 
@@ -153,7 +153,7 @@ function aViewMenu($array)
          else
          {
             // Формируем обычную li пункта меню c материалом
-            $Result=$Result.ili.ia.ihref.com.$value['Translit'].ehref.$value['Name'].ea;
+            $Result=$Result.ili.ia.ihref.comequ.$value['Translit'].ehref.$value['Name'].ea;
          }
          // Запоминаем текст меню без последнего /li 
          // для возможного использования на следующем шаге

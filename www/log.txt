@@ -241,3 +241,4 @@ Stack trace:
 #4 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 204
 [02-Apr-2022 21:11:08 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '⿠' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 91
+[03-Apr-2022 07:07:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ',', expecting ']' in C:\IttvePW\www\CreateBase.php on line 40
