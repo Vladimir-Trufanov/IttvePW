@@ -1,5 +1,5 @@
 <?php
-// PHP7/HTML5, EDGE/CHROME                               *** CreateBase.php ***
+// PHP7/HTML5, EDGE/CHROME                               *** MakeItBase.php ***
 
 // ****************************************************************************
 // * ittve.pw                   Создать базу данных материалов сайта itpw.db3 *
@@ -8,7 +8,7 @@
 
 //                                                   Автор:       Труфанов В.Е.
 //                                                   Дата создания:  04.05.2021
-// Copyright © 2021 tve                              Посл.изменение: 03.04.2022
+// Copyright © 2021 tve                              Посл.изменение: 04.04.2022
 
 // ****************************************************************************
 // *      Создать таблицы базы данных и выполнить начальное заполнение        *
@@ -61,38 +61,37 @@ function CreateTables($pdo)
          'Art      TEXT)';                                        // материал = статья сайта
       $st = $pdo->query($sql);
       
-      // Заполняем таблицу материалов в начальном состоянии (на 2022-04-03)
+      // Заполняем таблицу материалов в начальном состоянии (на 2022-04-04)
       $aCharters=[
-         [ 1, 0,-1, 'ittve.pw',                           'ittvepw',                            acsAll,  0,''],
-         [ 2, 1,-1, 'Ардуино',                            'arduino',                            acsAll,  0,''],
-         [ 3, 2, 0,    'Как было',                        'kak-bylo',                           acsAll,  0,''],
-         [ 4, 2, 0,    'Вид из окна',                     'vid-iz-okna',                        acsAll,  0,''],
-         [ 5, 2, 0,    'Погода',                          'pogoda',                             acsAll,  0,''],
-         [ 6, 1,-1, 'Лада-Нива',                          'lada-niva',                          acsAll,  0,''],
-         [ 7, 6, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,  0,''],
-         [ 8, 6, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,  0,''],
-         [ 9, 6, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,  0,''],
-         [10, 1,-1, 'Стиль',                              'stil',                               acsAll,  0,''],
-         [11,10, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', acsAll,  0,''],
-         [12,10, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           acsAll,  0,''],
-         [13, 1,-1, 'Моделирование',                      'modelirovanie',                      acsAll,  0,''],
-         [14, 1,-1, 'Учебники',                           'uchebniki',                          acsAll,  0,''],
-         [15, 1,-1, 'Сайт',                               'sajt',                               acsAll,  0,''],
-         [16,15, 0,    'Авторизоваться',                  'avtorizovatsya',                     acsAll,  0,''],
-         [17,15, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 acsAll,  0,''],
-         [18,15, 0,    'О сайте',                         'o-sajte',                            acsAll,  0,''],
-         [19,15, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,0,''],
-         [20,15, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,  0,''],
-         [21,15, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,  0,''],
-         /*
-         [22, 2, 0,    'Статья2 по Ардуино',              'arduino2',                           acsAll,  0,''],
-         [23, 2, 0,    'Статья3 по Ардуино',              'arduino3',                           acsAll,  0,''],
-         [25,22,-1,    'Тема4 по Ардуино',                'arduino4',                           acsAll,  0,''],
-         [26,25, 0,       'Проба41',                      'proba41',                            acsAll,  0,''],
-         [27,25, 0,       'Проба42',                      'proba42',                            acsAll,  0,''],
-         [28, 1,-1, 'Проба11',                            'proba11',                            acsAll,  0,''],
-         */
-         [29, 1,-1, 'ittve.end',                          'ittveend',                           acsAll,  0,'']
+         [ 1, 0,-1, 'ittve.pw',                           'ittvepw',                            acsAll,    0,''],
+         [ 2, 1,-1, 'Ардуино',                            'arduino',                            acsAll,    0,''],
+         [ 3, 2, 0,    'Как было',                        'kak-bylo',                           acsAll,    0,''],
+         [ 4, 2, 0,    'Вид из окна',                     'vid-iz-okna',                        acsAll,    0,''],
+         [ 5, 2, 0,    'Погода',                          'pogoda',                             acsAll,    0,''],
+         [ 6, 1,-1, 'Лада-Нива',                          'lada-niva',                          acsAll,    0,''],
+         [ 7, 6, 0,    'С чего все началось',             's-chego-vse-nachalos',               acsAll,    0,''],
+         [ 8, 6, 0,    'А что внутри?',                   'a-chto-vnutri',                      acsAll,    0,''],
+         [ 9, 6, 0,    'Эксперименты со строками',        'ehksperimenty-so-strokami',          acsAll,    0,''],
+         [10, 1,-1, 'Стиль',                              'stil',                               acsAll,    0,''],
+         [11,10, 0,    'Элементы стиля программирования', 'ehlementy-stilya-programmirovaniya', acsAll,    0,''],
+         [12,10, 0,    'Пишите программы просто',         'pishite-programmy-prosto',           acsAll,    0,''],
+         [13, 1,-1, 'Моделирование',                      'modelirovanie',                      acsAll,    0,''],
+         [14, 1,-1, 'Учебники',                           'uchebniki',                          acsAll,    0,''],
+         [15, 1,-1, 'Сайт',                               'sajt',                               acsAll,    0,''],
+         [16,15, 0,    'Авторизоваться',                  'avtorizovatsya',                     acsAll,    0,''],
+         [17,15, 0,    'Зарегистрироваться',              'zaregistrirovatsya',                 acsAll,    0,''],
+         [18,15, 0,    'О сайте',                         'o-sajte',                            acsAll,    0,''],
+         [19,15, 0,    'Редактировать материал',          'redaktirovat-material',              acsAutor,  0,''],
+         [20,15, 0,    'Изменить настройки',              'izmenit-nastrojki',                  acsAll,    0,''],
+         [21,15, 0,    'Отключиться',                     'otklyuchitsya',                      acsAll,    0,''],
+         [22, 2, 0,    'Статья2 по Ардуино',              'arduino2',                           acsClose,  0,''],
+         [23, 2, 0,    'Статья3 по Ардуино',              'arduino3',                           acsClose,  0,''],
+         [24,22,-1,    'Тема4 по Ардуино',                'arduino4',                           acsClose,  0,''],
+         [25,22,-1,    'Тема5 по Ардуино',                'arduino5',                           acsClose,  0,''],
+         [26,25, 0,       'Проба51',                      'proba51',                            acsClose,  0,''],
+         [27,25, 0,       'Проба52',                      'proba52',                            acsClose,  0,''],
+         [28, 1,-1, 'Проба11',                            'proba11',                            acsClose,  0,''],
+         [29, 1,-1, 'ittve.end',                          'ittveend',                           acsAll,    0,'']
       ];
 
       $statement = $pdo->prepare("INSERT INTO [stockpw] ".
@@ -187,4 +186,4 @@ aRecursPath($array,$array_idx_lvl,$table);
 echo 'Сформирован массив c указанием путей и транслита<br>'; 
 echo '<br>';  
 aViewPath($array);
-// ********************************************************* CreateBase.php ***
+// ********************************************************* MakeItBase.php ***

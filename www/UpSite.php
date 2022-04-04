@@ -117,10 +117,10 @@ else
 // Начинаем html-страницу
 echo '</head>'; 
 echo '<body>';
-echo $basename.'<br>';
 // При отладке воссоздаем базу данных
-// require_once 'CreateBase.php';
+// require_once 'MakeItBase.php';
 $Menu=aViewMenu(MakeTableOfMenu($basename)); 
+//echo '$NamePage='.$NamePage;
 require_once $NamePage;
 /*
 // При необходимости показываем кукисы и переменные сессий

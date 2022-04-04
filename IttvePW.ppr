@@ -487,10 +487,8 @@ IttvePW
 					www\EdisiteArticle\_Edit\GalleryNews.php
 					www\EdisiteArticle\_Edit\ImgTemplate.jpg
 					www\EdisiteArticle\_Edit\ќсобенности устройства винтиков в моей голове.html
-				-mms-lada-niva
-					www\EdisiteArticle\mms-lada-niva\itpw01-001-s-chego-vse-nachalos-20210501.php
-				-stil
-					www\EdisiteArticle\stil\itpw02-001-pishite-programmy-prosto-20210501.php
+				www\EdisiteArticle\itpw002005-pogoda-20220403.php
+				www\EdisiteArticle\itpw006007-s-chego-vse-nachalos-20210501.php
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -1036,16 +1034,16 @@ IttvePW
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
-			www\CreateBase.php
 			www\iJsJquery.php
 			www\index.php
-			www\Inimem.php
+			www\iniMem.php
 			www\iniMenu.php
 			www\iniWorkSpace.php
 			www\itpw.db3
 			www\ittvepw.php
 			www\log.txt
 			www\Main.php
+			www\MakeItBase.php
 			www\manifest.json
 			www\Site.php
 			www\Sitem.php
@@ -1145,30 +1143,50 @@ IttvePW
 1=www\Main.php
 2=www\UpSite.php
 3=www\ittvepw.php
-4=www\CreateBase.php
+4=www\MakeItBase.php
 5=www\Site.php
 6=www\iniMenu.php
+7=www\EdisiteArticle\_Edit\EdisiteArticle.php
+8=www\Pages\hBlock.php
+9=www\Pages\lSide.php
+10=www\Pages\cCenter.php
+11=www\iniMem.php
 [Selected Project Files]
 Main=
-Selected=www\Main.php
+Selected=www\UpSite.php
 [www\index.php]
 TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=93
-Caret=69,129
+TopLine=57
+Caret=71,95
 [www\UpSite.php]
 TopLine=104
-Caret=1,124
+Caret=4,121
 [www\ittvepw.php]
 TopLine=24
 Caret=122,37
-[www\CreateBase.php]
-TopLine=36
-Caret=66,70
+[www\MakeItBase.php]
+TopLine=151
+Caret=72,189
 [www\Site.php]
-TopLine=38
+TopLine=14
 Caret=1,14
 [www\iniMenu.php]
 TopLine=123
 Caret=48,156
+[www\EdisiteArticle\_Edit\EdisiteArticle.php]
+TopLine=24
+Caret=1,24
+[www\Pages\hBlock.php]
+TopLine=4
+Caret=1,1
+[www\Pages\lSide.php]
+TopLine=1
+Caret=1,1
+[www\Pages\cCenter.php]
+TopLine=3
+Caret=1,1
+[www\iniMem.php]
+TopLine=29
+Caret=1,1
