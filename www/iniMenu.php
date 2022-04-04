@@ -117,6 +117,39 @@ $Menu='
 function aViewMenu($array)
 {
    $Result='';   // html-текст формируемого меню
+   echo '<pre>';
+   // Выводим шапку
+   echo '<table border=2>';
+   // Выводим данные
+   foreach ($array as $value)
+   {
+      echo '<tr>';
+      echo '<td>'; 
+      echo ' '.$value['NameArt']; 
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['Name']; 
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['Translit'];
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['Level'];
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['LevelOld'];
+      echo '</td>'; 
+      echo '</tr>';
+   }
+   echo '</table>';
+   echo '</pre>';
+}
+
+
+
+function aViewMenu1($array)
+{
+   $Result='';   // html-текст формируемого меню
    $Resold='';   // html-текст меню, сформированный на предыдущем шаге
    $levelOld=0;
    $isUL=true;

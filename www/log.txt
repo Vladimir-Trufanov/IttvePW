@@ -242,3 +242,12 @@ Stack trace:
   thrown in C:\IttvePW\www\ittvepw.php on line 204
 [02-Apr-2022 21:11:08 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '⿠' (T_STRING), expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 91
 [03-Apr-2022 07:07:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ',', expecting ']' in C:\IttvePW\www\CreateBase.php on line 40
+[04-Apr-2022 18:45:01 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\IttvePW\www\MakeItBase.php on line 191
+[04-Apr-2022 20:45:37 Asia/Kuwait] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function aRecursForMenu(), 2 passed in C:\IttvePW\www\ittvepw.php on line 257 and exactly 5 expected in C:\IttvePW\www\ittvepw.php:66
+Stack trace:
+#0 C:\IttvePW\www\ittvepw.php(257): aRecursForMenu(Array, Array)
+#1 C:\IttvePW\www\UpSite.php(123): MakeTableOfMenu('C:\\IttvePW\\www/...')
+#2 C:\IttvePW\www\Main.php(87): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\ittvepw.php on line 66

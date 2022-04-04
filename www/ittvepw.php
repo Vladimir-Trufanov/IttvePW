@@ -60,6 +60,58 @@ function aRecursLevel(&$array,$data,$pid = 0,$level = 0)
    }
 }
 // ****************************************************************************
+// *          ---------------Сформировать массив для представления таблицы до уровня         *
+// *          ---------------    (по мотивам - https://m.habr.com/ru/post/280944/)           *
+// ****************************************************************************
+function aRecursForMenu(&$array,$data,$pid=0,$level=0)
+{
+   foreach ($data as $row)   
+   {
+      // Смотрим строки, pid которых передан в функцию,
+      // начинаем с нуля, т.е. с корня сайта
+      if ($row['pid'] == $pid)   
+      { 
+         // Собираем строку в ассоциативный массив,
+         // кроме 'ittve.pw'
+         if (($row['NameArt']<>'ittve.pw'))
+         {
+            if (($row['NameArt']<>'ittve.end'))
+            {
+               $_row['Level']=$level; 
+               if (count($array)==0) $_row['LevelOld']=$level;     
+               else $_row['LevelOld']=$array[count($array)-1]['Level'];       
+
+               if ($_row['Level']>$_row['LevelOld'])
+               {
+                  $_row['NameArt']=str_pad('', $level*3, '.').'-UL-';
+                  $_row['Translit']='';       
+                  $_row['Name']='';       
+                  $array[]=$_row;
+               }
+
+               if ($_row['Level']<$_row['LevelOld'])
+               {
+                  $_row['NameArt']=str_pad('', $_row['LevelOld']*3, '.').'-/UL-';
+                  $_row['Translit']='';       
+                  $_row['Name']='';       
+                  $array[]=$_row;
+               }
+
+               // Функцией str_pad добавляем точки
+               $_row['NameArt']=str_pad('', $level*3, '.').$row['NameArt'];
+               $_row['Translit']=$row['Translit'];       
+               $_row['Name']=$row['NameArt'];       
+               // Прибавляем каждую строку к выходному массиву
+               $array[]=$_row;
+            } 
+         } 
+         // Строка обработана, теперь запустим эту же функцию для текущего uid, то есть
+         // пойдёт обратотка дочерней строки (у которой этот uid является pid-ом)
+         aRecursForMenu($array,$data,$row['uid'],$level+1);
+      }
+   }
+}
+// ****************************************************************************
 // *         Сформировать массив представления таблицы c указанием путей      *
 // ****************************************************************************
 function aRecursPath(&$array,&$array_idx_lvl,$data,$pid=0,$level=0,$path="")
@@ -127,6 +179,7 @@ function aViewLevel($array)
       echo '</td>'; 
       echo '<td>'; 
       if ($value['access']==acsAutor) echo ' АВТОР';
+      else if ($value['access']==acsClose) echo ' Закрыт';
       else echo ' Все';
       echo '</td>'; 
       echo '</tr>';
@@ -179,6 +232,7 @@ function aViewPath($array)
       echo '</td>'; 
       echo '<td>'; 
       if ($value['access']==acsAutor) echo ' АВТОР';
+      else if ($value['access']==acsClose) echo ' Закрыт';
       else echo ' Все';
       echo '</td>'; 
       echo '</tr>';
@@ -207,7 +261,8 @@ function MakeTableOfMenu($filename)
    $table = $stmt->fetchAll();          
    // Формируется массив для представления таблицы
    $arrayl = array(); 
-   aRecursLevel($arrayl,$table); 
+   //aRecursLevel($arrayl,$table);
+   aRecursForMenu($arrayl,$table); 
    return $arrayl;
 }
 

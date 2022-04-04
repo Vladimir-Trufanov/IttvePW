@@ -119,9 +119,14 @@ echo '</head>';
 echo '<body>';
 // При отладке воссоздаем базу данных
 // require_once 'MakeItBase.php';
-$Menu=aViewMenu(MakeTableOfMenu($basename)); 
+echo '1------------------------------------------------<br>'; 
+aViewMenu(MakeTableOfMenu($basename));
+echo '2------------------------------------------------<br>'; 
+
+//$Menu=aViewMenu(MakeTableOfMenu($basename)); 
+//echo  $Menu;
 //echo '$NamePage='.$NamePage;
-require_once $NamePage;
+//require_once $NamePage;
 /*
 // При необходимости показываем кукисы и переменные сессий
 prown\ViewGlobal(avgSESSION);

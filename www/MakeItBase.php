@@ -186,4 +186,5 @@ aRecursPath($array,$array_idx_lvl,$table);
 echo 'Сформирован массив c указанием путей и транслита<br>'; 
 echo '<br>';  
 aViewPath($array);
+ 
 // ********************************************************* MakeItBase.php ***
