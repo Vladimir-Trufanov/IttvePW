@@ -1034,6 +1034,8 @@ IttvePW
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
+			www\example_homepage.html
+			www\example_homepage.txt
 			www\iJsJquery.php
 			www\index.php
 			www\iniMem.php
@@ -1048,6 +1050,7 @@ IttvePW
 			www\Site.php
 			www\Sitem.php
 			www\UpSite.php
+			www\YandexWeather.php
 		-Материалы
 			-TErrEvent Delphi
 				Материалы\TErrEvent Delphi\erANYMesUni.dcu
@@ -1151,30 +1154,31 @@ IttvePW
 9=www\Pages\lSide.php
 10=www\Pages\cCenter.php
 11=www\iniMem.php
+12=www\Common.php
 [Selected Project Files]
 Main=
-Selected=www\iniMenu.php
+Selected=www\Common.php
 [www\index.php]
 TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=61
-Caret=71,95
+TopLine=77
+Caret=1,28
 [www\UpSite.php]
-TopLine=93
-Caret=4,121
+TopLine=142
+Caret=24,150
 [www\ittvepw.php]
-TopLine=42
-Caret=65,94
+TopLine=76
+Caret=56,94
 [www\MakeItBase.php]
-TopLine=79
-Caret=22,94
+TopLine=17
+Caret=18,36
 [www\Site.php]
 TopLine=14
 Caret=1,14
 [www\iniMenu.php]
-TopLine=146
-Caret=11,98
+TopLine=98
+Caret=1,98
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
 TopLine=24
 Caret=1,24
@@ -1188,5 +1192,8 @@ Caret=1,1
 TopLine=3
 Caret=1,1
 [www\iniMem.php]
-TopLine=1
+TopLine=18
 Caret=18,18
+[www\Common.php]
+TopLine=1
+Caret=29,17

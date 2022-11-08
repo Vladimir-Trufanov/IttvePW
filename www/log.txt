@@ -251,3 +251,8 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\ittvepw.php on line 66
+[05-Apr-2022 14:45:04 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '$_row' (T_VARIABLE) in C:\IttvePW\www\ittvepw.php on line 94
+[05-Apr-2022 15:15:17 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\IttvePW\www\iniMenu.php on line 27
+[06-Apr-2022 15:22:13 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ':', expecting ']' in C:\IttvePW\www\UpSite.php on line 179
+[06-Apr-2022 18:41:53 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 202
+[06-Apr-2022 18:42:32 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 203

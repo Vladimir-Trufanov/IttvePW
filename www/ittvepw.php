@@ -72,37 +72,117 @@ function aRecursForMenu(&$array,$data,$pid=0,$level=0)
       if ($row['pid'] == $pid)   
       { 
          // Собираем строку в ассоциативный массив,
-         // кроме 'ittve.pw'
+         // кроме 'ittve.pw' и 'ittve.end'
          if (($row['NameArt']<>'ittve.pw'))
          {
             if (($row['NameArt']<>'ittve.end'))
             {
+               $IdCue=$row['IdCue']; 
+               if (count($array)==0) $levelOld=$level;     
+               else $levelOld=$array[count($array)-1]['Level'];       
+
+               // Функцией str_pad добавляем точки
+               $points=str_pad('',$level*3,'.');
+               $_row['Translit']=$points;
+
+               if ($level>$levelOld)
+               {
+                  $_row['Translit']=$_row['Translit'].iul;       
+               }
+               if ($level<$levelOld)
+               {
+                  $_row['Translit']=$_row['Translit'].eul;       
+               }
+
+
+
+               if ($IdCue==0) 
+               {
+                  $_row['Translit']=$_row['Translit'].ili.$row['Translit'];  
+                  $_row['Name']=$row['NameArt'].eli; 
+                  $_row['IdCue']=$IdCue;
+                  $_row['Level']=$level;
+                  $_row['LevelOld']=$levelOld;
+                  $array[]=$_row;
+               }      
+               // Или формируем пункт меню для начала раздела
+               // <li><a href="/">Стиль</a>
+               else if ($IdCue==-1)
+               {
+                  $_row['Translit']=$points."/";
+                  $_row['Name']=$row['NameArt']; 
+                  $_row['IdCue']=$IdCue;
+                  $_row['Level']=$level;
+                  $_row['LevelOld']=$levelOld;
+                  $array[]=$_row;
+               }  
+               // Прибавляем каждую строку к выходному массиву
+            } 
+         } 
+         // Строка обработана, теперь запустим эту же функцию для текущего uid, то есть
+         // пойдёт обратотка дочерней строки (у которой этот uid является pid-ом)
+         aRecursForMenu($array,$data,$row['uid'],$level+1);
+      }
+   }
+}
+function aRecursForMenuOld(&$array,$data,$pid=0,$level=0)
+{
+   foreach ($data as $row)   
+   {
+      // Смотрим строки, pid которых передан в функцию,
+      // начинаем с нуля, т.е. с корня сайта
+      if ($row['pid'] == $pid)   
+      { 
+         // Собираем строку в ассоциативный массив,
+         // кроме 'ittve.pw' и 'ittve.end'
+         if (($row['NameArt']<>'ittve.pw'))
+         {
+            if (($row['NameArt']<>'ittve.end'))
+            {
+               $_row['IdCue']=$row['IdCue']; 
                $_row['Level']=$level; 
                if (count($array)==0) $_row['LevelOld']=$level;     
                else $_row['LevelOld']=$array[count($array)-1]['Level'];       
 
                if ($_row['Level']>$_row['LevelOld'])
                {
-                  $_row['NameArt']=str_pad('', $level*3, '.').'-UL-';
-                  $_row['Translit']='';       
+                  $points=str_pad('',$_row['Level']*3,'.');
+                  $_row['Translit']=$points.iul;       
                   $_row['Name']='';       
                   $array[]=$_row;
                }
-
                if ($_row['Level']<$_row['LevelOld'])
                {
-                  $_row['NameArt']=str_pad('', $_row['LevelOld']*3, '.').'-/UL-';
-                  $_row['Translit']='';       
+                  // Закрываем <ul>
+                  $points=str_pad('',$_row['LevelOld']*3,'.');
+                  $_row['Translit']=$points.eul;       
+                  $_row['Name']='';       
+                  $array[]=$_row;
+                  // Закрываем все родительские <li>
+                  $points=str_pad('',$_row['Level']*3,'.');
+                  $_row['Translit']=$points.eli;       
                   $_row['Name']='';       
                   $array[]=$_row;
                }
-
                // Функцией str_pad добавляем точки
-               $_row['NameArt']=str_pad('', $level*3, '.').$row['NameArt'];
-               $_row['Translit']=$row['Translit'];       
-               $_row['Name']=$row['NameArt'];       
+               $points=str_pad('',$_row['Level']*3,'.');
+               // Формируем пункт меню для статьи
+               // <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>   
+               if ($_row['IdCue']==0) 
+               {
+                  $_row['Translit']=$points.ili.ia.ihref.comequ.$row['Translit'].ehref;  
+                  $_row['Name']=$row['NameArt'].ea.eli; 
+                  $array[]=$_row;
+               }      
+               // Или формируем пункт меню для начала раздела
+               // <li><a href="/">Стиль</a>
+               else if ($_row['IdCue']==-1)
+               {
+                  $_row['Translit']=$points.ili.ia.ihref."/".ehref;
+                  $_row['Name']=$row['NameArt'].ea; 
+                  $array[]=$_row;
+               }  
                // Прибавляем каждую строку к выходному массиву
-               $array[]=$_row;
             } 
          } 
          // Строка обработана, теперь запустим эту же функцию для текущего uid, то есть
@@ -258,10 +338,21 @@ function MakeTableOfMenu($filename)
    );
    // Выбирается таблица для меню из базы данных
    $stmt = $pdo->query("SELECT * FROM stockpw");
-   $table = $stmt->fetchAll();          
+   $table = $stmt->fetchAll();   
+   
+   //$arrayl = array(); 
+   //aRecursLevel($arrayl,$table); 
+   //aViewLevel($arrayl);
+   
+   $array = array();                         // выходной массив
+   $array_idx_lvl = array();                 // индекс по полю level
+   aRecursPath($array,$array_idx_lvl,$table); 
+   aViewPath($array);
+
+   echo '<br>';
+          
    // Формируется массив для представления таблицы
    $arrayl = array(); 
-   //aRecursLevel($arrayl,$table);
    aRecursForMenu($arrayl,$table); 
    return $arrayl;
 }

@@ -10,7 +10,7 @@
 // Copyright © 2021 tve                              Посл.изменение: 18.05.2021
 
 // -------------------------- Режим формирования реальных тегов списка меню ---
-
+/*
 define ("ili",'<li>');        
 define ("eli",'</li>');        
 define ("iul",'<ul>');        
@@ -21,20 +21,18 @@ define ("ihref",'href="');
 define ("comequ",'?com='); 
 define ("ehref",'">'); 
 define ("ibr",''); 
-
+*/
 // ------------------------ Отладочный режим формирования тегов списка меню ---
-/*
 define ("ili",'(li)');        
-define ("eli",'(/li)<br>');        
-define ("iul",'(ul)<br>');        
-define ("eul",'(/ul)<br>'); 
+define ("eli",'(/li)');        
+define ("iul",'(ul)');        
+define ("eul",'(/ul)'); 
 define ("ia",'(a ');        
 define ("ea",'(/a)'); 
 define ("ihref",'href="');        
-define ("com",'?com='); 
+define ("comequ",'?com='); 
 define ("ehref",'")'); 
 define ("ibr",'<br>'); 
-*/
 // ****************************************************************************
 // *  Сформировать подстроку из трех пробелов для каждого уровня со второго   *
 // ****************************************************************************
@@ -54,6 +52,7 @@ function MakeSpases($level)
    } 
    return $Result;
 }
+/*
 // ****************************************************************************
 // *                         Если новый уровень меньше старого,               *
 // *                 то сформировать все /ul до совмещения уровней            *
@@ -82,6 +81,7 @@ function MakeEul($level,$levelOldi,&$isUL)
    }
    return $Result;
 }
+*/
 // ****************************************************************************
 // *                               Сформировать меню                          *
 // ****************************************************************************
@@ -125,19 +125,19 @@ function aViewMenu($array)
    {
       echo '<tr>';
       echo '<td>'; 
-      echo ' '.$value['NameArt']; 
+      echo ' '.$value['Translit'];
       echo '</td>'; 
       echo '<td>'; 
       echo ' '.$value['Name']; 
-      echo '</td>'; 
-      echo '<td>'; 
-      echo ' '.$value['Translit'];
       echo '</td>'; 
       echo '<td>'; 
       echo ' '.$value['Level'];
       echo '</td>'; 
       echo '<td>'; 
       echo ' '.$value['LevelOld'];
+      echo '</td>'; 
+      echo '<td>'; 
+      echo ' '.$value['IdCue'];
       echo '</td>'; 
       echo '</tr>';
    }

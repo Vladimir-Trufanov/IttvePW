@@ -120,11 +120,11 @@ echo '<body>';
 // При отладке воссоздаем базу данных
 // require_once 'MakeItBase.php';
 echo '1------------------------------------------------<br>'; 
-aViewMenu(MakeTableOfMenu($basename));
+$Menu=aViewMenu(MakeTableOfMenu($basename));
 echo '2------------------------------------------------<br>'; 
 
 //$Menu=aViewMenu(MakeTableOfMenu($basename)); 
-//echo  $Menu;
+echo  $Menu;
 //echo '$NamePage='.$NamePage;
 //require_once $NamePage;
 /*
@@ -139,6 +139,106 @@ $headers = getallheaders();
 print_r($headers);
 print_r($_SERVER);
 */
+
+
+// ****************************************************************************
+// *                 Выполнить GET-запрос данных с GisMeteo                   *
+// ****************************************************************************
+
+// Указываем координаты дачи в Лососинном
+$dacha='latitude=61.701941&longitude=34.154539'; // 61.701941,34.154539
+$icon='icon=n_c3_rs3_st';
+// Назначаем URL о погоде по координатам
+$url = 'https://api.gismeteo.net/v2/weather/current/?'.$icon; //$dacha;
+// Указываем заголовок с моим токеном
+$headers = ['X-Gismeteo-Token: 61f2622da85fe2.06084651']; 
+// Назначаем поля нашего запроса и переводим их в формат JSON
+$post_data = ['field1'=>'val_1','field2'=>'val_2',];
+//$post_data = [];
+$data_json = json_encode($post_data);
+// Инициируем новый сеанс cURL и возвращаем дескриптор
+$curl = curl_init();
+// Загружаем URL
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_VERBOSE, 1);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data_json);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
+$result = curl_exec($curl); // результат POST запроса
+if (curl_error($curl)) echo 'Ошибка запроса о погоде: '.curl_error($curl).'<br>';
+else echo 'Данные о погоде: '.$result.'<br>';
+ 
+// ****************************************************************************
+
+
+/*
+// ****************************************************************************
+// *                Выполнить GET-запрос данных с Яндекс-Погоды               *
+// ****************************************************************************
+// Указываем координаты дачи в Лососинном
+$dacha='lat=61.701941&lon=34.154539'; // 61.701941,34.154539
+// Назначаем URL о погоде по координатам
+$url = 'https://api.weather.yandex.ru/v2/informers?'.$dacha;
+
+// https://api.weather.yandex.ru/v2/informers?lat=55.75396&lon=37.620393
+
+// Указываем заголовок с моим токеном
+$headers = ['X-Yandex-API-Key: 71dbce1b-477f-4dff-8aa1-45924134f92d']; 
+// Назначаем поля нашего запроса и переводим их в формат JSON
+//$post_data = ['field1'=>'val_1','field2'=>'val_2',];
+$post_data = [];
+$data_json = json_encode($post_data);
+// Инициируем новый сеанс cURL и возвращаем дескриптор
+$curl = curl_init();
+// Загружаем URL
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_VERBOSE, 1);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data_json);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
+$result = curl_exec($curl); // результат POST запроса
+if (curl_error($curl)) echo 'Ошибка запроса о погоде: '.curl_error($curl).'<br>';
+else echo 'Данные о погоде: '.$result.'<br>';
+// ****************************************************************************
+*/
+
+/*
+// ****************************************************************************
+// *                Выполнить GET-запрос данных с openweathermap.org               *
+// ****************************************************************************
+// Указываем координаты дачи в Лососинном
+$dacha='lat=61.701941&lon=34.154539'; // 61.701941,34.154539
+// Указываем API-key
+$appid='080b7a11c05216a4b86317b92370b484';
+// Назначаем URL о погоде по координатам
+$url = 'https://api.openweathermap.org/data/2.5/weather?'.$dacha.'&appid='.$appid;
+
+$headers = []; $post_data = []; $data_json = json_encode($post_data);
+// Инициируем новый сеанс cURL и возвращаем дескриптор
+$curl = curl_init();
+// Загружаем URL
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_VERBOSE, 1);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data_json);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
+$result = curl_exec($curl); // результат POST запроса
+if (curl_error($curl)) echo 'Ошибка запроса о погоде: '.curl_error($curl).'<br>';
+else echo 'Данные о погоде: '.$result.'<br>';
+// ****************************************************************************
+*/
+
+
+
+
+//print_r('response: '.$result.'<br>');
+//phpinfo();
 // Выводим завершающие теги страницы
 echo '</body>'; 
 echo '</html>';
