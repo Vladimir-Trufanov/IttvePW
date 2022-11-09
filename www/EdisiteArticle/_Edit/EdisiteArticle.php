@@ -72,10 +72,26 @@ if (isset($_POST['upload']))
       echo $e->getMessage();
    }
 }
+
 // Воспроизводим разметку и подготовленные материалы   
-echo '<p><textarea id="TitleArea" name="areat">'.$c_NameArt.'</textarea></p>';
+//echo '<p><textarea id="TitleArea" name="areat">'.$c_NameArt.'</textarea></p>';
 echo '<div id="EditDebug">';
-require $c_NameArt.".html";
+
+// При отладке воссоздаем базу данных
+// require_once 'MakeItBase.php';
+
+//echo  prown\getTranslit('Отключиться').'<br>';
+
+// Воспроизводим материал   
+echo '<div id="EditDebug">';
+
+echo '1------------------------------------------------<br>'; 
+aViewMenu(MakeTableOfMenu($basename));
+echo '2------------------------------------------------<br>'; 
+
+// Выводим меню
+echo $Menu;
+
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла
 /*
@@ -113,7 +129,6 @@ echo '</div>';
 // Заполняем область редактирования
 echo '<p><textarea id="ContentArea" name="areac">';
 require $c_NameArt.".html";
-//echo $c_NameArt.".html";
 echo '</textarea></p>';
 echo '<p><input id="InputArea" type="submit" value="Отправить"></p>';
 ?>

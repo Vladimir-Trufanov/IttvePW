@@ -401,7 +401,7 @@ IttvePW
 			MenuAccord\lSide.php
 			MenuAccord\MenuAccord.css
 			MenuAccord\MenuAccord.php
-		-SmartMenus
+		+SmartMenus
 			-addons
 				-bootstrap
 					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.css
@@ -476,12 +476,12 @@ IttvePW
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
 		+www
-			-EdisiteArticle
+			+EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
 					www\EdisiteArticle\_Current\С заботой и к мамам.jpg
-				-_Edit
+				+_Edit
 					www\EdisiteArticle\_Edit\EdisiteArticle.css
 					www\EdisiteArticle\_Edit\EdisiteArticle.php
 					www\EdisiteArticle\_Edit\GalleryNews.php
@@ -1144,56 +1144,40 @@ IttvePW
 [Open project files]
 0=www\index.php
 1=www\Main.php
-2=www\UpSite.php
-3=www\ittvepw.php
-4=www\MakeItBase.php
-5=www\Site.php
-6=www\iniMenu.php
-7=www\EdisiteArticle\_Edit\EdisiteArticle.php
-8=www\Pages\hBlock.php
-9=www\Pages\lSide.php
-10=www\Pages\cCenter.php
-11=www\iniMem.php
-12=www\Common.php
+2=www\ittvepw.php
+3=www\iniMenu.php
+4=www\iniMem.php
+5=www\UpSite.php
+6=www\EdisiteArticle\_Edit\EdisiteArticle.php
+7=www\EdisiteArticle\_Edit\EdisiteArticle.css
+8=..\IttveMe\ttree\styles.css
 [Selected Project Files]
 Main=
-Selected=www\Common.php
+Selected=..\IttveMe\ttree\styles.css
 [www\index.php]
 TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=77
-Caret=1,28
-[www\UpSite.php]
-TopLine=142
-Caret=24,150
+TopLine=89
+Caret=55,127
 [www\ittvepw.php]
 TopLine=76
 Caret=56,94
-[www\MakeItBase.php]
-TopLine=17
-Caret=18,36
-[www\Site.php]
-TopLine=14
-Caret=1,14
 [www\iniMenu.php]
-TopLine=98
-Caret=1,98
-[www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=24
-Caret=1,24
-[www\Pages\hBlock.php]
-TopLine=4
-Caret=1,1
-[www\Pages\lSide.php]
-TopLine=1
-Caret=1,1
-[www\Pages\cCenter.php]
-TopLine=3
-Caret=1,1
+TopLine=109
+Caret=1,117
 [www\iniMem.php]
-TopLine=18
-Caret=18,18
-[www\Common.php]
+TopLine=34
+Caret=1,58
+[www\UpSite.php]
+TopLine=105
+Caret=1,120
+[www\EdisiteArticle\_Edit\EdisiteArticle.php]
+TopLine=5
+Caret=1,90
+[www\EdisiteArticle\_Edit\EdisiteArticle.css]
+TopLine=76
+Caret=15,95
+[..\IttveMe\ttree\styles.css]
 TopLine=1
-Caret=29,17
+Caret=1,1

@@ -57,6 +57,7 @@ $c_NameArt=prown\MakeCookie('NameCharter',
    'Особенности устройства винтиков в моей голове',tStr);
 $Translit=prown\getTranslit($c_NameArt);  
 
+/*
 // Выводим меню
 if (prown\isComRequest('LifeMenu','com'))
 {
@@ -84,6 +85,7 @@ else
    if ($SiteDevice==Mobile) $NamePage='Sitem.php';
    else $NamePage='Site.php';
 }
+*/
 require_once "UpSite.php";
 
 /**
@@ -122,7 +124,7 @@ require_once "UpSite.php";
  * itpw006007-s-chego-vse-nachalos-20210501.php,
  * 
  * где itpw-признак принадлежности к сайту ittve.pw, далее uid раздела сайта
- * (максимум 999), далее uid статьи (максимум 999), делее через дефис транслит 
+ * (максимум 999), далее uid статьи (максимум 999), далее через дефис транслит 
  * статьи, далее через дефис дата создания статьи
  * 
  * Аналогично именуются фотографии к статьям, которые находятся в общем 

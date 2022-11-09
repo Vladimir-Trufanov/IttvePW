@@ -256,3 +256,8 @@ Stack trace:
 [06-Apr-2022 15:22:13 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ':', expecting ']' in C:\IttvePW\www\UpSite.php on line 179
 [06-Apr-2022 18:41:53 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 202
 [06-Apr-2022 18:42:32 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\IttvePW\www\UpSite.php on line 203
+[08-Nov-2022 22:08:42 Asia/Kuwait] PHP Warning:  Unexpected character in input:  ' in C:\IttvePW\www\iniMenu.php on line 167
+[08-Nov-2022 22:08:42 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '⿠ص' (T_STRING) in C:\IttvePW\www\iniMenu.php on line 167
+[09-Nov-2022 15:22:26 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 133
+[09-Nov-2022 15:25:48 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 136
+[09-Nov-2022 18:18:32 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 140

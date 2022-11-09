@@ -38,8 +38,10 @@
 }
 #Gallery, #NewGallery
 {
+   display:none; 
    margin-left:67%;
-   width:33%;
+   /*width:33%;*/
+   width:0;
 }
 #Footer
 {
@@ -82,14 +84,15 @@
 #EditDebug
 { 
    position:fixed; 
-   /*overflow:auto;*/ 
+   overflow:auto; 
    top:4%; 
    bottom:56%;
    padding:0 .5rem 0 .5rem;
-   /*text-align:justify;
-   background:red;*/ 
-   right:33%;
-   width:67%; 
+   /*text-align:justify;*/ 
+   /*background:magenta;*/
+   /*right:33%;*/
+   /*width:67%;*/ 
+   width:100%; 
 }
 #ContentArea
 { 
@@ -100,8 +103,8 @@
    padding:0 .5rem 0 .5rem;
    text-align:justify;
    background:yellow; 
-   right:33%;
-   width:67%; 
+   /*right:33%;*/
+   width:100%; 
 }
 #InputArea
 { 
