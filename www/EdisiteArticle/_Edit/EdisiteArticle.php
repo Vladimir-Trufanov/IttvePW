@@ -75,15 +75,14 @@ if (isset($_POST['upload']))
 
 // Воспроизводим разметку и подготовленные материалы   
 //echo '<p><textarea id="TitleArea" name="areat">'.$c_NameArt.'</textarea></p>';
-echo '<div id="EditDebug">';
-
-// При отладке воссоздаем базу данных
-// require_once 'MakeItBase.php';
-
-//echo  prown\getTranslit('Отключиться').'<br>';
 
 // Воспроизводим материал   
 echo '<div id="EditDebug">';
+
+// Формируем контрольный транслит
+// echo  prown\getTranslit('Отключиться').'<br>';
+// При отладке воссоздаем базу данных
+// require_once 'EdisiteArticle/MakeItBase.php';
 
 echo '1------------------------------------------------<br>'; 
 aViewMenu(MakeTableOfMenu($basename));
@@ -91,6 +90,17 @@ echo '2------------------------------------------------<br>';
 
 // Выводим меню
 echo $Menu;
+
+echo '3------------------------------------------------<br>'; 
+//$table=CreateMenuFromBase($basename);
+//echo 'NumRowsTable($table)='.NumRowsTable($table).'<br>';
+
+// Подключаемся к базе данных
+BaseOpen($basename,$pdo);
+$lvl=1;  $nspace=0; $cLast='+++';
+ShowTree($pdo,1,$lvl,$nspace,$cLast); 
+echo '4------------------------------------------------<br>'; 
+
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла

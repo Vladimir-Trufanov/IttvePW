@@ -401,7 +401,7 @@ IttvePW
 			MenuAccord\lSide.php
 			MenuAccord\MenuAccord.css
 			MenuAccord\MenuAccord.php
-		+SmartMenus
+		-SmartMenus
 			-addons
 				-bootstrap
 					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.css
@@ -487,8 +487,10 @@ IttvePW
 					www\EdisiteArticle\_Edit\GalleryNews.php
 					www\EdisiteArticle\_Edit\ImgTemplate.jpg
 					www\EdisiteArticle\_Edit\Особенности устройства винтиков в моей голове.html
+				www\EdisiteArticle\MenuAndBase.php
 				www\EdisiteArticle\itpw002005-pogoda-20220403.php
 				www\EdisiteArticle\itpw006007-s-chego-vse-nachalos-20210501.php
+				www\EdisiteArticle\MakeItBase.php
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -1034,8 +1036,6 @@ IttvePW
 			www\.htaccess
 			www\.user.ini
 			www\Common.php
-			www\example_homepage.html
-			www\example_homepage.txt
 			www\iJsJquery.php
 			www\index.php
 			www\iniMem.php
@@ -1045,12 +1045,10 @@ IttvePW
 			www\ittvepw.php
 			www\log.txt
 			www\Main.php
-			www\MakeItBase.php
 			www\manifest.json
 			www\Site.php
 			www\Sitem.php
 			www\UpSite.php
-			www\YandexWeather.php
 		-Материалы
 			-TErrEvent Delphi
 				Материалы\TErrEvent Delphi\erANYMesUni.dcu
@@ -1144,40 +1142,40 @@ IttvePW
 [Open project files]
 0=www\index.php
 1=www\Main.php
-2=www\ittvepw.php
-3=www\iniMenu.php
-4=www\iniMem.php
-5=www\UpSite.php
-6=www\EdisiteArticle\_Edit\EdisiteArticle.php
-7=www\EdisiteArticle\_Edit\EdisiteArticle.css
-8=..\IttveMe\ttree\styles.css
+2=www\iniMenu.php
+3=www\iniMem.php
+4=www\UpSite.php
+5=www\EdisiteArticle\MakeItBase.php
+6=www\EdisiteArticle\MenuAndBase.php
+7=www\EdisiteArticle\_Edit\EdisiteArticle.php
+8=www\ittvepw.php
 [Selected Project Files]
 Main=
-Selected=..\IttveMe\ttree\styles.css
+Selected=www\EdisiteArticle\MenuAndBase.php
 [www\index.php]
 TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=89
-Caret=55,127
-[www\ittvepw.php]
-TopLine=76
-Caret=56,94
+TopLine=97
+Caret=30,34
 [www\iniMenu.php]
-TopLine=109
+TopLine=166
 Caret=1,117
 [www\iniMem.php]
-TopLine=34
+TopLine=16
 Caret=1,58
 [www\UpSite.php]
 TopLine=105
-Caret=1,120
+Caret=16,142
+[www\EdisiteArticle\MakeItBase.php]
+TopLine=101
+Caret=16,134
+[www\EdisiteArticle\MenuAndBase.php]
+TopLine=81
+Caret=69,88
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=5
-Caret=1,90
-[www\EdisiteArticle\_Edit\EdisiteArticle.css]
-TopLine=76
-Caret=15,95
-[..\IttveMe\ttree\styles.css]
-TopLine=1
-Caret=1,1
+TopLine=75
+Caret=36,101
+[www\ittvepw.php]
+TopLine=320
+Caret=1,320

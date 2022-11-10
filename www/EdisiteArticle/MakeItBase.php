@@ -131,7 +131,7 @@ function CreateTables($pdo)
          [26,25, 0,       'Проба51',                      'proba51',                            acsClose,  0,''],
          [27,25, 0,       'Проба52',                      'proba52',                            acsClose,  0,''],
          [28, 1,-1, 'Проба11',                            '/',                                  acsClose,  0,''],
-         [29, 1,-1, 'ittve.end',                          '/',                                  acsAll,    0,'']
+         [29, 0,-1, 'ittve.end',                          '/',                                  acsAll,    0,'']
       ];
 
       $statement = $pdo->prepare("INSERT INTO [stockpw] ".

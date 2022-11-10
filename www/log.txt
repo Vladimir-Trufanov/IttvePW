@@ -261,3 +261,46 @@ Stack trace:
 [09-Nov-2022 15:22:26 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 133
 [09-Nov-2022 15:25:48 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.;C:\php\pear') in C:\IttvePW\www\UpSite.php on line 136
 [09-Nov-2022 18:18:32 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 140
+[10-Nov-2022 15:54:17 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php:30
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\MenuAndBase.php(47): ShowTree(0, 1)
+#1 C:\IttvePW\www\Main.php(34): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 30
+[10-Nov-2022 15:55:01 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_num_rows() in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php:32
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\MenuAndBase.php(47): ShowTree(0, 1)
+#1 C:\IttvePW\www\Main.php(34): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 32
+[10-Nov-2022 15:55:33 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_close() in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php:50
+Stack trace:
+#0 C:\IttvePW\www\Main.php(34): require_once()
+#1 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#2 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 50
+[10-Nov-2022 15:56:01 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function CreateMenuFromBase() in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php:96
+Stack trace:
+#0 C:\IttvePW\www\UpSite.php(122): require_once()
+#1 C:\IttvePW\www\Main.php(90): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 96
+[10-Nov-2022 15:56:08 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function CreateMenuFromBase() in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php:96
+Stack trace:
+#0 C:\IttvePW\www\UpSite.php(122): require_once()
+#1 C:\IttvePW\www\Main.php(90): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 96
+[10-Nov-2022 15:56:13 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to undefined function CreateMenuFromBase() in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php:96
+Stack trace:
+#0 C:\IttvePW\www\UpSite.php(122): require_once()
+#1 C:\IttvePW\www\Main.php(90): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#3 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 96
+[10-Nov-2022 17:47:17 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'MakeItBase.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 81
+[10-Nov-2022 21:43:28 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 102
