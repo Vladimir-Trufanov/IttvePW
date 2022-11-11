@@ -1152,6 +1152,7 @@ IttvePW
 6=www\EdisiteArticle\_Edit\EdisiteArticle.php
 7=www\ittvepw.php
 8=www\EdisiteArticle\MenuAndBase.php
+9=var2.txt
 [Selected Project Files]
 Main=
 Selected=www\EdisiteArticle\MenuAndBase.php
@@ -1180,5 +1181,8 @@ Caret=26,88
 TopLine=195
 Caret=67,207
 [www\EdisiteArticle\MenuAndBase.php]
-TopLine=149
-Caret=1,68
+TopLine=133
+Caret=54,121
+[var2.txt]
+TopLine=59
+Caret=61,97

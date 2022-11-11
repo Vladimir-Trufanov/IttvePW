@@ -65,7 +65,7 @@ function BaseOpen($filename,&$pdo)
    );
 }
 
-
+/*
 // Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
 function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
 { 
@@ -108,10 +108,10 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
       }
    }
 }
+*/
 
 
 
-/*
 // Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
 function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
 { 
@@ -143,15 +143,12 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
          ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli); 
          $lvl--; $nspace=$nspace-3; 
       }
-      // -----Перед </ul> ставим предыдущее </li>, если не было </ul>
-      if ($cLast=='+li') 
-      {
-         echo($cli); $cLast='-li';
-         echo(cLast($cLast).spaces($nspace)."</ul>\n");  $cLast='-ul';
-      }
+      // -----Перед </ul> ставим предыдущее </li>
+      echo($cli); $cLast='-li';
+      echo(cLast($cLast).spaces($nspace)."</ul>\n");  $cLast='-ul';
    }
 }
-*/
+
 function spaces($nspace)
 {
    $i=1; $c='';
