@@ -305,3 +305,5 @@ Stack trace:
 [10-Nov-2022 17:47:17 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'MakeItBase.php' (include_path='.;C:\php\pear') in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 81
 [10-Nov-2022 21:43:28 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 102
 [11-Nov-2022 20:07:21 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 90
+[11-Nov-2022 22:38:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 94
+[11-Nov-2022 23:57:25 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 103

@@ -401,7 +401,7 @@ IttvePW
 			MenuAccord\lSide.php
 			MenuAccord\MenuAccord.css
 			MenuAccord\MenuAccord.php
-		-SmartMenus
+		+SmartMenus
 			-addons
 				-bootstrap
 					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.css
@@ -481,7 +481,7 @@ IttvePW
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
 					www\EdisiteArticle\_Current\С заботой и к мамам.jpg
-				-_Edit
+				+_Edit
 					www\EdisiteArticle\_Edit\EdisiteArticle.css
 					www\EdisiteArticle\_Edit\EdisiteArticle.php
 					www\EdisiteArticle\_Edit\GalleryNews.php
@@ -1149,40 +1149,36 @@ IttvePW
 3=www\iniMem.php
 4=www\UpSite.php
 5=www\EdisiteArticle\MakeItBase.php
-6=www\EdisiteArticle\_Edit\EdisiteArticle.php
-7=www\ittvepw.php
-8=www\EdisiteArticle\MenuAndBase.php
-9=var2.txt
+6=www\ittvepw.php
+7=www\EdisiteArticle\MenuAndBase.php
+8=www\EdisiteArticle\_Edit\EdisiteArticle.php
 [Selected Project Files]
 Main=
-Selected=www\EdisiteArticle\MenuAndBase.php
+Selected=www\EdisiteArticle\_Edit\EdisiteArticle.php
 [www\index.php]
-TopLine=9
+TopLine=6
 Caret=1,18
 [www\Main.php]
-TopLine=34
+TopLine=76
 Caret=30,34
 [www\iniMenu.php]
-TopLine=79
-Caret=1,117
+TopLine=85
+Caret=1,116
 [www\iniMem.php]
 TopLine=20
 Caret=1,58
 [www\UpSite.php]
-TopLine=105
-Caret=16,142
+TopLine=88
+Caret=23,96
 [www\EdisiteArticle\MakeItBase.php]
 TopLine=137
-Caret=87,137
-[www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=83
-Caret=26,88
+Caret=59,137
 [www\ittvepw.php]
-TopLine=195
-Caret=67,207
+TopLine=125
+Caret=35,207
 [www\EdisiteArticle\MenuAndBase.php]
-TopLine=133
-Caret=54,121
-[var2.txt]
-TopLine=59
-Caret=61,97
+TopLine=144
+Caret=68,179
+[www\EdisiteArticle\_Edit\EdisiteArticle.php]
+TopLine=91
+Caret=10,100

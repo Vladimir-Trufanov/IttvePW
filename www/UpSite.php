@@ -93,7 +93,7 @@ else
    echo "
       <link href='sm-mint/sm-core-css.css' rel='stylesheet' type='text/css' />
       <link href='sm-mint/sm-mint.css' rel='stylesheet' type='text/css' />
-      <script src='/Js/jquery.smartmenus.js' type='text/javascript'></script>
+      <script src='/JS/jquery.smartmenus.js' type='text/javascript'></script>
       <script type='text/javascript'> $(function() 
       {
 		   $('#main-menu').smartmenus({

@@ -111,7 +111,7 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
 */
 
 
-
+/*
 // Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
 function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
 { 
@@ -146,6 +146,42 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
       // -----Перед </ul> ставим предыдущее </li>
       echo($cli); $cLast='-li';
       echo(cLast($cLast).spaces($nspace)."</ul>\n");  $cLast='-ul';
+   }
+}
+*/
+
+// Построить ***10*** меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$FirstUl) 
+{ 
+   $nLine++;
+   $lvl++; $nspace=$nspace+3;
+   $cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY uid";
+   $stmt = $pdo->query($cSQL);
+   $table = $stmt->fetchAll();
+
+   if (count($table)>0) 
+   {
+      // Выводим <ul>. Перед ним </li> не выводим.
+      //echo("<ul>".cUidPid($ParentID,$PidIn)."\n"); $cLast='+ul';
+      echo('<ul'.$FirstUl.'>'."\n"); $cLast='+ul';
+      // 
+      foreach ($table as $row)
+      {
+         $Uid = $row["uid"]; $Pid = $row["pid"];
+         
+         // Перед <li> выводим предыдущее </li>, если не было <ul>.
+         if ($cLast<>'+ul') {echo($cli); $cLast='-li';}
+         //  
+         echo("<li>\n"); $cLast='+li';
+         echo("<a href=\""."?id=".$Uid."\">".$row["NameArt"]."</a>"."\n");
+         // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
+         $cli="</li>"."\n";
+         ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli,''); 
+         $lvl--; $nspace=$nspace-3; 
+      }
+      // -----Перед </ul> ставим предыдущее </li>
+      echo($cli); $cLast='-li';
+      echo("</ul>\n");  $cLast='-ul';
    }
 }
 
