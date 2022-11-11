@@ -481,16 +481,17 @@ IttvePW
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
 					www\EdisiteArticle\_Current\С заботой и к мамам.jpg
-				+_Edit
+				-_Edit
 					www\EdisiteArticle\_Edit\EdisiteArticle.css
 					www\EdisiteArticle\_Edit\EdisiteArticle.php
 					www\EdisiteArticle\_Edit\GalleryNews.php
 					www\EdisiteArticle\_Edit\ImgTemplate.jpg
 					www\EdisiteArticle\_Edit\Особенности устройства винтиков в моей голове.html
-				www\EdisiteArticle\MenuAndBase.php
+				www\EdisiteArticle\CreateMenuFromBase.php
 				www\EdisiteArticle\itpw002005-pogoda-20220403.php
 				www\EdisiteArticle\itpw006007-s-chego-vse-nachalos-20210501.php
 				www\EdisiteArticle\MakeItBase.php
+				www\EdisiteArticle\MenuAndBase.php
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -1139,6 +1140,8 @@ IttvePW
 		IttvePW.ppr
 		IttvePW.xls
 		README.md
+		var1.txt
+		var2.txt
 [Open project files]
 0=www\index.php
 1=www\Main.php
@@ -1146,9 +1149,9 @@ IttvePW
 3=www\iniMem.php
 4=www\UpSite.php
 5=www\EdisiteArticle\MakeItBase.php
-6=www\EdisiteArticle\MenuAndBase.php
-7=www\EdisiteArticle\_Edit\EdisiteArticle.php
-8=www\ittvepw.php
+6=www\EdisiteArticle\_Edit\EdisiteArticle.php
+7=www\ittvepw.php
+8=www\EdisiteArticle\MenuAndBase.php
 [Selected Project Files]
 Main=
 Selected=www\EdisiteArticle\MenuAndBase.php
@@ -1156,26 +1159,26 @@ Selected=www\EdisiteArticle\MenuAndBase.php
 TopLine=9
 Caret=1,18
 [www\Main.php]
-TopLine=97
+TopLine=34
 Caret=30,34
 [www\iniMenu.php]
-TopLine=166
+TopLine=79
 Caret=1,117
 [www\iniMem.php]
-TopLine=16
+TopLine=20
 Caret=1,58
 [www\UpSite.php]
 TopLine=105
 Caret=16,142
 [www\EdisiteArticle\MakeItBase.php]
-TopLine=101
-Caret=16,134
-[www\EdisiteArticle\MenuAndBase.php]
-TopLine=81
-Caret=69,88
+TopLine=137
+Caret=87,137
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=75
-Caret=36,101
+TopLine=83
+Caret=26,88
 [www\ittvepw.php]
-TopLine=320
-Caret=1,320
+TopLine=195
+Caret=67,207
+[www\EdisiteArticle\MenuAndBase.php]
+TopLine=149
+Caret=1,68

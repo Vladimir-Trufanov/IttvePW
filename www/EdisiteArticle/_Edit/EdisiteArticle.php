@@ -95,10 +95,12 @@ echo '3------------------------------------------------<br>';
 //$table=CreateMenuFromBase($basename);
 //echo 'NumRowsTable($table)='.NumRowsTable($table).'<br>';
 
+echo "\n"; 
 // Подключаемся к базе данных
 BaseOpen($basename,$pdo);
 $lvl=1;  $nspace=0; $cLast='+++';
-ShowTree($pdo,1,$lvl,$nspace,$cLast); 
+$nLine=0; $cli="";
+ShowTree($pdo,1,1,$lvl,$nspace,$cLast,$nLine,$cli); 
 echo '4------------------------------------------------<br>'; 
 
 

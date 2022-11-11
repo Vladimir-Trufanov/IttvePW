@@ -1,6 +1,6 @@
 <?php
 
-// ������� ���������� � ����� ������
+// Открыть соединение с базой данных
 function dbopen()
 {
    $hostName = "";
@@ -9,18 +9,18 @@ function dbopen()
    $databaseName = "tree";
    if (!($link=mysql_connect($hostName,$userName,$password))) 
    {
-      printf("������ ��� ���������� � MySQL !\n");
+      printf("Ошибка при соединении с MySQL !\n");
       exit();
    }
    if (!mysql_select_db($databaseName, $link)) 
    {
-      printf("������ ���� ������ !");
+      printf("Ошибка базы данных !");
       exit();
    } 
 }
 
 /*
-// ��������� ���� (����������)
+// Построить меню (рекурсивно)
 function ShowTree($ParentID, $lvl) 
 { 
    global $link; 
@@ -49,14 +49,14 @@ function ShowTree($ParentID, $lvl)
 //ShowTree(0, 0); 
 //mysql_close($link); 
 
-// ������� ���������� � ����� ������
+// Открыть соединение с базой данных
 function BaseOpen($filename,&$pdo)
 {
-   // ��������� ������ PDO � ���� ���� ������
+   // Создается объект PDO и файл базы данных
    $pathBase='sqlite:'.$filename; 
    $username='tve';
    $password='23ety17';     
-   // ���������� PDO � ����
+   // Подключаем PDO к базе
    $pdo = new PDO(
       $pathBase, 
       $username,
@@ -65,10 +65,59 @@ function BaseOpen($filename,&$pdo)
    );
 }
 
-// ��������� ���� (����������)
-function ShowTree($pdo,$ParentID,&$lvl,&$nspace,&$cLast) 
+
+// Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
 { 
-   $lvl++; 
+   $nLine++;
+   $lvl++; $nspace=$nspace+3;
+
+   $cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY uid";
+   $stmt = $pdo->query($cSQL);
+   $table = $stmt->fetchAll();
+
+   if (count($table)>0) 
+   {
+      // Выводим <ul>. Перед ним </li> не выводим.
+      if ($ParentID<>$PidIn)
+      { 
+         echo("<ul>"."\n"); $cLast='+ul';
+      }
+      // 
+      foreach ($table as $row)
+      {
+         $Uid = $row["uid"]; $Pid = $row["pid"];
+         // Перед <li> выводим предыдущее </li>, если не было <ul>.
+         if ($cLast<>'+ul') {echo($cli); $cLast='-li';}
+         //  
+         echo("<li>\n"); $cLast='+li';
+         echo("<a href=\""."?id=".$Uid."\">".$row["NameArt"]."</a>"."\n");
+         // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
+         $cli="</li>"."\n";
+         ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli); 
+         $lvl--; $nspace=$nspace-3; 
+      }
+      // -----Перед </ul> ставим предыдущее </li>, если не было </ul>
+      if ($cLast=='+li') 
+      {
+         echo($cli); $cLast='-li';
+         if ($ParentID<>$PidIn)
+         { 
+            echo("</ul>"."\n");  $cLast='-ul';
+         }
+      }
+   }
+}
+
+
+
+/*
+// Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
+{ 
+   $nLine++;
+   //echo(cLast($cLast).spaces($nspace)."</li>".cUidPid($ParentID,$PidIn)."\n"); $cLast='-li';
+   $lvl++; $nspace=$nspace+3;
 
    //$cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY NameArt";
    $cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY uid";
@@ -77,23 +126,32 @@ function ShowTree($pdo,$ParentID,&$lvl,&$nspace,&$cLast)
 
    if (count($table)>0) 
    {
-      $nspace=$nspace+3; echo(cLast($cLast).spaces($nspace)."<ul> \n"); $cLast='+ul';
+      // Выводим <ul>. Перед ним </li> не выводим.
+      echo(cLast($cLast).spaces($nspace)."<ul>".cUidPid($ParentID,$PidIn)."\n"); $cLast='+ul';
+      // 
       foreach ($table as $row)
       {
-         $ID1 = $row["uid"];
+         $Uid = $row["uid"]; $Pid = $row["pid"];
+         
+         // Перед <li> выводим предыдущее </li>, если не было <ul>.
+         if ($cLast<>'+ul') {echo($cli); $cLast='-li';}
+         //  
          echo(cLast($cLast).spaces($nspace)."<li>\n"); $cLast='+li';
-         echo(cLast($cLast).spaces($nspace)."<a href=\""."?id=".$ID1."\">".$row["NameArt"].' ='.$nspace.'-'.$ID1.'-'.$row["pid"]."</a>"."  \n");
-         if ($cLast=='+li')
-         {
-            echo(cLast($cLast).spaces($nspace)."</li>\n"); $cLast='-li';
-         } 
-         ShowTree($pdo,$ID1,$lvl,$nspace,$cLast); 
-         $lvl--;
+         echo(cLast($cLast).spaces($nspace)."<a href=\""."?id=".$Uid."\">".$row["NameArt"].' ='.$nspace.'-'.$Uid.'-'.$Pid.' $nLine='.$nLine."</a>"."  \n");
+         // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
+         $cli=cLast($cLast).spaces($nspace)."</li>".cUidPid($ParentID,$PidIn)."\n";
+         ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli); 
+         $lvl--; $nspace=$nspace-3; 
       }
-      $nspace=$nspace-3; echo(cLast($cLast).spaces($nspace)."</ul>\n");  $cLast='-ul';
+      // -----Перед </ul> ставим предыдущее </li>, если не было </ul>
+      if ($cLast=='+li') 
+      {
+         echo($cli); $cLast='-li';
+         echo(cLast($cLast).spaces($nspace)."</ul>\n");  $cLast='-ul';
+      }
    }
 }
-
+*/
 function spaces($nspace)
 {
    $i=1; $c='';
@@ -111,6 +169,12 @@ function cLast($cLast)
    return $c;
 }
 
+function cUidPid($Uid,$Pid)
+{
+   $c='<!-- '.$Uid.'='.$Pid.' -->';
+   return $c;
+}
+
 function NumRowsTable($table)
 {
    $NumRows=0;
@@ -120,9 +184,9 @@ function NumRowsTable($table)
 
 function CreateMenuFromBase($filename)
 {
-   // ������������ � ���� ������
+   // Подключаемся к базе данных
    BaseOpen($filename,$pdo);
-   // �������� ������ ������� ��� ���� �� ���� ������
+   // Выбираем строку таблицы для меню из базы данных
    //$stmt = $pdo->query("SELECT uid,NameArt,pid FROM stockpw");
    $stmt = $pdo->query("SELECT uid,NameArt,pid FROM stockpw WHERE pid='1' ORDER BY NameArt");
    //"SELECT id,title,pid FROM catalogue WHERE pid=".$ParentID." ORDER BY title"
