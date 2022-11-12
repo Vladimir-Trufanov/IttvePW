@@ -308,3 +308,12 @@ Stack trace:
 [11-Nov-2022 22:38:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 94
 [11-Nov-2022 23:57:25 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 103
 [12-Nov-2022 08:17:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 257
+[12-Nov-2022 13:20:14 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '*', expecting end of file in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 256
+[12-Nov-2022 18:00:54 Asia/Kuwait] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php:110
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php(161): ShowTree16(NULL, 1, 1, '+++', 0, '', '')
+#1 C:\IttvePW\www\UpSite.php(122): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(90): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 110

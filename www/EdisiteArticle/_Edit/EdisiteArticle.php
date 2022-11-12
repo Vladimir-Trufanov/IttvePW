@@ -85,36 +85,80 @@ echo '<div id="EditDebug">';
 // При отладке воссоздаем базу данных
 // require_once 'EdisiteArticle/MakeItBase.php';
 
+// 1 образец кода
 /*
-echo '1------------------------------------------------<br>'; 
-aViewMenu(MakeTableOfMenu($basename));
-echo '2------------------------------------------------<br>'; 
+echo "\n"; 
+echo '<ul id="main-menu" class="sm sm-mint">';
+echo $Menu;
+echo '</ul>';
+echo "\n"; 
 */
 
-//echo '3------------------------------------------------<br>'; 
+/*
+echo '3------------------------------------------------<br>'; 
+aViewMenu(MakeTableOfMenu($basename));
+echo '4------------------------------------------------<br>'; 
+*/
+
+//echo '5------------------------------------------------<br>'; 
 //$table=CreateMenuFromBase($basename);
 //echo 'NumRowsTable($table)='.NumRowsTable($table).'<br>';
-//echo '4------------------------------------------------<br>'; 
+//echo '6------------------------------------------------<br>'; 
 
+// 2 образец кода
 ?> 
+<!--
+<ul id="main-menu" class="sm sm-mint">
+   <li><a href="/">ММС Лада-Нива</a>
+      <ul>
+         <li><a href="?Com=s-chego-vse-nachalos">С чего все началось</a></li>     
+         <li><a href="?Com=a-chto-vnutri">А что внутри?</a></li>
+         <li><a href="?Com=ehksperimenty-so-strokami">Эксперименты со строками</a></li>
+      </ul>
+   </li>
+   <li><a href="/">Стиль</a>
+      <ul>
+         <li><a href="?Com=ehlementy-stilya-programmirovaniya">Элементы стиля программирования</a></li>
+         <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>
+      </ul>
+   </li>
+   <li><a href="/">Моделирование</a></li>
+   <li><a href="/">Учебники</a></li>
+   <li><a href="/">Сайт</a>
+      <ul>
+         <li><a href="?Com=avtorizovatsya">Авторизоваться</a></li>
+         <li><a href="?Com=zaregistrirovatsya">Зарегистрироваться</a></li>
+         <li><a href="?Com=o-sajte">О сайте</a></li>
+         <li><a href="?Com=redaktirovat-material">Редактировать материал</a></li>
+         <li><a href="?Com=izmenit-nastrojki">Изменить настройки</a></li>
+         <li><a href="?Com=otklyuchitsya">Отключиться</a></li>
+      </ul>
+   </li>
+</ul>
+-->
 <?php
+
 
 // Подключаемся к базе данных
 BaseOpen($basename,$pdo);
-// 9 версия
-$lvl=1;  $nspace=0; $cLast='+++';
-$nLine=0; $cli="";
-//echo "ShowTree 9\n"; 
-//ShowTree9($pdo,1,1,$lvl,$nspace,$cLast,$nLine,$cli,' id="main-menu" class="sm sm-mint"');
 
-// 11 версия
-$lvl=1;  $nspace=0; $cLast='+++';
+/*
+// 15 версия
+$lvl=0; $cLast='+++';
 $nLine=0; $cli="";
 $FirstUl=' id="main-menu" class="sm sm-mint"';
 //$FirstUl='';
-echo "\nShowTree 11'\n"; 
-ShowTree11($pdo,1,1,$lvl,$nspace,$cLast,$nLine,$cli,$FirstUl);
+echo "\nShowTree 15\n"; 
+ShowTree15($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
+*/
 
+// 16 версия
+$lvl=0; $cLast='+++';
+$nLine=0; $cli="";
+$FirstUl=' id="main-menu" class="sm sm-mint"';
+//$FirstUl='';
+echo "\nShowTree 16'\n"; 
+ShowTree16($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла
