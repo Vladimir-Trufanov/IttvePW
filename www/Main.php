@@ -30,7 +30,9 @@ require_once $TPhpTools."/TPhpTools/TBaseMaker/BaseMakerClass.php";
 require_once "Common.php";     // Всегда 1-ый корневой модуль в списке
 require_once "iniMem.php";     // Всегда 2-ой корневой модуль в списке
 require_once "iniMenu.php";   
-require_once "ittvepw.php";    
+require_once "ittvepw.php"; 
+
+require_once 'EdisiteArticle/MakeItBase.php';
 require_once "EdisiteArticle/MenuAndBase.php";    
 // require_once "DebugNews.php";
 

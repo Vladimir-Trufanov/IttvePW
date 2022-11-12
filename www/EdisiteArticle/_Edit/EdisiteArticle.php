@@ -83,7 +83,7 @@ echo '<div id="EditDebug">';
 // echo  prown\getTranslit('Отключиться').'<br>';
 
 // При отладке воссоздаем базу данных
-// require_once 'EdisiteArticle/MakeItBase.php';
+MakeBase();
 
 // 1 образец кода
 /*
