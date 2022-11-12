@@ -113,7 +113,7 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
 
 /*
 // Построить меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
-function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
+function ShowTree8($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli) 
 { 
    $nLine++;
    //echo(cLast($cLast).spaces($nspace)."</li>".cUidPid($ParentID,$PidIn)."\n"); $cLast='-li';
@@ -140,7 +140,7 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
          echo(cLast($cLast).spaces($nspace)."<a href=\""."?id=".$Uid."\">".$row["NameArt"].' ='.$nspace.'-'.$Uid.'-'.$Pid.' $nLine='.$nLine."</a>"."  \n");
          // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
          $cli=cLast($cLast).spaces($nspace)."</li>".cUidPid($ParentID,$PidIn)."\n";
-         ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli); 
+         ShowTree8($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli); 
          $lvl--; $nspace=$nspace-3; 
       }
       // -----Перед </ul> ставим предыдущее </li>
@@ -150,8 +150,8 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli)
 }
 */
 
-// Построить ***10*** меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
-function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$FirstUl) 
+// Построить ***9*** меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree9($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$FirstUl) 
 { 
    $nLine++;
    $lvl++; $nspace=$nspace+3;
@@ -176,7 +176,7 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$Fi
          echo("<a href=\""."?id=".$Uid."\">".$row["NameArt"]."</a>"."\n");
          // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
          $cli="</li>"."\n";
-         ShowTree($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli,''); 
+         ShowTree9($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli,''); 
          $lvl--; $nspace=$nspace-3; 
       }
       // -----Перед </ul> ставим предыдущее </li>
@@ -184,7 +184,84 @@ function ShowTree($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$Fi
       echo("</ul>\n");  $cLast='-ul';
    }
 }
+// Построить ***10*** меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree10($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$FirstUl) 
+{ 
+   $nLine++;
+   $lvl++; $nspace=$nspace+3;
+   $cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY uid";
+   $stmt = $pdo->query($cSQL);
+   $table = $stmt->fetchAll();
 
+   if (count($table)>0) 
+   {
+      // Выводим <ul>. Перед ним </li> не выводим.
+      echo(SpacesOnLevel($lvl).'<ul'.$FirstUl.'>'."\n"); $cLast='+ul';
+      // 
+      foreach ($table as $row)
+      {
+         $Uid = $row["uid"]; $Pid = $row["pid"];
+         
+         // Перед <li> выводим предыдущее </li>, если не было <ul>.
+         if ($cLast<>'+ul') {echo($cli); $cLast='-li';}
+         //  
+         echo(SpacesOnLevel($lvl)."<li>\n"); $cLast='+li';
+         echo(SpacesOnLevel($lvl)."<a href=\""."?id=".$Uid."\">".$row["NameArt"]."</a>"."\n");
+         // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
+         $cli=SpacesOnLevel($lvl)."</li>"."\n";
+         ShowTree10($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli,''); 
+         $lvl--; $nspace=$nspace-3; 
+      }
+      // -----Перед </ul> ставим предыдущее </li>
+      echo($cli); $cLast='-li';
+      echo(SpacesOnLevel($lvl)."</ul>\n");  $cLast='-ul';
+   }
+}
+// Построить ***11*** меню (рекурсивно) В ДРУГОЙ РЕАЛИЗАЦИИ РАБОТАТЬ С МАССИВОМ
+function ShowTree11($pdo,$ParentID,$PidIn,&$lvl,&$nspace,&$cLast,&$nLine,&$cli,$FirstUl) 
+{ 
+   $nLine++;
+   $lvl++; $nspace=$nspace+3;
+   $cSQL="SELECT uid,NameArt,pid FROM stockpw WHERE pid=".$ParentID." ORDER BY uid";
+   $stmt = $pdo->query($cSQL);
+   $table = $stmt->fetchAll();
+
+   if (count($table)>0) 
+   {
+      // Выводим <ul>. Перед ним </li> не выводим.
+      echo(SpacesOnLevel($lvl,$cLast).'<ul'.$FirstUl.'>'."\n"); $cLast='+ul';
+      // 
+      foreach ($table as $row)
+      {
+         $Uid = $row["uid"]; $Pid = $row["pid"];
+         
+         // Перед <li> выводим предыдущее </li>, если не было <ul>.
+         if ($cLast<>'+ul') {echo($cli); $cLast='-li';}
+         //  
+         echo(SpacesOnLevel($lvl,$cLast)."<li> "); $cLast='+li';
+         echo("<a href=\""."?id=".$Uid."\">".$row["NameArt"]."</a>"."\n"); 
+         // Вместо вывода </li> формируем строку для вывода по условию перед <ul> и <li>
+         $cli=SpacesOnLevel($lvl,$cLast)."</li>"."\n";
+         ShowTree11($pdo,$Uid,$Pid,$lvl,$nspace,$cLast,$nLine,$cli,''); 
+         $lvl--; $nspace=$nspace-3; 
+      }
+      // -----Перед </ul> ставим предыдущее </li>
+      echo($cli); $cLast='-li';
+      echo(SpacesOnLevel($lvl,$cLast)."</ul>\n");  $cLast='-ul';
+   }
+}
+
+function SpacesOnLevel($lvl,$cLast)
+{
+   $i=1; $c=''; $c=$c.'<!-- '.$cLast.' -->';
+   while ($i<=$lvl)
+   {
+      $c=$c.'...';
+      $i++;
+   }
+   $c='';
+   return $c;
+}
 function spaces($nspace)
 {
    $i=1; $c='';

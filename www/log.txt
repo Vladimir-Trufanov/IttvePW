@@ -307,3 +307,4 @@ Stack trace:
 [11-Nov-2022 20:07:21 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '}' in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 90
 [11-Nov-2022 22:38:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 94
 [11-Nov-2022 23:57:25 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 103
+[12-Nov-2022 08:17:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 257
