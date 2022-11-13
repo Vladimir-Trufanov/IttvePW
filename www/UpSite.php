@@ -46,7 +46,7 @@ echo '
 ';
 // Подключаем jQuery
 echo '
-   <script src="/Js/jquery-1.11.1.min.js"></script>
+   <script src="/JS/jquery-1.11.1.min.js"></script>
 ';
 if ($SiteDevice==Mobile) 
 {   
@@ -67,13 +67,13 @@ if ($SiteDevice==Mobile)
       <meta content='yes' name='apple-mobile-web-app-capable'/>
    ";
    echo '
-      <link rel="stylesheet" href="Js/jquery-ui.min.css" />
-      <link rel="stylesheet" href="Js/jquery.mobile-1.4.5.min.css" />
+      <link rel="stylesheet" href="JS/jquery-ui.min.css" />
+      <link rel="stylesheet" href="JS/jquery.mobile-1.4.5.min.css" />
       <link rel="stylesheet" type="text/css" href="Styles/Stylesm.css">
-      <script src="/Js/jquery-ui.min.js"></script>
-      <script src="/Js/jquery.mobile-1.4.5.min.js"></script>
-      <script src="/Js/TJsPrown.js"></script>
-      <script src="/Js/IttvePW.js"></script>
+      <script src="/JS/jquery-ui.min.js"></script>
+      <!-- <script src="/JS/jquery.mobile-1.4.5.min.js"></script> -->
+      <script src="/JS/TJsPrown.js"></script>
+      <script src="/JS/IttvePW.js"></script>
    ';
    // Подключаем скрипты по завершению загрузки страницы
    echo '<script>$(document).ready(function() 

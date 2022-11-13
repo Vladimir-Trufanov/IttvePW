@@ -82,6 +82,10 @@ echo '<div id="EditDebug">';
 // Формируем контрольный транслит
 // echo  prown\getTranslit('Отключиться').'<br>';
 
+// Готовим и выводим меню
+$Arti=new ttools\ArticlesMaker($basename,$username,$password);
+$Arti->BaseConnect();
+
 // При отладке воссоздаем базу данных
 MakeBase();
 

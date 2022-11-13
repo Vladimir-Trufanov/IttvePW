@@ -13,6 +13,7 @@ session_start();
 
 // Подключаем файлы библиотеки прикладных модулей:
 $TPhpPrown=$SiteHost.'/TPhpPrown';
+
 require_once $TPhpPrown."/TPhpPrown/getTranslit.php";
 require_once $TPhpPrown."/TPhpPrown/isCalcInBrowser.php";
 require_once $TPhpPrown."/TPhpPrown/MakeCookie.php";
@@ -22,9 +23,10 @@ require_once $TPhpPrown."/TPhpPrown/ViewGlobal.php";
 
 // Подключаем файлы библиотеки прикладных классов:
 $TPhpTools=$SiteHost.'/TPhpTools';
+
 //require_once $TPhpTools."/TPhpTools/TDownloadFromServer/DownloadFromServerClass.php";
 //require_once $TPhpTools."/TPhpTools/TUploadToServer/UploadToServerClass.php";
-require_once $TPhpTools."/TPhpTools/TBaseMaker/BaseMakerClass.php";
+require_once $TPhpTools."/TPhpTools/TArticlesMaker/ArticlesMakerClass.php";
 
 // Выполняем начальную инициализацию
 require_once "Common.php";     // Всегда 1-ый корневой модуль в списке
@@ -89,6 +91,7 @@ else
    else $NamePage='Site.php';
 }
 */
+
 require_once "UpSite.php";
 
 /**

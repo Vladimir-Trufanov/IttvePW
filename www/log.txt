@@ -317,3 +317,17 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(34): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 110
+[13-Nov-2022 08:08:26 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'pathPhpPrown/CommonPrown.php' (include_path='.;C:\php\pear') in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 53
+[13-Nov-2022 08:24:32 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'pathPhpPrown/CommonPrown.php' (include_path='.;C:\php\pear') in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 53
+[13-Nov-2022 18:37:32 Asia/Kuwait] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function ttools\ArticlesMaker::__construct(), 0 passed in C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php on line 86 and at least 1 expected in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php:82
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php(86): ttools\ArticlesMaker->__construct()
+#1 C:\IttvePW\www\UpSite.php(122): require_once('C:\\IttvePW\\www\\...')
+#2 C:\IttvePW\www\Main.php(95): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\index.php(33): require_once('C:\\IttvePW\\www\\...')
+#4 {main}
+  thrown in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 82
+[13-Nov-2022 22:17:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 51
+[13-Nov-2022 22:18:13 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 51
+[13-Nov-2022 22:19:17 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 51
+[13-Nov-2022 22:19:37 Asia/Kuwait] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 51

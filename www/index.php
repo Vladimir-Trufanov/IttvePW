@@ -18,12 +18,13 @@ $SiteAbove   = $_WORKSPACE[wsSiteAbove];    // Надсайтовый катал
 $SiteHost    = $_WORKSPACE[wsSiteHost];     // Каталог хостинга
 $SiteDevice  = $_WORKSPACE[wsSiteDevice];   // 'Computer' | 'Mobile' | 'Tablet'
 $UserAgent   = $_WORKSPACE[wsUserAgent];    // HTTP_USER_AGENT
-//echo '***'.$SiteRoot.'***'.'<br>';
-/*
-$TimeRequest = $_WORKSPACE[wsTimeRequest];  // Время запроса сайта
-$Ip          = $_WORKSPACE[wsRemoteAddr];   // IP-адрес запроса сайта
-$SiteName    = $_WORKSPACE[wsSiteName];     // Доменное имя сайта
-*/
+
+// Указываем место размещения библиотеки прикладных функций TPhpPrown
+define ("pathPhpPrown",$SiteHost.'/TPhpPrown/TPhpPrown');
+// Указываем место размещения библиотеки прикладных классов TPhpTools
+define ("pathPhpTools",$SiteHost.'/TPhpTools/TPhpTools');
+// Указываем тип базы данных (по сайту) для управления классом ArticlesMaker   
+define ("articleSite",'IttvePw'); 
 
 // Подключаем сайт сбора сообщений об ошибках/исключениях и формирования 
 // страницы с выводом сообщений, а также комментариев для PHP5-PHP7

@@ -148,7 +148,6 @@ function CreateTables($pdo)
 // ****************************************************************************
 function MakeBase()
 {
-   echo 'MakeBase<br>';
 /*
 // Проверяется существование и удаляется файл базы данных 
 $filename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
