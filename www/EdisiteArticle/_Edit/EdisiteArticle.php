@@ -84,67 +84,15 @@ echo '<div id="EditDebug">';
 
 // Готовим и выводим меню
 $Arti=new ttools\ArticlesMaker($basename,$username,$password);
-$Arti->BaseConnect();
+
+// Выводим тестовое меню
+//$Arti->ShowSampleMenu();
 
 // При отладке воссоздаем базу данных
-MakeBase();
-
-// 1 образец кода
-/*
-echo "\n"; 
-echo '<ul id="main-menu" class="sm sm-mint">';
-echo $Menu;
-echo '</ul>';
-echo "\n"; 
-*/
-
-/*
-echo '3------------------------------------------------<br>'; 
-aViewMenu(MakeTableOfMenu($basename));
-echo '4------------------------------------------------<br>'; 
-*/
-
-//echo '5------------------------------------------------<br>'; 
-//$table=CreateMenuFromBase($basename);
-//echo 'NumRowsTable($table)='.NumRowsTable($table).'<br>';
-//echo '6------------------------------------------------<br>'; 
-
-// 2 образец кода
-?> 
-<!--
-<ul id="main-menu" class="sm sm-mint">
-   <li><a href="/">ММС Лада-Нива</a>
-      <ul>
-         <li><a href="?Com=s-chego-vse-nachalos">С чего все началось</a></li>     
-         <li><a href="?Com=a-chto-vnutri">А что внутри?</a></li>
-         <li><a href="?Com=ehksperimenty-so-strokami">Эксперименты со строками</a></li>
-      </ul>
-   </li>
-   <li><a href="/">Стиль</a>
-      <ul>
-         <li><a href="?Com=ehlementy-stilya-programmirovaniya">Элементы стиля программирования</a></li>
-         <li><a href="?Com=pishite-programmy-prosto">Пишите программы просто</a></li>
-      </ul>
-   </li>
-   <li><a href="/">Моделирование</a></li>
-   <li><a href="/">Учебники</a></li>
-   <li><a href="/">Сайт</a>
-      <ul>
-         <li><a href="?Com=avtorizovatsya">Авторизоваться</a></li>
-         <li><a href="?Com=zaregistrirovatsya">Зарегистрироваться</a></li>
-         <li><a href="?Com=o-sajte">О сайте</a></li>
-         <li><a href="?Com=redaktirovat-material">Редактировать материал</a></li>
-         <li><a href="?Com=izmenit-nastrojki">Изменить настройки</a></li>
-         <li><a href="?Com=otklyuchitsya">Отключиться</a></li>
-      </ul>
-   </li>
-</ul>
--->
-<?php
-
+$Arti->BaseFirstCreate();
 
 // Подключаемся к базе данных
-BaseOpen($basename,$pdo);
+// BaseOpen($basename,$pdo);
 
 /*
 // 15 версия
@@ -156,6 +104,7 @@ echo "\nShowTree 15\n";
 ShowTree15($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
 */
 
+/*
 // 16 версия
 $lvl=0; $cLast='+++';
 $nLine=0; $cli="";
@@ -163,6 +112,7 @@ $FirstUl=' id="main-menu" class="sm sm-mint"';
 //$FirstUl='';
 echo "\nShowTree 16'\n"; 
 ShowTree16($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
+*/
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла

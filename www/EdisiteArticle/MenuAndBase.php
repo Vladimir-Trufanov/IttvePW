@@ -1,19 +1,4 @@
 <?php
-// Открыть соединение с базой данных
-function BaseOpen($filename,&$pdo)
-{
-   // Создается объект PDO и файл базы данных
-   $pathBase='sqlite:'.$filename; 
-   $username='tve';
-   $password='23ety17';     
-   // Подключаем PDO к базе
-   $pdo = new PDO(
-      $pathBase, 
-      $username,
-      $password,
-      array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
-   );
-}
 
 // Построить ***15*** меню 
 function ShowTree15($pdo,$ParentID,$PidIn,&$cLast,&$nLine,&$cli,$FirstUl,&$lvl=-1) 
@@ -123,6 +108,7 @@ function NumRowsTable($table)
    return $NumRows;
 }
 
+/*
 function CreateMenuFromBase($filename)
 {
    // Подключаемся к базе данных
@@ -135,3 +121,4 @@ function CreateMenuFromBase($filename)
    print_r($table);       
    return $table;
 }
+*/

@@ -401,7 +401,7 @@ IttvePW
 			MenuAccord\lSide.php
 			MenuAccord\MenuAccord.css
 			MenuAccord\MenuAccord.php
-		+SmartMenus
+		-SmartMenus
 			-addons
 				-bootstrap
 					SmartMenus\addons\bootstrap\jquery.smartmenus.bootstrap.css
@@ -476,7 +476,7 @@ IttvePW
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
 		+www
-			+EdisiteArticle
+			-EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
@@ -490,7 +490,6 @@ IttvePW
 				www\EdisiteArticle\CreateMenuFromBase.php
 				www\EdisiteArticle\itpw002005-pogoda-20220403.php
 				www\EdisiteArticle\itpw006007-s-chego-vse-nachalos-20210501.php
-				www\EdisiteArticle\MakeItBase.php
 				www\EdisiteArticle\MenuAndBase.php
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
@@ -1148,47 +1147,44 @@ IttvePW
 2=www\iniMenu.php
 3=www\iniMem.php
 4=www\UpSite.php
-5=www\EdisiteArticle\MakeItBase.php
-6=www\ittvepw.php
-7=www\EdisiteArticle\MenuAndBase.php
-8=www\EdisiteArticle\_Edit\EdisiteArticle.php
-9=..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php
-10=..\TPhpTools\TPhpTools\iniToolsConst.php
-11=..\TPhpTools\TPhpTools\iniToolsMessage.php
-12=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
+5=www\ittvepw.php
+6=www\EdisiteArticle\MenuAndBase.php
+7=www\EdisiteArticle\_Edit\EdisiteArticle.php
+8=..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php
+9=..\TPhpTools\TPhpTools\iniToolsConst.php
+10=..\TPhpTools\TPhpTools\iniToolsMessage.php
+11=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
+12=..\TPhpTools\TPhpTools\TArticlesMaker\CommonArticlesMaker.php
 [Selected Project Files]
 Main=
-Selected=..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php
+Selected=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
 [www\index.php]
 TopLine=7
 Caret=21,27
 [www\Main.php]
-TopLine=69
-Caret=1,95
+TopLine=23
+Caret=1,37
 [www\iniMenu.php]
-TopLine=83
-Caret=28,122
+TopLine=91
+Caret=32,108
 [www\iniMem.php]
-TopLine=28
-Caret=1,68
+TopLine=35
+Caret=43,65
 [www\UpSite.php]
 TopLine=66
 Caret=38,71
-[www\EdisiteArticle\MakeItBase.php]
-TopLine=147
-Caret=1,161
 [www\ittvepw.php]
-TopLine=168
-Caret=35,207
+TopLine=1
+Caret=75,10
 [www\EdisiteArticle\MenuAndBase.php]
-TopLine=97
-Caret=1,138
+TopLine=1
+Caret=1,2
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=66
-Caret=1,89
+TopLine=88
+Caret=12,95
 [..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php]
-TopLine=81
-Caret=31,89
+TopLine=87
+Caret=7,79
 [..\TPhpTools\TPhpTools\iniToolsConst.php]
 TopLine=20
 Caret=1,1
@@ -1196,5 +1192,8 @@ Caret=1,1
 TopLine=1
 Caret=1,15
 [..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php]
+TopLine=177
+Caret=1,212
+[..\TPhpTools\TPhpTools\TArticlesMaker\CommonArticlesMaker.php]
 TopLine=1
-Caret=1,14
+Caret=1,32

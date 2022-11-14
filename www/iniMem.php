@@ -61,8 +61,8 @@ $PrefSite="itpw";                    // префикс изображений и
 $Translit="";                        // транслит текущей статьи
 $TranslitCharter="";                 // транслит раздела
 
-// Определяем данные для работы с базой данных материалов
-$basename=$_SERVER['DOCUMENT_ROOT'].'/itpw.db3';
+// Определяем данные для работы с базой данных материалов 
+$basename=$_SERVER['DOCUMENT_ROOT'].'/itpw'; // имя базы без расширения 'db3'
 $username='tve';
 $password='23ety17'; 
 
