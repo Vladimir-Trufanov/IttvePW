@@ -93,31 +93,13 @@ $Arti=new ttools\ArticlesMaker($basename,$username,$password);
 // Строим html-код меню по базе данных материалов сайта 
 // (предварительно определяем параметры первого тега <ul> для
 // связи со SmartMenu) 
+/*
 $FirstUl=' id="main-menu" class="sm sm-mint"';
-echo "\nMakeMenu16'\n"; 
+echo "\nMakeMenu16\n"; 
 $Arti->MakeMenu($FirstUl);
-
-
-/*
-//$pdo=$Arti->BaseConnect();
-// 15 версия
-$lvl=0; $cLast='+++';
-$nLine=0; $cli="";
-$FirstUl=' id="main-menu" class="sm sm-mint"';
-//$FirstUl='';
-echo "\nShowTree 15\n"; 
-ShowTree15($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
 */
 
-/*
-// 16 версия
-$lvl=0; $cLast='+++';
-$nLine=0; $cli="";
-$FirstUl=' id="main-menu" class="sm sm-mint"';
-//$FirstUl='';
-echo "\nShowTree 16'\n"; 
-ShowTree16($pdo,1,1,$cLast,$nLine,$cli,$FirstUl);
-*/
+Probaf($Arti);
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла

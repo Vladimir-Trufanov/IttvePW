@@ -34,7 +34,7 @@ require_once "iniMem.php";     // Всегда 2-ой корневой моду�
 require_once "iniMenu.php";   
 require_once "ittvepw.php"; 
 
-require_once "EdisiteArticle/MenuAndBase.php";    
+require_once "EdisiteArticle/Proba.php";    
 // require_once "DebugNews.php";
 
 // Изменяем счетчик запросов сайта из браузера и, таким образом,       

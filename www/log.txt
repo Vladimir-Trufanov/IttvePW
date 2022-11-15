@@ -16,3 +16,12 @@ Stack trace:
 #3 C:\IttvePW\www\index.php(35): require_once('C:\\IttvePW\\www\\...')
 #4 {main}
   thrown in C:\IttvePW\www\EdisiteArticle\MenuAndBase.php on line 8
+[15-Nov-2022 16:33:31 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 near "ORDER": syntax error in C:\IttvePW\www\EdisiteArticle\Proba.php:21
+Stack trace:
+#0 C:\IttvePW\www\EdisiteArticle\Proba.php(21): PDO->query('SELECT uid,pid,...')
+#1 C:\IttvePW\www\EdisiteArticle\_Edit\EdisiteArticle.php(102): Probaf(Object(ttools\ArticlesMaker))
+#2 C:\IttvePW\www\UpSite.php(122): require_once('C:\\IttvePW\\www\\...')
+#3 C:\IttvePW\www\Main.php(94): require_once('C:\\IttvePW\\www\\...')
+#4 C:\IttvePW\www\index.php(35): require_once('C:\\IttvePW\\www\\...')
+#5 {main}
+  thrown in C:\IttvePW\www\EdisiteArticle\Proba.php on line 21
