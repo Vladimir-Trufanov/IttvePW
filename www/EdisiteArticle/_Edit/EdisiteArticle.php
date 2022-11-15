@@ -87,14 +87,19 @@ $Arti=new ttools\ArticlesMaker($basename,$username,$password);
 
 // Выводим тестовое меню
 //$Arti->ShowSampleMenu();
-
 // При отладке воссоздаем базу данных
-$Arti->BaseFirstCreate();
+//$Arti->BaseFirstCreate();
 
-// Подключаемся к базе данных
-// BaseOpen($basename,$pdo);
+// Строим html-код меню по базе данных материалов сайта 
+// (предварительно определяем параметры первого тега <ul> для
+// связи со SmartMenu) 
+$FirstUl=' id="main-menu" class="sm sm-mint"';
+echo "\nMakeMenu16'\n"; 
+$Arti->MakeMenu($FirstUl);
+
 
 /*
+//$pdo=$Arti->BaseConnect();
 // 15 версия
 $lvl=0; $cLast='+++';
 $nLine=0; $cli="";
