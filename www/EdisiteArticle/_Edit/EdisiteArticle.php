@@ -99,7 +99,18 @@ echo "\nMakeMenu16\n";
 $Arti->MakeMenu($FirstUl);
 */
 
-Probaf($Arti);
+//Probaf($Arti);
+echo '_MakeTblMenu<br>';
+$ListFields = array(
+   'uid'     => '..Пункт меню..',
+   'pid'     => '..Родитель..',
+   'NameArt' => '..Статья сайта..',
+   'IdCue'   => '..Тип статьи..',
+);
+$SignAsc='>..';
+$SignDesc='<..';
+
+$Arti->MakeTblMenu($ListFields,$SignAsc,$SignDesc);
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла

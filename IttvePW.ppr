@@ -1153,12 +1153,12 @@ IttvePW
 9=www\EdisiteArticle\Proba.php
 [Selected Project Files]
 Main=
-Selected=www\EdisiteArticle\Proba.php
+Selected=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
 [www\index.php]
 TopLine=9
 Caret=21,27
 [www\Main.php]
-TopLine=100
+TopLine=16
 Caret=35,37
 [www\iniMenu.php]
 TopLine=91
@@ -1173,14 +1173,14 @@ Caret=1,134
 TopLine=1
 Caret=75,10
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=129
-Caret=1,148
+TopLine=83
+Caret=50,113
 [..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php]
-TopLine=79
-Caret=5,90
+TopLine=81
+Caret=41,100
 [..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php]
-TopLine=51
-Caret=31,67
+TopLine=169
+Caret=1,195
 [www\EdisiteArticle\Proba.php]
-TopLine=23
-Caret=77,51
+TopLine=21
+Caret=74,51
