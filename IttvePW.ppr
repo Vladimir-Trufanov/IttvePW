@@ -17,7 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	+IttvePW
+	-IttvePW
 		-backlight
 			backlight\c99-styles.css
 			backlight\example.c
@@ -475,8 +475,8 @@ IttvePW
 			SmartMenus\jquery.smartmenus.min.js
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
-		+www
-			+EdisiteArticle
+		-www
+			-EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
@@ -489,7 +489,6 @@ IttvePW
 					www\EdisiteArticle\_Edit\Особенности устройства винтиков в моей голове.html
 				www\EdisiteArticle\itpw002005-pogoda-20220403.php
 				www\EdisiteArticle\itpw006007-s-chego-vse-nachalos-20210501.php
-				www\EdisiteArticle\Proba.php
 			-favicon260x260
 				www\favicon260x260\android-chrome-192x192.png
 				www\favicon260x260\android-chrome-256x256.png
@@ -1150,37 +1149,33 @@ IttvePW
 6=www\EdisiteArticle\_Edit\EdisiteArticle.php
 7=..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php
 8=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
-9=www\EdisiteArticle\Proba.php
 [Selected Project Files]
 Main=
-Selected=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
+Selected=www\Main.php
 [www\index.php]
 TopLine=9
 Caret=21,27
 [www\Main.php]
 TopLine=16
-Caret=35,37
+Caret=4,37
 [www\iniMenu.php]
-TopLine=91
+TopLine=69
 Caret=32,108
 [www\iniMem.php]
 TopLine=37
 Caret=43,65
 [www\UpSite.php]
-TopLine=104
-Caret=1,134
+TopLine=103
+Caret=16,142
 [www\ittvepw.php]
 TopLine=1
 Caret=75,10
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=83
-Caret=50,113
+TopLine=89
+Caret=1,102
 [..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php]
 TopLine=81
 Caret=41,100
 [..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php]
-TopLine=169
-Caret=1,195
-[www\EdisiteArticle\Proba.php]
-TopLine=21
-Caret=74,51
+TopLine=3
+Caret=14,9

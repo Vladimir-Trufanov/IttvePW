@@ -99,7 +99,6 @@ echo "\nMakeMenu16\n";
 $Arti->MakeMenu($FirstUl);
 */
 
-//Probaf($Arti);
 echo '_MakeTblMenu<br>';
 $ListFields = array(
    'uid'     => '..Пункт меню..',
