@@ -86,19 +86,17 @@ echo '<div id="EditDebug">';
 $Arti=new ttools\ArticlesMaker($basename,$username,$password);
 
 // Выводим тестовое меню
-//$Arti->ShowSampleMenu();
+$Arti->ShowSampleMenu();
 // При отладке воссоздаем базу данных
 //$Arti->BaseFirstCreate();
 
 // Строим html-код меню по базе данных материалов сайта 
 // (предварительно определяем параметры первого тега <ul> для
 // связи со SmartMenu) 
-/*
-$FirstUl=' id="main-menu" class="sm sm-mint"';
-echo "\nMakeMenu16\n"; 
-$Arti->MakeMenu($FirstUl);
-*/
 
+$Arti->MakeMenu();
+
+/*
 echo '_MakeTblMenu<br>';
 $ListFields = array(
    'uid'     => '..Пункт меню..',
@@ -110,6 +108,7 @@ $SignAsc='>..';
 $SignDesc='<..';
 
 $Arti->MakeTblMenu($ListFields,$SignAsc,$SignDesc);
+*/
 
 //prown\ViewGlobal(avgPOST);
 // Выводим сообщения по итогам загрузки файла

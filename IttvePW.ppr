@@ -17,7 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	-IttvePW
+	+IttvePW
 		-backlight
 			backlight\c99-styles.css
 			backlight\example.c
@@ -475,13 +475,13 @@ IttvePW
 			SmartMenus\jquery.smartmenus.min.js
 			SmartMenus\LICENSE-MIT
 			SmartMenus\README.md
-		-www
-			-EdisiteArticle
+		+www
+			+EdisiteArticle
 				-_Current
 					www\EdisiteArticle\_Current\Особенности устройства винтиков в моей голове.html
 					www\EdisiteArticle\_Current\Подъем настроения.jpg
 					www\EdisiteArticle\_Current\С заботой и к мамам.jpg
-				-_Edit
+				+_Edit
 					www\EdisiteArticle\_Edit\EdisiteArticle.css
 					www\EdisiteArticle\_Edit\EdisiteArticle.php
 					www\EdisiteArticle\_Edit\GalleryNews.php
@@ -1151,31 +1151,31 @@ IttvePW
 8=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
 [Selected Project Files]
 Main=
-Selected=www\Main.php
+Selected=..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php
 [www\index.php]
-TopLine=9
+TopLine=7
 Caret=21,27
 [www\Main.php]
-TopLine=16
+TopLine=37
 Caret=4,37
 [www\iniMenu.php]
 TopLine=69
 Caret=32,108
 [www\iniMem.php]
-TopLine=37
-Caret=43,65
+TopLine=5
+Caret=1,16
 [www\UpSite.php]
-TopLine=103
+TopLine=102
 Caret=16,142
 [www\ittvepw.php]
 TopLine=1
 Caret=75,10
 [www\EdisiteArticle\_Edit\EdisiteArticle.php]
-TopLine=89
-Caret=1,102
+TopLine=79
+Caret=1,89
 [..\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php]
-TopLine=81
-Caret=41,100
+TopLine=95
+Caret=64,111
 [..\TPhpTools\TPhpTools\TArticlesMaker\CommonIttvePw.php]
-TopLine=3
-Caret=14,9
+TopLine=259
+Caret=20,269
