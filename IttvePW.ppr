@@ -1,0 +1,326 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultDir=C:\IttvePW\www
+DefaultCP=65001
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+IttvePW
+	+www
+		+arduino-kid-ru
+			+2021-12-21 ESP32-CAM CameraWebServer
+				+Ex1-CameraWebServer2
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол загрузки скетча.txt
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол мониторинга программы.txt
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\app_httpd.cpp
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\camera_index.h
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\camera_pins.h
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Capture_2022-03-25.jpg
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Протокол загрузки скетча.txt
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\ссылка на установку.txt
+				-Ex2-Photo2
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex2-Photo2\Photo2.ino
+				-Ex3-Clear_EEPROM
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex3-Clear_EEPROM\Clear_EEPROM.ino
+				-old
+					-10_sec
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\10_sec\10_sec.ino
+					-CameraWebServer
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\app_httpd.cpp
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\camera_index.h
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\camera_pins.h
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\CameraWebServer.ino
+					-Clear_EEPROM
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\Clear_EEPROM\Clear_EEPROM.ino
+					-ESP32-CAM статья и скетчи
+						-CameraWebServer
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\app_httpd.cpp
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\camera_index.h
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\camera_pins.h
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\CameraWebServer.ino
+						-Clear_EEPROM
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Clear_EEPROM\Clear_EEPROM.ino
+						-Esp32 камера - примеры сохранения фото на SD карту
+							-10_sec
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\10_sec\10_sec.ino
+							-NTPClient
+								-examples
+									-Advanced
+										www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\examples\Advanced\Advanced.ino
+									-Basic
+										www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\examples\Basic\Basic.ino
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\CHANGELOG
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\keywords.txt
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\library.json
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\library.properties
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\NTPClient.cpp
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\NTPClient.h
+								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\README.md
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\Esp32 камера - примеры сохранения фото на SD карту.doc
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\esp32 камера примеры Фотографии сохранение на SD карту.mp4
+						-Photo
+							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Photo\Photo.ino
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32cam - плата с камерой ov2640.doc
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\ESP32-CAM-programming-connection.png
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\package_esp32_index.json
+					-Photo
+						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\Photo\Photo.ino
+				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\2021-12-21 esp 32 cam Плата ESP с камерой ov2640 Установка подключение.doc
+				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\esp 32 cam. Плата ESP с камерой ov2640 Установка ESP32, подключение.mp4
+		-CamTrapESP32
+			-CameraWebServer
+				www\CamTrapESP32\CameraWebServer\app_httpd.cpp
+				www\CamTrapESP32\CameraWebServer\camera_index.h
+				www\CamTrapESP32\CameraWebServer\camera_pins.h
+				www\CamTrapESP32\CameraWebServer\CameraWebServer.ino
+			-Фото ловушка на ESP32 CAM
+				-1-SH1106 OLED дисплей
+					-lib1106spi
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\lib1106spi\DefaultFonts.c
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\lib1106spi\spi1106.c
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\lib1106spi\spi1106.h
+					-OLED_SH1106
+						-examples
+							-oled_sh1106_128x64
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\OLED_SH1106\examples\oled_sh1106_128x64\oled_sh1106_128x64.ino
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\OLED_SH1106\OLED_SH1106.cpp
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\OLED_SH1106\OLED_SH1106.h
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\SH1106 OLED дисплей.doc
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\WEO012864L.pdf
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\1-SH1106 OLED дисплей\Вывод текста на OLED дисплей с контроллером SH1106.doc
+				-3-СВЕТОДИОД LED 1W 3V 300mA
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\3-СВЕТОДИОД LED 1W 3V 300mA\СВЕТОДИОД LED 1W 3V 300mA.doc
+				-4-IRL530NPBF - Транзистор
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\4-IRL530NPBF - Транзистор\IRL530NPBF - Транзистор.doc
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\4-IRL530NPBF - Транзистор\irl530npbf.pdf
+				-5-OV2640 модуль камеры 21 мм 66-120-160 градусов
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\5-OV2640 модуль камеры 21 мм 66-120-160 градусов\OV2640 модуль камеры 21 мм 66-120-160 градусов.doc
+				-ESP-Mail-Client-master
+					-examples
+						-IMAP
+							-Copy_Messages
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Copy_Messages\Copy_Messsages.ino
+							-Custom_Client
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Custom_Client\Custom_Client.ino
+							-Custom_Command
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Custom_Command\Custom_Command.ino
+							-Delete_Messages
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Delete_Messages\Delete_Messsages.ino
+							-Mailbox_Changes_Notification
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Mailbox_Changes_Notification\Mailbox_Changes_Notification.ino
+							-Read_Email_Access_Token
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Read_Email_Access_Token\Read_Email_Access_Token.ino
+							-Read_Single_Email
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Read_Single_Email\Read_Single_Email.ino
+							-Read_Single_Email_Loop
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Read_Single_Email_Loop\Read_Single_Email_Loop.ino
+							-Search_Emails
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Search_Emails\Search_Emails.ino
+							-Set_Flags
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\IMAP\Set_Flags\Set_Flags.ino
+						-SMTP
+							-Custom_Client
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Custom_Client\Custom_Client.ino
+							-Ethernet
+								-ESP32
+									-Send_Text
+										-modified_LAN8720_board_images
+											www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Ethernet\ESP32\Send_Text\modified_LAN8720_board_images\lan8720_modified_board.png
+											www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Ethernet\ESP32\Send_Text\modified_LAN8720_board_images\lan8720_modified_schematic.png
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Ethernet\ESP32\Send_Text\Send_Text.ino
+								-ESP8266
+									-Send_Text
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Ethernet\ESP8266\Send_Text\Send_Text.ino
+							-Reply_Text
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Reply_Text\Reply_Text.ino
+							-Send_Access_Token
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Access_Token\Send_Access_Token.ino
+							-Send_Attachment_Blob
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Attachment_Blob\blob_data.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Attachment_Blob\Send_Attachment_Blob.ino
+							-Send_Attachment_File
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Attachment_File\Send_Attachment_File.ino
+							-Send_Attachment_PSRAM
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Attachment_PSRAM\Send_Attachment_PSRAM.ino
+							-Send_Camera_Image
+								-ESP_Camera
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\ESP_Camera\ESP_Camera.ino
+								-OV2640
+									-cam
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\camera.c
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\camera.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\camera_common.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov264_drive.c
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov264_drive.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\OV2640.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\OV2640.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov2640_regs.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov7725.c
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov7725.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\ov7725_regs.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\sccb.c
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\sccb.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\sensor.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\twi.c
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\cam\twi.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Camera_Image\OV2640\OV2640.ino
+							-Send_Embedded_Message
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Embedded_Message\Send_Embedded_Message.ino
+							-Send_Enriched_Text
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Enriched_Text\Send_Enriched_Text.ino
+							-Send_Flash_Message_with_Inline_Image
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Flash_Message_with_Inline_Image\Send_Flash_Message_with_Inline_Image.ino
+							-Send_HTML
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_HTML\Send_HTML.ino
+							-Send_Parallel_Attachment
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Parallel_Attachment\data.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Parallel_Attachment\Send_Parallel_Attachment.ino
+							-Send_Reuse_Session
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Reuse_Session\Send_Reuse_Session.ino
+							-Send_RFC822_Attachment
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_RFC822_Attachment\image.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_RFC822_Attachment\Send_RFC822_Attachment.ino
+							-Send_Text
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Text\Send_Text.ino
+							-Send_Text_Flowed
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\examples\SMTP\Send_Text_Flowed\Send_Text_Flowed.ino
+					-firmwares
+						-samd21
+							-v1.4.8+21120
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\firmwares\samd21\v1.4.8+21120\nina-fw.bin
+						-SerialNINAPassthrough
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\firmwares\SerialNINAPassthrough\SerialNINAPassthrough.ino
+					-media
+						-images
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\ArduinoIDE.png
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\ESP32-PSRAM.png
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\ESP8266_VM.png
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\esp-mail-client.png
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\esp-mail-client.svg
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\esptool.png
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\media\images\SerialNINAPassthrough.png
+					-src
+						-extras
+							-ESPTimeHelper
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\ESPTimeHelper\ESPTimeHelper.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\ESPTimeHelper\ESPTimeHelper.h
+							-mb_print
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\mb_print\mb_print.c
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\mb_print\mb_print.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MB_FS.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MB_FS_Interfaces.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MB_List.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MB_MCU.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MB_String.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\MIMEInfo.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\RFC2047.cpp
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\RFC2047.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\SDHelper.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\extras\SDK_Version_Common.h
+						-wcs
+							-base
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\base\TCP_Client_Base.h
+							-custom
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\custom\Custom_TCP_Client.h
+							-esp32
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_SSL_Client.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_SSL_Client.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_TCP_Client.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_TCP_Client.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_WCS.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp32\ESP32_WCS.h
+							-esp8266
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp8266\ESP8266_TCP_Client.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp8266\ESP8266_TCP_Client.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp8266\ESP8266_WCS.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\esp8266\ESP8266_WCS.h
+							-samd
+								-lib
+									-utility
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\debug.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\nano_rp2040_support.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\server_drv.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\server_drv.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\spi_drv.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\spi_drv.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\wifi_drv.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\wifi_drv.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\wifi_spi.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\WiFiSocketBuffer.cpp
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\WiFiSocketBuffer.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\wl_definitions.h
+										www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\utility\wl_types.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFi.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFi.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiClient.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiClient.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiNINA.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiServer.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiServer.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiSSLClient.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiSSLClient.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiStorage.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiStorage.h
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiUdp.cpp
+									www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\lib\WiFiUdp.h
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\WiFiNINA_TCP_Client.cpp
+								www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\samd\WiFiNINA_TCP_Client.h
+							www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\wcs\ESP_TCP_Clients.h
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\ESP_Mail_Client.cpp
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\ESP_Mail_Client.h
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\ESP_Mail_Const.h
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\ESP_Mail_Error.h
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\ESP_Mail_FS.h
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\README.md
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\src\SDK_Version_Common.h
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\_config.yml
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\keywords.txt
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\library.json
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\library.properties
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\LICENSE
+					www\CamTrapESP32\Фото ловушка на ESP32 CAM\ESP-Mail-Client-master\README.md
+				-тест датчика движения
+					-mini_v1
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\тест датчика движения\mini_v1\mini_v1.ino
+					-PIR_V4
+						www\CamTrapESP32\Фото ловушка на ESP32 CAM\тест датчика движения\PIR_V4\PIR_V4.ino
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2020-12-31 ESP32 CAM подключение и прошивка.doc
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2021-01-12 ESP32 CAM PINOUT и внешняя Wi Fi антенна.doc
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2021-01-19 ESP32 CAM самодельная плата расширения.doc
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2021-07-21 Фото ловушка на ESP32 CAM.doc
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2022-02-27 Модуль ESP32-CAM с камерой OV2640 WiFi Bluetooth.doc
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\fil.txt
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\Принципиальная электрическая схема фото-ловушки.png
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\Расширяем отладочную плату ESP32 CAM сверху.jpg
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\Расширяем отладочную плату ESP32 CAM снизу.jpg
+				www\CamTrapESP32\Фото ловушка на ESP32 CAM\Электрическая принципиальная схема ESP32 CAM плата разработчика.png
+		-ESP32-CAM
+			www\ESP32-CAM\package_esp32_index.json
+		-SensoCheCraft
+			www\SensoCheCraft\Гоша и Мила.jpg
+			www\SensoCheCraft\Стартовый комплект датчиков.doc
+			www\SensoCheCraft\Хорошенькая.jpg
+[Open project files]
+0=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
+1=..\IttveMe\www\iniMem.php
+[Selected Project Files]
+Main=
+Selected=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
+[www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino]
+TopLine=117
+Caret=31,140
+[..\IttveMe\www\iniMem.php]
+TopLine=1
+Caret=1,12
