@@ -319,8 +319,8 @@ IttvePW
 Main=
 Selected=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
 [www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino]
-TopLine=117
-Caret=31,140
+TopLine=26
+Caret=3,41
 [..\IttveMe\www\iniMem.php]
 TopLine=1
 Caret=1,12

@@ -37,8 +37,11 @@
 //const char* ssid = "linksystve";
 //const char* password = "x93k6kq6wf";
 
-const char* ssid = "truflaki";
-const char* password = "t1s2wde4bE";
+const char* ssid = "OPPO A9 2020";
+const char* password = "b277a4ee84e8";
+
+//const char* ssid = "truflaki";
+//const char* password = "t1s2wde4bE";
 
 void startCameraServer();
 
@@ -137,9 +140,8 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   // поместите сюда свой основной код для повторного запуска:
-  Serial.println("Всем привет!");
+  //Serial.println("Всем привет!");
   delay(10000);
 }
 
 // *************************************************** CameraWebServer2.ino ***
-
