@@ -315,12 +315,20 @@ IttvePW
 [Open project files]
 0=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
 1=..\IttveMe\www\iniMem.php
+2=Новый1.iss
+3=..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino
 [Selected Project Files]
 Main=
-Selected=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
+Selected=..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino
 [www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino]
 TopLine=26
 Caret=3,41
 [..\IttveMe\www\iniMem.php]
 TopLine=1
 Caret=1,12
+[Новый1.iss]
+TopLine=1
+Caret=1,1
+[..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino]
+TopLine=1
+Caret=24,16
