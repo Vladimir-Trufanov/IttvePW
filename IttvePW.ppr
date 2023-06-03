@@ -18,9 +18,31 @@ Extensions=*.*
 [Project tree]
 IttvePW
 	+www
+		-2018-02-14 Как задать статический IP адрес контроллеру ESP8266
+			-HelloFromEsp8266
+				www\2018-02-14 Как задать статический IP адрес контроллеру ESP8266\HelloFromEsp8266\HelloFromEsp8266.ino
+			www\2018-02-14 Как задать статический IP адрес контроллеру ESP8266\2018-02-14 Как задать статический IP адрес контроллеру ESP8266.doc
+		-2023-05-30 Espres_esp8266ex
+			-101-hello
+				www\2023-05-30 Espres_esp8266ex\101-hello\101-hello.ino
+			www\2023-05-30 Espres_esp8266ex\Дружимся с ESP.doc
+		+2023-06-02 Простой веб-сервер на ESP8266-01
+			+PointAccessEsp01
+				www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino
+			-PointAccessEsp8266
+				www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp8266\PointAccessEsp8266.ino
+			www\2023-06-02 Простой веб-сервер на ESP8266-01\2023-06-02 Простой веб-сервер на ESP8266-01.doc
 		+arduino-kid-ru
-			+2021-12-21 ESP32-CAM CameraWebServer
-				+Ex1-CameraWebServer2
+			+2020-12-26 Как создать точку доступа на ESP8266
+				+Access_Point-button
+					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Access_Point-button\Access_Point-button.ino
+				+Esp01-Blink
+					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Esp01-Blink\Esp01-Blink.ino
+				-ScanNet
+					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\ScanNet\ScanNet.ino
+				www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Как создать точку доступа на ESP8266.doc
+			-2021-12-21 ESP32-CAM CameraWebServer
+				-Ex1-CameraWebServer2
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол загрузки скетча.txt
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол мониторинга программы.txt
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\app_httpd.cpp
@@ -31,60 +53,31 @@ IttvePW
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Протокол загрузки скетча.txt
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\ссылка на установку.txt
 				-Ex2-Photo2
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex2-Photo2\Photo2.ino
+					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex2-Photo2\Ex2-Photo2.ino
 				-Ex3-Clear_EEPROM
 					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex3-Clear_EEPROM\Clear_EEPROM.ino
-				-old
-					-10_sec
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\10_sec\10_sec.ino
-					-CameraWebServer
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\app_httpd.cpp
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\camera_index.h
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\camera_pins.h
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\CameraWebServer\CameraWebServer.ino
-					-Clear_EEPROM
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\Clear_EEPROM\Clear_EEPROM.ino
-					-ESP32-CAM статья и скетчи
-						-CameraWebServer
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\app_httpd.cpp
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\camera_index.h
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\camera_pins.h
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\CameraWebServer\CameraWebServer.ino
-						-Clear_EEPROM
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Clear_EEPROM\Clear_EEPROM.ino
-						-Esp32 камера - примеры сохранения фото на SD карту
-							-10_sec
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\10_sec\10_sec.ino
-							-NTPClient
-								-examples
-									-Advanced
-										www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\examples\Advanced\Advanced.ino
-									-Basic
-										www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\examples\Basic\Basic.ino
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\CHANGELOG
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\keywords.txt
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\library.json
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\library.properties
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\NTPClient.cpp
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\NTPClient.h
-								www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\NTPClient\README.md
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\Esp32 камера - примеры сохранения фото на SD карту.doc
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32 камера - примеры сохранения фото на SD карту\esp32 камера примеры Фотографии сохранение на SD карту.mp4
-						-Photo
-							www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Photo\Photo.ino
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\Esp32cam - плата с камерой ov2640.doc
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\ESP32-CAM-programming-connection.png
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\ESP32-CAM статья и скетчи\package_esp32_index.json
-					-Photo
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\old\Photo\Photo.ino
 				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\2021-12-21 esp 32 cam Плата ESP с камерой ov2640 Установка подключение.doc
-				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\esp 32 cam. Плата ESP с камерой ov2640 Установка ESP32, подключение.mp4
+				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\ESP32-CAM-programming-connection.png
+			-2022-01-07 esp 32 cam Фотографии - сохранение на SD карту
+				-10_sec
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\10_sec\10_sec.ino
+				-NTPClient
+					-examples
+						-Advanced
+							www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\examples\Advanced\Advanced.ino
+						-Basic
+							www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\examples\Basic\Basic.ino
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\CHANGELOG
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\keywords.txt
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\library.json
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\library.properties
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\NTPClient.cpp
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\NTPClient.h
+					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\README.md
+				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту.doc
+				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\esp32 камера примеры Фотографии сохранение на SD карту.mp4
+				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\ссылка на гитхаб.txt
 		-CamTrapESP32
-			-CameraWebServer
-				www\CamTrapESP32\CameraWebServer\app_httpd.cpp
-				www\CamTrapESP32\CameraWebServer\camera_index.h
-				www\CamTrapESP32\CameraWebServer\camera_pins.h
-				www\CamTrapESP32\CameraWebServer\CameraWebServer.ino
 			-Фото ловушка на ESP32 CAM
 				-1-SH1106 OLED дисплей
 					-lib1106spi
@@ -313,22 +306,26 @@ IttvePW
 			www\SensoCheCraft\Стартовый комплект датчиков.doc
 			www\SensoCheCraft\Хорошенькая.jpg
 [Open project files]
-0=www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
-1=..\IttveMe\www\iniMem.php
-2=Новый1.iss
-3=..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino
+0=www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino
+1=www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Esp01-Blink\Esp01-Blink.ino
+2=www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Access_Point-button\Access_Point-button.ino
+3=www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp8266\PointAccessEsp8266.ino
+4=..\IttveMe\www\UpSiteCSS.php
 [Selected Project Files]
 Main=
-Selected=..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino
-[www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino]
-TopLine=26
-Caret=3,41
-[..\IttveMe\www\iniMem.php]
+Selected=www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino
+[www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino]
+TopLine=48
+Caret=16,242
+[www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Esp01-Blink\Esp01-Blink.ino]
+TopLine=8
+Caret=5,47
+[www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Access_Point-button\Access_Point-button.ino]
 TopLine=1
-Caret=1,12
-[Новый1.iss]
-TopLine=1
+Caret=30,61
+[www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp8266\PointAccessEsp8266.ino]
+TopLine=3
 Caret=1,1
-[..\Fil\2023-05-30 Espres_esp8266ex\101-hello.ino]
+[..\IttveMe\www\UpSiteCSS.php]
 TopLine=1
-Caret=24,16
+Caret=1,19
