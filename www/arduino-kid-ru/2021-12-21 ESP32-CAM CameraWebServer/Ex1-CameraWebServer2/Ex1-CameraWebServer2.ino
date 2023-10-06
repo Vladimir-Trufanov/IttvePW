@@ -34,11 +34,11 @@
 
 #include "camera_pins.h"
 
-//const char* ssid = "linksystve";
-//const char* password = "x93k6kq6wf";
+const char* ssid = "linksystve";
+const char* password = "x93k6kq6wf";
 
-const char* ssid = "OPPO A9 2020";
-const char* password = "b277a4ee84e8";
+//const char* ssid = "OPPO A9 2020";
+//const char* password = "b277a4ee84e8";
 
 //const char* ssid = "truflaki";
 //const char* password = "t1s2wde4bE";
