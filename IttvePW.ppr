@@ -6,8 +6,8 @@ Compilator.ProgSaveAll=0
 Compilator.ProgRunSelection=0
 Compilator.LogType=0
 Compilator.LogEncoding=0
-DefaultDir=C:\IttvePW\www
-DefaultCP=65001
+DefaultDir=C:\IttvePW
+DefaultCP=0
 LogtoEnd=1
 DontOpen=0
 AbsolutePath=0
@@ -17,156 +17,23 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 IttvePW
-	+www
-		-2018-02-14 Как задать статический IP адрес контроллеру ESP8266
-			-HelloFromEsp8266
-				www\2018-02-14 Как задать статический IP адрес контроллеру ESP8266\HelloFromEsp8266\HelloFromEsp8266.ino
-			www\2018-02-14 Как задать статический IP адрес контроллеру ESP8266\2018-02-14 Как задать статический IP адрес контроллеру ESP8266.doc
-		-2023-05-30 Espres_esp8266ex
-			-101-hello
-				www\2023-05-30 Espres_esp8266ex\101-hello\101-hello.ino
-			www\2023-05-30 Espres_esp8266ex\Дружимся с ESP.doc
-		-2023-06-02 Простой веб-сервер на ESP8266-01
-			-PointAccessEsp01
-				www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino
-			-PointAccessEsp8266
-				www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp8266\PointAccessEsp8266.ino
-			www\2023-06-02 Простой веб-сервер на ESP8266-01\2023-06-02 Простой веб-сервер на ESP8266-01.doc
-		-arduino-kid-ru
-			-2020-12-26 Как создать точку доступа на ESP8266
-				-Access_Point-button
-					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Access_Point-button\Access_Point-button.ino
-				-Esp01-Blink
-					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Esp01-Blink\Esp01-Blink.ino
-				-ScanNet
-					www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\ScanNet\ScanNet.ino
-				www\arduino-kid-ru\2020-12-26 Как создать точку доступа на ESP8266\Как создать точку доступа на ESP8266.doc
-			-2021-12-21 ESP32-CAM CameraWebServer
-				-Ex1-CameraWebServer2
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол загрузки скетча.txt
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\2023-05-27 Протокол мониторинга программы.txt
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\app_httpd.cpp
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\camera_index.h
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\camera_pins.h
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Capture_2022-03-25.jpg
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Ex1-CameraWebServer2.ino
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\Протокол загрузки скетча.txt
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex1-CameraWebServer2\ссылка на установку.txt
-				-Ex2-Photo2
-					www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex2-Photo2\Ex2-Photo2.ino
-				-Ex3-Clear_EEPROM
-					-Clear_EEPROM
-						www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\Ex3-Clear_EEPROM\Clear_EEPROM\Clear_EEPROM.ino
-				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\2021-12-21 esp 32 cam Плата ESP с камерой ov2640 Установка подключение.doc
-				www\arduino-kid-ru\2021-12-21 ESP32-CAM CameraWebServer\ESP32-CAM-programming-connection.png
-			-2022-01-07 esp 32 cam Фотографии - сохранение на SD карту
-				-10_sec
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\10_sec\10_sec.ino
-				-NTPClient
-					-examples
-						-Advanced
-							www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\examples\Advanced\Advanced.ino
-						-Basic
-							www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\examples\Basic\Basic.ino
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\CHANGELOG
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\keywords.txt
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\library.json
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\library.properties
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\NTPClient.cpp
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\NTPClient.h
-					www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\NTPClient\README.md
-				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту.doc
-				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\esp32 камера примеры Фотографии сохранение на SD карту.mp4
-				www\arduino-kid-ru\2022-01-07 esp 32 cam Фотографии - сохранение на SD карту\ссылка на гитхаб.txt
-		+CamTrapESP32
-			+ESP32-CAM_MJPEG2SD
-				-data
-					www\CamTrapESP32\ESP32-CAM_MJPEG2SD\data\configs.txt
-					www\CamTrapESP32\ESP32-CAM_MJPEG2SD\data\MJPEG2SD.htm
-				-extras
-					www\CamTrapESP32\ESP32-CAM_MJPEG2SD\extras\motion.png
-					www\CamTrapESP32\ESP32-CAM_MJPEG2SD\extras\screenshot.png
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\appGlobals.h
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\appSpecific.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\avi.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\camera_pins.h
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ESP32-CAM_MJPEG2SD.ino
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ftp.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\globals.h
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\LICENSE
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mic.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mjpeg2sd.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\motionDetect.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mqtt.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\peripherals.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\prefs.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\README.md
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\setupAssist.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\smtp.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\streamServer.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\uart.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\utils.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\utilsFS.cpp
-				www\CamTrapESP32\ESP32-CAM_MJPEG2SD\webServer.cpp
-			-LEDC33
-				www\CamTrapESP32\LEDC33\LEDC33.ino
-			-LEDCSoftwareFade
-				www\CamTrapESP32\LEDCSoftwareFade\LEDCSoftwareFade.ino
-			-v10-CameraWebServer
-				-v1-0 Просто подключение и прошивка
-				www\CamTrapESP32\v10-CameraWebServer\app_httpd.cpp
-				www\CamTrapESP32\v10-CameraWebServer\camera_index.h
-				www\CamTrapESP32\v10-CameraWebServer\camera_pins.h
-				www\CamTrapESP32\v10-CameraWebServer\v10-CameraWebServer.ino
-			-Фото ловушка на ESP32 CAM
-				www\CamTrapESP32\Фото ловушка на ESP32 CAM\2020-12-31 ESP32 CAM подключение и прошивка.doc
-		-ESP32-CAM
-			www\ESP32-CAM\package_esp32_index.json
-		-SensoCheCraft
-			www\SensoCheCraft\Гоша и Мила.jpg
-			www\SensoCheCraft\Стартовый комплект датчиков.doc
-			www\SensoCheCraft\Хорошенькая.jpg
+	+IttvePW
+		+Esp32
+			+CameraWebServer
+				Esp32\CameraWebServer\app_httpd.cpp
+				Esp32\CameraWebServer\camera_index.h
+				Esp32\CameraWebServer\camera_pins.h
+				Esp32\CameraWebServer\CameraWebServer.ino
+		-www
+		.gitignore
+		IttvePW.ppr
+		README.md
+		README.md.backup
 [Open project files]
-0=www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino
-1=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ESP32-CAM_MJPEG2SD.ino
-2=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\globals.h
-3=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\prefs.cpp
-4=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ftp.cpp
-5=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mic.cpp
-6=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mjpeg2sd.cpp
-7=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mqtt.cpp
-8=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\peripherals.cpp
-9=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\smtp.cpp
+0=Esp32\CameraWebServer\CameraWebServer.ino
 [Selected Project Files]
 Main=
-Selected=www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ESP32-CAM_MJPEG2SD.ino
-[www\2023-06-02 Простой веб-сервер на ESP8266-01\PointAccessEsp01\PointAccessEsp01.ino]
-TopLine=204
-Caret=16,242
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ESP32-CAM_MJPEG2SD.ino]
-TopLine=119
-Caret=14,161
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\globals.h]
-TopLine=63
-Caret=6,74
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\prefs.cpp]
-TopLine=406
-Caret=6,403
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\ftp.cpp]
-TopLine=208
-Caret=3,219
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mic.cpp]
-TopLine=126
-Caret=3,137
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mjpeg2sd.cpp]
-TopLine=666
-Caret=31,677
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\mqtt.cpp]
-TopLine=119
-Caret=3,130
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\peripherals.cpp]
-TopLine=307
-Caret=3,318
-[www\CamTrapESP32\ESP32-CAM_MJPEG2SD\smtp.cpp]
-TopLine=157
-Caret=3,173
+Selected=Esp32\CameraWebServer\CameraWebServer.ino
+[Esp32\CameraWebServer\CameraWebServer.ino]
+TopLine=1
+Caret=3,4
