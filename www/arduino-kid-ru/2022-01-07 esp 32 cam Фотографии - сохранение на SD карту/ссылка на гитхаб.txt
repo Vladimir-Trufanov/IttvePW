@@ -1,1 +1,0 @@
-https://github.com/Barrois/Detecteur-ESP32-Cam-Blob-Detector/tree/main/documentation/FPC_24P_0.5mm_I2C_Derivation
