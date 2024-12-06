@@ -1,0 +1,19 @@
+[18-Feb-2023 05:32:44 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: picturepw.uid, picturepw.TranslitPic in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php:610
+Stack trace:
+#0 C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php(610): PDOStatement->execute(Array)
+#1 C:\TPhpTools\TPhpTools\TKwinGallery\KwinGalleryClass.php(478): ttools\ArticlesMaker->InsertImgByTranslit(Object(PDO), '12', '\xD0\xA8\xD0\xB0\xD0\xBF\xD1\x88\xD0\xB0 \xD0\xB2\xD0\xB5...', 'shapsha-vesnoj', 'jpg', 'image/jpeg', '18.02.2023', 584145, '\xD0\xA8\xD0\xB0\xD0\xBF\xD1\x88\xD0\xB0 \xD0\xB2\xD0\xB5...')
+#2 C:\TPhpTools\TPhpTools\TKwinGallery\KwinGalleryClass.php(174): ttools\KwinGallery->ifKwinUpload('C:\\KwinTiny\\www', 'ittveEdit', 'ittve', '4', '12')
+#3 C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php(244): ttools\KwinGallery->__construct('ittveEdit', 'ittve', '4', '12', 'C:\\KwinTiny\\www', 'http://localhos...', Object(ttools\ArticlesMaker))
+#4 C:\TPhpTools\TPhpTools\TTinyGa in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 610
+[18-Feb-2023 08:58:00 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php on line 85
+[18-Feb-2023 09:14:49 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpTools/TPhpTools/JsTools.php' (include_path='.;C:\php\pear') in C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php on line 316
+[18-Feb-2023 09:24:12 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpTools/TPhpTools/JsTools.php' (include_path='.;C:\php\pear') in C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php on line 324
+[18-Feb-2023 09:24:17 Asia/Kuwait] PHP Fatal error:  require_once(): Failed opening required 'C:/TPhpTools/TPhpTools/JsTools.php' (include_path='.;C:\php\pear') in C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php on line 324
+[18-Feb-2023 11:17:33 Asia/Kuwait] PHP Parse error:  syntax error, unexpected ',' in C:\TPhpTools\TPhpTools\TKwinGallery\KwinGalleryClass.php on line 357
+[19-Feb-2023 09:31:18 Asia/Kuwait] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: picturepw.uid, picturepw.TranslitPic in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php:517
+Stack trace:
+#0 C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php(517): PDOStatement->execute(Array)
+#1 C:\TPhpTools\TPhpTools\TKwinGallery\KwinGalleryClass.php(468): ttools\ArticlesMaker->InsertImgByTranslit(Object(PDO), '12', '\xD0\xA8\xD0\xB0\xD0\xBF\xD1\x88\xD0\xB0 \xD0\xB2\xD0\xB5...', 'shapsha-vesnoj', 'jpg', 'image/jpeg', '19.02.2023', 584145, '\xD0\xA2\xD0\xB5\xD0\xBA\xD1\x81\xD1\x82 \xD0\xBA\xD0\xBE...')
+#2 C:\TPhpTools\TPhpTools\TKwinGallery\KwinGalleryClass.php(154): ttools\KwinGallery->ifKwinUpload('C:\\KwinTiny\\www', 'ittveEdit', 'ittve', '4', '12')
+#3 C:\TPhpTools\TPhpTools\TTinyGallery\TinyGalleryClass.php(239): ttools\KwinGallery->__construct('ittveEdit', 'ittve', '4', '12', 'C:\\KwinTiny\\www', 'http://localhos...', Object(ttools\ArticlesMaker))
+#4 C:\TPhpTools\TPhpTools\TTinyGa in C:\TPhpTools\TPhpTools\TArticlesMaker\ArticlesMakerClass.php on line 517

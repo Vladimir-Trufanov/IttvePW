@@ -1,0 +1,2 @@
+# KwinTiny
+Прикладной редактор TinyMCE

@@ -1,0 +1,70 @@
+/** HTML5/CSS3, EDGE/CHROME                                  *** Styles.css ***
+
+ ******************************************************************************
+ * KwinTiny         Определить стили документа за границами области редактора *
+ ******************************************************************************
+
+                                                     Автор:       Труфанов В.Е.
+                                                     Дата создания:  07.01.2019
+ Copyright © 2019 tve                                Посл.изменение: 10.02.2019
+*/
+
+/* Определяем базовый шрифт */
+html
+{
+   font-family:'Anonymous Pro',monospace;
+   font-size:16px;
+}
+/* Устанавливаем размеры шрифтов по умолчанию */
+body 
+{
+   height: 100%;
+   font-size:1rem; 
+}
+/* Выравниваем */
+html,body,#Info,#Niz
+{
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+}
+/* Раскрашиваем дивы */
+body {background:aqua;} 
+#Info{background:gray;}
+#Niz{background:transparent;}
+/* #Niz в низ */
+#Niz
+{
+   position:fixed; 
+   left:0;
+   bottom:0;
+   height:10%;
+   overflow:auto;
+}
+
+
+/**
+  Форматируем содержимое
+*/
+/* для нижнего меню */
+
+/*
+.uli 
+{
+   list-style: none; 
+   margin-top: 1rem; 
+   padding-left: 0; 
+}
+.ali
+{
+   text-decoration: none; 
+}
+.ili {display: inline;}
+*/
+
+/*
+ *************************************************************** Styles.css ***
+*/	
+	
+

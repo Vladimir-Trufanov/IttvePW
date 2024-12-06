@@ -1,0 +1,221 @@
+
+#KwinGallery,#WorkTiny,#FooterTiny
+{
+   margin:0;
+   padding:0;
+   border:0;
+   vertical-align:baseline;
+}
+/* Раскрашиваем дивы */
+#KwinGallery{background:LightCyan;}
+#WorkTiny{background:GhostWhite;}
+#FooterTiny{background:LightYellow;}
+/* Позиционируем секции области редактирования */
+#KwinGallery
+{
+   position:fixed; 
+   top:0;
+   right:0;
+   overflow:auto;
+}
+#WorkTiny
+{
+   position:fixed; 
+   left:0;
+   top:0;
+   overflow:auto;
+}
+#FooterTiny
+{
+   position:fixed; 
+   left:0;
+   overflow:auto;
+}
+
+/* Настраиваем рабочую область Tiny */
+#frmTinyText
+{
+   margin-top:1rem;
+   width:100%;
+   height:99%;
+}
+#mytextarea
+{
+   height:100%;
+}
+
+/* Назначем стили вывода заголовков */ 
+#NameGru,#NameError
+{
+   float:left;
+   margin-left:.5rem;
+   /*background:Red;*/
+}
+#NameError
+{
+   float:left;
+   margin-left:.5rem;
+   color:Red;
+}
+#Message
+{
+   text-align:center;
+   margin-left:.5rem;
+   color:maroon;
+   font-weight:600;
+}
+#NameArt
+{
+   float:right;
+   margin-right:.5rem;
+}
+#TopLine
+{
+   display:block;
+   overflow:hidden;
+   margin:0;
+   padding:0;
+   border:0;
+}
+/* Устанавливаем стили при назначении статьи */
+#AddArticle
+{
+  margin-top:6rem;
+  padding:0;
+  border:0;
+  vertical-align:baseline;
+  width:100%;
+}
+#nsGroup 
+{
+  position:relative;
+  width:100%;
+ -webkit-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+ -moz-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+ -ms-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+ -o-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+ transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+ -webkit-transition-delay:1s;
+ transition-delay:1s;
+}
+#nsName
+{
+  top:2rem;
+  left:1%;
+  width:76%;
+}
+#nsDate 
+{
+  top:2rem;
+  right:1%;
+  width:15%;
+}
+#nsName,#nsDate 
+{
+  position:absolute;
+  display:block;
+  height:30px;
+  background:#fff;
+  font-size:10pt;
+  padding-left:20px;
+  color:rgba(0,0,0,0.1);
+  -webkit-box-shadow:1px 1px 20px rgba(0,0,0, 0.2);
+  -moz-box-shadow:1px 1px 20px rgba(0,0, 0,0.2);
+  -ms-box-shadow:1px 1px 20px rgba(0,0, 0,0.2);
+  -o-box-shadow:1px 1px 20px rgba(0,0, 0,0.2);
+  box-shadow:1px 1px 20px rgba(0,0, 0,0.2);
+  border:none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  -ms-border-radius:4px;
+  -o-border-radius:4px;
+  border-radius:4px;
+  -webkit-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+  -moz-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+  -ms-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+  -o-transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+  transition:all 600ms cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#nsName:focus, #nsName:active:focus,
+#nsDate:focus, #nsDate:active:focus, 
+{
+  outline:none;
+  padding-left:30px;
+}
+#nsName 
+{
+  z-index:2;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  transition:0.5s;
+}
+#nsDate 
+{
+  z-index:1;
+  background:rgba(0, 0, 0, 0.1);
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  transition:0.5s;
+}
+
+/* Cтили картинок, изображений в галерее */
+#KwinGallery
+{
+   align-items:center;
+   overflow:auto;
+}
+.Card, .bCard, .imgCard, .pCard, .taCard
+{
+   background:transparent;
+}
+.Card
+{
+   border:.4rem double gray;
+   margin-bottom:.2rem;  
+}
+.bCard
+{
+   cursor:pointer;
+   margin:0;
+   padding:.1rem; 
+   border:0;
+}
+.imgCard
+{
+   width:100%;
+}
+#imgCardi
+{
+   width:100%;
+}
+#infCard, #insCard
+{
+   height:0;
+   width:0;
+   margin:0;
+   padding:0; 
+   border:0;
+}
+.pCard, .taCard 
+{
+   font-size:1rem; 
+   text-align:center;
+   margin:0;
+   padding:.1rem; 
+   border:0;
+}
+.taCard
+{
+   height:10rem;
+   width:100%;
+}
+.Card:hover 
+{
+   color: #993300; 
+   font-weight: 600;
+}
+
