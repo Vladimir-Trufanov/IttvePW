@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (https://fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" height="2.7469051in" id="svg580" version="1.2" x="0in" gorn="0" width="3.652406in" viewBox="0 0 262.97298 197.77665"  y="0in">
+    <desc >
+        <referenceFile >LCD-FM-RX-V2_0_pcb.svg</referenceFile>
+    </desc>
+    <defs id="defs584" />
+    <g  transform="translate(-0.32433498,-0.32450398)">
+        <g >
+            <g >
+                <g >
+                    <g id="g486" style="display:none" gorn="0.2.0.0.0.0" partID="58120" >
+                        <g id="copper0" style="display:none" gorn="0.2.0.0.0.0.0" >
+                            <g id="copper1" style="display:inline" gorn="0.2.0.0.0.0.0.0" >
+                                <g  transform="rotate(90,-46.307,140.712)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g434" gorn="0.2.0.0.0.0.0.0.0.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="4.3200002" id="connector12pin" gorn="0.2.0.0.0.0.0.0.0.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-46.307,140.712)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g437" gorn="0.2.0.0.0.0.0.0.1.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="11.52" id="connector13pin" gorn="0.2.0.0.0.0.0.0.1.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-46.307,140.712)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g440" gorn="0.2.0.0.0.0.0.0.2.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="18.719999" id="connector14pin" gorn="0.2.0.0.0.0.0.0.2.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g446" gorn="0.2.0.0.0.0.0.0.3.0.0.0.0" >
+                                                    <rect stroke-width="1.152" id="rect17" height="3.168" x="189.755" gorn="0.2.0.0.0.0.0.0.3.0.0.0.0.0" width="3.168" stroke="#ffbf00"  y="-178.069" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-21.107,144.312)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g449" gorn="0.2.0.0.0.0.0.0.4.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="25.92" id="connector11pin" gorn="0.2.0.0.0.0.0.0.4.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-21.107,144.312)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g452" gorn="0.2.0.0.0.0.0.0.5.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="18.719999" id="connector10pin" gorn="0.2.0.0.0.0.0.0.5.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-21.107,144.312)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g455" gorn="0.2.0.0.0.0.0.0.6.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="11.52" id="connector9pin" gorn="0.2.0.0.0.0.0.0.6.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-21.107,144.312)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g458" gorn="0.2.0.0.0.0.0.0.7.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="4.3200002" id="connector8pin" gorn="0.2.0.0.0.0.0.0.7.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-17.507,169.512)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g461" gorn="0.2.0.0.0.0.0.0.8.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="4.3200002" id="connector4pin" gorn="0.2.0.0.0.0.0.0.8.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-17.507,169.512)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g464" gorn="0.2.0.0.0.0.0.0.9.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="11.52" id="connector5pin" gorn="0.2.0.0.0.0.0.0.9.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-17.507,169.512)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g467" gorn="0.2.0.0.0.0.0.0.10.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="18.719999" id="connector6pin" gorn="0.2.0.0.0.0.0.0.10.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,-17.507,169.512)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g470" gorn="0.2.0.0.0.0.0.0.11.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="25.92" id="connector7pin" gorn="0.2.0.0.0.0.0.0.11.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,7.693,173.112)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g473" gorn="0.2.0.0.0.0.0.0.12.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="25.92" id="connector3pin" gorn="0.2.0.0.0.0.0.0.12.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,7.693,173.112)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g476" gorn="0.2.0.0.0.0.0.0.13.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="18.719999" id="connector2pin" gorn="0.2.0.0.0.0.0.0.13.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,7.693,173.112)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g479" gorn="0.2.0.0.0.0.0.0.14.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="11.52" id="connector1pin" gorn="0.2.0.0.0.0.0.0.14.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="rotate(90,7.693,173.112)">
+                                    <g >
+                                        <g >
+                                            <g >
+                                                <g id="g482" gorn="0.2.0.0.0.0.0.0.15.0.0.0.0" >
+                                                    <circle stroke-width="1.152" cy="4.3200002" id="connector0pin" gorn="0.2.0.0.0.0.0.0.15.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g  transform="translate(-0.32433498,-0.32450398)">
+        <g >
+            <g >
+                <g >
+                    <g id="g574" style="display:inline" gorn="0.3.0.0.0.0" partID="58122" >
+                        <g id="g572" style="display:inline" gorn="0.3.0.0.0.0.0" >
+                            <g  transform="rotate(90,-46.307,140.712)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g506" gorn="0.3.0.0.0.0.0.0.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="4.3200002" id="circle504" gorn="0.3.0.0.0.0.0.0.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-46.307,140.712)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g510" gorn="0.3.0.0.0.0.0.1.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="11.52" id="circle508" gorn="0.3.0.0.0.0.0.1.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-46.307,140.712)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g514" gorn="0.3.0.0.0.0.0.2.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="18.719999" id="circle512" gorn="0.3.0.0.0.0.0.2.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g522" gorn="0.3.0.0.0.0.0.3.0.0.0.0" >
+                                                <rect stroke-width="1.152" id="rect520" height="3.168" x="189.755" gorn="0.3.0.0.0.0.0.3.0.0.0.0.0" width="3.168" stroke="#ffbf00"  y="-178.069" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-21.107,144.312)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g526" gorn="0.3.0.0.0.0.0.4.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="25.92" id="circle524" gorn="0.3.0.0.0.0.0.4.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-21.107,144.312)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g530" gorn="0.3.0.0.0.0.0.5.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="18.719999" id="circle528" gorn="0.3.0.0.0.0.0.5.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-21.107,144.312)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g534" gorn="0.3.0.0.0.0.0.6.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="11.52" id="circle532" gorn="0.3.0.0.0.0.0.6.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-21.107,144.312)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g538" gorn="0.3.0.0.0.0.0.7.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="4.3200002" id="circle536" gorn="0.3.0.0.0.0.0.7.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-17.507,169.512)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g542" gorn="0.3.0.0.0.0.0.8.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="4.3200002" id="circle540" gorn="0.3.0.0.0.0.0.8.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-17.507,169.512)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g546" gorn="0.3.0.0.0.0.0.9.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="11.52" id="circle544" gorn="0.3.0.0.0.0.0.9.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-17.507,169.512)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g550" gorn="0.3.0.0.0.0.0.10.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="18.719999" id="circle548" gorn="0.3.0.0.0.0.0.10.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,-17.507,169.512)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g554" gorn="0.3.0.0.0.0.0.11.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="25.92" id="circle552" gorn="0.3.0.0.0.0.0.11.0.0.0.0.0" stroke="#ffbf00"  cx="4.3200002" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,7.693,173.112)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g558" gorn="0.3.0.0.0.0.0.12.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="25.92" id="circle556" gorn="0.3.0.0.0.0.0.12.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,7.693,173.112)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g562" gorn="0.3.0.0.0.0.0.13.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="18.719999" id="circle560" gorn="0.3.0.0.0.0.0.13.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,7.693,173.112)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g566" gorn="0.3.0.0.0.0.0.14.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="11.52" id="circle564" gorn="0.3.0.0.0.0.0.14.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="rotate(90,7.693,173.112)">
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g id="g570" gorn="0.3.0.0.0.0.0.15.0.0.0.0" >
+                                                <circle stroke-width="1.152" cy="4.3200002" id="circle568" gorn="0.3.0.0.0.0.0.15.0.0.0.0.0" stroke="#ffbf00"  cx="25.92" r="1.584" fill="none"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g  transform="translate(-0.32433498,-0.32450398)">
+        <g >
+            <g >
+                <g >
+                    <g id="g578" style="display:inline" gorn="0.4.0.0.0.0" partID="58121" >
+                        <g id="silkscreen" gorn="0.4.0.0.0.0.0" >
+                            <rect stroke-width="1" id="rect2882" height="196.77699" x="0.82433498" style="color:#000000;display:inline;overflow:visible;visibility:visible;stroke-miterlimit:4;stroke-dasharray:19.7841, 1.64867;stroke-dashoffset:16.4867;marker:none;enable-background:accumulate" stroke-opacity="1" gorn="0.4.0.0.0.0.0.0" width="261.97299" stroke="#ffffff"  y="0.82433599" fill="none"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
