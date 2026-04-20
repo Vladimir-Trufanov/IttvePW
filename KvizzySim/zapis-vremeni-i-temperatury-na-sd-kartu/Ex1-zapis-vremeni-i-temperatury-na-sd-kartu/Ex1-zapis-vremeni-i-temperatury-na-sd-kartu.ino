@@ -1,7 +1,7 @@
 // Ex1-zapis-vremeni-i-temperatury-na-sd-kartu.ino
 
 /*
- *  Arduino SD Card Tutorial Example
+ *  Проверка работы SD-карты
  *  
  *  by Dejan Nedelkovski, www.HowToMechatronics.com
  */
