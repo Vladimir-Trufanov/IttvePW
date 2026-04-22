@@ -1,0 +1,35 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultDir=C:\IttvePW\KvizzyTrassa\Trassa\www
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+Trassa
+	+www
+		-Ex1
+			www\Ex1\index.php
+		www\canvasjs.min.js
+		www\Ex2.php
+		www\Ex3.php
+		www\favicon.ico
+		www\index.php
+[Open project files]
+0=www\index.php
+[Selected Project Files]
+Main=
+Selected=www\index.php
+[www\index.php]
+TopLine=1
+Caret=1,30

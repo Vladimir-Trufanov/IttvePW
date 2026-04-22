@@ -1,9 +1,6 @@
 <?php
 
-// 2026-04-22 Это руссификация оригинала 
-// https://canvasjs.com/php-charts/spline-chart/
- 
- $dataPoints = array(
+$dataPoints = array(
 	array("x" => 946665000000, "y" => 3289000),
 	array("x" => 978287400000, "y" => 3830000),
 	array("x" => 1009823400000, "y" => 2009000),
@@ -21,19 +18,20 @@
 	array("x" => 1388514600000, "y" => 2394000),
 	array("x" => 1420050600000, "y" => 1872000),
 	array("x" => 1451586600000, "y" => 2140000)
- );
+);
  
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
 <script>
-window.onload = function () {
- 
-var chart = new CanvasJS.Chart("chartContainer", {
+window.onload = function () 
+{
+  var chart = new CanvasJS.Chart("chartContainer", 
+  {
 	animationEnabled: true,
 	title:{
 		text: "Company Revenue by Year"
+	},
+	axisX: {
+		title: "график формируется" + " один раз"
 	},
 	axisY: {
 		title: "Revenue in USD",
@@ -55,9 +53,7 @@ chart.render();
  
 }
 </script>
+
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="canvasjs.min.js"></script>
-</body>
-</html>      

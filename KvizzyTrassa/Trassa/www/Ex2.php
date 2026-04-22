@@ -1,6 +1,6 @@
 <?php
 
-// 2026-04-22 ----Это оригинальный пример со страницы:
+// ----2026-04-22 ----Это оригинальный пример со страницы:
 // -----https://canvasjs.com/php-charts/dynamic-live-multi-series-chart/
 
 $dataPoints1 = array();
@@ -21,9 +21,6 @@ for($i = 0; $i < $initialNumberOfDataPoints; $i++)
 }
 
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
 <script>
 window.onload = function() 
 {
@@ -119,6 +116,4 @@ function updateChart() {
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="canvasjs.min.js"></script>
-</body>
-</html>                              
+
