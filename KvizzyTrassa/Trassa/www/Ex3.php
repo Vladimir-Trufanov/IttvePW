@@ -28,13 +28,13 @@ window.onload = function ()
   {
 	animationEnabled: true,
 	title:{
-		text: "Company Revenue by Year"
+		text: "Выручка компании по годам"
 	},
 	axisX: {
 		title: "график формируется" + " один раз"
 	},
 	axisY: {
-		title: "Revenue in USD",
+		title: "Выручка в долларах США",
 		valueFormatString: "#0,,.",
 		suffix: "mn",
 		prefix: "$"

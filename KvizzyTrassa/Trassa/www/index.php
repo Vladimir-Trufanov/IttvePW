@@ -13,7 +13,7 @@ else $http='http';
 echo '<script src="'.$http.'://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].'/canvasjs.min.js"></script>';
 
 // 
-require_once 'Ex2.php';
+require_once 'Ex3.php';
 // 
 // require_once 'Ex3.php';
 

@@ -1,6 +1,7 @@
 <?php
 
-// 2026-04-22 Это оригинальный пример со страницы:
+// Ex1.php
+// 2026-04-22 Это чуть измененный пример со страницы:
 // https://canvasjs.com/php-charts/dynamic-live-multi-series-chart/
 
 $dataPoints1 = array();
@@ -21,13 +22,9 @@ for($i = 0; $i < $initialNumberOfDataPoints; $i++)
 }
 
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
 <script>
 window.onload = function() 
 {
-
 var updateInterval = <?php echo $updateInterval ?>;
 var dataPoints1 = <?php echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>;
 var dataPoints2 = <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>;
@@ -38,7 +35,7 @@ var xValue = <?php echo $x ?>;
 var chart = new CanvasJS.Chart("chartContainer", {
 	zoomEnabled: true,
 	title: {
-		text: "Live Power Consumption of 2 Buildings"
+		text: "Текущее энергопотребление двух зданий"
 	},
 	axisX: {
 		title: "chart updates every " + updateInterval / 1000 + " secs"
@@ -57,7 +54,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		itemclick : toggleDataSeries
 	},
 	data: [{ 
-			type: "line",
+			type: "spline",
 			name: "Building A",
 			xValueType: "dateTime",
 			yValueFormatString: "#,### watts",
@@ -67,7 +64,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 			dataPoints: dataPoints1
 		},
 		{				
-			type: "line",
+			type: "spline",
 			name: "Building B" ,
 			xValueType: "dateTime",
 			yValueFormatString: "#,### watts",
@@ -118,7 +115,4 @@ function updateChart() {
 </script>
 </head>
 <body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-</body>
-</html>                              
+<div id="chartContainer" style="height: 620px; width: 100%;"></div>
