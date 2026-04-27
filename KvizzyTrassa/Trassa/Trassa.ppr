@@ -28,13 +28,13 @@ Trassa
 		www\index.php
 [Open project files]
 0=www\index.php
-1=www\Ex3.php
+1=www\Ex7_MultiSeriesColumnChart.php
 [Selected Project Files]
 Main=
-Selected=www\Ex3.php
+Selected=www\Ex7_MultiSeriesColumnChart.php
 [www\index.php]
 TopLine=1
-Caret=18,16
-[www\Ex3.php]
-TopLine=1
-Caret=33,37
+Caret=45,16
+[www\Ex7_MultiSeriesColumnChart.php]
+TopLine=18
+Caret=33,44

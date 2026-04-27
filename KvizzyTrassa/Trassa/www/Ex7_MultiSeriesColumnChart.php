@@ -28,6 +28,22 @@ window.onload = function ()
           {label: "grape",  y: 64}
         ]
       },
+      { // dataSeries - first quarter
+        /*** Change type "column" to "bar", "area", "line" or "pie"***/        
+        // type: "column",
+        // type: "bar",
+        // type: "area",
+        type: "spline",
+        name: "ещё",
+        dataPoints: 
+        [
+          {label: "banana", y: 158},
+          {label: "orange", y: 169},
+          {label: "apple",  y: 180},                                    
+          {label: "mango",  y: 174},
+          {label: "grape",  y: 364}
+        ]
+      },
       { //dataSeries - second quarter
         // type: "column",
         // type: "bar",
@@ -39,7 +55,7 @@ window.onload = function ()
           {label: "banana", y: 63},
           {label: "orange", y: 73},
           {label: "apple",  y: 88},                                    
-          //{label: "mango",  y: 77},
+          {label: "mango",  y: 77},
           {label: "grape",  y: 60}
         ]
       }
