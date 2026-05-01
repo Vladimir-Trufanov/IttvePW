@@ -1,9 +1,33 @@
 /** Arduino C/C++ ******************************************* Kvizzy900.ino ***
  *
- * Обеспечить снятие показаний разного рода и запись на SD-карту
+ * Выводить данные GPS на сайт                  
+ * (ориентировочно - от окна гостинной:  по гармину = 61.80193,  34.32983   
+ *                                       по яндекс  = 61.802082, 34.329586)  
+ * По материалам сайтов:
+ * https://github.com/arduino/ArduinoCore-primo/blob/master/libraries/SoftwareSerial/examples/TwoPortReceive/TwoPortReceive.ino
+ * https://docs.arduino.cc/tutorials/communication/TwoPortReceive/
  * 
- * v1.0.0, 30.04.2026                                 Автор:      Труфанов В.Е.
- * Copyright © 2025 tve                               Дата создания: 30.04.2026
+ * В скетче принимает данные с двух программных последовательных портов и
+ * отправляет их на аппаратный последовательный порт.
+ * 
+ * Чтобы прослушать программный порт, вызывается метод port.listen().
+ * При использовании двух программных последовательных портов необходимо переключать порты,
+ * прослушивая каждый из них по очереди. Следует выбирать логичное время для переключения
+ * портов, например, в конце ожидаемой передачи или когда буфер пуст. 
+ *
+ * Вместо устаревшей TinyGPS используется TinyGPSPlus.
+ * 
+ * v3.0.8, 06.04.2026                                 Автор:      Труфанов В.Е.
+ * Copyright © 2025 tve                               Дата создания: 16.10.2025
+ *
+ * Скетч использует 25928 байт (80%) памяти устройства. Всего доступно 32256 байт.
+ * Глобальные переменные используют 1415 байт (69%) динамической памяти, оставляя 633 байт для локальных переменных. Максимум: 2048 байт.
+ * "C:\Users\Евгеньевич\AppData\Local\Arduino15\packages\arduino\tools\avrdude\8.0.0-arduino1/bin/avrdude" "-CC:\Users\Евгеньевич\AppData\Local\Arduino15\packages\arduino\tools\avrdude\8.0.0-arduino1/etc/avrdude.conf" -v -V -patmega328p -carduino "-PCOM15" -b115200 -D "-Uflash:w:C:\Users\Евгеньевич\AppData\Local\arduino\sketches\5EBB7E33EDD7F94B809681A5B41B83AC/Kvizzy900.ino.hex:i"
+ * Avrdude version 8.0-arduino.1
+ * Copyright see https://github.com/avrdudes/avrdude/blob/main/AUTHORS
+ * 
+ * v3.0.7, 10.12.2025:  26052 = 80% => 1544 => 504 [446]
+ * v3.0.8, 06.04.2026:  25928 = 80% => 1415 => 633
  *
 **/
 
@@ -11,11 +35,6 @@
 #include "GyverWDT.h"
 #include <iarduino_VCC.h>
 #include <EEPROM.h>
-
-// Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
-#include "VKEL_TTL.h"     
-// Обеспечиваем взаимодействие с SIM900 и передачу данных на сайт  
-#include "SIM900.h"   
 
 // Определяем переменные адреса (обычного и изменённого) для записи данных в EEPROM
 int address; int oldaddress; 
@@ -27,18 +46,30 @@ bool isReboot;
 // Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
 uint16_t nReboot;  
 
-//SoftwareSerial VKEL_TTL(12,13);  // синий на 12 - будет RX; зеленый на 13 - будет TX
-//SoftwareSerial   SIM900( 7,8 );  // SIM900 
+SoftwareSerial VKEL_TTL(12,13);  // синий на 12 - будет RX; зеленый на 13 - будет TX
+SoftwareSerial   SIM900( 7,8 );  // SIM900 
+int ThermistorPin = A0;          // аналоговый пин для снятия температуры
 
-//bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
+// Подключаем список 16-символьных сообщений приложения Kvizzy900
+// и функцию вывода сообщений
+#include "s16_Kvizzy900v3.h"
+
+bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
 uint32_t ncikl=0;                       // счетчик циклов
-//bool isFullCikl=true;                   // 9: true - "Выполняем прослушивание";        false - "Отрабатываем пустой цикл"
-//bool isMemTrass=false;                  // 8: true - "Показываем свободную память";    false - "Отменяем трассирование памяти"
-//bool isATTrass=true;                    // 7: true - "Показываем ответ на AT-команды"; false - "Отменяем трассирование AT-команд"
+bool isFullCikl=true;                   // 9: true - "Выполняем прослушивание";        false - "Отрабатываем пустой цикл"
+bool isMemTrass=false;                  // 8: true - "Показываем свободную память";    false - "Отменяем трассирование памяти"
+bool isATTrass=true;                    // 7: true - "Показываем ответ на AT-команды"; false - "Отменяем трассирование AT-команд"
+
+// Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
+#include "VKEL_TTL.h"     
+// Обеспечиваем взаимодействие с SIM900 и передачу данных на сайт  
+#include "SIM900.h"   
 
 void setup()
 {
   Serial.begin(115200);
+  VKEL_TTL.begin(9600); 
+  SIM900.begin(9600);
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
   EEPROM.get(address, nReboot);
@@ -51,7 +82,10 @@ void setup()
   address += sizeof(nReboot); 
   // Запускаем watchdog с таймаутом ~8c
   Watchdog.enable(INTERRUPT_RESET_MODE, WDT_PRESCALER_1024);  
-  //delay(1500);
+  // Выводим сводку по памяти в начале программы
+  saymess(DefToChar(m1_Fill));
+  saymess(FreeMemoryToChar());
+  delay(1500);
 }
 
 // Первый тайм-аут вызовет прерывание и если Watchdog не будет перезапущен,
@@ -210,3 +244,5 @@ void loop()
   else delay(1000);
 }
 
+// Arduino C/C++ ******************************************** Kvizzy900.ino ***
+                                                                                                                                                                                                  

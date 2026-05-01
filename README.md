@@ -1,12 +1,14 @@
 ## IttvePW DDS - для дома, для семьи
 
-Исследовательская и практическая (DDS - для дома, для семьи) работа с Arduino и другими платами. 
-
-Сборка проектов оффлайн.
-
-### [KvizzyTrassa](KvizzyTrassa/KvizzyTrassa.md)
+Исследовательская и практическая (DDS - для дома, для семьи) работа с различными  платами AVR (Arduino). 
 
 ---
+
+### [KvizzyTrassa - Вывод графиков состояний Gps/Gprs и других контроллеров при движении по трассе](KvizzyTrassa/KvizzyTrassa.md)
+
+### [ArduinoWDT - Заготовки подключения Arduino watchdog](ArduinoWDT/ArduinoWDT.md)
+
+### [IDEA - отслеживание работы контроллера через Bluetooth](IDEA/IDEA.md)
 
 ### [Живое радио и свет - AirRadioLight](#%D0%B6%D0%B8%D0%B2%D0%BE%D0%B5-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE-%D0%B8-%D1%81%D0%B2%D0%B5%D1%82-airradiolight)
 

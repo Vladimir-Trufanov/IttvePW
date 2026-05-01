@@ -13,16 +13,19 @@ DontOpen=0
 AbsolutePath=0
 FileFormat=0
 ProjectFilesOnly=0
+HTServer=localhost
 Extensions=*.*
 [Project tree]
 TrassaSD
 	+TrassaSD
-		TrassaSD.ino
+		Kvizzy900.ino
+		..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
+		TrassaSD.ppr
 [Open project files]
-0=TrassaSD.ino
+0=..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
 [Selected Project Files]
 Main=
-Selected=TrassaSD.ino
-[TrassaSD.ino]
-TopLine=1
-Caret=3,3
+Selected=..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
+[..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino]
+TopLine=30
+Caret=11,53
