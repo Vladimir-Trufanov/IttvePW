@@ -1,5 +1,4 @@
-## [IDEA - отслеживание работы контроллера через Bluetooth](https://microcontrollerslab.com/send-sensor-readings-to-android-phone-using-arduino-and-nrf24l01-via-ble/)
-
+## [SPI-i-SPI - замечания по подключению нескольких устройств по шине SPI](#)
 
 > **В интерфейсе SPI контакт SS (Slave Select) соответствует сигналу CS (Chip Select). Это линия выбора ведомого устройства, которая управляется ведущим устройством (мастером).** 
 
@@ -8,7 +7,16 @@ habr.com
 
 > **Таким образом, SS и CS — это разные обозначения для одного и того же сигнала, который используется для активации конкретного ведомого устройства при общении с мастером. При активном (низком) уровне сигнала SS ведомое устройство становится активным, и оно начинает воспринимать данные с линии MOSI и тактовый сигнал с SCK. При пассивном (высоком) уровне сигнала SS тактовый сигнал и данные на MOSI не влияют на ведомое устройство.** 
 
-###### [документация по приложению nRF Connect for Mobile](#)
 
-### [Документация nRF Connect для Android](https://github.com/nordicsemi/Android-nRF-Connect/blob/main/documentation/README.md)
+
+###### как в ардуино по spi подключить 2 устройства
+
+###### пример совместного подключения к arduino BLE и SD
+
+###### NRF24L01 via BLE and SD Card в Ардуино
+
+### [Better SPI Bus Design in 3 Steps](https://www.pjrc.com/better-spi-bus-design-in-3-steps/)
+
+### [Долгий путь к подключению NRF24L01](https://habr.com/ru/articles/574506/)
+
 
