@@ -7,6 +7,7 @@
  *
 **/
 
+/*
 #include <SoftwareSerial.h>
 #include "GyverWDT.h"
 #include <iarduino_VCC.h>
@@ -35,10 +36,12 @@ uint32_t ncikl=0;                       // счетчик циклов
 //bool isFullCikl=true;                   // 9: true - "Выполняем прослушивание";        false - "Отрабатываем пустой цикл"
 //bool isMemTrass=false;                  // 8: true - "Показываем свободную память";    false - "Отменяем трассирование памяти"
 //bool isATTrass=true;                    // 7: true - "Показываем ответ на AT-команды"; false - "Отменяем трассирование AT-команд"
+*/
 
 void setup()
 {
   Serial.begin(115200);
+  /*
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
   EEPROM.get(address, nReboot);
@@ -52,8 +55,10 @@ void setup()
   // Запускаем watchdog с таймаутом ~8c
   Watchdog.enable(INTERRUPT_RESET_MODE, WDT_PRESCALER_1024);  
   //delay(1500);
+  */
 }
 
+/*
 // Первый тайм-аут вызовет прерывание и если Watchdog не будет перезапущен,
 // то на втором прерывании произойдет жёсткая перезагрузка контроллера
 ISR(WATCHDOG) 
@@ -61,9 +66,11 @@ ISR(WATCHDOG)
   // Перезапускаем watchdog с таймаутом ~8c
   Watchdog.enable(INTERRUPT_RESET_MODE, WDT_PRESCALER_1024); 
 }
+*/
 
 void loop()
 {
+  /*
   // Отрабатываем управляющие команды из последовательного порта
   if (Serial.available())
   {
@@ -208,5 +215,6 @@ void loop()
   }
   // Если закрыто прослушивание, то делаем заглушку 1 сек 
   else delay(1000);
+  */
 }
 

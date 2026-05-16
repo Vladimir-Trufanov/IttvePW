@@ -18,6 +18,9 @@
 
 ### [U8g2-библиотека монохромной графики Arduino](U8g2/U8g2.md)
 
+### [Проекты AlexGyver](https://github.com/AlexGyver?page=6&tab=repositories)
+
+
 ---
 
 ### [Живое радио и свет AirRadioLight](#)

@@ -38,7 +38,7 @@ void setup()
   {
     Serial.println("Writing to file...");
     // Write to file
-    myFile.println("Testing text 1, 2 ,3...");
+    myFile.println("Testing text 11, 2 ,3...");
     myFile.close(); // close the file
     Serial.println("Done.");
   }
