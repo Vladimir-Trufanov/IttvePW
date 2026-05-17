@@ -46,6 +46,9 @@ void setup()
 {
   Serial.begin(9600);
   Serial.println(F("9600"));
+  VKEL_TTL.begin(9600); 
+  //SIM900.begin(9600);
+
   /*
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
@@ -257,4 +260,3 @@ void loop()
   else delay(1000);
   */
 }
-
