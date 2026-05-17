@@ -1,22 +1,26 @@
-/** Arduino C/C++ ******************************************* Kvizzy900.ino ***
+/** Arduino C/C++ ******************************************** TrassaSD.ino ***
  *
  * Обеспечить снятие показаний разного рода и запись на SD-карту
  * 
- * v1.0.0, 30.04.2026                                 Автор:      Труфанов В.Е.
+ * v1.0.1, 17.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 30.04.2026
  *
 **/
 
-/*
 #include <SoftwareSerial.h>
+
+// Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
+#include "VKEL_TTL.h"     
+
+uint32_t ncikl=0;                       // счетчик циклов
+
+/*
 #include "GyverWDT.h"
 #include <iarduino_VCC.h>
 #include <EEPROM.h>
 
-// Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
-#include "VKEL_TTL.h"     
 // Обеспечиваем взаимодействие с SIM900 и передачу данных на сайт  
-#include "SIM900.h"   
+// #include "SIM900.h"   
 
 // Определяем переменные адреса (обычного и изменённого) для записи данных в EEPROM
 int address; int oldaddress; 
@@ -40,7 +44,8 @@ uint32_t ncikl=0;                       // счетчик циклов
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
+  Serial.println(F("9600"));
   /*
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
@@ -70,6 +75,41 @@ ISR(WATCHDOG)
 
 void loop()
 {
+  ncikl++;
+
+  // Прослушиваем приемник GPS V.KEL-TTL
+  // (по умолчанию прослушивается последний инициализированный порт,
+  // если требуется прослушивать другой, следует его явно указать)
+  VKEL_TTL.listen();
+  // Выбираем данные навигации из приёмника GPS V.KEL TTL 
+  isVKEL_TTL=Talk_VKEL_TTL(ncikl);
+  // Если данные от приемника GPS есть, то
+  // -- начинаем прослушивать и работать с портом SIM900
+  if (isVKEL_TTL)
+  {
+    Serial.println(F("Данные от приемника GPS есть"));
+  }
+  // Выводим причину, пересчитываем и указываем интервал отсутствия сигнала GPS
+  else
+  {
+    Serial.println(F("Отсутствие сигнала GPS"));
+    /*
+      // Формируем уточняющее сообщение о задержке
+      delayGPS=millis()-BdelayGPS; 
+      uint32_t deltaSec=delayGPS/1000;
+      if (deltaSec<100) SecToChar(deltaSec);
+      else 
+      {
+        uint32_t deltaMin=deltaSec/60;
+        if (deltaMin<100) SecToChar(deltaMin,false);
+        else DefToChar(m1_Delay99); 
+      } 
+      // Выводим уточняющее сообщение о задержке
+      saymess(charMess);
+    */
+  } 
+  delay(1000);
+
   /*
   // Отрабатываем управляющие команды из последовательного порта
   if (Serial.available())
