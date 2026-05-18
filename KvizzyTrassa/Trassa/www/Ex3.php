@@ -1,6 +1,10 @@
 <?php
 
 $dataPoints = array(
+	array("x" => 500000, "y" => 1000),
+	array("x" => 800000, "y" => 3000),
+	array("x" => 900000, "y" => 2000),
+/*
 	array("x" => 946665000000, "y" => 3289000),
 	array("x" => 978287400000, "y" => 3830000),
 	array("x" => 1009823400000, "y" => 2009000),
@@ -18,6 +22,7 @@ $dataPoints = array(
 	array("x" => 1388514600000, "y" => 2394000),
 	array("x" => 1420050600000, "y" => 1872000),
 	array("x" => 1451586600000, "y" => 2140000)
+*/
 );
  
 ?>
@@ -35,16 +40,16 @@ window.onload = function ()
 	},
 	axisY: {
 		title: "Выручка в долларах США",
-		valueFormatString: "#0,,.",
+    valueFormatString: "#0,,.",
 		suffix: "mn",
 		prefix: "$"
 	},
 	data: [{
 		type: "spline",
 		markerSize: 5,
-		xValueFormatString: "YYYY",
-		yValueFormatString: "$#,##0.##",
-		xValueType: "dateTime",
+		//xValueFormatString: "YYYY",
+		//yValueFormatString: "$#,##0.##",
+		//xValueType: "dateTime",
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
 });

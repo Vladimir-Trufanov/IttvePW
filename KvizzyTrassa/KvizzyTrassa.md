@@ -21,6 +21,8 @@
 
 #### [Красивые PHP-диаграммы для веб-приложений ](https://canvasjs.com/php-charts/)
 
+#### [CanvasJS - Documentation](https://manuals.muthu.co/posts/javascript-libraries-and-functions/canvasjs.html#basic-chart-configuration)
+
 #### [PHP Dynamic / Live Multi Series Chart](https://canvasjs.com/php-charts/dynamic-live-multi-series-chart/)
 
 ***Динамическая диаграмма PHP / многосерийная диаграмма в реальном времени***
