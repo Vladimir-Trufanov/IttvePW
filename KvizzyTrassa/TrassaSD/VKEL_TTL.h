@@ -2,7 +2,7 @@
  * 
  * Обеспечить взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
  * 
- * v5.0.0, 01.12.2025                                 Автор:      Труфанов В.Е.
+ * v6.0.1, 18.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 16.10.2025
 **/
 
@@ -10,6 +10,8 @@
 #define VKEL_TTL_h
 // Указываем, что данный файл нужно подключить только один раз
 #pragma once  
+
+#include "s32nRF24L01.h"    
 
 // Настраиваем переменные и модули для работы с V.KEL TTL
 #include <TinyGPSPlus.h>
@@ -29,7 +31,7 @@ int gday,gmonth,gyear;                  // день, месяц, год
 int ghour,gmin,gsec;                    // час,минута,секунда
 int SAT=0;                              // количество спутников
 double HDOP;                            // погрешность координат
-const int timezone_hours=3;             // Корректировка времени на время Москвы
+const int timezone_hours=3;             // корректировка времени на время Москвы
 
 /*
 Выделяем 15-е, 16-е и 17-е поля в предложении $GPGSA, 
@@ -140,10 +142,12 @@ bool Talk_VKEL_TTL(unsigned long ncikl)
       lat=gps.location.lat();
       lng=gps.location.lng();
       DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
-      Serial.print("lat=            "); printf("x = %8.6f \n", lat); // выведет 71.90Serial.println(lat);
-      Serial.print("lat=            "); Serial.println(lat);
-      Serial.print("lng=            "); Serial.println(lng);
-      Serial.print("DistanceBetween="); Serial.println(DistanceBetween);
+      Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
+      //LocationToChar(lat,lng,chardec);
+      Serial.println(LocationToChar(lat,lng,chardec)); 
+      Serial.println(krdMess); 
+      Serial.println("-------"); 
+ 
       // Меняем прежнее положение для определения будущего расстояния между точками
       lat0=lat; lng0=lng;  
       // Определяем дату

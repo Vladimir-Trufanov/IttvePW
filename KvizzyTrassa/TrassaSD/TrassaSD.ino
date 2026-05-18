@@ -10,7 +10,8 @@
 #include <SoftwareSerial.h>
 
 // Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
-#include "VKEL_TTL.h"     
+#include "VKEL_TTL.h" 
+#include "s32nRF24L01.h"    
 
 uint32_t ncikl=0;                       // счетчик циклов
 
