@@ -142,11 +142,11 @@ bool Talk_VKEL_TTL(unsigned long ncikl)
       lat=gps.location.lat();
       lng=gps.location.lng();
       DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
-      Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
-      //LocationToChar(lat,lng,chardec);
-      Serial.println(LocationToChar(lat,lng,chardec)); 
+      //Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
+      LocationToChar(lat,lng,chardec);
+      //Serial.println(LocationToChar(lat,lng,chardec)); 
       Serial.println(krdMess); 
-      Serial.println("-------"); 
+      //Serial.println("-------"); 
  
       // Меняем прежнее положение для определения будущего расстояния между точками
       lat0=lat; lng0=lng;  
@@ -180,6 +180,10 @@ bool Talk_VKEL_TTL(unsigned long ncikl)
         //saymess(DefToChar(m1_DateIsNot));
         Serial.println(F("Не определяется дата"));
       }
+      DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec); 
+      //Serial.println(DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec)); 
+      Serial.println(tidMess); 
+      Serial.println(""); //("-------"); 
     }
     // "Не определяется локация" 
     else
