@@ -10,10 +10,12 @@
 #include <SoftwareSerial.h>
 
 // Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
-#include "VKEL_TTL.h" 
-#include "s32nRF24L01.h"    
 
 uint32_t ncikl=0;                       // счетчик циклов
+
+#include "VKEL_TTL.h" 
+#include "SIM900.h"   
+#include "s32nRF24L01.h"    
 
 /*
 #include "GyverWDT.h"
@@ -21,7 +23,6 @@ uint32_t ncikl=0;                       // счетчик циклов
 #include <EEPROM.h>
 
 // Обеспечиваем взаимодействие с SIM900 и передачу данных на сайт  
-// #include "SIM900.h"   
 
 // Определяем переменные адреса (обычного и изменённого) для записи данных в EEPROM
 int address; int oldaddress; 
@@ -32,9 +33,6 @@ int address; int oldaddress;
 bool isReboot;       
 // Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
 uint16_t nReboot;  
-
-//SoftwareSerial VKEL_TTL(12,13);  // синий на 12 - будет RX; зеленый на 13 - будет TX
-//SoftwareSerial   SIM900( 7,8 );  // SIM900 
 
 //bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
 uint32_t ncikl=0;                       // счетчик циклов
@@ -48,7 +46,7 @@ void setup()
   Serial.begin(9600);
   Serial.println(F("9600"));
   VKEL_TTL.begin(9600); 
-  //SIM900.begin(9600);
+  SIM900.begin(9600);
 
   /*
   // Переопределяем счетчик перезагрузок контроллера
@@ -111,7 +109,40 @@ void loop()
       saymess(charMess);
     */
   } 
-  delay(1000);
+
+  // Работаем с SIM900
+  SIM900.listen();
+  // Проверяем, реагирует ли на команды SIM900
+  // и включаем GPRS, если нет ответа
+  uint8_t answeri=AT_com(AT_AT);                  
+  // Инициируем переменные
+  if (answeri!=0)
+  { 
+    //Serial.print(F("answeri=")); Serial.println(answeri);
+    Serial.println(F("Включаем SIM900, ждем 10 секунд!"));
+    // Включаем SIM900
+    // saymess(DefToChar(m1_TurnOnSIM900));
+    SIM900powerUpOrDown();
+    // Начинаем новый отсчет времени для передачи на сайт 
+    // BdelaySIM=millis();  
+  }
+  // Отсчитываем время и отправляем данные положения на сайт
+  else
+  {
+    Serial.println(F("Есть SIM900"));
+    /*
+        delaySIM=millis()-BdelaySIM; 
+        if (delaySIM>dTimeSIM) 
+        {
+          // Отправляем данные положения на сайт и начинаем новый отсчет времени для передачи на сайт 
+          CoordSend();
+        }
+    */
+  }
+
+
+
+  delay(100);
 
   /*
   // Отрабатываем управляющие команды из последовательного порта
