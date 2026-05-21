@@ -34,7 +34,6 @@ bool isReboot;
 // Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
 uint16_t nReboot;  
 
-//bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
 uint32_t ncikl=0;                       // счетчик циклов
 //bool isFullCikl=true;                   // 9: true - "Выполняем прослушивание";        false - "Отрабатываем пустой цикл"
 //bool isMemTrass=false;                  // 8: true - "Показываем свободную память";    false - "Отменяем трассирование памяти"
@@ -129,7 +128,11 @@ void loop()
   // Отсчитываем время и отправляем данные положения на сайт
   else
   {
-    Serial.println(F("Есть SIM900"));
+    //Serial.println(F("Есть SIM900"));
+
+    // Выбираем данные навигации из приёмника GPS V.KEL TTL 
+    isSIM900=Talk_SIM900(ncikl);
+
     /*
         delaySIM=millis()-BdelaySIM; 
         if (delaySIM>dTimeSIM) 

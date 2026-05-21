@@ -25,24 +25,10 @@
 
 // Готовим массивы символов для формирования сообщений
 char chardec[8];    // буфер координат, дистанции, температуры, напряжения - max 7 знаков и точка (nt)
-char krdMess[34];   // буфер сообщения c текущими координатами  
+char krdMess[34];   // буфер сообщения c текущими координатами и числом спутников 
 char tidMess[34];   // буфер сообщения о дате и времени  
+char simMess[34];   // буфер сообщения о дате и времени  
 
-// ****************************************************************************
-// *                       Сформировать сообщение о локации                   *
-// ****************************************************************************
-_DS(LocToCh,"-")    
-_DS(pref_krd,"krd")    
-char* LocationToChar(double lat, double lng, char chardec[]) 
-{
-  // "krd61.80191-34.32987"
-  memset(krdMess,'\0',34); 
-  strcat_P(krdMess,pref_krd); 
-  dtostrf(lat,2,5,chardec); strcat(krdMess,chardec);
-  strcat_P(krdMess,LocToCh); 
-  dtostrf(lng,2,5,chardec); strcat(krdMess,chardec);
-  return krdMess;  
-} 
 // ****************************************************************************
 // *            Преобразовать беззнаковое  целое в строку символов            *
 // ****************************************************************************
@@ -55,6 +41,23 @@ char* IntToChar(uint32_t numbIn)
   String(numby).toCharArray(charNumby,10);
   return charNumby;
 }
+// ****************************************************************************
+// *              Сформировать сообщение о локации и числе спутников          *
+// ****************************************************************************
+_DS(LocToCh,"-")    
+_DS(pref_krd,"krd")    
+char* LocationToChar(double lat, double lng, int SAT, char chardec[]) 
+{
+  // "krd61.80191-34.32987-11"
+  memset(krdMess,'\0',34); 
+  strcat_P(krdMess,pref_krd); 
+  dtostrf(lat,2,5,chardec); strcat(krdMess,chardec);
+  strcat_P(krdMess,LocToCh); 
+  dtostrf(lng,2,5,chardec); strcat(krdMess,chardec);
+  strcat_P(krdMess,LocToCh); 
+  strcat(krdMess,IntToChar(SAT));
+  return krdMess;  
+} 
 // ****************************************************************************
 // *                   Сформировать сообщение о дате и времени                *
 // ****************************************************************************
@@ -84,7 +87,32 @@ char* DateTimeToChar(int ghour, int gmin, int gsec, int gday, int gmonth, int gy
   if (gsec<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(gsec));}
   else strcat(tidMess,IntToChar(gsec)); 
   return tidMess;  
-} 
+}
+// ****************************************************************************
+// *         Сформировать сообщение об уровне сигнала и батареи GPRS          *
+// ****************************************************************************
+_DS(pref_sim,"sim")    
+char* DbAndVoltToChar(int lipo, int dB, char chardec[]) 
+{
+  // "sim24-4.56"
+  memset(simMess,'\0',34); 
+  strcat_P(simMess,pref_sim); 
+  strcat(simMess,IntToChar(dB)); 
+  strcat_P(simMess,LocToCh); 
+  double vib=double(lipo)/1000;
+  dtostrf(vib,1,2,chardec); strcat(simMess,chardec);
+ 
+  /*
+  strcat_P(charMess,gprs); 
+  if (dB<10) {strcat_P(charMess,DistT4); strcat(charMess,IntToChar(dB));}
+  else strcat(charMess,IntToChar(dB)); 
+  strcat_P(charMess,dbzpt); 
+  double vib=double(lipo)/1000;
+  dtostrf(vib,1,2,chardec); strcat(charMess,chardec);strcat_P(charMess,vvq); 
+  */
+  return simMess;  
+}  
+
 
 /* Пример сообщений:
 

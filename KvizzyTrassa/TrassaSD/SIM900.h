@@ -19,14 +19,16 @@ MatchState ms;
 
 // Подключаем список 16-символьных сообщений приложения Kvizzy900
 // и функцию вывода сообщений
-//#include "s16_Kvizzy900v3.h"
+
+#include "s32nRF24L01.h"    
+bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
 
 // Размещаем список команд в программной памяти
 _DS(AT_AT,"AT") 
 _DS(AT_CSQ,"AT+CSQ")        // Проверить уровень сигнала
+_DS(AT_CBC,"AT+CBC")        // Получить состояние батареи
 
 /*
-_DS(AT_CBC,"AT+CBC")        // Получить состояние батареи
 //_DS(AT_CSQ,"AT+CSQ") 
 _DS(AT_Contype,"AT+SAPBR=3,1,\"Contype\",\"GPRS\"") 
 // ----------------------------------------------------------------------------
@@ -120,7 +122,9 @@ uint8_t AT_(unsigned int timeout)
   }
   while((answer == 2) && ((millis() - previous) < timeout));
   // При необходимости трассируем ответ на AT-команду
-  //if (isATTrass) Serial.println(response);
+  //if (isATTrass) { 
+  //  Serial.print("**** "); Serial.println(response); 
+  //  }
   // Если вышли ли за границу буфера, то возвращаем ошибку
   // "ответ SIM900 превышает 169 символов"  
   if (answer==1) goto by; 
@@ -299,20 +303,6 @@ bool send_coords_at(uint32_t glat, uint32_t glon, uint32_t gcik)
   return true;
 }
 // ****************************************************************************
-// *                     Отправить данные положения на сайт и                 *
-// *              начать новый отсчет времени для передачи на сайт            *
-// ****************************************************************************
-void CoordSend()
-{
-  bool isSend;     // флаг успешности отправки координат
-  //saymess(DefToChar(m1_SendCoordints));
-  glat=lat*1000000; glon=lng*1000000;   
-  isSend=send_coords_at(glat,glon,ncikl);
-  //if (isSend) saymess(DefToChar(m1_CoordinatGone));
-  // Начинаем новый отсчет времени для передачи на сайт 
-  BdelaySIM=millis();   
-}
-// ****************************************************************************
 // *                Выбрать в буфере подстроку по запросу regexp              *
 // ****************************************************************************
 int getIntByMatch(char buf[],char mch[]) 
@@ -338,6 +328,42 @@ int getIntByMatch(char buf[],char mch[])
     i=atoi(chardec);
   }
   return i;
+}
+
+// ****************************************************************************
+// *  Выбрать данные из SIM900, в случае неудачи вывести сообщение об ошибке  *
+// ****************************************************************************
+bool Talk_SIM900(uint32_t ncikl)
+{
+  bool isSend=true; 
+  // Получаем состояние батареи
+  //if (AT_com(AT_CBC)!=0) isSend=false; 
+  AT_com(AT_CBC);
+  // Выбираем первые 4 цифры в ответе
+  lipo=getIntByMatch(response,"%d%d%d%d");
+  //Serial.print("lipo= "); Serial.println(lipo); 
+
+  // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
+  // он должен быть выше 5. Чем выше, тем лучше, до 31.
+  //if (AT_com(AT_CSQ)!=0) isSend=false; 
+  AT_com(AT_CSQ);
+  // Выбираем первые одну или более цифры в ответе
+  dB=getIntByMatch(response,"%d(%d*)");
+  //Serial.print("dB= "); Serial.println(dB); 
+  // При ненулевых данных выводим сообщение об уровне сигнала и батареи 
+  if ((lipo>0)&&(dB>0)) DbAndVoltToChar(lipo,dB,chardec);
+  else isSend=false; 
+  Serial.println(simMess); 
+  Serial.println(""); //("-------"); 
+
+
+  //saymess(DefToChar(m1_SendCoordints));
+  //glat=lat*1000000; glon=lng*1000000;   
+  //isSend=send_coords_at(glat,glon,ncikl);
+  //if (isSend) saymess(DefToChar(m1_CoordinatGone));
+  // Начинаем новый отсчет времени для передачи на сайт 
+  //BdelaySIM=millis();  
+  return isSend; 
 }
 
 #endif

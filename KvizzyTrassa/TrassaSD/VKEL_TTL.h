@@ -126,7 +126,7 @@ bool smartDelay(unsigned long ms)
 // *         Выбрать данные навигации из буфера приёмника GPS V.KEL TTL,      *
 // *                в случае неудачи вывести сообщение об ошибке              *
 // ****************************************************************************
-bool Talk_VKEL_TTL(unsigned long ncikl)
+bool Talk_VKEL_TTL(uint32_t ncikl)
 {
   // Инициируем данные приёмника GPS
   ghour=0; gmin=0; gsec=0; 
@@ -141,9 +141,9 @@ bool Talk_VKEL_TTL(unsigned long ncikl)
     {
       lat=gps.location.lat();
       lng=gps.location.lng();
-      DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
+      //DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
       //Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
-      LocationToChar(lat,lng,chardec);
+      LocationToChar(lat,lng,SAT,chardec);
       //Serial.println(LocationToChar(lat,lng,chardec)); 
       Serial.println(krdMess); 
       //Serial.println("-------"); 
@@ -183,7 +183,7 @@ bool Talk_VKEL_TTL(unsigned long ncikl)
       DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec); 
       //Serial.println(DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec)); 
       Serial.println(tidMess); 
-      Serial.println(""); //("-------"); 
+      //Serial.println(""); //("-------"); 
     }
     // "Не определяется локация" 
     else
