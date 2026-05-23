@@ -256,7 +256,6 @@ bool Talk_SIM900(uint32_t ncikl)
       {
         DbAndVoltToChar(lipo,dB,vi,chardec);
         Serial.println(simMess); 
-        Serial.println(""); //("-------"); 
       }
       else isSend=false; 
     } 

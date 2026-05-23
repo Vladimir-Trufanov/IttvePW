@@ -42,7 +42,6 @@ void setup()
 
 void loop()
 {
-  ncikl++;
   // Считываем напряжение питания
   vi = analogRead_VCC();      
 
@@ -55,6 +54,7 @@ void loop()
   // Принимаем и запоминаем данные от приемника GPS
   if (isVKEL_TTL)
   {
+    ncikl++;  // изменили счетчик считанных данных
     //Serial.println(F("Данные от приемника GPS есть"));
   }
   // Выводим причину, пересчитываем и указываем интервал отсутствия сигнала GPS
@@ -115,7 +115,20 @@ void loop()
 
   delay(100);
 
-  
+  // С 11 цикла, как пошли координаты пересчитываем нарастающее расстояние и время
+  if (ncikl==10)
+  {
+    // Инициируем прежнее время для определения будущих интервалов
+    ghour0=ghour; gmin0=gmin; gsec0=gsec; 
+  }
+  else if (ncikl>10)
+  {
+    IncreaseToChar(DistanceBetween,ghour,gmin,gsec,ghour0,gmin0,gsec0);
+    // Меняем прежнее время для определения будущих интервалов
+    ghour0=ghour; gmin0=gmin; gsec0=gsec; 
+    Serial.println(ddtMess); 
+    Serial.println(""); //("-------"); 
+  }
   // Отрабатываем управляющие команды из последовательного порта
   if (Serial.available())
   {

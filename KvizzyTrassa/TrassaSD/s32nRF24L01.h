@@ -13,8 +13,6 @@
 // Указываем, что данный файл нужно подключить только один раз
 #pragma once    
 
-// #include <MemoryFree.h>
-
 // Определяем макрос для размещения массива символов в программной памяти:
 // const char pstr[] PROGMEM = "Массив символов pgm в программной памяти, Flash вместо RAM";
 #define _DS(name,value) const char name[] PROGMEM = value;
@@ -23,11 +21,16 @@
 // (const __FlashStringHelper*) pstr
 #define _FS(name) (const __FlashStringHelper*) name
 
+// Переменные нарастающего расстояния в сантиметрах и времени в секундах
+uint32_t increase_distance=0;  // до 4 294 967 295 = 42 949 км
+uint32_t increase_time=0;      // до 4294967295 = 1 193 046 час
+
 // Готовим массивы символов для формирования сообщений
 char chardec[8];    // буфер координат, дистанции, температуры, напряжения - max 7 знаков и точка (nt)
 char krdMess[34];   // буфер сообщения c текущими координатами и числом спутников 
 char tidMess[34];   // буфер сообщения о дате и времени  
 char simMess[34];   // буфер сообщения о дате и времени  
+char ddtMess[34];   // буфер сообщения нарастающего расстояния в сантиметрах и времени в секундах 
 
 // ****************************************************************************
 // *            Преобразовать беззнаковое  целое в строку символов            *
@@ -65,7 +68,7 @@ _DS(pref_tid,"tid")
 _DS(Point,".")    
 _DS(Twodots,":") 
 _DS(dZero,"0")    
-char* DateTimeToChar(int ghour, int gmin, int gsec, int gday, int gmonth, int gyear, char chardec[]) 
+char* DateTimeToChar(int ghour, int gmin, int gsec, int gday, int gmonth, int gyear) 
 {
   // "tid2026.05.18-20:43:23"
   memset(tidMess,'\0',34); 
@@ -110,7 +113,29 @@ char* DbAndVoltToChar(int lipo, int dB, float vi, char chardec[])
   dtostrf(vi,1,2,chardec); strcat(simMess,chardec);
   return simMess;  
 }  
-
+// ****************************************************************************
+// *         Сформировать сообщение о нарастающем расстоянии и времени        *
+// ****************************************************************************
+_DS(pref_ddt,"ddt")    
+_DS(di,"d") 
+char* IncreaseToChar(double DistanceBetween, int ghour, int gmin, int gsec, int ghour0, int gmin0, int gsec0) 
+{
+  uint32_t value;
+  // "ddt123456789-d123456789"
+  memset(ddtMess,'\0',34); 
+  strcat_P(ddtMess,pref_ddt); 
+  // Пересчитываем нарастающее время
+  value=ghour0*3600+gmin0*60+gsec0;
+  value=ghour*3600+gmin*60+gsec-value;
+  increase_time=increase_time+value;
+  strcat(ddtMess,IntToChar(increase_time)); 
+  // Пересчитываем нарастающее расстояние
+  strcat_P(ddtMess,LocToCh); 
+  strcat_P(ddtMess,di); 
+  increase_distance=increase_distance+DistanceBetween*100;
+  strcat(ddtMess,IntToChar(increase_distance)); 
+  return ddtMess;  
+}
 
 /* Пример сообщений:
 

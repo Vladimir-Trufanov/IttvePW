@@ -20,7 +20,8 @@ TinyGPSPlus gps;
 SoftwareSerial VKEL_TTL(2,3);           // синий на 2 - RX; зеленый на 3 - TX
 
 bool isVKEL_TTL=false;                  // "Приемник GPS не подает сигналы" = The GPS receiver does not send signals
-double lat0=61.80193, lng0=34.32983;    // координаты предыдущей точки - окно гостинной
+double lat0, lng0;                      // координаты предыдущей точки 
+int ghour0,gmin0,gsec0;                 // час,минута,секунда в предыдущей точке
 uint32_t BdelayGPS=millis();            // начало отсчета задержки сигнала в опросе GPS 
 uint32_t delayGPS;                      // задержка сигнала в опросе GPS 
 
@@ -141,7 +142,8 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
     {
       lat=gps.location.lat();
       lng=gps.location.lng();
-      //DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
+      DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
+      //Serial.print("DistanceBetween="); Serial.println(DistanceBetween);
       //Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
       LocationToChar(lat,lng,SAT,chardec);
       //Serial.println(LocationToChar(lat,lng,chardec)); 
@@ -180,8 +182,8 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
         //saymess(DefToChar(m1_DateIsNot));
         Serial.println(F("Не определяется дата"));
       }
-      DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec); 
-      //Serial.println(DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear,chardec)); 
+      DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear); 
+      //Serial.println(DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear)); 
       Serial.println(tidMess); 
       //Serial.println(""); //("-------"); 
     }
