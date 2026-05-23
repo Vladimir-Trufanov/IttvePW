@@ -1,64 +1,39 @@
-/** Arduino UNO, SIM900 **************************************** VKEL_TTL.h ***
+/** Arduino UNO, SIM900 ****************************************** SIM900.h ***
  * 
- * Обеспечить взаимодействие с SIM900 и передачу данных на сайт 
+ * Обеспечить прием данных с SIM900
  * 
- * v3.0.2, 06.04.2026                                 Автор:      Труфанов В.Е.
+ * v3.0.4, 22.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 16.10.2025
 **/
 
 #ifndef SIM900_h
 #define SIM900_h
-// Указываем, что данный файл нужно подключить только один раз
 #pragma once 
 
 SoftwareSerial SIM900(7,8);  // синий на 7 - будет RX; зеленый на 8 - будет TX
 
 #include <Regexp.h>
-// match state object
-MatchState ms;
-
-// Подключаем список 16-символьных сообщений приложения Kvizzy900
-// и функцию вывода сообщений
-
+MatchState ms;               // объект соответствия выборке
 #include "s32nRF24L01.h"    
-bool isSIM900=false;                    // "Не работает SIM900" = SIM900 does not work
+bool isSIM900=false;         // false - "Не работает SIM900"
 
 // Размещаем список команд в программной памяти
 _DS(AT_AT,"AT") 
-_DS(AT_CSQ,"AT+CSQ")        // Проверить уровень сигнала
-_DS(AT_CBC,"AT+CBC")        // Получить состояние батареи
+_DS(AT_CSQ,"AT+CSQ")         // проверить уровень сигнала
+_DS(AT_CBC,"AT+CBC")         // получить состояние батареи
 
-/*
-//_DS(AT_CSQ,"AT+CSQ") 
-_DS(AT_Contype,"AT+SAPBR=3,1,\"Contype\",\"GPRS\"") 
-// ----------------------------------------------------------------------------
-//_DS(AT_SAPBR,"AT+SAPBR=3,1,\"APN\",\"internet.mts.ru\"")   // МТС
-  _DS(AT_SAPBR,"AT+SAPBR=3,1,\"APN\",\"internet\"")          // Мегафон
-// ----------------------------------------------------------------------------
-_DS(AT_SAPBR1,"AT+SAPBR=1,1")
-_DS(AT_SAPBR0,"AT+SAPBR=0,1")
-_DS(AT_HTTPINIT,"AT+HTTPINIT") 
-_DS(AT_HTTPPARA,"AT+HTTPPARA=\"CID\",1") 
-_DS(AT_HTTPACTION0,"AT+HTTPACTION=0") 
-_DS(AT_HTTPREAD,"AT+HTTPREAD") 
-_DS(AT_HTTPTERM,"AT+HTTPTERM") 
-// ----------------------------------------------------------------------------
-// https://probatv.ru/State/?cycle=2&num=4&ctrl=203&sjson={"wpt":{"lat":52518611,"lon":13376111}} - путевая точка от Sim900 в автомобиле
-//_DS(str0,"AT+HTTPPARA=\"URL\",\"http://probatv.ru/State/?cycle=")
-  _DS(str0,"AT+HTTPPARA=\"URL\",\"http://kwinflat.ru/State/?cycle=")
-// ----------------------------------------------------------------------------
-_DS(str1,"&num=5&ctrl=203&sjson={%22trkpt%22:{%22lat%22:")
-_DS(str2,",%22lon%22:")
-_DS(str3,",%22color%22:%22blue%22}}\"")
-*/
+char response[170];          // буфер ответа GPRS и URL передачи данных
+int lipo=0;                  // четырехзначное состояние батареи lipo
+int dB=0;                    // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
+float vi;                    // напряжение питания контроллера
 
-char response[170];            // буфер ответа GPRS и URL передачи данных
-uint32_t glat,glon;            // значения координат, передаваемые на сайт 
-uint32_t BdelaySIM=millis();   // начало отсчета времени до передачи на сайт 
-uint32_t delaySIM;             // истекший интервал после передачи 
-uint32_t dTimeSIM=180000;      // интервал подачи координат в мс на сайт (3 мин)  
-int lipo=0;                    // четырехзначное состояние батареи lipo
-int dB=0;                      // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
+
+//uint32_t glat,glon;            // значения координат, передаваемые на сайт 
+//uint32_t BdelaySIM=millis();   // начало отсчета времени до передачи на сайт 
+//uint32_t delaySIM;             // истекший интервал после передачи 
+//uint32_t dTimeSIM=180000;      // интервал подачи координат в мс на сайт (3 мин)  
+
+
 
 // ****************************************************************************
 // *                 Сформировать сообщения по ошибке AT-команды              *
@@ -69,13 +44,38 @@ void ATerrorMess(char* ATcommand, uint8_t answer)
   // Выводим текст AT команды
   // if (answer==0) saymess(ATcommand);
   // Выводим сообщение об ошибке
-  /*
-  if (answer==1) saymess(DefToChar(m1_ResponsExceed));
-  else if (answer==2) saymess(DefToChar(m1_NoReception));
-  else if (answer==3) saymess(DefToChar(m1_NoConfirmed));
-  else if (answer==4) saymess(DefToChar(m1_NotCompleted));
-  */
+  if (answer==1) Serial.println(F("Ответ SIM900 превышает 169 символов")); 
+  else if (answer==2) Serial.println(F("За время тайм-аута не начат приём")); 
+  else if (answer==3) Serial.println(F("Oтвет на команду не подтвержден" )); 
+  else if (answer==4) Serial.println(F("За время тайм-аута не завершён ответ")); 
 } 
+
+/*
+// Представляем все сообщения 1 приложения "m1" (из 16 символов юникода)
+// (из-за особенностей драйвера для LCD1602 по максимуму русские буквы
+// представлены латинскими)
+_DS(m1_Fill,          "                ")    // 16 байт
+_DS(m1_Full,          "1234567890123456")    // 16 байт
+_DS(m1_NotSignGPS,    "HET CИГHAЛA GPS ")    // "Приемник GPS не подает сигналы"
+_DS(m1_SIM900notWork, "OTKЛЮЧEH SIM900 ")    // "Не работает SIM900"
+_DS(m1_anAudition,    "ПPOCЛУШИBAEM GPS")    // "Выполняем прослушивание" - Performing an audition
+_DS(m1_EmptyLoop,     "ИДET ПУCTOЙ ЦИKЛ")    // "Отрабатываем пустой цикл" - Working out an empty loop
+_DS(m1_Delay99,       "ЗAДEPЖKA >99 min")    // "Задержка >99 мин"
+_DS(m1_TimeIsNot,     "HET XOДA BPEMEHИ")    // "Не определяется время" - The time is not being determined
+_DS(m1_DateIsNot,     "HET ДAHHЫX ДATЫ ")    // "Не определяется дата" - The date is not being determined
+_DS(m1_LocateIsNot,   "HE ИДET ЛOKAЦИЯ ")    // "Не определяется локация" - "Location is not being determined"
+_DS(m1_TurnOnSIM900,  "BKЛЮЧAEM SIM900 ")    // "Включаем SIM900" - "Turning on the SIM900"
+_DS(m1_FreeMemory,    "CMOTPИM ПAMЯTЬ  ")    // "Показываем свободную память" - Showing free memory
+_DS(m1_NoMemoryTrace, "HE ГЛЯДИM ПAMЯTЬ")    // "Отменяем трассирование памяти" - Canceling memory tracing
+_DS(m1_ATcom,         "ECTЬ AT-KOMAHДЫ ")    // "Показываем ответ на AT-команды"
+_DS(m1_NoATtrass,     "HE TPACCИPУEM AT")    // "Отменяем трассирование AT-команд"
+_DS(m1_NoConfirmed,   "HE УCПEШEH GPRS ")    // - The response to the command has not been confirmed
+_DS(m1_NotCompleted,  "HE ПOЛHЫЙ OTBET ")    // - The response was not completed during the timeout period
+_DS(m1_Wait5sek,      "ЖДEM OTBET 5 sec")    // "Ждем 5 сек для получения ответа" - "Waiting for a response for 5 seconds"
+_DS(m1_SendCoordints, "----> KOOPДИHATЫ")    // "Отправляем координаты" - "Sending the coordinates"
+_DS(m1_CoordinatGone, "KOOPДИHATЫ ====>")    // "Координаты ушли" - "The coordinates are gone"
+*/
+
 // ****************************************************************************
 // *               Отправить AT-команду на SIM900 и выбрать ответ             *
 // ****************************************************************************
@@ -161,9 +161,10 @@ uint8_t AT_(unsigned int timeout)
   return answer;
 }
 // ****************************************************************************
-// *    Загрузить AT-команду в буфер из программной памяти и отправить её     *
+// *     Загрузить AT-команду в буфер из программной памяти и отправить её    *
+// *           (timeout=100, уже не хватает на команду AT, 22.05.2026)        *
 // ****************************************************************************
-uint8_t AT_com(const char ATcommand[],unsigned int timeout=500)
+uint8_t AT_com(const char ATcommand[],unsigned int timeout=300)
 {
   // При отправке AT-команды используется один и тот же буфер для отправки команды и 
   // приёма ответа, поэтому буфер готовится (чистится) дважды
@@ -171,19 +172,6 @@ uint8_t AT_com(const char ATcommand[],unsigned int timeout=500)
   strcpy_P(response,ATcommand);   // перекинули в буфер команду из программной памяти    
   return AT_(timeout);  
 }
-// ****************************************************************************
-// *    Загрузить AT-команду в буфер из оперативной памяти и отправить её     *
-// ****************************************************************************
-/*
-uint8_t AT_RAM(const char ATcommand[],unsigned int timeout=500)
-{
-  // При отправке AT-команды используется один и тот же буфер для отправки команды и 
-  // приёма ответа, поэтому буфер готовится (чистится) дважды
-  memset(response,'\0',170);      // очистили буфер 
-  strcpy(response,ATcommand);     // перекинули в буфер команду из программной памяти    
-  return AT_(timeout);  
-}
-*/
 // ****************************************************************************
 // *  Включить/выключить (программный триггер) SIM900 через вывод D9 Arduino  *
 // *     (В качестве синхронизации включения/выключения требуется импульс     *
@@ -215,94 +203,6 @@ void SIM900powerUpOrDown()
   delay(3000);
 }
 // ****************************************************************************
-// *          Выполнить передачу последних принятых координат на сайт         *
-// ****************************************************************************
-// 2025-11-04 вид запроса, введенный вручную 
-// http://probatv.ru/State/?cycle=7&num=5&ctrl=204&sjson={"trkpt":{"lat":52518611,"lon":13376111,"color":"yellow"}}
-// 2025-11-04 вид запроса, считанный из URL сайта в Edge и Google Chrome
-// http://probatv.ru/State/?cycle=7&num=5&ctrl=204&sjson={%22trkpt%22:{%22lat%22:52518611,%22lon%22:13376111,%22color%22:%22yellow%22}}
-// 2025-11-04 вид запроса, считанный из URL сайта в Yandex
-// http://probatv.ru/State/?cycle=7&num=5&ctrl=204&sjson=%7B%22trkpt%22:%7B%22lat%22:52518611,%22lon%22:13376111,%22color%22:%22yellow%22%7D%7D
-// 2 репозитария, которые могут пригодиться в будущем
-// https://github.com/lbussy/LCBUrl
-// https://github.com/plageoj/urlencode
-bool send_coords_at(uint32_t glat, uint32_t glon, uint32_t gcik)
-{
-  /*
-  // "AT+CSQ" - проверяем "уровень сигнала", первое значение это уровень сигнала в дБ,
-  // он должен быть выше 5. Чем выше, тем лучше, до 31.
-  // if (AT_com(AT_CSQ)!=0) return false;
-  // "AT+CIPSHUT" - закрываем все соединения TCP/UDP, которые могли быть открыты на модуле. 
-  // Использование этой команды может быть полезно, например, при переустановке 
-  // соединения или для освобождения ресурсов, занятых предыдущими соединениями. 
-  // if (AT_com(AT_CIPSHUT)!=0) return false;
-  
-  // "AT+SAPBR=3,1,\"Contype\",\"GPRS\"" - открываем контекст GPRS и устанавливаем GPRS-соединение
-  if (AT_com(AT_Contype)!=0) return false;
-  
-  // "AT+SAPBR=3,1,\"APN\",\"internet.mts.ru\"" - определяем имя точки доступа Access Point Name (APN) — как “internet.mts.ru”.
-  if (AT_com(AT_SAPBR)!=0) return false;
-  
-  // "AT+SAPBR=1,1" - устанавливаем соединение для профиля с идентификатором 1.
-  // Когда соединение будет установлено, можно получить параметры сеанса с помощью 
-  // команды AT+SAPBR=2,1. После установления соединения команда вернет адрес 
-  // IP из внутренней сети мобильного провайдера   
-  if (AT_com(AT_SAPBR1,2000)!=0) 
-  {
-    // "AT+SAPBR=0,1" - перезакрываем носитель контекста GPRS (сессию), если он был оставлен открытым
-    // (команда AT+SAPBR=0,1 используется для закрытия сессии и соединения TCP/IP, 
-    // чтобы не расходовать ресурсы мобильного провайдера. 
-    AT_com(AT_SAPBR0,1500);
-    if (AT_com(AT_SAPBR1,2000)!=0) return false;
-  }
-  
-  // "AT+HTTPINIT" - инициализируем сервис HTTP 
-  AT_com(AT_HTTPINIT);
-
-  // "AT+HTTPPARA=\"CID\",1" - задаём идентификатор профиля сеанса
-  if (AT_com(AT_HTTPPARA)!=0) return false;
-
-  // Задаём URL сайта, к которому будет отправляться запрос HTTP GET и готовим строку с URL-адресом, 
-  // cобственно в URL заменяем обратные слэши на %22, иначе URL сбрасывается
-  // "AT+HTTPPARA=\"URL\",\"http://probatv.ru/State/?cycle=7&num=5&ctrl=203&sjson={%22trkpt%22:{%22lat%22:52518611,%22lon%22:13376111,%22color%22:%22yellow%22}}\""
-  memset(response,'\0',170); 
-  strcat_P(response,str0); 
-  strcat(response,IntToChar(gcik)); 
-  strcat_P(response,str1); 
-  strcat(response,IntToChar(glat)); 
-  strcat_P(response,str2); 
-  strcat(response,IntToChar(glon)); 
-  strcat_P(response,str3); 
-  AT_(2500);
-
-  // Вводим команду для выполнения запроса GET: AT+HTTPACTION=0.
-  // Параметр команды AT+HTTPACTION задает тип запроса HTTP: 0 — GET, 1 — POST, 2 — HEAD, 3 — DELETE.
-  // В нашем случае нулевое значение предписывает выполнить запрос GET.
-  AT_com(AT_HTTPACTION0);
-
-  // Ждем 5 сек для получения ответа
-  saymess(DefToChar(m1_Wait5sek));
-  delay(5000); 
-  
-  // "AT+HTTPREAD" - cчитываем результаты запроса, обычно содержит код состояния 200 в случае успеха
-  AT_com(AT_HTTPREAD,2500);
-
-  // "AT+HTTPTERM" - отключаем сервис HTTP
-  AT_com(AT_HTTPTERM);
-
-  // "AT+CIPSHUT" - закрываем все соединения TCP/UDP, которые могли быть открыты на модуле. 
-  // Использование этой команды может быть полезно, например, при переустановке 
-  // соединения или для освобождения ресурсов, занятых предыдущими соединениями. 
-  // if (AT_com(AT_CIPSHUT)!=0) return false;
-
-  // "AT+SAPBR=0,1" - закрываем носитель контекста GPRS (сессию), если он был оставлен открытым
-  // (команда AT+SAPBR=0,1 используется для закрытия сессии и соединения TCP/IP, 
-  // чтобы не расходовать ресурсы мобильного провайдера. 
-  if (AT_com(AT_SAPBR0)!=0) return false;
-  */
-  return true;
-}
-// ****************************************************************************
 // *                Выбрать в буфере подстроку по запросу regexp              *
 // ****************************************************************************
 int getIntByMatch(char buf[],char mch[]) 
@@ -329,40 +229,38 @@ int getIntByMatch(char buf[],char mch[])
   }
   return i;
 }
-
 // ****************************************************************************
-// *  Выбрать данные из SIM900, в случае неудачи вывести сообщение об ошибке  *
+// *          Выбрать данные из SIM900, в случае неудачи вернуть false        *
 // ****************************************************************************
 bool Talk_SIM900(uint32_t ncikl)
 {
   bool isSend=true; 
   // Получаем состояние батареи
-  //if (AT_com(AT_CBC)!=0) isSend=false; 
-  AT_com(AT_CBC);
-  // Выбираем первые 4 цифры в ответе
-  lipo=getIntByMatch(response,"%d%d%d%d");
-  //Serial.print("lipo= "); Serial.println(lipo); 
+  if (AT_com(AT_CBC)!=0) isSend=false; 
+  else
+  {
+    // Выбираем первые 4 цифры в ответе
+    lipo=getIntByMatch(response,"%d%d%d%d");
+    //Serial.print("lipo= "); Serial.println(lipo); 
 
-  // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
-  // он должен быть выше 5. Чем выше, тем лучше, до 31.
-  //if (AT_com(AT_CSQ)!=0) isSend=false; 
-  AT_com(AT_CSQ);
-  // Выбираем первые одну или более цифры в ответе
-  dB=getIntByMatch(response,"%d(%d*)");
-  //Serial.print("dB= "); Serial.println(dB); 
-  // При ненулевых данных выводим сообщение об уровне сигнала и батареи 
-  if ((lipo>0)&&(dB>0)) DbAndVoltToChar(lipo,dB,chardec);
-  else isSend=false; 
-  Serial.println(simMess); 
-  Serial.println(""); //("-------"); 
-
-
-  //saymess(DefToChar(m1_SendCoordints));
-  //glat=lat*1000000; glon=lng*1000000;   
-  //isSend=send_coords_at(glat,glon,ncikl);
-  //if (isSend) saymess(DefToChar(m1_CoordinatGone));
-  // Начинаем новый отсчет времени для передачи на сайт 
-  //BdelaySIM=millis();  
+    // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
+    // он должен быть выше 5. Чем выше, тем лучше, до 31.
+    if (AT_com(AT_CSQ)!=0) isSend=false;
+    else
+    {
+      // Выбираем первые одну или более цифры в ответе
+      dB=getIntByMatch(response,"%d(%d*)");
+      //Serial.print("dB= "); Serial.println(dB); 
+      // При ненулевых данных формируем сообщение об уровне сигнала и батареи 
+      if ((lipo>0)&&(dB>0)) 
+      {
+        DbAndVoltToChar(lipo,dB,vi,chardec);
+        Serial.println(simMess); 
+        Serial.println(""); //("-------"); 
+      }
+      else isSend=false; 
+    } 
+  }
   return isSend; 
 }
 

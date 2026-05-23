@@ -2,14 +2,15 @@
  *
  * Обеспечить снятие показаний разного рода и запись на SD-карту
  * 
- * v1.0.1, 17.05.2026                                 Автор:      Труфанов В.Е.
+ * v1.0.3, 22.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 30.04.2026
  *
 **/
 
 #include <SoftwareSerial.h>
-
-// Обеспечиваем взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
+#include <iarduino_VCC.h>
+#include <EEPROM.h>
+#include <avr/wdt.h>
 
 uint32_t ncikl=0;                       // счетчик циклов
 
@@ -17,66 +18,33 @@ uint32_t ncikl=0;                       // счетчик циклов
 #include "SIM900.h"   
 #include "s32nRF24L01.h"    
 
-/*
-#include "GyverWDT.h"
-#include <iarduino_VCC.h>
-#include <EEPROM.h>
-
-// Обеспечиваем взаимодействие с SIM900 и передачу данных на сайт  
-
-// Определяем переменные адреса (обычного и изменённого) для записи данных в EEPROM
-int address; int oldaddress; 
-// Определяем переменную флага для записи даты перезагрузки
-// (после перезагрузки флаг устанавливается в значение true для того,
-// чтобы записать дату первого поступления координат после перезагрузки
-// для постоянного хранения)
-bool isReboot;       
+// Определяем адрес для записи данных в EEPROM
+int address; 
 // Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
 uint16_t nReboot;  
-
-uint32_t ncikl=0;                       // счетчик циклов
-//bool isFullCikl=true;                   // 9: true - "Выполняем прослушивание";        false - "Отрабатываем пустой цикл"
-//bool isMemTrass=false;                  // 8: true - "Показываем свободную память";    false - "Отменяем трассирование памяти"
-//bool isATTrass=true;                    // 7: true - "Показываем ответ на AT-команды"; false - "Отменяем трассирование AT-команд"
-*/
 
 void setup()
 {
   Serial.begin(9600);
-  Serial.println(F("9600"));
   VKEL_TTL.begin(9600); 
   SIM900.begin(9600);
 
-  /*
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
   EEPROM.get(address, nReboot);
   if (nReboot==65535) nReboot=0;
   nReboot++;
   EEPROM.put(address,nReboot);
-  // Устанавливаем флаг и определяем адрес для записи 
-  // даты первого поступления координат после перезагрузки
-  isReboot=true; 
-  address += sizeof(nReboot); 
+  Serial.print(F("Контроллер перезагрузился: ")); Serial.println(nReboot);
   // Запускаем watchdog с таймаутом ~8c
-  Watchdog.enable(INTERRUPT_RESET_MODE, WDT_PRESCALER_1024);  
-  //delay(1500);
-  */
+  wdt_enable (WDTO_8S); 
 }
-
-/*
-// Первый тайм-аут вызовет прерывание и если Watchdog не будет перезапущен,
-// то на втором прерывании произойдет жёсткая перезагрузка контроллера
-ISR(WATCHDOG) 
-{
-  // Перезапускаем watchdog с таймаутом ~8c
-  Watchdog.enable(INTERRUPT_RESET_MODE, WDT_PRESCALER_1024); 
-}
-*/
 
 void loop()
 {
   ncikl++;
+  // Считываем напряжение питания
+  vi = analogRead_VCC();      
 
   // Прослушиваем приемник GPS V.KEL-TTL
   // (по умолчанию прослушивается последний инициализированный порт,
@@ -147,51 +115,16 @@ void loop()
 
   delay(100);
 
-  /*
+  
   // Отрабатываем управляющие команды из последовательного порта
   if (Serial.available())
   {
     int ccom = Serial.read();
-    // Выполняем команду на пустое зацикливание
-    // (например для того, чтобы посмотреть предыдущие сообщения)
-    // или отменяем её
-    if (ccom == '9') 
-    {
-      if (isFullCikl) {isFullCikl=false; saymess(DefToChar(m1_EmptyLoop));}
-      else            {isFullCikl=true;  saymess(DefToChar(m1_anAudition));}
-    }
-    // Выполняем команду по трассировке утечек памяти
-    // (показывать оставшуюся свободную память)
-    // или отменяем её
-    if (ccom == '8') 
-    {
-      if (isMemTrass) 
-      {
-        isMemTrass=false; 
-        saymess(DefToChar(m1_NoMemoryTrace));
-        if (!isFullCikl) {isFullCikl=true; saymess(DefToChar(m1_anAudition));}
-      }
-      else {isMemTrass=true; saymess(DefToChar(m1_FreeMemory));}
-    }
-    // Выполняем команды по трассировке AT-команд SIM900
-    if (ccom == '7') 
-    {
-      if (isATTrass) 
-      {
-        isATTrass=false; 
-        saymess(DefToChar(m1_NoATtrass));
-        if (!isFullCikl) {isFullCikl=true; saymess(DefToChar(m1_anAudition));}
-      }
-      else {isATTrass=true; saymess(DefToChar(m1_ATcom));}
-    }
-    // Выполняем принудительную передачу последних принятых координат на сайт
-    if (ccom == '1') 
-    {
-      SIM900.listen();
-      CoordSend();
-      VKEL_TTL.listen();
-    }
+    // Выполняем иммитацию зацикливания для проверки watchdog
+    if (ccom == '9') while (true) {}
   }
+
+  /*
   // При необходимости трассируем память
   if (isMemTrass) saymess(FreeMemoryToChar());
 
@@ -210,8 +143,6 @@ void loop()
     logR2 = log(R2);
     float ti=(1.0/(c1+c2*logR2+c3*logR2*logR2*logR2)); // температура по Кельвину
     ti = ti - 273.15;                                  // температура по Цельсию
-    // Считываем напряжение питания
-    float vi = analogRead_VCC();      
 
     // Прослушиваем приемник GPS V.KEL-TTL
     // (по умолчанию прослушивается последний инициализированный порт,
@@ -293,4 +224,6 @@ void loop()
   // Если закрыто прослушивание, то делаем заглушку 1 сек 
   else delay(1000);
   */
+  // Сбрасываем счетчик watchdog
+  wdt_reset();
 }

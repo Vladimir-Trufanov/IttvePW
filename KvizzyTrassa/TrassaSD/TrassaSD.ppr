@@ -18,14 +18,26 @@ Extensions=*.*
 [Project tree]
 TrassaSD
 	+TrassaSD
-		Kvizzy900.ino
-		..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
+		-fil
+			fil\Kvizzy900.ino
+		s32nRF24L01.h
+		SIM900.h
+		TrassaSD.ino
 		TrassaSD.ppr
+		VKEL_TTL.h
 [Open project files]
-0=..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
+0=s32nRF24L01.h
+1=TrassaSD.ino
+2=SIM900.h
 [Selected Project Files]
 Main=
-Selected=..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino
-[..\..\ArduinoWDT\testwdt_Dremkin\testwdt_Dremkin.ino]
-TopLine=30
-Caret=11,53
+Selected=TrassaSD.ino
+[s32nRF24L01.h]
+TopLine=1
+Caret=1,1
+[TrassaSD.ino]
+TopLine=109
+Caret=10,5
+[SIM900.h]
+TopLine=1
+Caret=10,5

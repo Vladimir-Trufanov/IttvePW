@@ -89,27 +89,25 @@ char* DateTimeToChar(int ghour, int gmin, int gsec, int gday, int gmonth, int gy
   return tidMess;  
 }
 // ****************************************************************************
-// *         Сформировать сообщение об уровне сигнала и батареи GPRS          *
+// *              Сформировать сообщение об уровне сигнала,                   *
+// *            напряжения батареи GPRS и питания контроллера                 *
 // ****************************************************************************
 _DS(pref_sim,"sim")    
-char* DbAndVoltToChar(int lipo, int dB, char chardec[]) 
+_DS(vg,"vg")    
+_DS(vc,"vc")    
+char* DbAndVoltToChar(int lipo, int dB, float vi, char chardec[]) 
 {
-  // "sim24-4.56"
+  // "sim24-vg4.12-vc4.54"
   memset(simMess,'\0',34); 
   strcat_P(simMess,pref_sim); 
   strcat(simMess,IntToChar(dB)); 
   strcat_P(simMess,LocToCh); 
+  strcat_P(simMess,vg); 
   double vib=double(lipo)/1000;
   dtostrf(vib,1,2,chardec); strcat(simMess,chardec);
- 
-  /*
-  strcat_P(charMess,gprs); 
-  if (dB<10) {strcat_P(charMess,DistT4); strcat(charMess,IntToChar(dB));}
-  else strcat(charMess,IntToChar(dB)); 
-  strcat_P(charMess,dbzpt); 
-  double vib=double(lipo)/1000;
-  dtostrf(vib,1,2,chardec); strcat(charMess,chardec);strcat_P(charMess,vvq); 
-  */
+  strcat_P(simMess,LocToCh); 
+  strcat_P(simMess,vc); 
+  dtostrf(vi,1,2,chardec); strcat(simMess,chardec);
   return simMess;  
 }  
 
