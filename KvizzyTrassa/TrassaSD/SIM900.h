@@ -11,8 +11,8 @@
 #pragma once 
 SoftwareSerial SIM900(7,8);  // синий на 7 - будет RX; зеленый на 8 - будет TX
 #include <avr/wdt.h>
-//#include <Regexp.h>
-//MatchState ms;               // объект соответствия выборке
+#include <Regexp.h>
+MatchState ms;               // объект соответствия выборке
 #include "s32nRF24L01.h"    
 bool isSIM900=false;         // false - "Не работает SIM900"
 
@@ -21,7 +21,7 @@ _DS(AT_AT,"AT")
 _DS(AT_CSQ,"AT+CSQ")         // проверить уровень сигнала
 _DS(AT_CBC,"AT+CBC")         // получить состояние батареи
 
-char response[170];          // буфер ответа GPRS и URL передачи данных
+char response[34];          // буфер ответа GPRS и URL передачи данных
 int lipo=0;                  // четырехзначное состояние батареи lipo
 int dB=0;                    // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
 float vi;                    // напряжение питания контроллера
@@ -35,47 +35,21 @@ void ATerrorMess(char* ATcommand, uint8_t answer)
   // Выводим текст AT команды
   // if (answer==0) saymess(ATcommand);
   // Выводим сообщение об ошибке
-  if (answer==1) Serial.println(F("Ответ SIM900 превышает 169 символов")); 
+  if (answer==1) Serial.println(F("Ответ SIM900 превышает 34 символа")); 
   else if (answer==2) Serial.println(F("За время тайм-аута не начат приём")); 
   else if (answer==3) Serial.println(F("Oтвет на команду не подтвержден" )); 
   else if (answer==4) Serial.println(F("За время тайм-аута не завершён ответ")); 
 } 
-
-/*
-// Представляем все сообщения 1 приложения "m1" (из 16 символов юникода)
-// (из-за особенностей драйвера для LCD1602 по максимуму русские буквы
-// представлены латинскими)
-_DS(m1_Fill,          "                ")    // 16 байт
-_DS(m1_Full,          "1234567890123456")    // 16 байт
-_DS(m1_NotSignGPS,    "HET CИГHAЛA GPS ")    // "Приемник GPS не подает сигналы"
-_DS(m1_SIM900notWork, "OTKЛЮЧEH SIM900 ")    // "Не работает SIM900"
-_DS(m1_anAudition,    "ПPOCЛУШИBAEM GPS")    // "Выполняем прослушивание" - Performing an audition
-_DS(m1_EmptyLoop,     "ИДET ПУCTOЙ ЦИKЛ")    // "Отрабатываем пустой цикл" - Working out an empty loop
-_DS(m1_Delay99,       "ЗAДEPЖKA >99 min")    // "Задержка >99 мин"
-_DS(m1_TimeIsNot,     "HET XOДA BPEMEHИ")    // "Не определяется время" - The time is not being determined
-_DS(m1_DateIsNot,     "HET ДAHHЫX ДATЫ ")    // "Не определяется дата" - The date is not being determined
-_DS(m1_LocateIsNot,   "HE ИДET ЛOKAЦИЯ ")    // "Не определяется локация" - "Location is not being determined"
-_DS(m1_TurnOnSIM900,  "BKЛЮЧAEM SIM900 ")    // "Включаем SIM900" - "Turning on the SIM900"
-_DS(m1_FreeMemory,    "CMOTPИM ПAMЯTЬ  ")    // "Показываем свободную память" - Showing free memory
-_DS(m1_NoMemoryTrace, "HE ГЛЯДИM ПAMЯTЬ")    // "Отменяем трассирование памяти" - Canceling memory tracing
-_DS(m1_ATcom,         "ECTЬ AT-KOMAHДЫ ")    // "Показываем ответ на AT-команды"
-_DS(m1_NoATtrass,     "HE TPACCИPУEM AT")    // "Отменяем трассирование AT-команд"
-_DS(m1_NoConfirmed,   "HE УCПEШEH GPRS ")    // - The response to the command has not been confirmed
-_DS(m1_NotCompleted,  "HE ПOЛHЫЙ OTBET ")    // - The response was not completed during the timeout period
-_DS(m1_Wait5sek,      "ЖДEM OTBET 5 sec")    // "Ждем 5 сек для получения ответа" - "Waiting for a response for 5 seconds"
-_DS(m1_SendCoordints, "----> KOOPДИHATЫ")    // "Отправляем координаты" - "Sending the coordinates"
-_DS(m1_CoordinatGone, "KOOPДИHATЫ ====>")    // "Координаты ушли" - "The coordinates are gone"
-*/
 
 // ****************************************************************************
 // *               Отправить AT-команду на SIM900 и выбрать ответ             *
 // ****************************************************************************
 /*
 Функция отправляет AT-команду в SIM900 и выбирает ответ за заданное время тайм-аута.
-Для отправки команда должна быть размещена в буфере response не более 169 символов с завершающим нулём
+Для отправки команда должна быть размещена в буфере response не более 33 символов с завершающим нулём
 Возвращается ответ answer: 
   0 - "передана команда SIM900, получен подтверждающий ответ";
-  1 - "ответ SIM900 превышает 169 символов";
+  1 - "ответ SIM900 превышает 33 символов";
   2 - "за время тайм-аута не начат приём ответа";
   3 - "ответ на команду не подтвержден"
   4 - "за время тайм-аута не завершён ответ"
@@ -96,7 +70,7 @@ uint8_t AT_(unsigned int timeout)
   // 1 шаг: Отправляем AT-команду   
   SIM900.println(response);  
   // 2 шаг: Чистим буфер для приема ответа
-  memset(response,'\0',170);   // очистили буфер 
+  memset(response,'\0',34);   // очистили буфер 
   
   // Циклимся, пока не выберем весь ответ за время тайм-аута
   i = 0;  // установили начальную позицию заполнения буфера
@@ -108,14 +82,14 @@ uint8_t AT_(unsigned int timeout)
       response[i] = SIM900.read();
       i++;
       // Проверяем, не вышли ли за границу буфера
-      if (i>169) {answer=1; break; }
+      if (i>33) {answer=1; break; }
     }
   }
   while((answer == 2) && ((millis() - previous) < timeout));
   // При необходимости трассируем ответ на AT-команду
-  Serial.print(F("**** ")); Serial.println(response); 
+  //Serial.print(F("**")); Serial.print(response); Serial.println(F("**"));
   // Если вышли ли за границу буфера, то возвращаем ошибку
-  // "ответ SIM900 превышает 169 символов"  
+  // "ответ SIM900 превышает 34 символа"  
   if (answer==1) goto by; 
   // Если остались в начальной позиции, то возвращаем ошибку
   // "за время тайм-аута не начат приём ответа"  
@@ -157,7 +131,7 @@ uint8_t AT_com(const char ATcommand[],unsigned int timeout=300)
 {
   // При отправке AT-команды используется один и тот же буфер для отправки команды и 
   // приёма ответа, поэтому буфер готовится (чистится) дважды
-  memset(response,'\0',170);      // очистили буфер 
+  memset(response,'\0',34);      // очистили буфер 
   strcpy_P(response,ATcommand);   // перекинули в буфер команду из программной памяти    
   return AT_(timeout);  
 }
@@ -193,7 +167,7 @@ void SIM900powerUpOrDown()
   delay(3000);
   wdt_reset();
 }
-/*
+
 // ****************************************************************************
 // *                Выбрать в буфере подстроку по запросу regexp              *
 // ****************************************************************************
@@ -221,7 +195,7 @@ int getIntByMatch(char buf[],char mch[])
   }
   return i;
 }
-*/
+
 // ****************************************************************************
 // *          Выбрать данные из SIM900, в случае неудачи вернуть false        *
 // ****************************************************************************
@@ -233,8 +207,8 @@ bool Talk_SIM900(uint32_t ncikl)
   else
   {
     // Выбираем первые 4 цифры в ответе
-    lipo=21; //getIntByMatch(response,"%d%d%d%d");
-    //Serial.print("lipo= "); Serial.println(lipo); 
+    lipo=getIntByMatch(response,"%d%d%d%d");
+    Serial.print(F("lipo= ")); Serial.println(lipo); 
 
     // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
     // он должен быть выше 5. Чем выше, тем лучше, до 31.
@@ -242,8 +216,26 @@ bool Talk_SIM900(uint32_t ncikl)
     else
     {
       // Выбираем первые одну или более цифры в ответе
-      dB=14; //getIntByMatch(response,"%d(%d*)");
-      //Serial.print("dB= "); Serial.println(dB); 
+      dB=getIntByMatch(response,"%d(%d*)");
+      Serial.print(F("dB= ")); Serial.println(dB); 
+
+      /*
+      Serial.print(F("*** AT_CSQ:")); Serial.print(response); Serial.println(F("***")); 
+
+      // Ищем позицию уровня сигнал
+      int nb,ne;
+      char *needle = "+CSQ: ";
+      char *result = strstr(response, needle);
+      if (result != NULL) 
+      {
+        Serial.print(F("*** result:")); Serial.print(result); Serial.println(F("***")); 
+      }
+      else 
+      {
+        Serial.println(F("Substring not found"));
+      }
+      */
+
       // При ненулевых данных формируем сообщение об уровне сигнала и батареи 
       if ((lipo>0)&&(dB>0)) 
       {
@@ -255,6 +247,31 @@ bool Talk_SIM900(uint32_t ncikl)
   }
   return isSend; 
 }
+
+/*
+Поиск в массиве char с помощью функций C
+Для работы с массивами символов, заканчивающимися нулём, можно использовать стандартные функции C, например:
+strchr — ищет символ в строке и возвращает указатель на него. Если символ не найден, возвращается нулевой указатель.
+strstr — ищет подстроку в строке и возвращает указатель на её начало. Если подстрока не найдена, возвращается нулевой указатель.
+ 
+alexgyver.ru
+Пример использования strchr:
+char buf = "hello world";
+char* p = strchr(buf, 'w'); // p == "world", (p - buf) == 6
+``` [20]
+
+Также можно реализовать поиск вручную с помощью цикла, сравнивая каждый символ массива с искомым. Пример функции:
+```cpp
+int search_and_destroy(char* buff, size_t len, char c) {
+  for (int i = 0; i < len; i++) {
+    if (buff[i] == c) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+*/
 
 #endif
 

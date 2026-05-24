@@ -17,8 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 TrassaSD
-	+TrassaSD
-		-res
+	-TrassaSD
 		s32nRF24L01.h
 		SD_Card.h
 		SIM900.h
@@ -36,8 +35,8 @@ Selected=SIM900.h
 TopLine=65
 Caret=1,65
 [SD_Card.h]
-TopLine=1
+TopLine=12
 Caret=1,51
 [SIM900.h]
-TopLine=1
-Caret=3,15
+TopLine=71
+Caret=5,90
