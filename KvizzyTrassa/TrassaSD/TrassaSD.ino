@@ -12,6 +12,11 @@
 #include <EEPROM.h>
 #include <avr/wdt.h>
 
+#include <SD.h>
+#include <SPI.h>
+File myFile;
+int pinCS = 10; // контакт 10 на плате Arduino Uno для CS на SD
+
 uint32_t ncikl=0;                       // счетчик циклов
 
 #include "s32nRF24L01.h"    
@@ -29,6 +34,20 @@ void setup()
   Serial.begin(9600);
   VKEL_TTL.begin(9600); 
   SIM900.begin(9600);
+
+  pinMode(pinCS, OUTPUT);
+  // инициализация SD карты
+  //if (SD.begin())
+  //{
+  //  Serial.println("SD card is ready to use.");
+  //} 
+  //else
+  //{
+  //  Serial.println("SD card initialization failed");
+  //  return;
+  //}
+
+
 
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 

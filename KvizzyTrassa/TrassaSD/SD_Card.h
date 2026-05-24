@@ -17,31 +17,49 @@ uint32_t BdelaySD=millis();   // начало отсчета интервала 
 uint32_t delaySD;             // фактическое время после предыдущей записи на SD
 
 // ****************************************************************************
-// *         Выбрать данные навигации из буфера приёмника GPS V.KEL TTL,      *
-// *                в случае неудачи вывести сообщение об ошибке              *
+// *              Сформировать и записать данные в файл на SD-карте           *
 // ****************************************************************************
 bool Talk_SD_Card(uint32_t ncikl)
 {
   if (ncikl<11) 
   {
-    Serial.println(F("Talk_SD_Card: ожидается прием координат"));
+    Serial.print(F("Talk_SD_Card: ")); Serial.println(ncikl); 
   }
   else
   {
-    // Формируем строку выходного сообщения
-    //Serial.print(F("--SD1: ")); Serial.println(ncikl); 
-    /*
-    */
+    // Формируем строку для файла
     FillToSD(ncikl); 
-    Serial.print(F("--SD2: ")); Serial.println(sdline); 
-    Serial.print(F("--SD3: ")); Serial.println(tidMess); 
+
+  /*
+  // создание/открытие файла 
+  myFile = SD.open("testGPS.txt", FILE_WRITE);
   
- 
+  // if the file opened okay, write to it:
+  if (myFile) 
+  {
+    //Serial.println("Writing to file...");
+    // Write to file
+    myFile.println("Testing text 11, 2 ,3...");
+    myFile.close(); // close the file
+    //Serial.println("Done.");
+  }
+  // если файл не открылся выводим сообщение об ошибке
+  else 
+  {
+    Serial.println(F("error opening test.txt"));
+  }
+*/
+    Serial.print(F("--SD2: ")); Serial.println(sdline); 
+
+
+
+
+
+
 
   }
   return true;
 }
-
 
 #endif
 

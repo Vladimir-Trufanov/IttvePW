@@ -137,7 +137,9 @@ char* IncreaseToChar(double DistanceBetween, int ghour, int gmin, int gsec, int 
   strcat(ddtMess,IntToChar(increase_distance)); 
   return ddtMess;  
 }
-
+// ****************************************************************************
+// *                    Сформировать запись для загрузки в файл               *
+// ****************************************************************************
 _DS(tzpt,";")    
 void FillToSD(uint32_t ncikl) 
 {
@@ -152,25 +154,9 @@ void FillToSD(uint32_t ncikl)
   strcat_P(sdline,tzpt); 
   strcat(sdline,simMess);
   strcat_P(sdline,tzpt); 
-
-  /*
-  strcat_P(ddtMess,pref_ddt); 
-  // Пересчитываем нарастающее время
-  value=ghour0*3600+gmin0*60+gsec0;
-  value=ghour*3600+gmin*60+gsec-value;
-  increase_time=increase_time+value;
-  strcat(ddtMess,IntToChar(increase_time)); 
-  // Пересчитываем нарастающее расстояние
-  strcat_P(ddtMess,LocToCh); 
-  strcat_P(ddtMess,di); 
-  increase_distance=increase_distance+DistanceBetween*100;
-  strcat(ddtMess,IntToChar(increase_distance)); 
-  */
 }
 
-
 /* Пример сообщений:
-
 $GPGSV,4,1,13,01,61,199,19,02,35,173,28,03,59,264,09,04,13,217,24*78
 $GPGSV,4,2,13,06,01,318,,12,12,020,,13,14,022,,17,32,287,*7F
 $GPGSV,4,3,13,19,24,321,11,25,07,056,18,28,38,105,28,31,23,136,28*7A
