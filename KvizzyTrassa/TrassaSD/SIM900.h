@@ -9,9 +9,8 @@
 #ifndef SIM900_h
 #define SIM900_h
 #pragma once 
-
 SoftwareSerial SIM900(7,8);  // синий на 7 - будет RX; зеленый на 8 - будет TX
-
+#include <avr/wdt.h>
 #include <Regexp.h>
 MatchState ms;               // объект соответствия выборке
 #include "s32nRF24L01.h"    
@@ -26,14 +25,6 @@ char response[170];          // буфер ответа GPRS и URL переда
 int lipo=0;                  // четырехзначное состояние батареи lipo
 int dB=0;                    // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
 float vi;                    // напряжение питания контроллера
-
-
-//uint32_t glat,glon;            // значения координат, передаваемые на сайт 
-//uint32_t BdelaySIM=millis();   // начало отсчета времени до передачи на сайт 
-//uint32_t delaySIM;             // истекший интервал после передачи 
-//uint32_t dTimeSIM=180000;      // интервал подачи координат в мс на сайт (3 мин)  
-
-
 
 // ****************************************************************************
 // *                 Сформировать сообщения по ошибке AT-команды              *
@@ -194,6 +185,7 @@ uint8_t AT_com(const char ATcommand[],unsigned int timeout=300)
 **/
 void SIM900powerUpOrDown()
 {
+  wdt_reset();
   pinMode(9, OUTPUT);
   digitalWrite(9,LOW);
   delay(1000);
@@ -201,6 +193,7 @@ void SIM900powerUpOrDown()
   delay(2000);
   digitalWrite(9,LOW);
   delay(3000);
+  wdt_reset();
 }
 // ****************************************************************************
 // *                Выбрать в буфере подстроку по запросу regexp              *

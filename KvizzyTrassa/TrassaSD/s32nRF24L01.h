@@ -26,16 +26,17 @@ uint32_t increase_distance=0;  // до 4 294 967 295 = 42 949 км
 uint32_t increase_time=0;      // до 4294967295 = 1 193 046 час
 
 // Готовим массивы символов для формирования сообщений
+char charNumby[10]; // char[9]+'\0'
 char chardec[8];    // буфер координат, дистанции, температуры, напряжения - max 7 знаков и точка (nt)
 char krdMess[34];   // буфер сообщения c текущими координатами и числом спутников 
 char tidMess[34];   // буфер сообщения о дате и времени  
 char simMess[34];   // буфер сообщения о дате и времени  
 char ddtMess[34];   // буфер сообщения нарастающего расстояния в сантиметрах и времени в секундах 
+char sdline[150];   // буфер строки выходного файла с данными 
 
 // ****************************************************************************
 // *            Преобразовать беззнаковое  целое в строку символов            *
 // ****************************************************************************
-char charNumby[10]; // char[9]+'\0'
 char* IntToChar(uint32_t numbIn) 
 {
   uint32_t numby=numbIn;
@@ -136,6 +137,37 @@ char* IncreaseToChar(double DistanceBetween, int ghour, int gmin, int gsec, int 
   strcat(ddtMess,IntToChar(increase_distance)); 
   return ddtMess;  
 }
+
+_DS(tzpt,";")    
+void FillToSD(uint32_t ncikl) 
+{
+  memset(sdline,'\0',150); 
+  strcat(sdline,IntToChar(ncikl));
+  strcat_P(sdline,tzpt); 
+  strcat(sdline,ddtMess);
+  strcat_P(sdline,tzpt); 
+  strcat(sdline,krdMess);
+  strcat_P(sdline,tzpt); 
+  strcat(sdline,tidMess);
+  strcat_P(sdline,tzpt); 
+  strcat(sdline,simMess);
+  strcat_P(sdline,tzpt); 
+
+  /*
+  strcat_P(ddtMess,pref_ddt); 
+  // Пересчитываем нарастающее время
+  value=ghour0*3600+gmin0*60+gsec0;
+  value=ghour*3600+gmin*60+gsec-value;
+  increase_time=increase_time+value;
+  strcat(ddtMess,IntToChar(increase_time)); 
+  // Пересчитываем нарастающее расстояние
+  strcat_P(ddtMess,LocToCh); 
+  strcat_P(ddtMess,di); 
+  increase_distance=increase_distance+DistanceBetween*100;
+  strcat(ddtMess,IntToChar(increase_distance)); 
+  */
+}
+
 
 /* Пример сообщений:
 

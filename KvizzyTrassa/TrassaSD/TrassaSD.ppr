@@ -18,9 +18,8 @@ Extensions=*.*
 [Project tree]
 TrassaSD
 	+TrassaSD
-		-fil
-			fil\Kvizzy900.ino
 		s32nRF24L01.h
+		SD_Card.h
 		SIM900.h
 		TrassaSD.ino
 		TrassaSD.ppr
@@ -29,15 +28,23 @@ TrassaSD
 0=s32nRF24L01.h
 1=TrassaSD.ino
 2=SIM900.h
+3=SD_Card.h
+4=VKEL_TTL.h
 [Selected Project Files]
 Main=
-Selected=TrassaSD.ino
+Selected=SD_Card.h
 [s32nRF24L01.h]
-TopLine=1
-Caret=1,1
+TopLine=15
+Caret=13,30
 [TrassaSD.ino]
-TopLine=109
-Caret=10,5
+TopLine=9
+Caret=13,41
 [SIM900.h]
-TopLine=1
-Caret=10,5
+TopLine=186
+Caret=1,247
+[SD_Card.h]
+TopLine=10
+Caret=7,34
+[VKEL_TTL.h]
+TopLine=169
+Caret=1,204
