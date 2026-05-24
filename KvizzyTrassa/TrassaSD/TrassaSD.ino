@@ -8,7 +8,7 @@
 **/
 
 #include <SoftwareSerial.h>
-#include <iarduino_VCC.h>
+//#include <iarduino_VCC.h>
 #include <EEPROM.h>
 #include <avr/wdt.h>
 
@@ -37,15 +37,14 @@ void setup()
 
   pinMode(pinCS, OUTPUT);
   // инициализация SD карты
-  //if (SD.begin())
-  //{
-  //  Serial.println("SD card is ready to use.");
-  //} 
-  //else
-  //{
-  //  Serial.println("SD card initialization failed");
-  //  return;
-  //}
+  if (SD.begin())
+  {
+    Serial.println(F("SD card is ready to use."));
+  } 
+  else
+  {
+    Serial.println(F("SD card initialization failed"));
+  }
 
 
 
@@ -63,7 +62,7 @@ void setup()
 void loop()
 {
   // Считываем напряжение питания
-  vi = analogRead_VCC();      
+  //vi = analogRead_VCC();      
   // Прослушиваем приемник GPS V.KEL-TTL
   // (по умолчанию прослушивается последний инициализированный порт,
   // если требуется прослушивать другой, следует его явно указать)
@@ -78,7 +77,8 @@ void loop()
   else
   {
     Serial.println(F("Отсутствие сигнала GPS"));
-  } 
+  }
+  
   // Работаем с SIM900
   SIM900.listen();
   // Проверяем, реагирует ли на команды SIM900
@@ -106,12 +106,13 @@ void loop()
   }
   else if (ncikl>10)
   {
-    IncreaseToChar(DistanceBetween,ghour,gmin,gsec,ghour0,gmin0,gsec0);
+    //IncreaseToChar(DistanceBetween,ghour,gmin,gsec,ghour0,gmin0,gsec0);
     // Меняем прежнее время для определения будущих интервалов
     ghour0=ghour; gmin0=gmin; gsec0=gsec; 
-    Serial.println(ddtMess); 
-    Serial.println(""); //("-------"); 
+    //Serial.println(ddtMess); 
+    //Serial.println(""); //("-------"); 
   }
+  
   // Проверяем интервал и делаем запись данных в файл 
   delaySD=millis()-BdelaySD; 
   if (delaySD>dTimeSD) 

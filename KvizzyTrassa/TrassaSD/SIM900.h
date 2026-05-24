@@ -11,8 +11,8 @@
 #pragma once 
 SoftwareSerial SIM900(7,8);  // синий на 7 - будет RX; зеленый на 8 - будет TX
 #include <avr/wdt.h>
-#include <Regexp.h>
-MatchState ms;               // объект соответствия выборке
+//#include <Regexp.h>
+//MatchState ms;               // объект соответствия выборке
 #include "s32nRF24L01.h"    
 bool isSIM900=false;         // false - "Не работает SIM900"
 
@@ -113,9 +113,7 @@ uint8_t AT_(unsigned int timeout)
   }
   while((answer == 2) && ((millis() - previous) < timeout));
   // При необходимости трассируем ответ на AT-команду
-  //if (isATTrass) { 
-  //  Serial.print("**** "); Serial.println(response); 
-  //  }
+  Serial.print(F("**** ")); Serial.println(response); 
   // Если вышли ли за границу буфера, то возвращаем ошибку
   // "ответ SIM900 превышает 169 символов"  
   if (answer==1) goto by; 
@@ -195,6 +193,7 @@ void SIM900powerUpOrDown()
   delay(3000);
   wdt_reset();
 }
+/*
 // ****************************************************************************
 // *                Выбрать в буфере подстроку по запросу regexp              *
 // ****************************************************************************
@@ -222,6 +221,7 @@ int getIntByMatch(char buf[],char mch[])
   }
   return i;
 }
+*/
 // ****************************************************************************
 // *          Выбрать данные из SIM900, в случае неудачи вернуть false        *
 // ****************************************************************************
@@ -233,7 +233,7 @@ bool Talk_SIM900(uint32_t ncikl)
   else
   {
     // Выбираем первые 4 цифры в ответе
-    lipo=getIntByMatch(response,"%d%d%d%d");
+    lipo=21; //getIntByMatch(response,"%d%d%d%d");
     //Serial.print("lipo= "); Serial.println(lipo); 
 
     // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
@@ -242,13 +242,13 @@ bool Talk_SIM900(uint32_t ncikl)
     else
     {
       // Выбираем первые одну или более цифры в ответе
-      dB=getIntByMatch(response,"%d(%d*)");
+      dB=14; //getIntByMatch(response,"%d(%d*)");
       //Serial.print("dB= "); Serial.println(dB); 
       // При ненулевых данных формируем сообщение об уровне сигнала и батареи 
       if ((lipo>0)&&(dB>0)) 
       {
-        DbAndVoltToChar(lipo,dB,vi,chardec);
-        Serial.println(simMess); 
+        //DbAndVoltToChar(lipo,dB,vi,chardec);
+        //Serial.println(simMess); 
       }
       else isSend=false; 
     } 

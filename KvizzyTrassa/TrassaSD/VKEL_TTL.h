@@ -143,9 +143,9 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
       //Serial.print("DistanceBetween="); Serial.println(DistanceBetween);
       //Serial.print(gps.location.lat(), 6); Serial.print(F(",")); Serial.println(gps.location.lng(), 6);
-      LocationToChar(lat,lng,SAT,chardec);
+      //LocationToChar(lat,lng,SAT,chardec);
       //Serial.println(LocationToChar(lat,lng,chardec)); 
-      Serial.println(krdMess); 
+      //Serial.println(krdMess); 
       //Serial.println("-------"); 
  
       // Меняем прежнее положение для определения будущего расстояния между точками
@@ -180,23 +180,21 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
         //saymess(DefToChar(m1_DateIsNot));
         Serial.println(F("Не определяется дата"));
       }
-      DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear); 
+      //DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear); 
       //Serial.println(DateTimeToChar(ghour,gmin,gsec,gday,gmonth,gyear)); 
-      Serial.println(tidMess); 
+      //Serial.println(tidMess); 
       //Serial.println(""); //("-------"); 
     }
     // "Не определяется локация" 
     else
     {
       newdata = false;
-      //saymess(DefToChar(m1_LocateIsNot));
       Serial.println(F("Не определяется локация"));
     }
   }
   else
   {
     // "Приемник GPS не подает сигналы"
-    //saymess(DefToChar(m1_NotSignGPS));
     Serial.println(F("Приемник GPS не подает сигналы"));
   }
   return newdata;

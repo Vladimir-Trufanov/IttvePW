@@ -10,7 +10,7 @@
 #define SD_Card_h
 #pragma once  
 
-#include "s32nRF24L01.h"    
+//#include "s32nRF24L01.h"    
 
 uint32_t dTimeSD=10000;       // заданный интервал между записями на SD в мс (180000 = 3 мин)  
 uint32_t BdelaySD=millis();   // начало отсчета интервала записи данных на SD 
@@ -21,24 +21,17 @@ uint32_t delaySD;             // фактическое время после п
 // ****************************************************************************
 bool Talk_SD_Card(uint32_t ncikl)
 {
-  if (ncikl<11) 
-  {
-    Serial.print(F("Talk_SD_Card: ")); Serial.println(ncikl); 
-  }
-  else
-  {
-    // Формируем строку для файла
-    FillToSD(ncikl); 
+  // Формируем строку для файла
+  // FillToSD(ncikl); 
 
-  /*
   // создание/открытие файла 
   myFile = SD.open("testGPS.txt", FILE_WRITE);
-  
   // if the file opened okay, write to it:
   if (myFile) 
   {
-    //Serial.println("Writing to file...");
+    Serial.print(F("to file...")); Serial.println(ncikl); 
     // Write to file
+    myFile.print(ncikl); myFile.print(":");
     myFile.println("Testing text 11, 2 ,3...");
     myFile.close(); // close the file
     //Serial.println("Done.");
@@ -48,16 +41,8 @@ bool Talk_SD_Card(uint32_t ncikl)
   {
     Serial.println(F("error opening test.txt"));
   }
-*/
-    Serial.print(F("--SD2: ")); Serial.println(sdline); 
-
-
-
-
-
-
-
-  }
+  
+  //  Serial.print(F("--SD2: ")); Serial.println(sdline); 
   return true;
 }
 
