@@ -2,22 +2,20 @@
  *
  * Обеспечить снятие показаний разного рода и запись на SD-карту
  * 
- * v1.0.3, 22.05.2026                                 Автор:      Труфанов В.Е.
- * Copyright © 2025 tve                               Дата создания: 30.04.2026
+ * v2.0.0, 25.05.2026                                 Автор:      Труфанов В.Е.
+ * Copyright © 2026 tve                               Дата создания: 30.04.2026
  *
 **/
 
 #include <SoftwareSerial.h>
-//#include <iarduino_VCC.h>
+#include <iarduino_VCC.h>
 #include <EEPROM.h>
 #include <avr/wdt.h>
 
 #include <SD.h>
 #include <SPI.h>
 File myFile;
-int pinCS = 10; // контакт 10 на плате Arduino Uno для CS на SD
-
-uint32_t ncikl=0;                       // счетчик циклов
+int pinCS = 10;      // контакт 10 на плате Arduino Uno для CS на SD
 
 #include "s32nRF24L01.h"    
 #include "VKEL_TTL.h" 
@@ -37,17 +35,8 @@ void setup()
 
   pinMode(pinCS, OUTPUT);
   // инициализация SD карты
-  if (SD.begin())
-  {
-    Serial.println(F("SD card is ready to use."));
-  } 
-  else
-  {
-    Serial.println(F("SD card initialization failed"));
-  }
-
-
-
+  if (SD.begin()) Serial.println(F("SD-карта готова"));
+  else Serial.println(F("Ошибка инициализации SD"));
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
   EEPROM.get(address, nReboot);
@@ -62,7 +51,7 @@ void setup()
 void loop()
 {
   // Считываем напряжение питания
-  //vi = analogRead_VCC();      
+  vi = analogRead_VCC();      
   // Прослушиваем приемник GPS V.KEL-TTL
   // (по умолчанию прослушивается последний инициализированный порт,
   // если требуется прослушивать другой, следует его явно указать)
@@ -78,24 +67,20 @@ void loop()
   {
     Serial.println(F("Отсутствие сигнала GPS"));
   }
-  
   // Работаем с SIM900
   SIM900.listen();
   // Проверяем, реагирует ли на команды SIM900
   // и включаем GPRS, если нет ответа
-  uint8_t answeri=AT_com(AT_AT);                  
-  // Инициируем переменные
-  if (answeri!=0)
+  if (AT_com(AT_AT)!=0)
   { 
     Serial.println(F("Включаем SIM900, ждем 10 секунд!"));
     // Включаем SIM900
     SIM900powerUpOrDown();
   }
-  // Отсчитываем время и отправляем данные положения на сайт
+  // Выбираем данные по SIM900 
   else
   {
     //Serial.println(F("Есть SIM900"));
-    // Выбираем данные навигации из приёмника GPS V.KEL TTL 
     isSIM900=Talk_SIM900(ncikl);
   }
   // С 11 цикла, как пошли координаты пересчитываем нарастающее расстояние и время
@@ -117,7 +102,7 @@ void loop()
   delaySD=millis()-BdelaySD; 
   if (delaySD>dTimeSD) 
   {
-    Talk_SD_Card(ncikl); // записали данные на SD
+    Talk_SD_Card();      // записали данные на SD
     BdelaySD=millis();   // начали отсчет нового интервала для записи данных на SD 
   }
   // Отрабатываем управляющие команды из последовательного порта
@@ -132,3 +117,5 @@ void loop()
   // Делаем паузу на нормализацию состояния контроллера
   delay(100);
 }
+
+// *********************************************************** TrassaSD.ino ***

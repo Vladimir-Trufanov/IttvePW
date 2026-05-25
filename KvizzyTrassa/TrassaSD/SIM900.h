@@ -21,11 +21,6 @@ _DS(AT_AT,"AT")
 _DS(AT_CSQ,"AT+CSQ")         // проверить уровень сигнала
 _DS(AT_CBC,"AT+CBC")         // получить состояние батареи
 
-char response[34];          // буфер ответа GPRS и URL передачи данных
-int lipo=0;                  // четырехзначное состояние батареи lipo
-int dB=0;                    // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
-float vi;                    // напряжение питания контроллера
-
 // ****************************************************************************
 // *                 Сформировать сообщения по ошибке AT-команды              *
 // ****************************************************************************
@@ -208,7 +203,7 @@ bool Talk_SIM900(uint32_t ncikl)
   {
     // Выбираем первые 4 цифры в ответе
     lipo=getIntByMatch(response,"%d%d%d%d");
-    Serial.print(F("lipo= ")); Serial.println(lipo); 
+    //Serial.print(F("lipo= ")); Serial.println(lipo); 
 
     // Проверяем уровень сигнала, первое значение это уровень сигнала в дБ,
     // он должен быть выше 5. Чем выше, тем лучше, до 31.
@@ -217,7 +212,7 @@ bool Talk_SIM900(uint32_t ncikl)
     {
       // Выбираем первые одну или более цифры в ответе
       dB=getIntByMatch(response,"%d(%d*)");
-      Serial.print(F("dB= ")); Serial.println(dB); 
+      //Serial.print(F("dB= ")); Serial.println(dB); 
 
       /*
       Serial.print(F("*** AT_CSQ:")); Serial.print(response); Serial.println(F("***")); 
@@ -237,12 +232,12 @@ bool Talk_SIM900(uint32_t ncikl)
       */
 
       // При ненулевых данных формируем сообщение об уровне сигнала и батареи 
-      if ((lipo>0)&&(dB>0)) 
-      {
+      //if ((lipo>0)&&(dB>0)) 
+      //{
         //DbAndVoltToChar(lipo,dB,vi,chardec);
         //Serial.println(simMess); 
-      }
-      else isSend=false; 
+      //}
+      //else isSend=false; 
     } 
   }
   return isSend; 
