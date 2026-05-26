@@ -50,6 +50,7 @@ void setup()
 
 void loop()
 {
+  ncikl++;  // изменили счетчик 
   // Считываем напряжение питания
   vi = analogRead_VCC();      
   // Прослушиваем приемник GPS V.KEL-TTL
@@ -60,12 +61,7 @@ void loop()
   isVKEL_TTL=Talk_VKEL_TTL(ncikl);
   if (isVKEL_TTL)
   {
-    ncikl++;  // изменили счетчик считанных данных
     //Serial.println(F("Данные от приемника GPS есть"));
-  }
-  else
-  {
-    Serial.println(F("Отсутствие сигнала GPS"));
   }
   // Работаем с SIM900
   SIM900.listen();
