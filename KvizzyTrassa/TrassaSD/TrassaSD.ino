@@ -79,21 +79,6 @@ void loop()
     //Serial.println(F("Есть SIM900"));
     isSIM900=Talk_SIM900(ncikl);
   }
-  // С 11 цикла, как пошли координаты пересчитываем нарастающее расстояние и время
-  if (ncikl==10)
-  {
-    // Инициируем прежнее время для определения будущих интервалов
-    ghour0=ghour; gmin0=gmin; gsec0=gsec; 
-  }
-  else if (ncikl>10)
-  {
-    //IncreaseToChar(DistanceBetween,ghour,gmin,gsec,ghour0,gmin0,gsec0);
-    // Меняем прежнее время для определения будущих интервалов
-    ghour0=ghour; gmin0=gmin; gsec0=gsec; 
-    //Serial.println(ddtMess); 
-    //Serial.println(""); //("-------"); 
-  }
-  
   // Проверяем интервал и делаем запись данных в файл 
   delaySD=millis()-BdelaySD; 
   if (delaySD>dTimeSD) 

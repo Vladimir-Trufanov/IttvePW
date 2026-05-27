@@ -25,11 +25,13 @@ uint32_t delaySD;             // фактическое время после п
 #define Twodots  F(":") 
 #define LocToCh  F("-")    
 #define Point    F(".")    
+#define signd    F("d")    
 
 #define pref_tid F("tid")    
 #define pref_krd F("krd")    
 #define pref_sim F("sim")  
 #define pref_ddt F("ddt")  
+#define Space    F(" ")  
 
 #define vg       F("vg")    
 #define vc       F("vc")    
@@ -44,13 +46,14 @@ uint32_t delaySD;             // фактическое время после п
 
 bool Talk_SD_Card()
 {
-  // создание/открытие файла 
-  myFile = SD.open("testGPS.txt", FILE_WRITE);
-  // if the file opened okay, write to it:
-  if (myFile) 
+  bool result=false;
+  char fname[] = "testGPS.txt";
+  Serial.print(fname); Serial.print(Space); Serial.print(ncikl); Serial.print(Space);   
+  if (DistanceBetween>0)
   {
-    Serial.print(F("to file ")); Serial.print(ncikl); 
-    if (DistanceBetween>0)
+    // создание/открытие файла 
+    myFile = SD.open(fname, FILE_WRITE);
+    if (myFile) 
     {
       // Формируем индекс по номеру цикла
       fp(ncikl); fp(tsz);
@@ -64,29 +67,21 @@ bool Talk_SD_Card()
       fp(pref_sim); fpi(dB); fp(LocToCh); fp(vg); double vig=double(lipo)/1000; fuu(vig); fp(LocToCh); 
       fp(vc); fuu(vi); fp(tsz); 
       // "ddt123456789-d123456789;"
-      fp(pref_ddt); uint32_t value;
-      // Пересчитываем нарастающее время
-      value=ghour0*3600+gmin0*60+gsec0;
-      value=ghour*3600+gmin*60+gsec-value;
-      increase_time=increase_time+value;
-      fpi(increase_time); fp(LocToCh); 
-      // Пересчитываем нарастающее расстояние
-      increase_distance=increase_distance+DistanceBetween*100;
-      fpi(increase_distance); fp(tsz); 
+      fp(pref_ddt); fpi(increase_time);     fp(LocToCh); 
+      fp(signd);    fpi(increase_distance); fp(tsz); 
       fpln("");
       myFile.close(); // close the file
-      Serial.println(F(""));
+      result=true;
     }
-    else Serial.println(F(" нет записи"));
+    // если файл не открылся выводим сообщение об ошибке
+    // и перезагружаем контроллер
+    else 
+    {
+      Serial.print(F("ошибка открытия "));
+    }
   }
-  // если файл не открылся выводим сообщение об ошибке
-  else 
-  {
-    Serial.println(F("error opening test.txt"));
-  }
-  
-  //  Serial.print(F("--SD2: ")); Serial.println(sdline); 
-  return true;
+  Serial.println(DistanceBetween);
+  return result;
 }
 
 #endif
