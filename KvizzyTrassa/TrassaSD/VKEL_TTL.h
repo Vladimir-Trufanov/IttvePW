@@ -59,10 +59,20 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       Serial.println(F("gps.location.isValid()"));
       lat=gps.location.lat();
       lng=gps.location.lng();
-      DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
-      lat0=lat; lng0=lng;  
-      Serial.print(F("DistanceBetween=")); Serial.println(DistanceBetween);
+      
       /*
+      DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
+      //increase_distance = increase_distance + DistanceBetween*100;
+      Serial.print(F("increase_distance1 = ")); Serial.println(increase_distance);
+      increase_distance = DistanceBetween*100;
+      lat0=lat; lng0=lng;  
+      //Serial.print(F("lat=")); Serial.println(lat);
+      //Serial.print(F("lng=")); Serial.println(lng);
+      Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
+      //Serial.print(F("increase_distance = ")); dtostrf(increase_distance,6,1,charNumby); Serial.println(charNumby);
+      Serial.print(F("increase_distance2 = ")); Serial.println(increase_distance);
+      */
+      
       // Пересчитываем нарастающее расстояние и нарастающее время
       if ((lat0==-1)&&(lng0==-1)) 
       {
@@ -74,13 +84,17 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
         // Пересчитываем расстояние и меняем прежнее положение для определения будущего расстояния между точками
         DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
         increase_distance = increase_distance + DistanceBetween*100;
-        lat0=lat; lng0=lng;  
-        Serial.print(F("DistanceBetween=")); Serial.println(DistanceBetween);
         // Пересчитываем нарастающее время
         new_time=millis(); increase_time = increase_time + (new_time-old_time)/1000; 
         old_time=new_time; 
       }
-      */
+      
+      lat0=lat; lng0=lng;  
+      Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
+      Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
+      Serial.print(F("increase_time     = ")); Serial.println(increase_time);
+      
+
       // Определяем дату
       if (gps.date.isValid())
       {
