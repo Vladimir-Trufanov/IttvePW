@@ -213,60 +213,10 @@ bool Talk_SIM900(uint32_t ncikl)
       // Выбираем первые одну или более цифры в ответе
       dB=getIntByMatch(response,"%d(%d*)");
       //Serial.print(F("dB= ")); Serial.println(dB); 
-
-      /*
-      Serial.print(F("*** AT_CSQ:")); Serial.print(response); Serial.println(F("***")); 
-
-      // Ищем позицию уровня сигнал
-      int nb,ne;
-      char *needle = "+CSQ: ";
-      char *result = strstr(response, needle);
-      if (result != NULL) 
-      {
-        Serial.print(F("*** result:")); Serial.print(result); Serial.println(F("***")); 
-      }
-      else 
-      {
-        Serial.println(F("Substring not found"));
-      }
-      */
-
-      // При ненулевых данных формируем сообщение об уровне сигнала и батареи 
-      //if ((lipo>0)&&(dB>0)) 
-      //{
-        //DbAndVoltToChar(lipo,dB,vi,chardec);
-        //Serial.println(simMess); 
-      //}
-      //else isSend=false; 
     } 
   }
   return isSend; 
 }
-
-/*
-Поиск в массиве char с помощью функций C
-Для работы с массивами символов, заканчивающимися нулём, можно использовать стандартные функции C, например:
-strchr — ищет символ в строке и возвращает указатель на него. Если символ не найден, возвращается нулевой указатель.
-strstr — ищет подстроку в строке и возвращает указатель на её начало. Если подстрока не найдена, возвращается нулевой указатель.
- 
-alexgyver.ru
-Пример использования strchr:
-char buf = "hello world";
-char* p = strchr(buf, 'w'); // p == "world", (p - buf) == 6
-``` [20]
-
-Также можно реализовать поиск вручную с помощью цикла, сравнивая каждый символ массива с искомым. Пример функции:
-```cpp
-int search_and_destroy(char* buff, size_t len, char c) {
-  for (int i = 0; i < len; i++) {
-    if (buff[i] == c) {
-      return i;
-    }
-  }
-  return -1;
-}
-
-*/
 
 #endif
 

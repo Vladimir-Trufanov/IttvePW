@@ -15,7 +15,7 @@
 #include <SD.h>
 #include <SPI.h>
 File myFile;
-int pinCS = 10;      // контакт 10 на плате Arduino Uno для CS на SD
+int pinCS = 10; // контакт 10 на плате Arduino Uno для CS на SD
 
 #include "s32nRF24L01.h"    
 #include "VKEL_TTL.h" 

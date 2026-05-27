@@ -4,48 +4,45 @@
  * памяти и вывод их в последовательный порт или другой интерфейс
  * без копирования в оперативную память
  * 
- * v2.0.0, 25.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.1, 27.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 16.10.2025
 **/
 
 #ifndef s32_nRF24L01_h
 #define s32_nRF24L01_h
-// Указываем, что данный файл нужно подключить только один раз
 #pragma once    
 
 // Определяем макрос для размещения массива символов в программной памяти:
 // const char pstr[] PROGMEM = "Массив символов pgm в программной памяти, Flash вместо RAM";
 #define _DS(name,value) const char name[] PROGMEM = value;
-// Определяем макрос для выборки массива символов из Flash 
-// напрямую, без копирования их в оперативную память RAM:
-// (const __FlashStringHelper*) pstr
-#define _FS(name) (const __FlashStringHelper*) name
 
-uint32_t ncikl=0;    // счетчик циклов после подключения к GSM
+uint32_t ncikl=0;               // счетчик циклов 
+uint32_t dTimeSD=20000;         // заданный интервал между записями на SD в мс (180000 = 3 мин)  
 
 // Переменные расчетов нарастающего расстояния в сантиметрах и времени в секундах
-double increase_distance=0;    // до 4 294 967 295 = 42 949 км ???
-uint32_t increase_time=0;      // до 4294967295 = 1 193 046 час
-double DistanceBetween;        // расстояние между текущей и предыдущей точкой
-uint32_t old_time;             // время в предыдущей учетной точке
-uint32_t new_time;             // время в текущей учетной точке
+double increase_distance=0;     // до 4 294 967 295 = 42 949 км ???
+uint32_t increase_time=0;       // до 4294967295 = 1 193 046 час
+double DistanceBetween;         // расстояние между текущей и предыдущей точкой
+uint32_t old_time;              // время в предыдущей учетной точке
+uint32_t new_time;              // время в текущей учетной точке
 // Массивы символов для формирования сообщений
-char charNumby[10];            // char[9]+'\0' - буфер для чисел в массив
-char chardec[8];               // буфер для regexp - max 7 знаков и точка (nt)
-char response[34];             // универсальный буфер 
+char charNumby[10];             // char[9]+'\0' - буфер для чисел в массив
+char chardec[8];                // буфер для regexp - max 7 знаков и точка (nt)
+char response[34];              // универсальный буфер 
 
 // Данные по приемнику GPS
-double lat0=-1, lng0=-1;       // координаты предыдущей точки 
-double lat=lat0,lng=lng0;      // координаты текущей точки 
-int gday,gmonth,gyear;         // день, месяц, год
-int ghour,gmin,gsec;           // час,минута,секунда
-int SAT=0;                     // количество спутников
-const int timezone_hours=3;    // корректировка времени на время Москвы
+double lat0=-1, lng0=-1;        // координаты предыдущей точки 
+double lat=lat0,lng=lng0;       // координаты текущей точки 
+int gday=5,gmonth=2; //,
+int gyear=1958; // день, месяц, год
+int ghour=0,gmin=0,gsec;        // час,минута,секунда
+int SAT=0;                      // количество спутников
+const int timezone_hours=3;     // корректировка времени на время Москвы
 
 // Данные по GPRS
-int lipo=0;                    // четырехзначное состояние батареи lipo
-int dB=0;                      // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
-float vi;                      // напряжение питания контроллера
+int lipo=0;                     // четырехзначное состояние батареи lipo
+int dB=0;                       // уровень сигнала GPRS в дБ (должен быть выше 5. Чем выше, тем лучше, до 31)
+float vi;                       // напряжение питания контроллера
 
 // ****************************************************************************
 // *            Преобразовать беззнаковое  целое в строку символов            *
@@ -58,124 +55,30 @@ char* IntToChar(uint32_t numbIn)
   String(numby).toCharArray(charNumby,10);
   return charNumby;
 }
-// ****************************************************************************
-// *                    Сформировать запись для загрузки в файл               *
-// ****************************************************************************
-/*
-_DS(tzpt,";")    
-void FillSDLine() 
-{
-  // "ncikl;krd61.80191-34.32987-11"
-  memset(sdline,'\0',96); 
-  strcat_P(sdline,IntToChar(ncikl));
-  / * 
-  dtostrf(lat,2,5,chardec); strcat(krdMess,chardec);
-  strcat_P(krdMess,LocToCh); 
-  dtostrf(lng,2,5,chardec); strcat(krdMess,chardec);
-  strcat_P(krdMess,LocToCh); 
-  strcat(krdMess,IntToChar(SAT));
-  return krdMess; 
-  * / 
-} 
-*/
-// ****************************************************************************
-// *              Сформировать сообщение о локации и числе спутников          *
-// ****************************************************************************
-/*
-_DS(LocToCh,"-")    
-_DS(pref_krd,"krd")    
-char* LocationToChar(double lat, double lng, int SAT, char chardec[]) 
-{
-  // "krd61.80191-34.32987-11"
-  memset(krdMess,'\0',34); 
-  strcat_P(krdMess,pref_krd); 
-  dtostrf(lat,2,5,chardec); strcat(krdMess,chardec);
-  strcat_P(krdMess,LocToCh); 
-  dtostrf(lng,2,5,chardec); strcat(krdMess,chardec);
-  strcat_P(krdMess,LocToCh); 
-  strcat(krdMess,IntToChar(SAT));
-  return krdMess;  
-} 
-*/
+
 /*
 // ****************************************************************************
-// *                   Сформировать сообщение о дате и времени                *
+// *                             Сформировать имя файла                       *
 // ****************************************************************************
-_DS(pref_tid,"tid")    
-_DS(Point,".")    
-_DS(Twodots,":") 
-_DS(dZero,"0")    
-char* DateTimeToChar(int ghour, int gmin, int gsec, int gday, int gmonth, int gyear) 
+_DS(pref_gps,"gps")    
+_DS(diZero,"0")    
+_DS(diSubo,"_")    
+_DS(ptxt,".txt")    
+char* makefilename() 
 {
-  // "tid2026.05.18-20:43:23"
-  memset(tidMess,'\0',34); 
-  strcat_P(tidMess,pref_tid); 
-  strcat(tidMess,IntToChar(gyear)); 
-  strcat_P(tidMess,Point); 
-  if (gmonth<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(gmonth));}
-  else strcat(tidMess,IntToChar(gmonth)); 
-  strcat_P(tidMess,Point); 
-  if (gday<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(gday));}
-  else strcat(tidMess,IntToChar(gday)); 
-  strcat_P(tidMess,LocToCh); 
-  if (ghour<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(ghour));}
-  else strcat(tidMess,IntToChar(ghour)); 
-  strcat_P(tidMess,Twodots); 
-  if (gmin<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(gmin));}
-  else strcat(tidMess,IntToChar(gmin)); 
-  strcat_P(tidMess,Twodots); 
-  if (gsec<10) {strcat_P(tidMess,dZero); strcat(tidMess,IntToChar(gsec));}
-  else strcat(tidMess,IntToChar(gsec)); 
-  return tidMess;  
-}
-*/
-/*
-// ****************************************************************************
-// *              Сформировать сообщение об уровне сигнала,                   *
-// *            напряжения батареи GPRS и питания контроллера                 *
-// ****************************************************************************
-_DS(pref_sim,"sim")    
-_DS(vg,"vg")    
-_DS(vc,"vc")    
-char* DbAndVoltToChar(int lipo, int dB, float vi, char chardec[]) 
-{
-  // "sim24-vg4.12-vc4.54"
-  memset(simMess,'\0',34); 
-  strcat_P(simMess,pref_sim); 
-  strcat(simMess,IntToChar(dB)); 
-  strcat_P(simMess,LocToCh); 
-  strcat_P(simMess,vg); 
-  double vib=double(lipo)/1000;
-  dtostrf(vib,1,2,chardec); strcat(simMess,chardec);
-  strcat_P(simMess,LocToCh); 
-  strcat_P(simMess,vc); 
-  dtostrf(vi,1,2,chardec); strcat(simMess,chardec);
-  return simMess;  
-}  
-*/
-/*
-// ****************************************************************************
-// *         Сформировать сообщение о нарастающем расстоянии и времени        *
-// ****************************************************************************
-_DS(pref_ddt,"ddt")    
-_DS(di,"d") 
-char* IncreaseToChar(double DistanceBetween, int ghour, int gmin, int gsec, int ghour0, int gmin0, int gsec0) 
-{
-  uint32_t value;
-  // "ddt123456789-d123456789"
-  memset(ddtMess,'\0',34); 
-  strcat_P(ddtMess,pref_ddt); 
-  // Пересчитываем нарастающее время
-  value=ghour0*3600+gmin0*60+gsec0;
-  value=ghour*3600+gmin*60+gsec-value;
-  increase_time=increase_time+value;
-  strcat(ddtMess,IntToChar(increase_time)); 
-  // Пересчитываем нарастающее расстояние
-  strcat_P(ddtMess,LocToCh); 
-  strcat_P(ddtMess,di); 
-  increase_distance=increase_distance+DistanceBetween*100;
-  strcat(ddtMess,IntToChar(increase_distance)); 
-  return ddtMess;  
+  // "gps20260518_2043.txt"
+  memset(response,'\0',34); 
+  strcat_P(response,pref_gps); 
+  strcat(response,IntToChar(gyear)); 
+  if (gmonth<10) {strcat_P(response,diZero); strcat(response,IntToChar(gmonth));}
+  else strcat(response,IntToChar(gmonth)); 
+  if (gday<10) {strcat_P(response,diZero); strcat(response,IntToChar(gday));}
+  else strcat(response,IntToChar(gday)); strcat_P(response,diSubo);
+  if (ghour<10) {strcat_P(response,diZero); strcat(response,IntToChar(ghour));}
+  else strcat(response,IntToChar(ghour)); 
+  if (gmin<10) {strcat_P(response,diZero); strcat(response,IntToChar(gmin));}
+  else strcat(response,IntToChar(gmin)); 
+  return response;  
 }
 */
 
