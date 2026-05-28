@@ -85,7 +85,7 @@ uint8_t AT_(unsigned int timeout)
   }
   while((answer == 2) && ((millis() - previous) < timeout));
   // При необходимости трассируем ответ на AT-команду
-  Serial.print(F("**")); Serial.print(response); Serial.println(F("**"));
+  // Serial.print(F("**")); Serial.print(response); Serial.println(F("**"));
   // Если вышли ли за границу буфера, то возвращаем ошибку
   // "ответ SIM900 превышает 34 символа"  
   if (answer==1) goto by; 

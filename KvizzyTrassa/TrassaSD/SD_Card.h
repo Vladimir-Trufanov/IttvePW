@@ -2,7 +2,7 @@
  * 
  * Обеспечить запись данных на SD 
  * 
- * v2.0.1, 27.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.2, 28.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2026 tve                               Дата создания: 25.05.2026
 **/
 
@@ -10,6 +10,7 @@
 #define SD_Card_h
 #pragma once  
 
+#include <iarduino_VCC.h>
 #include "s32nRF24L01.h"    
 
 uint32_t BdelaySD=millis();   // начало отсчета интервала записи данных на SD 
@@ -43,7 +44,7 @@ uint32_t delaySD;             // фактическое время после п
 #define fuu(volti) dtostrf(volti,1,2,charNumby); fp(charNumby)
 #define fpln(value) myFile.println(value)
 
-_DS(pref_gps,"gps")    
+//_DS(pref_gps,"gps")    
 _DS(diZero,"0")    
 _DS(diSubo,"_")    
 _DS(ptxt,".txt")    
@@ -51,13 +52,14 @@ _DS(ptxt,".txt")
 bool Talk_SD_Card()
 {
   bool result=false;
+  // Считываем напряжение питания
+  float vi = analogRead_VCC();      
   //char fname = makefilename();
   //char fname[] = "testGPS1.txt";
-  char fname[22] = "testGPS2.txt";
 
   // "gps20260518_2043.txt"
-  memset(fname,'\0',22); 
-  strcat_P(fname,pref_gps); 
+  //memset(fname,'\0',22); 
+  //strcat_P(fname,pref_gps); 
   //IntToChar(gyear); Serial.println(charNumby);
   /*
   strcat(fname,IntToChar(gyear)); 
@@ -90,9 +92,9 @@ bool Talk_SD_Card()
     // Формируем индекс по номеру цикла
     fp(ncikl); fp(tsz);
     // "tid2026.05.18-20:43:23;"
-    fp(pref_tid); 
-    fpi(gyear); fp(Point);   fpd(gmonth); fp(Point);   fpd(gday); fp(LocToCh);
-    fpd(ghour); fp(Twodots); fpd(gmin);   fp(Twodots); fpd(gsec); fp(tsz);
+    //fp(pref_tid); 
+    //fpi(gyear); fp(Point);   fpd(gmonth); fp(Point);   fpd(gday); fp(LocToCh);
+    //fpd(ghour); fp(Twodots); fpd(gmin);   fp(Twodots); fpd(gsec); fp(tsz);
     // "krd61.80191-34.32987-11;"
     fp(pref_krd); fco(lat); fp(LocToCh); fco(lng); fp(LocToCh); fpi(SAT); fp(tsz);
     // "sim24-vg4.12-vc4.54;"

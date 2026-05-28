@@ -2,20 +2,22 @@
  *
  * Обеспечить снятие показаний разного рода и запись на SD-карту
  * 
- * v2.0.1, 28.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.2, 28.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2026 tve                               Дата создания: 30.04.2026
  *
 **/
 
 #include <SoftwareSerial.h>
-#include <iarduino_VCC.h>
 #include <EEPROM.h>
 #include <avr/wdt.h>
-
 #include <SD.h>
 #include <SPI.h>
-File myFile;
-int pinCS = 10; // контакт 10 на плате Arduino Uno для CS на SD
+
+#define fnamesize 16    // размер поля для имени файла         
+File myFile;            // дескриптор файла
+char fname[fnamesize]="testGPS"; 
+bool firstmyfile=true;  // ожидается первый запрос датs/времени с SIM900
+int pinCS = 10;         // контакт 10 на плате Arduino Uno для CS на SD
 
 #include "s32nRF24L01.h"    
 #include "VKEL_TTL.h" 
@@ -44,8 +46,6 @@ void setup()
   nReboot++;
   EEPROM.put(address,nReboot);
   Serial.print(F("Контроллер перезагрузился: ")); Serial.println(nReboot);
-  // Запускаем watchdog с таймаутом ~8c
-  wdt_enable(WDTO_8S); 
 
   // Инициализируем часы на московское время 26/05/28,09:51:10
   /*
@@ -53,24 +53,28 @@ void setup()
   AT_com(AT_AT);
   AT_com(ST);
   */
+
+  /*
+  // Считываем время с часов и формируем имя файла
+  SIM900.listen();
+  if (AT_com(AT_CCLK)!=0)
+  { 
+  }
+  else
+  {
+    Serial.println(F("a"));
+  }
+  */
+  // Запускаем watchdog с таймаутом ~8c
+  wdt_enable(WDTO_8S); 
 }
 
 void loop()
 {
   ncikl++;  // изменили счетчик 
-  // Считываем напряжение питания
-  vi = analogRead_VCC();      
-  // Прослушиваем приемник GPS V.KEL-TTL
+  // Работаем с SIM900
   // (по умолчанию прослушивается последний инициализированный порт,
   // если требуется прослушивать другой, следует его явно указать)
-  VKEL_TTL.listen();
-  // Выбираем данные навигации из приёмника GPS V.KEL TTL 
-  isVKEL_TTL=Talk_VKEL_TTL(ncikl);
-  if (isVKEL_TTL)
-  {
-    //Serial.println(F("Данные от приемника GPS есть"));
-  }
-  // Работаем с SIM900
   SIM900.listen();
   // Проверяем, реагирует ли на команды SIM900
   // и включаем GPRS, если нет ответа
@@ -86,8 +90,22 @@ void loop()
   // Выбираем данные по SIM900 
   else
   {
+    // Формируем имя файла
+    if (firstmyfile) 
+    {
+      //Serial.println(F("1"));
+      firstmyfile=false;
+    }
     //Serial.println(F("Есть SIM900"));
     isSIM900=Talk_SIM900(ncikl);
+  }
+  // Прослушиваем приемник GPS V.KEL-TTL
+  VKEL_TTL.listen();
+  // Выбираем данные навигации из приёмника GPS V.KEL TTL 
+  isVKEL_TTL=Talk_VKEL_TTL(ncikl);
+  if (isVKEL_TTL)
+  {
+    //Serial.println(F("Данные от приемника GPS есть"));
   }
   // Проверяем интервал и делаем запись данных в файл 
   delaySD=millis()-BdelaySD; 
