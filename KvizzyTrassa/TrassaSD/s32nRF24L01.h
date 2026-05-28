@@ -16,19 +16,20 @@
 // const char pstr[] PROGMEM = "Массив символов pgm в программной памяти, Flash вместо RAM";
 #define _DS(name,value) const char name[] PROGMEM = value;
 
+#define bufsize 50              // размер универсального буфера
 uint32_t ncikl=0;               // счетчик циклов 
 uint32_t dTimeSD=20000;         // заданный интервал между записями на SD в мс (180000 = 3 мин)  
 
 // Переменные расчетов нарастающего расстояния в сантиметрах и времени в секундах
 double increase_distance=0;     // до 4 294 967 295 = 42 949 км ???
-uint32_t increase_time=0;       // до 4294967295 = 1 193 046 час
+//uint32_t increase_time=0;       // до 4294967295 = 1 193 046 час
 double DistanceBetween;         // расстояние между текущей и предыдущей точкой
-uint32_t old_time;              // время в предыдущей учетной точке
-uint32_t new_time;              // время в текущей учетной точке
+//uint32_t old_time;              // время в предыдущей учетной точке
+//uint32_t new_time;              // время в текущей учетной точке
 // Массивы символов для формирования сообщений
 char charNumby[10];             // char[9]+'\0' - буфер для чисел в массив
 char chardec[8];                // буфер для regexp - max 7 знаков и точка (nt)
-char response[34];              // универсальный буфер 
+char response[bufsize];         // универсальный буфер 
 
 // Данные по приемнику GPS
 double lat0=-1, lng0=-1;        // координаты предыдущей точки 
@@ -67,7 +68,7 @@ _DS(ptxt,".txt")
 char* makefilename() 
 {
   // "gps20260518_2043.txt"
-  memset(response,'\0',34); 
+  memset(response,'\0',bufsize); 
   strcat_P(response,pref_gps); 
   strcat(response,IntToChar(gyear)); 
   if (gmonth<10) {strcat_P(response,diZero); strcat(response,IntToChar(gmonth));}

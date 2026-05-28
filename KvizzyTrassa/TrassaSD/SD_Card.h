@@ -99,7 +99,7 @@ bool Talk_SD_Card()
     fp(pref_sim); fpi(dB); fp(LocToCh); fp(vg); double vig=double(lipo)/1000; fuu(vig); fp(LocToCh); 
     fp(vc); fuu(vi); fp(tsz); 
     // "ddt123456789-d123456789;"
-    fp(pref_ddt); fpi(increase_time);     fp(LocToCh); 
+    //fp(pref_ddt); fpi(increase_time);     fp(LocToCh); 
     fp(signd);    fpi(increase_distance); fp(tsz); 
     fpln("");
     myFile.close(); // close the file

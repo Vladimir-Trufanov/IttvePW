@@ -53,6 +53,7 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
   bool newdata = smartDelay(1100);
   if (newdata)
   {
+    /*
     // Определяем дату
     if (gps.date.isValid())
     {
@@ -82,7 +83,7 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       newdata = false;
       Serial.println(F("Не определяется дата"));
     }
-
+    */
     // Определяем координаты и перемещение от предыдущей точки
     if (gps.location.isValid())
     {
@@ -94,7 +95,7 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       if ((lat0==-1)&&(lng0==-1)) 
       {
         DistanceBetween = 0; increase_distance = 0;
-        old_time=millis();   increase_time = 0; 
+        //old_time=millis();   increase_time = 0; 
       }
       // Иначе уже пересчитываем расстояние между точками
       else
@@ -105,49 +106,18 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       if (DistanceBetween>0.2)
       {
         increase_distance = increase_distance + DistanceBetween*100;
-        new_time=millis(); increase_time = increase_time + (new_time-old_time)/1000; 
-        old_time=new_time; 
+        //new_time=millis(); increase_time = increase_time + (new_time-old_time)/1000; 
+        //old_time=new_time; 
         lat0=lat; lng0=lng;  
         Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
         Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
-        Serial.print(F("increase_time     = ")); Serial.println(increase_time);
+        //Serial.print(F("increase_time     = ")); Serial.println(increase_time);
       }
       // Если продвижения не было, отрезаем время без движения
       else
       {
-        old_time=millis();   
+        //old_time=millis();   
       }
-      /*
-      // Определяем дату
-      if (gps.date.isValid())
-      {
-        gday=gps.date.day(); gmonth=gps.date.month(); gyear=gps.date.year(); 
-        // Определяем время
-        if (gps.time.isValid())
-        {
-          ghour=gps.time.hour(); gmin=gps.time.minute(); gsec=gps.time.second();
-          ghour=ghour+timezone_hours;
-          if (ghour>=24) ghour=ghour-24;
-          else if (ghour<0) ghour=ghour+24;
-          // Определяем количество спутников и погрешность
-          if (gps.satellites.isValid()) SAT=gps.satellites.value(); 
-        }
-        // "Не определяется время"
-        else 
-        {
-          newdata = false;
-          //saymess(DefToChar(m1_TimeIsNot));
-          Serial.println(F("Не определяется время"));
-        }
-      }
-      // "Не определяется дата"
-      else
-      {
-        newdata = false;
-        //saymess(DefToChar(m1_DateIsNot));
-        Serial.println(F("Не определяется дата"));
-      }
-      */
     }
     // "Не определяется локация" 
     else
