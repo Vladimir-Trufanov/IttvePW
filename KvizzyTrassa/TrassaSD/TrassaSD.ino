@@ -13,21 +13,16 @@
 #include <SD.h>
 #include <SPI.h>
 
+#define pinCS 10        // контакт 10 на плате Arduino для CS на SD
 #define fnamesize 16    // размер поля для имени файла         
 File myFile;            // дескриптор файла
 char fname[fnamesize]="testGPS"; 
 bool firstmyfile=true;  // ожидается первый запрос датs/времени с SIM900
-int pinCS = 10;         // контакт 10 на плате Arduino Uno для CS на SD
 
 #include "s32nRF24L01.h"    
 #include "VKEL_TTL.h" 
 #include "SIM900.h"   
 #include "SD_Card.h"   
-
-// Определяем адрес для записи данных в EEPROM
-int address; 
-// Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
-uint16_t nReboot;  
 
 void setup()
 {
@@ -35,35 +30,26 @@ void setup()
   VKEL_TTL.begin(9600); 
   SIM900.begin(9600);
 
+  // Определяем переменную счетчика перезагрузок контроллера для  постоянного хранения
+  uint16_t nReboot;  
+  // Определяем адрес для записи данных в EEPROM
+  int address; 
+  // Инициализируем SD карту
   pinMode(pinCS, OUTPUT);
-  // инициализация SD карты
   if (SD.begin()) Serial.println(F("SD-карта готова"));
   else Serial.println(F("Ошибка инициализации SD"));
   // Переопределяем счетчик перезагрузок контроллера
   address=0; 
   EEPROM.get(address, nReboot);
-  if (nReboot==65535) nReboot=0;
+  if (nReboot>65534) nReboot=0;
   nReboot++;
   EEPROM.put(address,nReboot);
   Serial.print(F("Контроллер перезагрузился: ")); Serial.println(nReboot);
-
   // Инициализируем часы на московское время 26/05/28,09:51:10
   /*
   SIM900.listen();
   AT_com(AT_AT);
   AT_com(ST);
-  */
-
-  /*
-  // Считываем время с часов и формируем имя файла
-  SIM900.listen();
-  if (AT_com(AT_CCLK)!=0)
-  { 
-  }
-  else
-  {
-    Serial.println(F("a"));
-  }
   */
   // Запускаем watchdog с таймаутом ~8c
   wdt_enable(WDTO_8S); 
@@ -93,7 +79,9 @@ void loop()
     // Формируем имя файла
     if (firstmyfile) 
     {
-      //Serial.println(F("1"));
+      //Serial.print(F("response=")); Serial.println(response);
+      makedatetime();
+      Serial.print(F("charNumby=")); Serial.println(charNumby);
       firstmyfile=false;
     }
     //Serial.println(F("Есть SIM900"));
