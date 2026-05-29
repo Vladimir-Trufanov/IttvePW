@@ -2,7 +2,7 @@
  *
  * Обеспечить снятие показаний разного рода и запись на SD-карту
  * 
- * v2.0.2, 28.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.3, 29.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2026 tve                               Дата создания: 30.04.2026
  *
 **/
@@ -10,13 +10,8 @@
 #include <SoftwareSerial.h>
 #include <EEPROM.h>
 #include <avr/wdt.h>
-#include <SD.h>
-#include <SPI.h>
 
 #define pinCS 10        // контакт 10 на плате Arduino для CS на SD
-#define fnamesize 16    // размер поля для имени файла         
-File myFile;            // дескриптор файла
-char fname[fnamesize]="testGPS"; 
 bool firstmyfile=true;  // ожидается первый запрос датs/времени с SIM900
 
 #include "s32nRF24L01.h"    
@@ -55,8 +50,11 @@ void setup()
   wdt_enable(WDTO_8S); 
 }
 
+uint32_t BdelaySD=millis();   // начало отсчета интервала записи данных на SD 
 void loop()
 {
+  uint32_t delaySD;           // фактическое время после предыдущей записи на SD
+
   ncikl++;  // изменили счетчик 
   // Работаем с SIM900
   // (по умолчанию прослушивается последний инициализированный порт,
@@ -76,15 +74,10 @@ void loop()
   // Выбираем данные по SIM900 
   else
   {
-    // Формируем имя файла
-    if (firstmyfile) 
-    {
-      //Serial.print(F("response=")); Serial.println(response);
-      makedatetime();
-      Serial.print(F("charNumby=")); Serial.println(charNumby);
-      firstmyfile=false;
-    }
-    //Serial.println(F("Есть SIM900"));
+    // Формируем начальные дату/время для имени файла
+    // или фрагмент строки файла с датой\временем (firstmyfile==false)
+    makedatetime(firstmyfile);
+    if (firstmyfile) firstmyfile=false;
     isSIM900=Talk_SIM900(ncikl);
   }
   // Прослушиваем приемник GPS V.KEL-TTL

@@ -17,7 +17,7 @@
 #define _DS(name,value) const char name[] PROGMEM = value;
 
 #define bufsize   50            // размер универсального буфера
-#define NumbySize 16            // размер буфера для чисел или даты\времени
+#define NumbySize 12            // размер буфера для чисел или даты\времени
 
 uint32_t ncikl=0;               // счетчик циклов 
 uint32_t dTimeSD=20000;         // заданный интервал между записями на SD в мс (180000 = 3 мин)   
@@ -26,7 +26,8 @@ uint32_t dTimeSD=20000;         // заданный интервал между 
 double increase_distance=0;     // до 4 294 967 295 = 42 949 км ???
 double DistanceBetween;         // расстояние между текущей и предыдущей точкой
 // Массивы символов для формирования сообщений
-char charNumby[NumbySize];      // char[9]+'\0' - буфер для чисел в массив или char[14]+'\0' - буфер даты\времени
+char charDatdt[NumbySize]; //="260518_1123";  
+char charNumby[NumbySize]; //="12345678901"; // для чисел в IntToChar, для даты/времени в makedatetime 
 char chardec[8];                // буфер для regexp - max 7 знаков и точка (nt)
 char response[bufsize];         // универсальный буфер 
 // Данные по приемнику GPS
@@ -48,33 +49,37 @@ char* IntToChar(uint32_t numbIn)
   String(numby).toCharArray(charNumby,10);
   return charNumby;
 }
-
-// По строке символов принятой информации с часов контроллера SIM900: '+CCLK: "26/05/28,11:23:13+12"'
-// сформировать имя для формирования файла с данными GPS/GSM:         "gps260518_1123.txt"
-
 // ****************************************************************************
 // *            Проскочить разделитель в принятой информации                  *
 // *                  и перенести 2 символа в имя файла                       *
 // ****************************************************************************
-void move2chars(int &Point, int &j)
+void move2chars(int &Point, int &j, bool firstmyfile)
 {
   Point++;
-  charNumby[j]=response[Point]; j++; Point++;
-  charNumby[j]=response[Point]; j++; Point++;
+  if (firstmyfile)
+  {
+    charDatdt[j]=response[Point]; j++; Point++;
+    charDatdt[j]=response[Point]; j++; Point++;
+  }
+  else
+  {
+    charNumby[j]=response[Point]; j++; Point++;
+    charNumby[j]=response[Point]; j++; Point++;
+  }
 }
 // ****************************************************************************
 // *    По строке символов принятой информации с часов контроллера SIM900:    *
 // *                 '+CCLK: "26/05/28,11:23:13+12"'                          *
-// *       сформировать вставку в строку записи файла с данными GPS/GSM:      *
-// *                          "gps260518_1123"                                *
+// *   сформировать вставку даты/времени в строку файла с данными GPS/GSM:    *
+// *                          "260518_1123"                                   *
+// *                    или в имя файла "260518x"                             *
 // ****************************************************************************
-_DS(pref_gps,"gps")    
-void makedatetime() 
+void makedatetime(bool firstmyfile) 
 {
   int i,j,Point;
-  memset(charNumby,'\0',NumbySize); 
-  strcat_P(charNumby,pref_gps); 
-  j=3; // отметили позицию для следующего символа в имени файла
+  if (firstmyfile) memset(charDatdt,'\0',NumbySize); 
+  else memset(charNumby,'\0',NumbySize); 
+  j=0; // отметили позицию для следующего символа в имени файла
   // Ищем год (позиция первых кавычек)
   for (int i = 0; i < sizeof(response)-1; i++) 
   {
@@ -85,45 +90,22 @@ void makedatetime()
     }
   }
   // Переносим год в имя файла
-  move2chars(Point,j);
+  move2chars(Point,j,firstmyfile);
   // Переносим месяц и день в имя файла
-  move2chars(Point,j);
-  move2chars(Point,j);
+  move2chars(Point,j,firstmyfile);
+  move2chars(Point,j,firstmyfile);
   // Переносим час и минуту
-  charNumby[j]='_'; j++; 
-  move2chars(Point,j);
-  move2chars(Point,j);
+  if (firstmyfile) 
+  {
+    charDatdt[j]='x';
+  } 
+  else 
+  {
+    charNumby[j]='_'; j++; 
+    move2chars(Point,j,firstmyfile);
+    move2chars(Point,j,firstmyfile);
+  }
 }
-
-
-/*
-// ****************************************************************************
-// *    По строке символов принятой информации с часов контроллера SIM900:    *
-// *                 '+CCLK: "26/05/28,11:23:13+12"'                          *
-// *        сформировать имя для формирования файла с данными GPS/GSM:        *
-// *                       "gps260518_1123.txt"                               *
-// ****************************************************************************
-//_DS(pref_gps,"gps")    
-//_DS(diZero,"0")    
-//_DS(diSubo,"_")    
-//_DS(ptxt,".txt")    
-char* makefilename() 
-{
-  // "gps20260518_2043.txt"
-  memset(response,'\0',bufsize); 
-  strcat_P(response,pref_gps); 
-  strcat(response,IntToChar(gyear)); 
-  if (gmonth<10) {strcat_P(response,diZero); strcat(response,IntToChar(gmonth));}
-  else strcat(response,IntToChar(gmonth)); 
-  if (gday<10) {strcat_P(response,diZero); strcat(response,IntToChar(gday));}
-  else strcat(response,IntToChar(gday)); strcat_P(response,diSubo);
-  if (ghour<10) {strcat_P(response,diZero); strcat(response,IntToChar(ghour));}
-  else strcat(response,IntToChar(ghour)); 
-  if (gmin<10) {strcat_P(response,diZero); strcat(response,IntToChar(gmin));}
-  else strcat(response,IntToChar(gmin)); 
-  return response;  
-}
-*/
 
 /* Пример сообщений:
 $GPGSV,4,1,13,01,61,199,19,02,35,173,28,03,59,264,09,04,13,217,24*78
