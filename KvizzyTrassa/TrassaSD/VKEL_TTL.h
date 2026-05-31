@@ -2,7 +2,7 @@
  * 
  * Обеспечить взаимодействие и выборку данных из приёмника GPS VKEL_TTL 
  * 
- * v6.0.3, 28.05.2026                                 Автор:      Труфанов В.Е.
+ * v6.0.4, 31.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 16.10.2025
 **/
 
@@ -53,9 +53,11 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
     // Определяем координаты и перемещение от предыдущей точки
     if (gps.location.isValid())
     {
-      Serial.println(F("gps.location.isValid()"));
+      //Serial.println(F("gps.location.isValid()"));
       lat=gps.location.lat();
       lng=gps.location.lng();
+      Serial.print(F("lat = ")); Serial.println(lat);
+      Serial.print(F("lng = ")); Serial.println(lng);
       // Если первое обнаружение координат, инициируем нарастающее расстояние
       if ((lat0==-1)&&(lng0==-1)) 
       {
@@ -65,15 +67,16 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       else
       {
         DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
+        // Если есть продвижение более 10 см, пересчитываем нарастающее расстояние 
+        //if (DistanceBetween>0.1)
+        //{
+        //  increase_distance = increase_distance + DistanceBetween*100;
+        //  lat0=lat; lng0=lng;  
+        //  Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
+        //  Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
+        //}
       }
-      // Если есть продвижение более 20 см, пересчитываем нарастающее расстояние 
-      if (DistanceBetween>0.2)
-      {
-        increase_distance = increase_distance + DistanceBetween*100;
-        lat0=lat; lng0=lng;  
-        Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
-        Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
-      }
+      Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
     }
     // "Не определяется локация" 
     else

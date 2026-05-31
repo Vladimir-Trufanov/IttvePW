@@ -2,7 +2,7 @@
  * 
  * Обеспечить запись данных на SD 
  * 
- * v2.0.2, 28.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.3, 31.05.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2026 tve                               Дата создания: 25.05.2026
 **/
 
@@ -51,8 +51,6 @@
 // *                       "gps260518_1123.txt"                               *
 // ****************************************************************************
 _DS(pref_gps,"g")    
-//_DS(diZero,"0")    
-//_DS(diSubo,"_")    
 _DS(ptxt,".txt")    
 
 bool Talk_SD_Card()
@@ -86,10 +84,16 @@ bool Talk_SD_Card()
     fp(ncikl); fp(tsz);
     // "tid260518_1123;"
     fp(pref_tid); 
-    Serial.print(F("Talk_SD_Card: charNumby=")); Serial.println(charNumby);
+    Serial.print(F("Talk_SD_Card: charNumby=")); 
+    Serial.println(charNumby);
     fp(charNumby); fp(tsz);
     // "krd61.80191-34.32987-11;"
-    fp(pref_krd); fco(lat); fp(LocToCh); fco(lng); fp(LocToCh); fpi(SAT); fp(tsz);
+    fp(pref_krd); fco(lat); fp(LocToCh); 
+    Serial.println(charNumby);
+    fco(lng); fp(LocToCh); 
+    Serial.println(charNumby);
+    fpi(SAT); fp(tsz);
+    Serial.println(charNumby);
     // "sim24-vg4.12-vc4.54;"
     fp(pref_sim); fpi(dB); fp(LocToCh); fp(vg); double vig=double(lipo)/1000; fuu(vig); fp(LocToCh); 
     fp(vc); fuu(vi); fp(tsz); 
