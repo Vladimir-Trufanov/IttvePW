@@ -56,8 +56,8 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       //Serial.println(F("gps.location.isValid()"));
       lat=gps.location.lat();
       lng=gps.location.lng();
-      Serial.print(F("lat = ")); Serial.println(lat);
-      Serial.print(F("lng = ")); Serial.println(lng);
+      //Serial.print(F("lat = ")); dtostrf(lat,2,5,charNumby); Serial.println(charNumby);
+      //Serial.print(F("lng = ")); dtostrf(lng,2,5,charNumby); Serial.println(charNumby);
       // Если первое обнаружение координат, инициируем нарастающее расстояние
       if ((lat0==-1)&&(lng0==-1)) 
       {
@@ -67,16 +67,20 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       else
       {
         DistanceBetween = gps.distanceBetween(lat,lng,lat0,lng0);
-        // Если есть продвижение более 10 см, пересчитываем нарастающее расстояние 
-        //if (DistanceBetween>0.1)
-        //{
-        //  increase_distance = increase_distance + DistanceBetween*100;
-        //  lat0=lat; lng0=lng;  
-        //  Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
-        //  Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
-        //}
       }
-      Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
+      // 
+      // Если есть продвижение пересчитываем нарастающее расстояние 
+      if (DistanceBetween>0.15)
+      {
+        increase_distance = increase_distance + DistanceBetween*100;
+      }
+      // Меняем прежние координаты
+      //Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
+      //Serial.print(F("increase_distance = ")); Serial.println(increase_distance);
+      lat0=lat; lng0=lng; 
+      // Определяем количество спутников
+      if (gps.satellites.isValid()) SAT=gps.satellites.value(); 
+      //Serial.print(F("SAT = ")); Serial.println(SAT);
     }
     // "Не определяется локация" 
     else

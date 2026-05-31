@@ -58,9 +58,6 @@ bool Talk_SD_Card()
   // !!! Стандартная библиотека SD.h ограничивает длину имени файла 8 символами 
   // (плюс возможное расширение из 3 символов). 
   // Это связано с форматом 8.3, который используется в файловых системах FAT. 
-
-  Serial.print(F("Talk_SD_Card: charDatdt=")); Serial.println(charDatdt);
-
   File myFile;                         // дескриптор файла
   bool result=false;
   char fname[fnamesize]="testGPS.txt"; // "g260518x.txt"    
@@ -84,16 +81,11 @@ bool Talk_SD_Card()
     fp(ncikl); fp(tsz);
     // "tid260518_1123;"
     fp(pref_tid); 
-    Serial.print(F("Talk_SD_Card: charNumby=")); 
-    Serial.println(charNumby);
     fp(charNumby); fp(tsz);
     // "krd61.80191-34.32987-11;"
     fp(pref_krd); fco(lat); fp(LocToCh); 
-    Serial.println(charNumby);
     fco(lng); fp(LocToCh); 
-    Serial.println(charNumby);
     fpi(SAT); fp(tsz);
-    Serial.println(charNumby);
     // "sim24-vg4.12-vc4.54;"
     fp(pref_sim); fpi(dB); fp(LocToCh); fp(vg); double vig=double(lipo)/1000; fuu(vig); fp(LocToCh); 
     fp(vc); fuu(vi); fp(tsz); 
@@ -101,15 +93,15 @@ bool Talk_SD_Card()
     fp(pref_dtd); fpi(increase_distance); fp(tsz); 
     fpln("");
     myFile.close(); // close the file
+    Serial.println(Point);  
     result=true;
   }
   // если файл не открылся выводим сообщение об ошибке
   // и перезагружаем контроллер
   else 
   {
-    Serial.print(F("ошибка открытия "));
+    Serial.println(F("ошибка открытия "));
   }
-  Serial.println(DistanceBetween);
   return result;
 }
 
