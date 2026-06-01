@@ -2,7 +2,7 @@
  * 
  * Обеспечить запись данных на SD 
  * 
- * v2.0.3, 31.05.2026                                 Автор:      Труфанов В.Е.
+ * v2.0.4, 01.06.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2026 tve                               Дата создания: 25.05.2026
 **/
 
@@ -93,7 +93,7 @@ bool Talk_SD_Card()
     fp(pref_dtd); fpi(increase_distance); fp(tsz); 
     fpln("");
     myFile.close(); // close the file
-    Serial.println(Point);  
+    Serial.println(increase_distance);
     result=true;
   }
   // если файл не открылся выводим сообщение об ошибке

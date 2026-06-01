@@ -72,7 +72,8 @@ bool Talk_VKEL_TTL(uint32_t ncikl)
       // Если есть продвижение пересчитываем нарастающее расстояние 
       if (DistanceBetween>0.15)
       {
-        increase_distance = increase_distance + DistanceBetween*100;
+        //increase_distance = increase_distance + DistanceBetween*100;
+        increase_distance = increase_distance + DistanceBetween;
       }
       // Меняем прежние координаты
       //Serial.print(F("DistanceBetween   = ")); Serial.println(DistanceBetween);
