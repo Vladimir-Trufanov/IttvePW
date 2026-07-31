@@ -25,26 +25,5 @@ TrassaSD
 		TrassaSD.ppr
 		VKEL_TTL.h
 [Open project files]
-0=TrassaSD.ino
-1=SD_Card.h
-2=SIM900.h
-3=s32nRF24L01.h
-4=VKEL_TTL.h
 [Selected Project Files]
 Main=
-Selected=SD_Card.h
-[TrassaSD.ino]
-TopLine=5
-Caret=14,5
-[SD_Card.h]
-TopLine=72
-Caret=19,62
-[SIM900.h]
-TopLine=35
-Caret=4,35
-[s32nRF24L01.h]
-TopLine=7
-Caret=14,7
-[VKEL_TTL.h]
-TopLine=1
-Caret=14,5
