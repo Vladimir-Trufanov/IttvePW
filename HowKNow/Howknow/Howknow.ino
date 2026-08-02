@@ -9,12 +9,24 @@
 #include <Arduino.h>
 #include "config.h"  
 
+
+#include <PriUint64.h>
+
 void setup() 
 {
   Serial.begin(115200);
   delay(5000);
-  Serial.println("Подключена плата: " + String(BOARD_NAME));
-  Serial.println("Подключена плата: " + String(BOARD_NAME));
+  Serial.println("\n");
+
+
+
+
+  
+  initconfig();
+   
+  Serial.println("BOARD_TYPE:  " + String(BOARD_TYPE));
+  Serial.println("BOARD_NAME:  " + String(BOARD_NAME));
+  Serial.println("MAC_ADDRESS: " + String(MAC_ADDRESS));
 
   #if defined(ARDUINO_ARCH_AVR)
     // код для Uno/Nano/Mega
@@ -28,6 +40,10 @@ void setup()
     // код для ESP8266
     Serial.println("код для ESP8266");
   #endif
+
+
+  //if (BOARD_NAME == "Generic ESP8266 Module") Serial.println("BOARD_NAME == Generic ESP8266 Module");
+  //else Serial.println("BOARD_NAME => проверка не сработала");
 
   /*
   Как в скетче прочитать серийный номер esp32
@@ -55,14 +71,12 @@ void setup()
   для сетевых настроек), можно использовать WiFi.macAddress(), который 
   возвращает строку. 
   */
+
   uint64_t CHIPID = ESP.getEfuseMac();  // Получаем MAC-адрес
-
   // Выводим результат в шестнадцатеричном формате
-  Serial.printf("ESP32 MAC: %04X%08X",
-    (uint16_t)(CHIPID >> 32),           // Старшие 2 байта
-    (uint32_t)CHIPID);                  // Младшие 4 байта
+  // https://github.com/yoursunny/PriUint64
+  Serial.println(PriUint64<HEX>(CHIPID));
 }
-
 
 void loop() 
 {
