@@ -2,7 +2,7 @@
  * 
  * "Как в скетче ардуино узнать ..." - подготовить список определений и констант
  * 
- * v1.0.2, 04.08.2026                                 Автор:      Труфанов В.Е.
+ * v1.0.3, 05.08.2026                                 Автор:      Труфанов В.Е.
  * Copyright © 2025 tve                               Дата создания: 31.07.2026
 **/
 
@@ -30,11 +30,12 @@ void setup()
   -----------------------------
   BOARD_TYPE   - тип платы
   BOARD_NAME   - название платы в менеджере плат IDE Arduino
-  MAC_ADDRESS  - MAC-адрес платы 
-  MAC_FORMATED - MAC-адрес платы для протокола ESP-NOW
+  MAC_ADDRESS  - MAC-адрес платы [ESP32, ESP8266]
+  MAC_FORMATED - MAC-адрес платы для протокола ESP-NOW [ESP32, ESP8266]
+  CHIPID       - cерийный номер [ESP32]
   */
 
-  // Определяем тип платы
+  // ---------------------------------------------------------------- тип платы
   #if defined(ARDUINO_ARCH_AVR)
     // Uno/Nano/Mega
     #define uBOARD_TYPE "AVR"
@@ -44,51 +45,51 @@ void setup()
   #elif defined(ARDUINO_ARCH_ESP32)
     #define uBOARD_TYPE ARDUINO_ARCH_ESP32
   #elif defined(ARDUINO_ARCH_ESP8266)
-    #define uBOARD_TYPE "ESP8266"
+    #define uBOARD_TYPE ARDUINO_ARCH_ESP8266
   #endif
   Serial.println("uBOARD_TYPE: " + String(uBOARD_TYPE));
   Serial.println(" BOARD_TYPE: " + String(BOARD_TYPE));
   if (uBOARD_TYPE == BOARD_TYPE) Serial.println(" Равны! \n"); 
 
+  // ------------------------------ название платы в менеджере плат IDE Arduino
   Serial.println(" BOARD_NAME:  " + String(BOARD_NAME) + "\n");
 
-  #if defined(ARDUINO_ARCH_ESP32)
- 
-  // Определяем MAC-ADDRESS платы
-  String uMAC_ADDRESS;  
-  #if defined(notwifi)
-    uMAC_ADDRESS = "00:00:00:00:00:00";
-  #else
-    WiFi.mode(WIFI_STA); 
-    #if defined(ARDUINO_ARCH_ESP8266)
-      delay(1000); 
+  #if defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_ARCH_ESP8266)
+    // -------------------------------------------------------- MAC-адрес платы
+    String uMAC_ADDRESS;  
+    #if defined(notwifi)
+      uMAC_ADDRESS = "00:00:00:00:00:00";
     #else
-      while (!(WiFi.STA.started())) delay(10);
+      WiFi.mode(WIFI_STA); 
+      #if defined(ARDUINO_ARCH_ESP8266)
+        delay(1000); 
+      #else
+        while (!(WiFi.STA.started())) delay(10);
+      #endif
+      uMAC_ADDRESS = WiFi.macAddress();
     #endif
-    uMAC_ADDRESS = WiFi.macAddress();
-  #endif
-  Serial.println("uMAC_ADDRESS: " + String(uMAC_ADDRESS));
-  Serial.println(" MAC_ADDRESS: " + String(MAC_ADDRESS));
-  if (uMAC_ADDRESS == MAC_ADDRESS) Serial.println(" Равны! \n"); 
+    Serial.println("uMAC_ADDRESS: " + String(uMAC_ADDRESS));
+    Serial.println(" MAC_ADDRESS: " + String(MAC_ADDRESS));
+    if (uMAC_ADDRESS == MAC_ADDRESS) Serial.println(" Равны! \n"); 
 
-  // Определяем MAC-адрес платы для протокола ESP-NOW
-  Serial.print("MAC_FORMATED: ");
-  Serial.print("{");
-  int index = 0;
-  for(int i=0; i<6; i++)
-  {
-    Serial.print("0x");
-    Serial.print(uMAC_ADDRESS.substring(index, index+2));
-    if(i<5)
+    // ---------------------------------- MAC-адрес платы для протокола ESP-NOW
+    Serial.print("MAC_FORMATED: ");
+    Serial.print("{");
+    int index = 0;
+    for(int i=0; i<6; i++)
     {
-      Serial.print(", ");
+      Serial.print("0x");
+      Serial.print(uMAC_ADDRESS.substring(index, index+2));
+      if(i<5)
+      {
+        Serial.print(", ");
+      }
+      index += 3;
     }
-    index += 3;
-  }
-  Serial.println("}");
-
+    Serial.println("}");
   #endif
 
+  // ----------------------------------------------------- серийный номер esp32
   #if defined(ARDUINO_ARCH_ESP32)
     // Читаем серийный номер
     /*
